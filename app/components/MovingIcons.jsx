@@ -47,8 +47,8 @@ const MovingIcons = () => {
           />
         </div>
       </div>
-      <div className='absolute hidden sm:block -mt-12 -z-50 left-10 sm:left-16 md:left-28 lg:left-48  w-[85%] sm:w-[80%] md:w-[75%] lg:w-[70%] h-3 sm:h-4 md:h-5 bg-primary-gradient rounded shadow-md animate-shadow-pulse'></div>
-      <div className='absolute hidden sm:block -mt-9 -z-50 left-12 sm:left-20 md:left-32 lg:left-56  w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] h-3 sm:h-4 md:h-5 bg-primary-gradient rounded shadow-md animate-shadow-pulse'></div>
+      {/* <div className='absolute hidden sm:block -mt-12 -z-50 left-10 sm:left-16 md:left-28 lg:left-48  w-[85%] sm:w-[80%] md:w-[75%] lg:w-[70%] h-3 sm:h-4 md:h-5 bg-primary-gradient rounded shadow-md animate-shadow-pulse'></div>
+      <div className='absolute hidden sm:block -mt-9 -z-50 left-12 sm:left-20 md:left-32 lg:left-56  w-[80%] sm:w-[75%] md:w-[70%] lg:w-[65%] h-3 sm:h-4 md:h-5 bg-primary-gradient rounded shadow-md animate-shadow-pulse'></div> */}
     </>
   );
 };

@@ -162,25 +162,25 @@ const Header = () => {
         <nav className='hidden md:block absolute !sm:top-[32%] !lg:top-[23%] !xl:top-[16%]  w-[95%] container z-50 inset-x-0 bg-primary-gradient text-white shadow-lg'>
           <div className='text-xl flex justify-between space-x-4 py-5 font-bold'>
             <div>
-              <a href='#' className='hover:bg-blue-700 py-2 px-2'>
+              <a href='#' className='hover:bg-red-700 py-2 px-2'>
                 Home
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 About
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 Pages
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 Policies
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 FAQ
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 Blogs
               </a>
-              <a href='#' className='hover:bg-blue-700 py-2 px-4'>
+              <a href='#' className='hover:bg-red-700 py-2 px-4'>
                 Life Insurance
               </a>
             </div>
