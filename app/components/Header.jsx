@@ -21,6 +21,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import Image from 'next/image';
 
 const Header = () => {
   const pathname = usePathname(); // Get the current pathname
@@ -115,6 +116,7 @@ const Header = () => {
             <a href='#' className='hover:text-gray-400'>
               <FaLink className='w-6 h-6' />
             </a>
+            {/* <img src='/images/textonly_nobuffer.png' className='w-16 h-8' /> */}
           </div>
         </div>
       </div>
@@ -122,10 +124,16 @@ const Header = () => {
       <div className='h-44'>
         <div className='bg-white py-10  flex justify-between items-start px-10 container mx-auto'>
           <div className='text-5xl font-bold text-[#01209F]'>
-            <h1>Insurance Lite</h1>
+            {/* <h1>Insurance Lite</h1>
             <p className='text-lg  text-[#D20E32] font-normal'>
               WordPress Theme
-            </p>
+            </p> */}
+            <Image
+              src='/images/fulllogo_nobuffer.jpg'
+              width={100}
+              height={20}
+              style={{ width: '80px', height: '80px' }}
+            />
           </div>
           <div className='hidden lg:flex items-start space-x-8'>
             <div className='flex space-x-2'>

@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div>
             <img
-              src='http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/client_05_white.png'
+              src='/images/icononly_transparent_nobuffer.png'
               alt='Scramjet'
               className='h-12 mb-4'
             />
