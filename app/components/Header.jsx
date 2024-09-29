@@ -121,7 +121,7 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navigation */}
-      <div className='h-44'>
+      <div className='h-56'>
         <div className='bg-white py-10  flex justify-between items-start px-10 container mx-auto'>
           <div className='text-5xl font-bold text-[#01209F]'>
             {/* <h1>Insurance Lite</h1>
@@ -132,7 +132,7 @@ const Header = () => {
               src='/images/fulllogo_nobuffer.jpg'
               width={100}
               height={20}
-              style={{ width: '80px', height: '80px' }}
+              style={{ width: '110px', height: '110px' }}
             />
           </div>
           <div className='hidden lg:flex items-start space-x-8'>
