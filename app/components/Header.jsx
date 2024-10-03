@@ -64,23 +64,20 @@ const Header = () => {
 
   const slides = [
     {
-      imageUrl:
-        'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/doctor-filling-up-life-insurance-form.jpg',
+      imageUrl: '/images/slider/african.jpg',
       title: 'We Provide Best Insurance Policy',
       description:
         'We have almost 30+ years of experience for providing consulting services solutions',
       buttonText: 'Read More',
     },
     {
-      imageUrl:
-        'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/happy-parents-laughing-together-with-daughter-1.jpg',
+      imageUrl: '/images/slider/african2.jpg',
       title: "Secure Your Family's Future",
       description: 'Choose the right insurance plan for your loved ones.',
       buttonText: 'Learn More',
     },
     {
-      imageUrl:
-        'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/banner3.jpeg',
+      imageUrl: '/images/slider/african3.jpg',
       title: 'Comprehensive Coverage Options',
       description: 'Get coverage that suits your unique needs.',
       buttonText: 'Explore Plans',
@@ -217,9 +214,11 @@ const Header = () => {
               {slides.map((slide, index) => (
                 <CarouselItem key={index}>
                   <div
-                    className='relative h-[40rem] object-cover bg-center'
+                    className='relative h-[60rem] bg-cover bg-center'
                     style={{
                       backgroundImage: `url(${slide.imageUrl})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
                     }}
                   >
                     <div className='absolute inset-0 bg-black opacity-50'></div>
