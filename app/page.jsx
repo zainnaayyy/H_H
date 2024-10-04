@@ -23,10 +23,10 @@ const page = () => {
       <InsurancePolicy />
       <GrowBusiness />
       <ContactSection />
-      <Achievements />
+      {/* <Achievements />
       <BlogSection />
       <Testimonials />
-      <Team />
+      <Team /> */}
       <Footer />
       {/* <ContactSection /> */}
       {/* <ContactFormWithMap /> */}

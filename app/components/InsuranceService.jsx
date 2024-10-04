@@ -5,34 +5,34 @@ const services = [
   {
     title: 'Health Insurance',
     description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
+      'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
     imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/doctor-filling-up-life-insurance-form.jpg',
+      '/images/health.jpeg',
     icon: '💉',
   },
   {
     title: 'Life Insurance',
     description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
+      'Let us help you navigate the key to financial security.',
     imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/happy-parents-laughing-together-with-daughter-1.jpg',
+      '/images/life.jpeg',
     icon: '👨‍👩‍👧',
   },
   {
     title: 'Dental & Vision Insurance',
     description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
+      'We provide affordable dental and vision policies for your overall health.',
     imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/banner3.jpeg',
-    icon: '🚗',
+      '/images/dental.jpeg',
+    icon: '🦷',
   },
   {
     title: 'Medicare Insurance',
     description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
+      'Finding the right medicare supplement can be challenging, we are here to help.',
     imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/doctor-filling-up-life-insurance-form.jpg',
-    icon: '💉',
+      '/images/medicare.jpeg',
+    icon: '⚕️',
   },
 ];
 
@@ -46,10 +46,8 @@ const InsuranceService = () => {
         <Button size='lg' className='bg-[#13287B] mt-2 '>
           Get Started
         </Button>
-        <p className='text-gray-600 text-center mt-2'>
-          An award winning digital branding agency, driving sales and increasing
-          value with exceptional websites, brand identities & <br /> campaigns
-          lorem ipsum dolor sit amet.
+        <p className='text-gray-600 text-center mt-2 text-lg'>
+          Insurance can leave you with a lot of questions, let us help you make the best informed decision.
         </p>
       </div>
       <div className='max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8'>
@@ -60,7 +58,7 @@ const InsuranceService = () => {
           >
             <div
               className='absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110'
-              style={{ backgroundImage: `url(${service.imageUrl})` }}
+              style={{ backgroundImage: `url(${service.imageUrl})`, backgroundSize: 'cover' }}
             ></div>
             <div className='absolute inset-x-0 top-10 left-10 w-80 h-64 bg-white bg-opacity-90 p-6 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0'>
               <div className='text-blue-600 text-5xl mb-4'>{service.icon}</div>

@@ -28,7 +28,7 @@ import Image from 'next/image';
 const Header = () => {
   const pathname = usePathname(); // Get the current pathname
   console.log(pathname, 'check');
-  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
   const isHomePage = pathname === '/'; //
 
   let heroImage = 'url(/default-hero-image.jpg)';
@@ -66,21 +66,21 @@ const Header = () => {
 
   const slides = [
     {
-      imageUrl: '/images/slider/african.jpg',
+      imageUrl: '/images/slider/african.jpeg',
       title:
-        'Together, We’re Building A Stronger, Healthier Haiti, One Family At A Time.',
+        'Together We are Building a Healthier Haiti, One Family at a Time.',
       description:
         'We have almost 30+ years of experience for providing consulting services solutions',
       buttonText: 'Get Started',
     },
+    // {
+    //   imageUrl: '/images/slider/african2.jpg',
+    //   title: "Secure Your Family's Future",
+    //   description: 'Choose the right insurance plan for your loved ones.',
+    //   buttonText: 'Get Started',
+    // },
     {
-      imageUrl: '/images/slider/african2.jpg',
-      title: "Secure Your Family's Future",
-      description: 'Choose the right insurance plan for your loved ones.',
-      buttonText: 'Get Started',
-    },
-    {
-      imageUrl: '/images/slider/african3.jpg',
+      imageUrl: '/images/slider/african3.jpeg',
       title: 'Comprehensive Coverage Options',
       description: 'Get coverage that suits your unique needs.',
       buttonText: 'Get Started',
@@ -121,7 +121,7 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navigation */}
-      <div className='h-56'>
+      <div className='h-56 mb-8'>
         <div className='bg-white py-10  flex justify-between items-center px-10 container mx-auto'>
           <div className='flex items-center gap-x-5 text-5xl font-bold text-[#13287B]'>
             {/* <h1>Insurance Lite</h1>
@@ -132,38 +132,38 @@ const Header = () => {
               src='/images/fulllogo_nobuffer.jpg'
               width={100}
               height={20}
-              style={{ width: '110px', height: '110px' }}
+              style={{ width: '150px', height: '150px' }}
             />
-            <p className='text-4xl'>Health For Haitians</p>
+            <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p>
           </div>
-          <div className='hidden lg:flex items-start max-w-3xl space-x-8'>
-            <div className='flex space-x-2'>
+          <div className='hidden lg:flex items-start max-w-2xl space-x-8'>
+            <div className='flex'>
               <span>
-                <FaPhoneVolume className='w-12 h-12 text-[#01209F]' />
+                <FaPhoneVolume className='w-8 h-8 text-[#01209F]' />
               </span>
               <div className='flex flex-col'>
-                <span className='font-bold text-xl'> Phone Number</span>
-                <span className='text-[#D20E32]'>1.844.544.0663</span>
+                <span className='font-bold text-base'> Phone Number</span>
+                <span className='text-[#D20E32] text-sm'>1.844.544.0663</span>
               </div>
             </div>
-            <div className='flex space-x-2'>
+            <div className='flex'>
               <span>
-                <SiGooglemaps className='w-12 h-12 text-[#01209F]' />
+                <SiGooglemaps className='w-8 h-8 text-[#01209F]' />
               </span>
               <div className='flex flex-col'>
-                <span className='font-bold text-xl'> Contact Address</span>
-                <span className='text-[#D20E32]'>
-                  1000 NW 65th St. | Suite 103 | Fort Lauderdale FL 33309
+                <span className='font-bold text-base'> Contact Address</span>
+                <span className='text-[#D20E32] text-sm'>
+                  1000 NW 65th St. | Suite 103 <br/> Fort Lauderdale FL 33309
                 </span>
               </div>
             </div>
-            <div className='flex space-x-2'>
+            <div className='flex'>
               <span>
-                <MdOutlineMailOutline className='w-12 h-12 text-[#01209F]' />
+                <MdOutlineMailOutline className='w-8 h-8 text-[#01209F]' />
               </span>
               <div className='flex flex-col'>
-                <span className='font-bold text-xl'> Email Address</span>
-                <span className='text-[#D20E32]'>info@h4hinsurance.com</span>
+                <span className='font-bold text-base'> Email Address</span>
+                <span className='text-[#D20E32] text-sm'>info@h4hinsurance.com</span>
               </div>
             </div>
           </div>
@@ -171,25 +171,16 @@ const Header = () => {
 
         {/* Navbar */}
         <nav className='hidden md:block    w-[95%] container z-50 inset-x-0 bg-transparent text-black '>
-          <div className='text-xl flex justify-center space-x-4 py-5 font-bold'>
+          <div className='text-xl flex justify-center space-x-4 py-2 font-bold'>
             <div>
               <a href='#' className='hover:text-[#13287B] py-2 px-2'>
                 Home
               </a>
               <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                Products
+              </a>
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
                 About Us
-              </a>
-              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
-                Health Insurance
-              </a>
-              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
-                Life Insurance
-              </a>
-              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
-                Dental & Vision Insurance
-              </a>
-              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
-                Medicare
               </a>
               <a href='#' className='hover:text-[#13287B] py-2 px-4'>
                 Contact Us
@@ -223,10 +214,10 @@ const Header = () => {
                     {/* Text Content */}
                     <div className='absolute inset-0 flex items-center justify-center'>
                       <div className='text-center max-w-4xl text-white space-y-4 animate-slideIn'>
-                        <h1 className='text-6xl font-bold leading-normal'>
+                        <h1 className='text-5xl font-bold leading-normal'>
                           {slide.title}
                         </h1>
-                        <p className='text-4xl mt-5 leading-normal'>
+                        <p className='text-3xl mt-5 leading-normal'>
                           {slide.description}
                         </p>
                         <button className='bg-[#13287B] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>

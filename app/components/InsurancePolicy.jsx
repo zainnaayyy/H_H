@@ -31,30 +31,35 @@ const InsurancePolicy = () => {
         <div className='md:w-[40%]'>
           <div className=''>
             <img
-              src='http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/Screen-Shot-2022-07-24-at-15.12-1.png'
+              src='/images/mission.jpeg'
               alt='Insurance'
               className='rounded-lg shadow-lg'
             />
           </div>
         </div>
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <h2 className='text-3xl font-bold text-gray-800 mb-4'>
-            We Provide Best Insurance Policy for Any Purpose
+          <h2 className='text-3xl font-bold text-[#B92031] mb-4'>
+            How We Make a Difference
           </h2>
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8'>
-            {data.map((item, index) => (
-              <div key={index} className='flex items-start space-x-4 mt-6'>
-                {item.icon}
-                <div>
-                  <h3 className='text-lg font-semibold text-gray-700'>
-                    {item.title}
-                  </h3>
-                  <p className='text-sm text-gray-600'>{item.description}</p>
-                </div>
-              </div>
-            ))}
+          <div className='grid grid-cols-1 sm:grid-cols-1 gap-4 mt-8'>
+            <div>
+              <h3 className='text-lg font-semibold text-gray-700'>
+                Empowering Haiti's Underserved Communities Through Accessible Health Insurance
+              </h3>
+              <p className='text-base text-gray-600'>
+              Our mission is to improve the lives of Haiti’s underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives. 
+              </p>
+            </div>
+             <div>
+              <h3 className='text-lg font-semibold text-gray-700'>
+                Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time.
+              </h3>
+              <p className='text-base text-gray-600'>
+                Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change. The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy. Empowering Haitians unlocks their full potential, generating innovation, cultural diversity, and a more inclusive society. When we uplift our own, we build a future where everyone thrives.
+              </p>
+            </div>
           </div>
-          <div className='flex items-center mt-8'>
+          {/* <div className='flex items-center mt-8'>
             <img
               src='http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/Screen-Shot-2022-07-24-at-15.12-1.png'
               alt='CEO'
@@ -64,7 +69,7 @@ const InsurancePolicy = () => {
               <p className='text-gray-800 font-bold'>Bhagat Singh</p>
               <p className='text-sm text-gray-600'>CEO</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
