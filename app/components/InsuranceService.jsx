@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import React from 'react';
 
 const services = [
@@ -18,7 +19,7 @@ const services = [
     icon: '👨‍👩‍👧',
   },
   {
-    title: 'Car Insurance',
+    title: 'Dental & Vision Insurance',
     description:
       'We have almost 35+ years of experience for providing consulting services solutions',
     imageUrl:
@@ -26,28 +27,12 @@ const services = [
     icon: '🚗',
   },
   {
-    title: 'Health Insurance',
+    title: 'Medicare Insurance',
     description:
       'We have almost 35+ years of experience for providing consulting services solutions',
     imageUrl:
       'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/doctor-filling-up-life-insurance-form.jpg',
     icon: '💉',
-  },
-  {
-    title: 'Life Insurance',
-    description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
-    imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/happy-parents-laughing-together-with-daughter-1.jpg',
-    icon: '👨‍👩‍👧',
-  },
-  {
-    title: 'Car Insurance',
-    description:
-      'We have almost 35+ years of experience for providing consulting services solutions',
-    imageUrl:
-      'http://demo.sparklewpthemes.com/constructionlight/insurance-lite/wp-content/uploads/sites/48/2022/07/banner3.jpeg',
-    icon: '🚗',
   },
 ];
 
@@ -56,15 +41,18 @@ const InsuranceService = () => {
     <div className='bg-gray-100 py-16'>
       <div className='text-center mb-12'>
         <h2 className='text-3xl font-bold text-gray-800'>
-          We Provide professional Insurance Services
+          We Are Here to Service Your Insurance Needs
         </h2>
+        <Button size='lg' className='bg-[#13287B] mt-2 '>
+          Get Started
+        </Button>
         <p className='text-gray-600 text-center mt-2'>
           An award winning digital branding agency, driving sales and increasing
           value with exceptional websites, brand identities & <br /> campaigns
           lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
+      <div className='max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8'>
         {services.map((service, index) => (
           <div
             key={index}

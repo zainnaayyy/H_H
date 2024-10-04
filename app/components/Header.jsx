@@ -3,9 +3,11 @@ import React, { useRef } from 'react';
 import {
   FaCube,
   FaFacebook,
+  FaInstagram,
   FaLink,
   FaPhoneVolume,
   FaSearch,
+  FaWhatsapp,
   FaYoutube,
 } from 'react-icons/fa';
 import { SiGooglemaps } from 'react-icons/si';
@@ -65,31 +67,32 @@ const Header = () => {
   const slides = [
     {
       imageUrl: '/images/slider/african.jpg',
-      title: 'We Provide Best Insurance Policy',
+      title:
+        'Together, We’re Building A Stronger, Healthier Haiti, One Family At A Time.',
       description:
         'We have almost 30+ years of experience for providing consulting services solutions',
-      buttonText: 'Read More',
+      buttonText: 'Get Started',
     },
     {
       imageUrl: '/images/slider/african2.jpg',
       title: "Secure Your Family's Future",
       description: 'Choose the right insurance plan for your loved ones.',
-      buttonText: 'Learn More',
+      buttonText: 'Get Started',
     },
     {
       imageUrl: '/images/slider/african3.jpg',
       title: 'Comprehensive Coverage Options',
       description: 'Get coverage that suits your unique needs.',
-      buttonText: 'Explore Plans',
+      buttonText: 'Get Started',
     },
   ];
 
   return (
     <header className=' bg-white'>
       {/* Top Bar */}
-      <div className='bg-primary-gradient'>
-        <div className='container mx-auto text-white py-4 px-16 flex justify-between items-center text-sm'>
-          <div className='flex items-center space-x-4 text-xl'>
+      <div className='bg-[#13287B]'>
+        <div className='container mx-auto text-white py-4 px-16 flex justify-end items-center text-sm'>
+          {/* <div className='flex items-center space-x-4 text-xl'>
             <span className='flex items-center'>
               <FaPhoneVolume className='text-[#01209F]' />
               <span className='px-2'>012345678</span>
@@ -102,16 +105,16 @@ const Header = () => {
               <SiGooglemaps className='text-[#01209F]' />
               <span className='px-2'>Your Address</span>
             </span>
-          </div>
+          </div> */}
           <div className='flex space-x-4'>
             <a href='#' className='hover:text-gray-400'>
               <FaFacebook className='w-6 h-6' />
             </a>
             <a href='#' className='hover:text-gray-400'>
-              <FaYoutube className='w-6 h-6' />
+              <FaInstagram className='w-6 h-6' />
             </a>
             <a href='#' className='hover:text-gray-400'>
-              <FaLink className='w-6 h-6' />
+              <FaWhatsapp className='w-6 h-6' />
             </a>
             {/* <img src='/images/textonly_nobuffer.png' className='w-16 h-8' /> */}
           </div>
@@ -119,8 +122,8 @@ const Header = () => {
       </div>
       {/* Main Navigation */}
       <div className='h-56'>
-        <div className='bg-white py-10  flex justify-between items-start px-10 container mx-auto'>
-          <div className='text-5xl font-bold text-[#01209F]'>
+        <div className='bg-white py-10  flex justify-between items-center px-10 container mx-auto'>
+          <div className='flex items-center gap-x-5 text-5xl font-bold text-[#13287B]'>
             {/* <h1>Insurance Lite</h1>
             <p className='text-lg  text-[#D20E32] font-normal'>
               WordPress Theme
@@ -131,15 +134,16 @@ const Header = () => {
               height={20}
               style={{ width: '110px', height: '110px' }}
             />
+            <p className='text-4xl'>Health For Haitians</p>
           </div>
-          <div className='hidden lg:flex items-start space-x-8'>
+          <div className='hidden lg:flex items-start max-w-3xl space-x-8'>
             <div className='flex space-x-2'>
               <span>
                 <FaPhoneVolume className='w-12 h-12 text-[#01209F]' />
               </span>
               <div className='flex flex-col'>
                 <span className='font-bold text-xl'> Phone Number</span>
-                <span className='text-[#D20E32]'>012345678</span>
+                <span className='text-[#D20E32]'>1.844.544.0663</span>
               </div>
             </div>
             <div className='flex space-x-2'>
@@ -148,7 +152,9 @@ const Header = () => {
               </span>
               <div className='flex flex-col'>
                 <span className='font-bold text-xl'> Contact Address</span>
-                <span className='text-[#D20E32]'>Your Address</span>
+                <span className='text-[#D20E32]'>
+                  1000 NW 65th St. | Suite 103 | Fort Lauderdale FL 33309
+                </span>
               </div>
             </div>
             <div className='flex space-x-2'>
@@ -157,45 +163,37 @@ const Header = () => {
               </span>
               <div className='flex flex-col'>
                 <span className='font-bold text-xl'> Email Address</span>
-                <span className='text-[#D20E32]'>your@domain.com</span>
+                <span className='text-[#D20E32]'>info@h4hinsurance.com</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Navbar */}
-        <nav className='hidden md:block absolute !sm:top-[32%] !lg:top-[23%] !xl:top-[16%]  w-[95%] container z-50 inset-x-0 bg-primary-gradient text-white shadow-lg'>
-          <div className='text-xl flex justify-between space-x-4 py-5 font-bold'>
+        <nav className='hidden md:block    w-[95%] container z-50 inset-x-0 bg-transparent text-black '>
+          <div className='text-xl flex justify-center space-x-4 py-5 font-bold'>
             <div>
-              <a href='#' className='hover:bg-red-700 py-2 px-2'>
+              <a href='#' className='hover:text-[#13287B] py-2 px-2'>
                 Home
               </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
-                About
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                About Us
               </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
-                Pages
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                Health Insurance
               </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
-                Policies
-              </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
-                FAQ
-              </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
-                Blogs
-              </a>
-              <a href='#' className='hover:bg-red-700 py-2 px-4'>
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
                 Life Insurance
               </a>
-            </div>
-            <div className='flex items-center space-x-5'>
-              <span>
-                <FaSearch />
-              </span>
-              <span>
-                <FaCube />
-              </span>
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                Dental & Vision Insurance
+              </a>
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                Medicare
+              </a>
+              <a href='#' className='hover:text-[#13287B] py-2 px-4'>
+                Contact Us
+              </a>
             </div>
           </div>
         </nav>
@@ -207,14 +205,14 @@ const Header = () => {
           <Carousel
             plugins={[plugin.current]}
             className='w-full'
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
+            // onMouseEnter={plugin.current.stop}
+            // onMouseLeave={plugin.current.reset}
           >
             <CarouselContent>
               {slides.map((slide, index) => (
                 <CarouselItem key={index}>
                   <div
-                    className='relative h-[60rem] bg-cover bg-center'
+                    className='relative h-[50rem] mt-8 bg-cover bg-center'
                     style={{
                       backgroundImage: `url(${slide.imageUrl})`,
                       backgroundSize: 'cover',
@@ -225,13 +223,13 @@ const Header = () => {
                     {/* Text Content */}
                     <div className='absolute inset-0 flex items-center justify-center'>
                       <div className='text-center max-w-4xl text-white space-y-4 animate-slideIn'>
-                        <h1 className='text-7xl font-bold leading-normal'>
+                        <h1 className='text-6xl font-bold leading-normal'>
                           {slide.title}
                         </h1>
                         <p className='text-4xl mt-5 leading-normal'>
                           {slide.description}
                         </p>
-                        <button className='bg-primary-gradient hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+                        <button className='bg-[#13287B] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
                           {slide.buttonText}
                         </button>
                       </div>

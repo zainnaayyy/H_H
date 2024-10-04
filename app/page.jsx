@@ -17,9 +17,9 @@ const page = () => {
   return (
     <div>
       <Header />
-      <ServicesSection />
-      <MovingIcons />
+      {/* <ServicesSection /> */}
       <InsuranceService />
+      <MovingIcons />
       <InsurancePolicy />
       <GrowBusiness />
       <ContactSection />
