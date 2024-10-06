@@ -15,21 +15,36 @@ import Testimonials from './components/Testimonials';
 
 const page = () => {
   return (
+    // <div>
+    //   <Header />
+    //   {/* <ServicesSection /> */}
+    //   <InsuranceService />
+    //   <MovingIcons />
+    //   <InsurancePolicy />
+    //   <GrowBusiness />
+    //   <ContactSection />
+    //   {/* <Achievements />
+    //   <BlogSection />
+    //   <Testimonials />
+    //   <Team /> */}
+    //   <Footer />
+    //   {/* <ContactSection /> */}
+    //   {/* <ContactFormWithMap /> */}
+    // </div>
+
     <div>
       <Header />
-      {/* <ServicesSection /> */}
-      <InsuranceService />
-      <MovingIcons />
-      <InsurancePolicy />
+      <section id='products'>
+        <InsuranceService />
+      </section>
+      <section id='about'>
+        <InsurancePolicy />
+      </section>
       <GrowBusiness />
-      <ContactSection />
-      {/* <Achievements />
-      <BlogSection />
-      <Testimonials />
-      <Team /> */}
+      <section id='contact'>
+        <ContactSection />
+      </section>
       <Footer />
-      {/* <ContactSection /> */}
-      {/* <ContactFormWithMap /> */}
     </div>
   );
 };

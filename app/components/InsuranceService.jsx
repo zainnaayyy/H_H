@@ -47,10 +47,11 @@ const InsuranceService = () => {
           Get Started
         </Button>
         <p className='text-gray-600 text-center mt-2 text-lg'>
-          Insurance can leave you with a lot of questions, let us help you make the best informed decision.
+          Insurance can leave you with a lot of questions, let us help you make
+          the best informed decision.
         </p>
       </div>
-      <div className='max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8'>
+      <div className='max-w-4xl mx-auto flex flex-wrap flex-col md:flex-row items-center justify-center gap-8'>
         {services.map((service, index) => (
           <div
             key={index}
@@ -58,7 +59,10 @@ const InsuranceService = () => {
           >
             <div
               className='absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110'
-              style={{ backgroundImage: `url(${service.imageUrl})`, backgroundSize: 'cover' }}
+              style={{
+                backgroundImage: `url(${service.imageUrl})`,
+                backgroundSize: 'cover',
+              }}
             ></div>
             <div className='absolute inset-x-0 top-10 left-10 w-80 h-64 bg-white bg-opacity-90 p-6 flex flex-col justify-center items-center text-center transition-opacity duration-300 group-hover:opacity-0'>
               <div className='text-blue-600 text-5xl mb-4'>{service.icon}</div>

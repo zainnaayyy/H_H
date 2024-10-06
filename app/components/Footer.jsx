@@ -23,7 +23,9 @@ const Footer = () => {
               alt='Scramjet'
               className='h-12 mb-4'
             />
-            <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p>
+            <p className='text-4xl'>
+              Health <span className='text-[#B92031]'> For</span> Haitians
+            </p>
           </div>
 
           {/* Services */}
@@ -66,10 +68,10 @@ const Footer = () => {
       </div>
       <div className='bg-black w-full'>
         <div className='border-t w-[80%] mx-auto bg-black border-gray-700 h-16 px-5 flex flex-col md:flex-row justify-between items-center'>
-          <p className='text-lg'>
+          <p className='text-xs sm:text-lg'>
             © 2024 Health for Haitians. All Rights Reserved.
           </p>
-          <div className='flex space-x-4 mt-4 md:mt-0'>
+          <div className='flex space-x-4 pb-2 mt-0 sm:mt-4 md:mt-0'>
             <FaFacebookF className='text-white hover:text-blue-500 cursor-pointer' />
             <FaWhatsapp className='text-white hover:text-green-500 cursor-pointer' />
             <FaInstagram className='text-white hover:text-red-500 cursor-pointer' />
