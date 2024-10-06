@@ -37,6 +37,7 @@ const page = () => {
       <section id='products'>
         <InsuranceService />
       </section>
+      <MovingIcons />
       <section id='about'>
         <InsurancePolicy />
       </section>

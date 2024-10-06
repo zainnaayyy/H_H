@@ -29,7 +29,7 @@ import {
 const Header = () => {
   const pathname = usePathname(); // Get the current pathname
   console.log(pathname, 'check');
-  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 10000, stopOnInteraction: true }));
   const isHomePage = pathname === '/';
 
   let heroImage = 'url(/default-hero-image.jpg)';
