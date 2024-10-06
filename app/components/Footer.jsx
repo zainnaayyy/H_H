@@ -9,7 +9,12 @@ const services = [
   'SMS Terms & Condition(s)',
 ];
 
-const usefulLinks = ['Home', 'Products', 'About Us', 'Contact Us'];
+const usefulLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'Products', href: '#products' },
+  { name: 'About Us', href: '#about' },
+  { name: 'Contact Us', href: '#contact' },
+];
 
 const Footer = () => {
   return (
@@ -55,8 +60,8 @@ const Footer = () => {
                   <span className='mr-2 text-white'>
                     <IoIosArrowDroprightCircle />
                   </span>
-                  <Link href='/' className='hover:text-blue-600 w-full'>
-                    {link}
+                  <Link href={link.href} className='hover:text-blue-600 w-full'>
+                    {link.name}
                   </Link>
                 </li>
               ))}

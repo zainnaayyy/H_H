@@ -83,7 +83,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='bg-white'>
+    <header id='home' className='bg-white'>
       {/* Top Bar */}
       <div className='bg-[#13287B]'>
         <div className='container mx-auto text-white py-4 px-16 flex justify-end items-center text-sm'>
@@ -170,7 +170,7 @@ const Header = () => {
       </div>
       {/* Hero Section */}
       {isHomePage ? (
-        <div id='home' className='relative w-full'>
+        <div className='relative w-full'>
           <Carousel plugins={[plugin.current]} className='w-full'>
             <CarouselContent>
               {slides.map((slide, index) => (
@@ -193,7 +193,7 @@ const Header = () => {
                           {slide.description}
                         </p>
                         <button className='bg-[#B92031] text-white px-10 py-2 text-lg font-medium'>
-                          {slide.buttonText}
+                          <Link href='#contact'>{slide.buttonText}</Link>
                         </button>
                       </div>
                     </div>

@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React from 'react';
 
 const services = [
@@ -6,32 +7,27 @@ const services = [
     title: 'Health Insurance',
     description:
       'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
-    imageUrl:
-      '/images/health.jpeg',
+    imageUrl: '/images/health.jpeg',
     icon: '💉',
   },
   {
     title: 'Life Insurance',
-    description:
-      'Let us help you navigate the key to financial security.',
-    imageUrl:
-      '/images/life.jpeg',
+    description: 'Let us help you navigate the key to financial security.',
+    imageUrl: '/images/life.jpeg',
     icon: '👨‍👩‍👧',
   },
   {
     title: 'Dental & Vision Insurance',
     description:
       'We provide affordable dental and vision policies for your overall health.',
-    imageUrl:
-      '/images/dental.jpeg',
+    imageUrl: '/images/dental.jpeg',
     icon: '🦷',
   },
   {
     title: 'Medicare Insurance',
     description:
       'Finding the right medicare supplement can be challenging, we are here to help.',
-    imageUrl:
-      '/images/medicare.jpeg',
+    imageUrl: '/images/medicare.jpeg',
     icon: '⚕️',
   },
 ];
@@ -44,7 +40,7 @@ const InsuranceService = () => {
           We Are Here to Service Your Insurance Needs
         </h2>
         <Button size='lg' className='bg-[#13287B] mt-2 '>
-          Get Started
+          <Link href='#contact'>Get Started</Link>
         </Button>
         <p className='text-gray-600 text-center mt-2 text-lg'>
           Insurance can leave you with a lot of questions, let us help you make
