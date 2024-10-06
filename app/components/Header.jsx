@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import {
   FaCube,
   FaFacebook,
@@ -12,10 +12,11 @@ import {
 } from 'react-icons/fa';
 import { SiGooglemaps } from 'react-icons/si';
 import { MdOutlineMailOutline } from 'react-icons/md';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Autoplay from 'embla-carousel-autoplay';
 import Link from 'next/link'; // Import Link from next/link
 import Image from 'next/image';
+import { FaBars } from 'react-icons/fa';
 
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -25,12 +26,25 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
+import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const pathname = usePathname(); // Get the current pathname
   console.log(pathname, 'check');
   const plugin = useRef(Autoplay({ delay: 10000, stopOnInteraction: true }));
   const isHomePage = pathname === '/';
+  const router = useRouter();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   let heroImage = 'url(/default-hero-image.jpg)';
   let pageTitle = 'Page';
@@ -82,6 +96,11 @@ const Header = () => {
     },
   ];
 
+  const handleLinkClick = (href) => {
+    router.push(href); // Use router to navigate
+    setIsDropdownOpen(false); // Close the dropdown
+  };
+
   return (
     <header id='home' className='bg-white'>
       {/* Top Bar */}
@@ -97,6 +116,68 @@ const Header = () => {
             <a href='#' className='hover:text-gray-400'>
               <FaWhatsapp className='w-6 h-6' />
             </a>
+            <Sheet>
+              <SheetTrigger asChild>
+                <button className='hover:text-gray-400'>
+                  <FaBars className='w-6 h-6' />
+                </button>
+              </SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Navigate</SheetTitle>
+                  <SheetDescription>
+                    Choose a page to navigate to:
+                  </SheetDescription>
+                </SheetHeader>
+                <div className='grid gap-4 py-4'>
+                  <nav className='py-4'>
+                    <ul className='flex flex-col space-y-4'>
+                      <li>
+                        <Link
+                          href='#home'
+                          onClick={() => handleLinkClick('#home')}
+                          className='hover:text-[#13287B] py-2 px-2'
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href='#about'
+                          onClick={() => handleLinkClick('#about')}
+                          className='hover:text-[#13287B] py-2 px-2'
+                        >
+                          About
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href='#products'
+                          onClick={() => handleLinkClick('#products')}
+                          className='hover:text-[#13287B] py-2 px-2'
+                        >
+                          Products
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href='#contact'
+                          onClick={() => handleLinkClick('#contact')}
+                          className='hover:text-[#13287B] py-2 px-2'
+                        >
+                          Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <SheetFooter>
+                  <SheetClose asChild>
+                    <Button type='submit'>Close</Button>
+                  </SheetClose>
+                </SheetFooter>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
