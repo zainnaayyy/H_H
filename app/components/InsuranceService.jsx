@@ -4,27 +4,27 @@ import React from 'react';
 
 const services = [
   {
-    title: 'Health Insurance',
+    title: 'Health ',
     description:
       'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
     imageUrl: '/images/health.jpeg',
     icon: '💉',
   },
   {
-    title: 'Life Insurance',
+    title: 'Life ',
     description: 'Let us help you navigate the key to financial security.',
     imageUrl: '/images/life.jpeg',
     icon: '👨‍👩‍👧',
   },
   {
-    title: 'Dental & Vision Insurance',
+    title: 'Dental & Vision ',
     description:
       'We provide affordable dental and vision policies for your overall health.',
     imageUrl: '/images/dental.jpeg',
     icon: '🦷',
   },
   {
-    title: 'Medicare Insurance',
+    title: 'Medicare ',
     description:
       'Finding the right medicare supplement can be challenging, we are here to help.',
     imageUrl: '/images/medicare.jpeg',

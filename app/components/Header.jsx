@@ -257,7 +257,7 @@ const Header = () => {
               {slides.map((slide, index) => (
                 <CarouselItem key={index}>
                   <div
-                    className='relative h-[50rem] mt-8 bg-cover bg-center'
+                    className='relative h-[40rem] mt-8 bg-cover bg-center'
                     style={{
                       backgroundImage: `url(${slide.imageUrl})`,
                       backgroundSize: 'cover',
@@ -270,9 +270,9 @@ const Header = () => {
                         <h1 className='text-lg md:text-5xl font-bold leading-normal'>
                           {slide.title}
                         </h1>
-                        <p className='text-sm md:text-lg'>
+                        {/* <p className='text-sm md:text-lg'>
                           {slide.description}
-                        </p>
+                        </p> */}
                         <button className='bg-[#B92031] text-white px-10 py-2 text-lg font-medium'>
                           <Link href='#contact'>{slide.buttonText}</Link>
                         </button>
