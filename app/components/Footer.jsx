@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaYoutube, FaShoppingCart, FaWhatsapp, FaInstagram } from 'react-icons/fa';
@@ -18,12 +19,12 @@ const Footer = () => {
         <div className='grid grid-cols-1 md:grid-cols-3'>
           {/* Logo and Description */}
           <div>
-            <img
-              src='/images/icononly_transparent_nobuffer.png'
-              alt='Scramjet'
-              className='h-12 mb-4'
+            <Image
+              src='/images/H4HLogo.svg'
+              width={200}
+              height={150}
             />
-            <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p>
+            {/* <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p> */}
           </div>
 
           {/* Services */}

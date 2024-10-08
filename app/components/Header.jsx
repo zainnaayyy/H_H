@@ -129,10 +129,10 @@ const Header = () => {
               WordPress Theme
             </p> */}
             <Image
-              src='/images/fulllogo_nobuffer.jpg'
-              width={100}
-              height={20}
-              style={{ width: '150px', height: '150px' }}
+              src='/images/H4HLogo.svg'
+              width={200}
+              height={150}
+              // style={{ width: '300px', height: '300px' }}
             />
             <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p>
           </div>
