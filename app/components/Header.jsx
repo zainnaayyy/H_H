@@ -186,10 +186,10 @@ const Header = () => {
         <div className='bg-white py-10 flex justify-between items-center px-10 container mx-auto'>
           <div className='flex items-center gap-x-5 text-5xl font-bold text-[#13287B]'>
             <Image
-              src='/images/fulllogo_nobuffer.jpg'
-              width={100}
-              height={20}
-              style={{ width: '150px', height: '150px' }}
+              src='/images/H4HLogo.svg'
+              width={200}
+              height={150}
+              // style={{ width: '300px', height: '300px' }}
             />
             <p className='text-lg md:text-4xl'>
               Health <span className='text-[#B92031]'> For</span> Haitians
