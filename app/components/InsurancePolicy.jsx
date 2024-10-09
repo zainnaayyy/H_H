@@ -38,7 +38,7 @@ const InsurancePolicy = () => {
           </div>
         </div>
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <h2 className='text-3xl font-bold text-[#B92031] mb-4'>
+          <h2 className='text-3xl font-bold text-[#0A4958] mb-4'>
             How We Make a Difference
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-1 gap-4 mt-8'>

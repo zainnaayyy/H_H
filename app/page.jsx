@@ -38,7 +38,7 @@ const page = () => {
         <InsuranceService />
       </section>
       <MovingIcons />
-      <section id='about'>
+      <section id='mission'>
         <InsurancePolicy />
       </section>
       <GrowBusiness />

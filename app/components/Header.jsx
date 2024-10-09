@@ -114,37 +114,37 @@ const Header = () => {
   return (
     <header id='home' className='bg-white'>
       {/* Top Bar */}
-      <div className='bg-[#29d3ddb2]'>
+      <div className='bg-[#01B6AD]'>
         <div className='container mx-auto text-white py-4 px-16 flex justify-end items-center text-sm'>
           <div className='flex flex-col sm:flex-row w-full justify-between items-center'>
             <div className='flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10'>
               <div className='hidden md:flex justify-between items-center'>
-                <FaPhoneVolume className='w-8 h-8 text-[#01209F]' />
-                <span className='text-white font-bold px-2 text-xl'>
+                <FaPhoneVolume className='w-8 h-8 text-[#0A4958]' />
+                <span className='text-[#F6E7D2] font-bold px-2 text-xl'>
                   1.844.544.0663
                 </span>
               </div>
               <div className='hidden md:flex justify-between items-center'>
-                <MdOutlineMailOutline className='w-8 h-8 text-[#01209F]' />
-                <span className='text-white font-bold px-2 text-xl'>
+                <MdOutlineMailOutline className='w-8 h-8 text-[#0A4958]' />
+                <span className='text-[#F6E7D2] font-bold px-2 text-xl'>
                   info@h4hinsurance.com
                 </span>
               </div>
             </div>
             <div className='flex space-x-4 mt-4 sm:mt-0'>
               <a href='#' className='hover:text-gray-400'>
-                <FaFacebook className='w-6 h-6 text-blue-600' />
+                <FaFacebook className='w-6 h-6 text-blue-800' />
               </a>
               <a href='#' className='hover:text-gray-400'>
-                <FaInstagram className='w-6 h-6 text-orange-500' />
+                <FaInstagram className='w-6 h-6 text-pink-800' />
               </a>
               <a href='#' className='hover:text-gray-400'>
-                <FaWhatsapp className='w-6 h-6 text-green-600' />
+                <FaWhatsapp className='w-6 h-6 text-green-800' />
               </a>
               <Sheet>
                 <SheetTrigger asChild>
                   <button className='hover:text-gray-400'>
-                    <FaBars className='w-6 h-6' />
+                    <FaBars className='w-6 h-6 text-[#F6E7D2]' />
                   </button>
                 </SheetTrigger>
                 <SheetContent>
@@ -159,7 +159,7 @@ const Header = () => {
                       <ul className='flex flex-col space-y-4'>
                         <li>
                           <Link
-                            href='#home'
+                            href='/'
                             onClick={() => handleLinkClick('#home')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
@@ -168,16 +168,16 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='#about'
-                            onClick={() => handleLinkClick('#about')}
+                            href='/about-us'
+                            onClick={() => handleLinkClick('/about-us')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
-                            About
+                            About Us
                           </Link>
                         </li>
                         <li>
                           <Link
-                            href='#products'
+                            href='/#products'
                             onClick={() => handleLinkClick('#products')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
@@ -186,7 +186,16 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='#contact'
+                            href='/#mission'
+                            onClick={() => handleLinkClick('#mission')}
+                            className='hover:text-[#13287B] py-2 px-2'
+                          >
+                            Mission
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href='/#contact'
                             onClick={() => handleLinkClick('#contact')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
@@ -208,104 +217,44 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navigation */}
-      <div className=''>
-        <div className='bg-white py-1 flex justify-between items-center px-10 '>
-          <div className='flex items-center justify-between w-full text-5xl font-bold text-[#13287B]'>
-            <div className='flex items-center'>
-              <Image
-                src='/images/H4HLogo.svg'
-                width={150}
-                height={150}
-                className='ml-20'
-              />
-            </div>
-            <nav className='hidden lg:block w-[95%] mr-20 container z-50 bg-transparent text-black'>
-              <div className='text-xl flex justify-center space-x-4 py-2 font-bold'>
-                <div>
-                  <Link href='#home' className='hover:text-[#13287B] py-2 px-2'>
-                    Home
-                  </Link>
-                  <Link
-                    href='#products'
-                    className='hover:text-[#13287B] py-2 px-4'
-                  >
-                    Products
-                  </Link>
-                  <Link
-                    href='#about'
-                    className='hover:text-[#13287B] py-2 px-4'
-                  >
-                    Our Mission
-                  </Link>
-                  <Link
-                    href='#contact'
-                    className='hover:text-[#13287B] py-2 px-4'
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-              </div>
-            </nav>
-          </div>
-
-          {/* <div className='hidden lg:flex items-start max-w-2xl space-x-8'>
-            <div className='flex'>
-              <span>
-                <FaPhoneVolume className='w-8 h-8 text-[#01209F]' />
-              </span>
-              <div className='flex flex-col'>
-                <span className='font-bold text-base'> Phone Number</span>
-                <span className='text-[#D20E32] text-sm'>1.844.544.0663</span>
-              </div>
-            </div>
-            <div className='flex'>
-              <span>
-                <SiGooglemaps className='w-8 h-8 text-[#01209F]' />
-              </span>
-              <div className='flex flex-col'>
-                <span className='font-bold text-base'> Contact Address</span>
-                <span className='text-[#D20E32] text-sm'>
-                  1000 NW 65th St. | Suite 103 <br /> Fort Lauderdale FL 33309
-                </span>
-              </div>
-            </div>
-            <div className='flex'>
-              <span>
-                <MdOutlineMailOutline className='w-8 h-8 text-[#01209F]' />
-              </span>
-              <div className='flex flex-col'>
-                <span className='font-bold text-base'> Email Address</span>
-                <span className='text-[#D20E32] text-sm'>
-                  info@h4hinsurance.com
-                </span>
-              </div>
-            </div>
-          </div> */}
+      <div className='bg-white py-10 flex justify-around items-center container'>
+        <div className='flex items-center text-[#0A4958]'>
+          <Image
+            src='/images/H4HLogo.svg'
+            width={200}
+            height={150}
+            // style={{ width: '300px', height: '300px' }}
+          />
         </div>
-        {/* Navbar */}
-        {/* <nav className='hidden md:block w-[95%] container z-50 inset-x-0 bg-transparent text-black'>
-          <div className='text-xl flex justify-center space-x-4 py-2 font-bold'>
-            <div>
-              <Link href='#home' className='hover:text-[#13287B] py-2 px-2'>
-                Home
-              </Link>
-              <Link href='#products' className='hover:text-[#13287B] py-2 px-4'>
-                Products
-              </Link>
-              <Link href='#about' className='hover:text-[#13287B] py-2 px-4'>
-                Our Mission
-              </Link>
-              <Link href='#contact' className='hover:text-[#13287B] py-2 px-4'>
-                Contact Us
-              </Link>
+        <div className='hidden lg:flex items-start'>
+          {/* Navbar */}
+          <nav className='hidden lg:flex container text-black'>
+            <div className='text-3xl flex justify-center space-x-10 py-2 font-bold'>
+              <div>
+                <Link href='/' className='hover:text-[#0A4958] py-2 px-2'>
+                  Home
+                </Link>
+                <Link href='/about-us' className='hover:text-[#0A4958] py-2 px-4'>
+                  About Us
+                </Link>
+                <Link href='/#products' className='hover:text-[#0A4958] py-2 px-4'>
+                  Products
+                </Link>
+                <Link href='/#mission' className='hover:text-[#0A4958] py-2 px-4'>
+                  Mission
+                </Link>
+                <Link href='/#contact' className='hover:text-[#0A4958] py-2 px-4'>
+                  Contact Us
+                </Link>
+              </div>
             </div>
-          </div>
-        </nav> */}
+          </nav>
+        </div>
       </div>
       {/* Hero Section */}
       {isHomePage ? (
-        <div className='flex w-full'>
-          <div className='lg:w-1/2 w-full p-6 bg-gray-50'>
+        <div className='w-full mx-auto px-20 lg:flex justify-between mb-8'>
+          <div className='lg:w-1/3 w-full mb-5 lg:mb-0'>
             <h2 className='text-3xl font-semibold mb-6'>Get Covered Today</h2>
             <form>
               <div className='mb-4'>
@@ -334,12 +283,12 @@ const Header = () => {
                   <input
                     type='text'
                     placeholder='First'
-                    className='w-1/2 text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600'
+                    className='w-1/2 text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                   />
                   <input
                     type='text'
                     placeholder='Last'
-                    className='w-1/2 text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600'
+                    className='w-1/2 text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                   />
                 </div>
               </div>
@@ -349,7 +298,7 @@ const Header = () => {
                 </label>
                 <input
                   type='date'
-                  className='w-full px-3 py-2 text-xl border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600'
+                  className='w-full px-3 py-2 text-xl border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                 />
               </div>
               <div className='mb-4'>
@@ -358,7 +307,7 @@ const Header = () => {
                 </label>
                 <input
                   type='text'
-                  className='w-full text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600'
+                  className='w-full text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                 />
               </div>
               <div className='mb-4'>
@@ -367,7 +316,7 @@ const Header = () => {
                 </label>
                 <input
                   type='email'
-                  className='w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-xl'
+                  className='w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD] text-xl'
                 />
               </div>
               <div className='mb-4'>
@@ -376,14 +325,14 @@ const Header = () => {
                 </label>
                 <input
                   type='tel'
-                  className='w-full px-3 py-2 border rounded-lg focus:outline-none text-xl focus:ring-2 focus:ring-blue-600'
+                  className='w-full px-3 py-2 border rounded-lg focus:outline-none text-xl focus:ring-2 focus:ring-[#01B6AD]'
                 />
               </div>
               <div className='mb-6'>
                 <label className='inline-flex items-center text-xl'>
                   <input
                     type='checkbox'
-                    className='form-checkbox text-blue-600'
+                    className='form-checkbox text-[#01B6AD]'
                   />
                   <span className='ml-2'>Text me with news & offers</span>
                 </label>
@@ -436,57 +385,23 @@ const Header = () => {
               </p>
               <button
                 type='submit'
-                className='bg-primary-gradient mt-3 text-white font-semibold py-2 px-6  hover:bg-blue-800 transition-colors'
+                className='bg-[#01B6AD] mt-3 text-white font-semibold py-2 px-6  hover:bg-[#0A4958] transition-colors'
               >
                 SUBMIT
               </button>
             </form>
           </div>
-          <div className=' w-full p-6'>
+          <div className='lg:w-2/3 lg:pl-5 w-full'>
             <Image
               src='/images/slider/african.jpeg'
               width='500' // Use a specific width to maintain aspect ratio
               height='500' // Use a specific height to maintain aspect ratio
-              className='object-cover h-full rounded-lg'
+              className='object-cover h-full w-full rounded-lg'
               alt='Insurance Image'
             />
           </div>
         </div>
-      ) : (
-        <div
-          className='h-[30rem] bg-cover bg-center relative'
-          style={{ backgroundImage: heroImage }}
-        >
-          <div className='absolute inset-0 bg-black opacity-50'></div>
-          <div className='absolute inset-0 flex flex-col items-center justify-center text-white'>
-            <h1 className='text-4xl font-bold'>{pageTitle}</h1>
-            <nav className='py-4'>
-              <ul className='flex space-x-4'>
-                <li>
-                  <Link href='/about' className='hover:text-gray-400'>
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/services' className='hover:text-gray-400'>
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/policies' className='hover:text-gray-400'>
-                    Policies
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/contact' className='hover:text-gray-400'>
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      )}
+      ) : null}
     </header>
   );
 };

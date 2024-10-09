@@ -12,14 +12,15 @@ const services = [
 
 const usefulLinks = [
   { name: 'Home', href: '/' },
-  { name: 'Products', href: '#products' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Contact Us', href: '#contact' },
+  { name: 'About Us', href: '/about-us' },
+  { name: 'Products', href: '/#products' },
+  { name: 'Mission', href: '/#mission' },
+  { name: 'Contact Us', href: '/#contact' },
 ];
 
 const Footer = () => {
   return (
-    <footer className='bg-footer text-white pt-10'>
+    <footer className='bg-footer text-white pt-5'>
       <div className='max-w-7xl mx-auto px-4 mb-6 sm:px-6 lg:px-8'>
         <div className='grid grid-cols-1 md:grid-cols-3'>
           {/* Logo and Description */}
