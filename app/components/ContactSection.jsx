@@ -94,7 +94,7 @@ const ContactSection = () => {
         <div className='max-w-6xl mx-auto  flex flex-col lg:flex-row shadow-lg bg-map rounded-lg'>
           {/* Contact Form */}
           <div className='lg:w-1/2 p-6 bg-gray-50'>
-            <h2 className='text-3xl font-semibold mb-6'>Get Started</h2>
+            <h2 className='text-3xl font-semibold mb-6'>Get Covered Today</h2>
             <form>
               <div className='mb-4'>
                 <label className='block text-gray-700 text-xl font-semibold mb-2'>

@@ -119,3 +119,20 @@ html {
 .bg-primary-gradient {
   background: linear-gradient(135deg, #D20E32, #01209F);
 }
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  width: 200%;
+  /* Width should be adjusted to fit two sections */
+  animation: slide 20s linear infinite;
+  display: flex;
+  /* Ensure the content inside is laid out in a row */
+}
