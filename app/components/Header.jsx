@@ -118,20 +118,20 @@ const Header = () => {
         <div className='container mx-auto text-white py-4 px-16 flex justify-end items-center text-sm'>
           <div className='flex flex-col sm:flex-row w-full justify-between items-center'>
             <div className='flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10'>
-              <div className='hidden md:flex justify-between items-center'>
+              <div className='flex justify-between items-center'>
                 <FaPhoneVolume className='w-8 h-8 text-[#0A4958]' />
-                <span className='text-[#F6E7D2] font-bold px-2 text-xl'>
+                <span className='text-white font-bold px-2 text-xl'>
                   1.844.544.0663
                 </span>
               </div>
-              <div className='hidden md:flex justify-between items-center'>
+              <div className='flex justify-between items-center'>
                 <MdOutlineMailOutline className='w-8 h-8 text-[#0A4958]' />
-                <span className='text-[#F6E7D2] font-bold px-2 text-xl'>
+                <span className='text-white font-bold px-2 text-xl'>
                   info@h4hinsurance.com
                 </span>
               </div>
             </div>
-            <div className='flex space-x-4 mt-4 sm:mt-0'>
+            <div className='hidden md:flex space-x-4 mt-4 sm:mt-0'>
               <a href='#' className='hover:text-gray-400'>
                 <FaFacebook className='w-6 h-6 text-blue-800' />
               </a>
@@ -141,6 +141,8 @@ const Header = () => {
               <a href='#' className='hover:text-gray-400'>
                 <FaWhatsapp className='w-6 h-6 text-green-800' />
               </a>
+            </div>
+            <div className='lg:mt-0 mt-8'>
               <Sheet>
                 <SheetTrigger asChild>
                   <button className='hover:text-gray-400'>
@@ -217,19 +219,19 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navigation */}
-      <div className='bg-white py-10 flex justify-around items-center container'>
-        <div className='flex items-center text-[#0A4958]'>
+      <div className='bg-white py-10 flex justify-center lg:justify-start items-center w-full mx-auto'>
+        <div className='flex justify-start items-center text-[#0A4958] mb-5 ml-5 lg:w-5/12 w-1/3'>
           <Image
             src='/images/H4HLogo.svg'
-            width={200}
-            height={150}
+            width={100}
+            height={50}
             // style={{ width: '300px', height: '300px' }}
           />
         </div>
-        <div className='hidden lg:flex items-start'>
+        <div className='hidden lg:flex lg:w-8/12 w-1/2'>
           {/* Navbar */}
-          <nav className='hidden lg:flex container text-black'>
-            <div className='text-3xl flex justify-center space-x-10 py-2 font-bold'>
+          <nav className='hidden lg:flex text-black'>
+            <div className='text-xl flex justify-center space-x-10 py-2 font-bold'>
               <div>
                 <Link href='/' className='hover:text-[#0A4958] py-2 px-2'>
                   Home
@@ -253,12 +255,12 @@ const Header = () => {
       </div>
       {/* Hero Section */}
       {isHomePage ? (
-        <div className='w-full mx-auto px-20 lg:flex justify-between mb-8'>
+        <div className='w-full mx-auto pl-20 pr-10 lg:flex justify-between mb-8'>
           <div className='lg:w-1/3 w-full mb-5 lg:mb-0'>
-            <h2 className='text-3xl font-semibold mb-6'>Get Covered Today</h2>
+            <h2 className='text-3xl text-[#B92031] font-semibold mb-6'>Get Covered Today</h2>
             <form>
               <div className='mb-4'>
-                <label className='block text-gray-700 text-xl font-semibold mb-2'>
+                <label className='block text-gray-700 text-lg lg:text-xl font-semibold mb-2'>
                   Choose your Insurance Type
                 </label>
                 <div className='flex text-lg flex-wrap gap-4'>
@@ -334,7 +336,7 @@ const Header = () => {
                     type='checkbox'
                     className='form-checkbox text-[#01B6AD]'
                   />
-                  <span className='ml-2'>Text me with news & offers</span>
+                  <span className='ml-2 text-lg'>Text me with news & offers</span>
                 </label>
               </div>
               <p className='text-sm text-gray-500 mt-2'>

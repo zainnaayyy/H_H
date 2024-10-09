@@ -7,7 +7,7 @@ import { IoIosArrowDroprightCircle } from 'react-icons/io';
 const services = [
   'Privacy Policy',
   'Terms of Service',
-  'SMS Terms & Condition(s)',
+  'SMS Terms & Condition',
 ];
 
 const usefulLinks = [
@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <Image
               src='/images/H4HLogo.svg'
-              width={200}
+              width={175}
               height={150}
             />
             {/* <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p> */}
