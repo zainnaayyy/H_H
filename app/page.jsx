@@ -38,9 +38,9 @@ const page = () => {
         <InsuranceService />
       </section>
       <MovingIcons />
-      <section id='mission'>
+      {/* <section id='mission'>
         <InsurancePolicy />
-      </section>
+      </section> */}
       <GrowBusiness />
       <section id='contact'>
         <ContactSection />

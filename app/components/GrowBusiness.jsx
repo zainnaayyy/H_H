@@ -1,4 +1,6 @@
 'use client';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { FaPlay } from 'react-icons/fa';
 
@@ -33,10 +35,13 @@ const GrowBusiness = () => {
           <FaPlay className='h-10 w-10 text-white' />
         </button>
       </div> */}
-      <div className='text-center mt-8 text-white z-50'>
+      <div className='flex flex-col justify-center items-center text-center mt-8 text-white z-50'>
         <h1 className='text-4xl md:text-4xl font-bold'>
           Get Your Family Covered Today!
         </h1>
+        <Button size='lg' className='bg-[#17f0ff] hover:bg-[#0A4958] mt-2 '>
+          <Link href='/'>Speak to an Agent</Link>
+        </Button>
       </div>
     </div>
   );

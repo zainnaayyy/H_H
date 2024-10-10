@@ -35,7 +35,7 @@ const ContactSection = () => {
     {
       id: 3,
       title: 'Chat',
-      description: 'Mon to Fri (9am - 6pm EST)',
+      description: 'Mon to Fri (9am-6pm EST)',
       icon: MdOutlineChat,
     },
   ];
@@ -62,7 +62,7 @@ const ContactSection = () => {
         }}
       >
         <div className='text-center mb-12'>
-          <h2 className='text-3xl font-bold text-gray-800'>Contact Us!</h2>
+          <h2 className='text-3xl font-bold text-gray-500'>Contact Us!</h2>
         </div>
         <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
           {services.map((service, index) => {
@@ -70,7 +70,7 @@ const ContactSection = () => {
             return (
               <div key={service.id} className='bg-white p-8 shadow-lg '>
                 <div className='flex justify-center items-center mb-4 py-2'>
-                  <Icon className='h-14 w-14 text-[#0A4958] mr-4' />
+                  <Icon className='h-14 w-14 text-[#B92031]' />
                 </div>
                 <h3 className='text-xl text-center font-bold text-gray-800'>
                   {service.title}

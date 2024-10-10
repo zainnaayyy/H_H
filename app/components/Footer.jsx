@@ -14,7 +14,7 @@ const usefulLinks = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about-us' },
   { name: 'Products', href: '/#products' },
-  { name: 'Mission', href: '/#mission' },
+  { name: 'Mission', href: '/mission' },
   { name: 'Contact Us', href: '/#contact' },
 ];
 

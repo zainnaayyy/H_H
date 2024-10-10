@@ -28,24 +28,12 @@ const InsurancePolicy = () => {
   return (
     <div className='flex flex-wrap md:flex-nowrap items-center justify-between py-16 px-8 bg-white'>
       <div className='flex flex-col md:flex-row  justify-center md:space-x-8 w-full'>
-        <div className='md:w-[40%]'>
-          <div className=''>
-            <img
-              src='/images/mission.jpeg'
-              alt='Insurance'
-              className='rounded-lg shadow-lg'
-            />
-          </div>
-        </div>
         <div className='md:w-1/2 mt-8 md:mt-0'>
-          <h2 className='text-3xl font-bold text-[#0A4958] mb-4'>
+          <h2 className='text-3xl font-bold mb-4'>
             How We Make a Difference
           </h2>
           <div className='grid grid-cols-1 sm:grid-cols-1 gap-4 mt-8'>
             <div>
-              <h3 className='text-lg font-semibold text-gray-700'>
-                Empowering Haiti&apos;s Underserved Communities Through Accessible Health Insurance
-              </h3>
               <p className='text-base text-gray-600'>
               Our mission is to improve the lives of Haiti&apos;s underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives. 
               </p>
