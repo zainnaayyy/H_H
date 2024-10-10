@@ -77,44 +77,66 @@ const Header = () => {
       consent: false,
     },
     validationSchema,
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       setIsSubmitting(true);
 
+      try {
+        const response = await fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(values),
+        });
+
+        if (response.ok) {
+          message.success(
+            'Thank you for opting in! A confirmation email has been sent.'
+          );
+        } else {
+          message.error('Failed to submit the form. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        message.error('An error occurred. Please try again.');
+      } finally {
+        setLoading(false);
+      }
+
       const myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append('Content-Type', 'application/json');
 
       const raw = JSON.stringify({
-        "insuranceType": values.insuranceType.join(', '),
-        "firstName": values.firstName,
-        "lastName": values.lastName,
-        "dob": values.dob,
-        "zipCode": values.zipCode,
-        "email": values.email,
-        "phoneNumber": values.phoneNumber,
-        "consent": values.consent
+        insuranceType: values.insuranceType.join(', '),
+        firstName: values.firstName,
+        lastName: values.lastName,
+        dob: values.dob,
+        zipCode: values.zipCode,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+        consent: values.consent,
       });
 
       const requestOptions = {
-        method: "POST",
+        method: 'POST',
         headers: myHeaders,
         body: raw,
-        redirect: "follow"
+        redirect: 'follow',
       };
 
-      fetch("/api/saveToGoogleSheet", requestOptions)
+      fetch('/api/saveToGoogleSheet', requestOptions)
         .then((response) => response.json())
         .then((result) => {
-          if(result.status === 200) {
+          if (result.status === 200) {
             Swal.fire({
               icon: 'success',
               title: 'Form Submitted!',
-              text: "Your form has been submitted successfully! An agent will reach out to you soon.",
+              text: 'Your form has been submitted successfully! An agent will reach out to you soon.',
               confirmButtonColor: '#17f0ff',
               width: '20rem',
             });
             formik.resetForm();
             setIsSubmitting(false);
-        }})
+          }
+        })
         .catch((error) => {
           Swal.fire({
             icon: 'error',
