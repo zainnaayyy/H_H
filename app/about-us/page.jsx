@@ -10,16 +10,42 @@ const AboutUs = () => {
       <div className='flex flex-wrap md:flex-nowrap items-center justify-between py-16 px-8 bg-white'>
         <div className='flex flex-col md:flex-row  justify-center md:space-x-8 w-full'>
           <div className='md:w-1/2 mt-8 md:mt-0'>
-            <h2 className='text-3xl font-bold text-[#0A4958] mb-4'>
-              Empowering Haiti&apos;s Underserved Communities Through Accessible Health Insurance
-            </h2>
+            <div className='text-center text-3xl font-bold'>About Us</div>
             <div className='grid grid-cols-1 sm:grid-cols-1 gap-4 mt-8'>
               <div>
                 <p className='text-base text-gray-600'>
-                At H4H (Health for Haitians), we recognize the pressing issue many Haitian immigrants face in accessing proper healthcare due to language barriers, limited awareness, and financial constraints. Our mission is to bridge this gap by providing culturally sensitive health insurance solutions that empower individuals and families to secure the care they deserve. We envision a future where every Haitian immigrant has equal access to affordable, comprehensive healthcare, leading to healthier, more secure communities.
-                <br />
-                <br />
-                Guided by our core values of inclusivity, compassion, and empowerment, we work tirelessly to offer personalized support in navigating the complex world of health insurance. As a team of Haitian immigrants ourselves, we are deeply committed to improving the well-being of our community. Looking ahead, we aim to expand our outreach, ensuring that no member of the Haitian community is left without the knowledge or resources to protect their health.
+                  Founded by a Haitian immigrant with first-hand experience of
+                  the unique challenges Haitians face when trying to access the
+                  American Dream, our mission is deeply personal. Like everyone
+                  else, he envisions helping the Haitian community gain access
+                  to essential opportunities such as healthcare, education,
+                  jobs, networks, housing, nutrition, investing, and personal
+                  growth. His wife, also of Caribbean descent, shares this
+                  vision and dreams of expanding these efforts to all Caribbean
+                  Islands. While our goal is to support all underserved
+                  communities, our team is particularly focused on Haitians, who
+                  are among the most underserved. Health is the foundation of
+                  life, which is why we begin our work here.
+                  <br />
+                  <br />
+                  Access to quality healthcare is vital for the well-being of
+                  individuals and families, yet many in the Haitian community
+                  face significant barriers to obtaining proper health coverage.
+                  Language differences, lack of information, and financial
+                  constraints are just a few of the obstacles that prevent them
+                  from accessing the care they need. Our mission is to bridge
+                  this gap by providing Creole-speaking resources to help
+                  Haitian individuals and families navigate the complex
+                  healthcare system and secure the coverage necessary for a
+                  healthier future.
+                  <br />
+                  <br />
+                  Whether they need Medicaid, health insurance, Medicare, or
+                  life insurance, we believe that everyone deserves access to
+                  high-quality service and support. Looking ahead, we aim to
+                  expand our outreach, ensuring that every member of the Haitian
+                  community has the knowledge and resources to protect their
+                  health and well-being.
                 </p>
               </div>
             </div>
@@ -28,7 +54,7 @@ const AboutUs = () => {
       </div>
       <Footer />
     </>
-  )
+  );
 };
 
 export default AboutUs;

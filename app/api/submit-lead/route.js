@@ -3,7 +3,6 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   const { firstName, email } = await req.json(); // Capture form data
-  console.log(firstName, email, 'check');
 
   if (!firstName || !email) {
     return NextResponse.json(
@@ -15,15 +14,16 @@ export async function POST(req) {
   // Set up Nodemailer transport
   const transporter = nodemailer.createTransport({
     service: 'Gmail', // Or another email provider
+    host: 'smtp.gmail.com',
     auth: {
       user: process.env.EMAIL_USER, // Your email
-      pass: process.env.EMAIL_PASS, // Your email password (or app password)
+      pass: process.env.EMAIL_PASS, // Your email password or app password
     },
   });
 
   // Email content
   const mailOptions = {
-    from: '"Your Company" <your-email@example.com>',
+    from: '"Your Company" <tech@ehgcorp.com>',
     to: email, // Send email to the customer
     subject: 'Thank You for Opting In!',
     text: `Hello ${firstName},\n\nThank you for opting in to receive updates from us.\n\nBest regards,\nYour Company`,

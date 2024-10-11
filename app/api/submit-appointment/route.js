@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   try {
-    const { date, time, method } = await req.json();
+    const { date, time, method, email } = await req.json();
 
     if (!date || !time || !method) {
       return NextResponse.json(
@@ -15,6 +15,7 @@ export async function POST(req) {
     // Nodemailer configuration
     const transporter = nodemailer.createTransport({
       service: 'Gmail', // Or another email provider
+      host: 'smtp.gmail.com',
       auth: {
         user: process.env.EMAIL_USER, // Your email
         pass: process.env.EMAIL_PASS, // Your email password (or app password)
@@ -40,7 +41,7 @@ export async function POST(req) {
     // Email content
     const mailOptions = {
       from: '"Your Company" <your-email@example.com>',
-      to: 'client-email@example.com', // Send email to the customer
+      to: email, // Send email to the customer
       subject: 'Appointment Confirmation',
       text: `Your appointment is scheduled for ${date} at ${time} via ${appointmentMethodText}.`,
       html: `<p>Your appointment is scheduled for <strong>${date}</strong> at <strong>${time}</strong> via <strong>${appointmentMethodText}</strong>.</p>`,

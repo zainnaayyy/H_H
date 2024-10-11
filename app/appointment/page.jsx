@@ -1,19 +1,24 @@
 'use client';
 import React, { useState } from 'react';
-import { DatePicker, TimePicker, Radio, Button, message } from 'antd';
+import { DatePicker, TimePicker, Radio, Button, message, Input } from 'antd';
 import { useRouter } from 'next/navigation';
 import moment from 'moment';
 import 'antd/dist/reset.css'; // Ant Design Reset CSS
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const ScheduleAppointment = () => {
   const [selectedDate, setSelectedDate] = useState(null);
+  const [email, setEmail] = useState(''); // New state for email
   const [selectedTime, setSelectedTime] = useState(null);
   const [appointmentMethod, setAppointmentMethod] = useState(''); // New state for appointment method
   const router = useRouter();
 
   const handleSubmit = async () => {
     if (!selectedDate || !selectedTime || !appointmentMethod) {
-      message.error('Please select a date, time, and appointment method.');
+      message.error(
+        'Please select an email, date, time, and appointment method.'
+      );
       return;
     }
 
@@ -21,6 +26,7 @@ const ScheduleAppointment = () => {
       date: selectedDate.format('YYYY-MM-DD'),
       time: selectedTime.format('HH:mm'),
       method: appointmentMethod,
+      email: email, // Include the email here
     };
 
     try {
@@ -35,7 +41,7 @@ const ScheduleAppointment = () => {
         message.success(
           'Appointment scheduled successfully! Please check your email.'
         );
-        router.push('/thank-you'); // Optional: Redirect to a thank you page
+        // router.push('/thank-you'); // Optional: Redirect to a thank you page
       } else {
         message.error('Failed to schedule appointment.');
       }
@@ -46,46 +52,64 @@ const ScheduleAppointment = () => {
   };
 
   return (
-    <div className='max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg mt-10'>
-      <h2 className='text-2xl font-bold mb-6 text-center'>
-        Schedule an Appointment
-      </h2>
+    <>
+      <Header />
+      <div className='max-w-lg mx-auto p-6 bg-white rounded-lg shadow-lg my-10'>
+        <h2 className='text-2xl font-bold mb-6 text-center'>
+          Schedule an Appointment
+        </h2>
+        <div className='mb-4'>
+          <Input
+            type='email'
+            className='w-full focus:ring-2 focus:ring-[#01B6AD]'
+            placeholder='Enter your email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className='mb-4'>
+          <DatePicker
+            className='w-full focus:ring-2 focus:ring-[#01B6AD]'
+            onChange={(date) => setSelectedDate(date)}
+            disabledDate={(current) =>
+              current && current < moment().endOf('day')
+            }
+            placeholder='Select Date'
+          />
+        </div>
 
-      <div className='mb-4'>
-        <DatePicker
-          className='w-full'
-          onChange={(date) => setSelectedDate(date)}
-          disabledDate={(current) => current && current < moment().endOf('day')}
-          placeholder='Select Date'
-        />
-      </div>
+        <div className='mb-4'>
+          <TimePicker
+            className='w-full focus:ring-2 focus:ring-[#01B6AD]'
+            format='HH:mm'
+            minuteStep={15}
+            onChange={(time) => setSelectedTime(time)}
+            placeholder='Select Time'
+          />
+        </div>
 
-      <div className='mb-4'>
-        <TimePicker
-          className='w-full'
-          format='HH:mm'
-          minuteStep={15}
-          onChange={(time) => setSelectedTime(time)}
-          placeholder='Select Time'
-        />
-      </div>
+        {/* Radio Button Group for Appointment Method */}
+        <div className='mb-4'>
+          <Radio.Group
+            onChange={(e) => setAppointmentMethod(e.target.value)}
+            value={appointmentMethod}
+          >
+            <Radio value='face-to-face'>Face to Face Office Meeting</Radio>
+            <Radio value='phone'>Appointment by Phone</Radio>
+            <Radio value='virtual'>Virtual Meeting via Google Meet</Radio>
+          </Radio.Group>
+        </div>
 
-      {/* Radio Button Group for Appointment Method */}
-      <div className='mb-4'>
-        <Radio.Group
-          onChange={(e) => setAppointmentMethod(e.target.value)}
-          value={appointmentMethod}
+        <Button
+          type='primary'
+          className='w-full bg-[#17f0ff] hover:!bg-[#0A4958]'
+          onClick={handleSubmit}
         >
-          <Radio value='face-to-face'>Face to Face Office Meeting</Radio>
-          <Radio value='phone'>Appointment by Phone</Radio>
-          <Radio value='virtual'>Virtual Meeting via Google Meet</Radio>
-        </Radio.Group>
+          Confirm Appointment
+        </Button>
       </div>
-
-      <Button type='primary' className='w-full' onClick={handleSubmit}>
-        Confirm Appointment
-      </Button>
-    </div>
+      <Footer />
+    </>
   );
 };
 
