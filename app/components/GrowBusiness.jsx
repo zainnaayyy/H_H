@@ -25,8 +25,7 @@ const GrowBusiness = () => {
       id='parallax-bg'
       className='relative h-72 flex flex-col justify-center items-center bg-cover bg-center '
       style={{
-        backgroundImage:
-          'url(/images/help.jpeg)',
+        backgroundImage: 'url(/images/help.jpeg)',
       }}
     >
       <div className='absolute inset-0 bg-black opacity-40'></div>
@@ -40,7 +39,7 @@ const GrowBusiness = () => {
           Get Your Family Covered Today!
         </h1>
         <Button size='lg' className='bg-[#17f0ff] hover:bg-[#0A4958] mt-2 '>
-          <Link href='/'>Speak to an Agent</Link>
+          <Link href='/appointment'>Speak to an Agent</Link>
         </Button>
       </div>
     </div>

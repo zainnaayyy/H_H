@@ -77,44 +77,60 @@ const Header = () => {
       consent: false,
     },
     validationSchema,
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       setIsSubmitting(true);
 
       const myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append('Content-Type', 'application/json');
 
       const raw = JSON.stringify({
-        "insuranceType": values.insuranceType.join(', '),
-        "firstName": values.firstName,
-        "lastName": values.lastName,
-        "dob": values.dob,
-        "zipCode": values.zipCode,
-        "email": values.email,
-        "phoneNumber": values.phoneNumber,
-        "consent": values.consent
+        insuranceType: values.insuranceType.join(', '),
+        firstName: values.firstName,
+        lastName: values.lastName,
+        dob: values.dob,
+        zipCode: values.zipCode,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+        consent: values.consent,
       });
 
       const requestOptions = {
-        method: "POST",
+        method: 'POST',
         headers: myHeaders,
         body: raw,
-        redirect: "follow"
+        redirect: 'follow',
       };
 
-      fetch("/api/saveToGoogleSheet", requestOptions)
+      fetch('/api/saveToGoogleSheet', requestOptions)
         .then((response) => response.json())
-        .then((result) => {
-          if(result.status === 200) {
-            Swal.fire({
-              icon: 'success',
-              title: 'Form Submitted!',
-              text: "Your form has been submitted successfully! An agent will reach out to you soon.",
-              confirmButtonColor: '#17f0ff',
-              width: '20rem',
+        .then(async (result) => {
+          if (result.status === 200) {
+            const response = await fetch('/api/submit-lead', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(values),
             });
+
+            if (response.ok) {
+              Swal.fire({
+                icon: 'success',
+                title: 'Form Submitted!',
+                text: 'Your form has been submitted successfully!  A confirmation e-mail has also been sent. An agent will reach out to you soon.',
+                confirmButtonColor: '#17f0ff',
+                width: '20rem',
+              });
+            } else {
+              Swal.fire({
+                icon: 'error',
+                title: `Oops!`,
+                text: 'Something went wrong while sending the confirmation e-mail.',
+                confirmButtonColor: '#B92031',
+              });
+            }
             formik.resetForm();
             setIsSubmitting(false);
-        }})
+          }
+        })
         .catch((error) => {
           Swal.fire({
             icon: 'error',
@@ -130,7 +146,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setFormPosition(formRef.current.getBoundingClientRect().top)
+      setFormPosition(formRef.current.getBoundingClientRect().top);
       const screenPosition = window.innerHeight / 10;
       if (formPosition < screenPosition) {
         setIsVisible(true);
@@ -189,7 +205,8 @@ const Header = () => {
     },
     {
       imageUrl: '/images/slider/african3.jpeg',
-      title: 'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
+      title:
+        'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
       description: 'Get coverage that suits your unique needs.',
       buttonText: 'Get Started',
     },
@@ -280,8 +297,8 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='/#products'
-                            onClick={() => handleLinkClick('#products')}
+                            href='/health'
+                            onClick={() => handleLinkClick('/health')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
                             Health
@@ -289,8 +306,8 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='/#products'
-                            onClick={() => handleLinkClick('#products')}
+                            href='/dental'
+                            onClick={() => handleLinkClick('/dental')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
                             Dental & Vision
@@ -298,8 +315,8 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='/#products'
-                            onClick={() => handleLinkClick('#products')}
+                            href='/life'
+                            onClick={() => handleLinkClick('/life')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
                             Life
@@ -307,8 +324,8 @@ const Header = () => {
                         </li>
                         <li>
                           <Link
-                            href='/#products'
-                            onClick={() => handleLinkClick('#products')}
+                            href='/medicare'
+                            onClick={() => handleLinkClick('/medicare')}
                             className='hover:text-[#13287B] py-2 px-2'
                           >
                             Medicare
@@ -361,28 +378,52 @@ const Header = () => {
           <nav className='hidden lg:flex text-black'>
             <div className='xl:text-xl text-base flex justify-center space-x-10 py-2 font-bold'>
               <div>
-                <Link href='/' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-2'>
+                <Link
+                  href='/'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-2'
+                >
                   Home
                 </Link>
-                <Link href='/about-us' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/about-us'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   About Us
                 </Link>
-                <Link href='/#products' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/health'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Health
                 </Link>
-                <Link href='/#products' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/dental'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Dental & Vision
                 </Link>
-                <Link href='/#products' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/life'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Life
                 </Link>
-                <Link href='/#products' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/medicare'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Medicare
                 </Link>
-                <Link href='/mission' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/mission'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Mission
                 </Link>
-                <Link href='/#contact' className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'>
+                <Link
+                  href='/#contact'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                >
                   Contact Us
                 </Link>
               </div>
@@ -393,8 +434,13 @@ const Header = () => {
       {/* Hero Section */}
       {isHomePage ? (
         <div className='w-full mx-auto pl-20 pr-10 lg:flex justify-between mb-8'>
-          <div ref={formRef} className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl`}>
-            <h2 className='text-3xl text-[#B92031] font-semibold mb-6'>Get Covered Today</h2>
+          <div
+            ref={formRef}
+            className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl`}
+          >
+            <h2 className='text-3xl text-[#B92031] font-semibold mb-6'>
+              Get Covered Today
+            </h2>
             <form onSubmit={formik.handleSubmit}>
               {/* Insurance Type */}
               <div className='mb-4'>
@@ -402,28 +448,34 @@ const Header = () => {
                   Choose your Insurance Type
                 </label>
                 <div className='flex text-lg flex-wrap gap-4'>
-                  {['Health', 'Dental', 'Vision', 'Medicare', 'Life'].map((type) => (
-                    <label key={type} className='inline-flex items-center'>
-                      <input
-                        type='checkbox'
-                        name='insuranceType'
-                        value={type}
-                        onChange={formik.handleChange}
-                        checked={formik.values.insuranceType.includes(type)}
-                        className='form-checkbox text-blue-600'
-                      />
-                      <span className='ml-2 text-gray-500'>{type}</span>
-                    </label>
-                  ))}
+                  {['Health', 'Dental', 'Vision', 'Medicare', 'Life'].map(
+                    (type) => (
+                      <label key={type} className='inline-flex items-center'>
+                        <input
+                          type='checkbox'
+                          name='insuranceType'
+                          value={type}
+                          onChange={formik.handleChange}
+                          checked={formik.values.insuranceType.includes(type)}
+                          className='form-checkbox text-blue-600'
+                        />
+                        <span className='ml-2 text-gray-500'>{type}</span>
+                      </label>
+                    )
+                  )}
                 </div>
                 {formik.touched.insuranceType && formik.errors.insuranceType ? (
-                  <div className='text-red-500'>{formik.errors.insuranceType}</div>
+                  <div className='text-red-500'>
+                    {formik.errors.insuranceType}
+                  </div>
                 ) : null}
               </div>
 
               {/* Full Name */}
               <div className='mb-4 '>
-                <label className='text-xl block text-gray-500 font-semibold mb-2'>Full Name</label>
+                <label className='text-xl block text-gray-500 font-semibold mb-2'>
+                  Full Name
+                </label>
                 <div className='flex gap-4'>
                   <div className='flex flex-col w-1/2'>
                     <input
@@ -435,7 +487,9 @@ const Header = () => {
                       className='text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                     />
                     {formik.touched.firstName && formik.errors.firstName ? (
-                      <div className='text-red-500'>{formik.errors.firstName}</div>
+                      <div className='text-red-500'>
+                        {formik.errors.firstName}
+                      </div>
                     ) : null}
                   </div>
                   <div className='flex flex-col w-1/2'>
@@ -448,7 +502,9 @@ const Header = () => {
                       className='text-xl px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#01B6AD]'
                     />
                     {formik.touched.lastName && formik.errors.lastName ? (
-                      <div className='text-red-500'>{formik.errors.lastName}</div>
+                      <div className='text-red-500'>
+                        {formik.errors.lastName}
+                      </div>
                     ) : null}
                   </div>
                 </div>
@@ -456,7 +512,9 @@ const Header = () => {
 
               {/* Date of Birth */}
               <div className='mb-4'>
-                <label className='block text-xl text-gray-500 font-semibold mb-2'>Date of Birth</label>
+                <label className='block text-xl text-gray-500 font-semibold mb-2'>
+                  Date of Birth
+                </label>
                 <input
                   type='date'
                   name='dob'
@@ -471,7 +529,9 @@ const Header = () => {
 
               {/* Zip Code */}
               <div className='mb-4'>
-                <label className='block text-gray-500 font-semibold mb-2 text-xl'>Zip Code</label>
+                <label className='block text-gray-500 font-semibold mb-2 text-xl'>
+                  Zip Code
+                </label>
                 <input
                   type='text'
                   name='zipCode'
@@ -486,7 +546,9 @@ const Header = () => {
 
               {/* Email */}
               <div className='mb-4'>
-                <label className='block text-xl text-gray-500 font-semibold mb-2'>Email</label>
+                <label className='block text-xl text-gray-500 font-semibold mb-2'>
+                  Email
+                </label>
                 <input
                   type='email'
                   name='email'
@@ -501,7 +563,9 @@ const Header = () => {
 
               {/* Phone Number */}
               <div className='mb-4'>
-                <label className='block text-gray-500 font-semibold mb-2 text-xl'>Mobile phone number (US only)</label>
+                <label className='block text-gray-500 font-semibold mb-2 text-xl'>
+                  Mobile phone number (US only)
+                </label>
                 <input
                   type='tel'
                   name='phoneNumber'
@@ -510,7 +574,9 @@ const Header = () => {
                   className='w-full px-3 py-2 border rounded-lg focus:outline-none text-xl focus:ring-2 focus:ring-[#01B6AD]'
                 />
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-                  <div className='text-red-500'>{formik.errors.phoneNumber}</div>
+                  <div className='text-red-500'>
+                    {formik.errors.phoneNumber}
+                  </div>
                 ) : null}
               </div>
 
@@ -524,7 +590,9 @@ const Header = () => {
                     checked={formik.values.consent}
                     className='form-checkbox text-[#01B6AD]'
                   />
-                  <span className='ml-2 text-lg text-gray-500'>Text me with news & offers</span>
+                  <span className='ml-2 text-lg text-gray-500'>
+                    Text me with news & offers
+                  </span>
                 </label>
                 {formik.touched.consent && formik.errors.consent ? (
                   <div className='text-red-500'>{formik.errors.consent}</div>
@@ -612,34 +680,34 @@ const Header = () => {
             </form>
           </div>
           <div className={`lg:w-2/3 lg:pl-5 w-full`}>
-          <Carousel plugins={[plugin.current]} className='w-full'>
-            <CarouselContent>
-              {slides.map((slide, index) => (
-                <CarouselItem key={index}>
-                  <div
-                    className='relative h-[25rem] xl:h-[67rem] md:h-[83rem] bg-cover bg-center'
-                    style={{
-                      backgroundImage: `url(${slide.imageUrl})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                    }}
-                  >
-                    <div className='absolute inset-0 bg-black opacity-50'></div>
-                    <div className='absolute inset-0 flex items-center justify-center'>
-                      <div className='text-center max-w-3xl text-white space-y-4 animate-slideIn'>
-                        <h1 className='text-lg md:text-4xl font-bold leading-normal'>
-                          {slide.title}
-                        </h1>
-                        {/* <p className='text-sm md:text-lg'>
+            <Carousel plugins={[plugin.current]} className='w-full'>
+              <CarouselContent>
+                {slides.map((slide, index) => (
+                  <CarouselItem key={index}>
+                    <div
+                      className='relative h-[25rem] xl:h-[67rem] md:h-[83rem] bg-cover bg-center'
+                      style={{
+                        backgroundImage: `url(${slide.imageUrl})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
+                    >
+                      <div className='absolute inset-0 bg-black opacity-50'></div>
+                      <div className='absolute inset-0 flex items-center justify-center'>
+                        <div className='text-center max-w-3xl text-white space-y-4 animate-slideIn'>
+                          <h1 className='text-lg md:text-4xl font-bold leading-normal'>
+                            {slide.title}
+                          </h1>
+                          {/* <p className='text-sm md:text-lg'>
                           {slide.description}
                         </p> */}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
       ) : null}
