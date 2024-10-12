@@ -685,7 +685,7 @@ const Header = () => {
                 {slides.map((slide, index) => (
                   <CarouselItem key={index}>
                     <div
-                      className='relative h-[25rem] xl:h-[67rem] md:h-[83rem] bg-cover bg-center'
+                      className='relative h-[25rem] xl:h-[65rem] md:h-[83rem] bg-cover bg-center'
                       style={{
                         backgroundImage: `url(${slide.imageUrl})`,
                         backgroundSize: 'cover',
