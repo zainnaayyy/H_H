@@ -17,8 +17,8 @@ export async function POST(req) {
       service: 'Gmail', // Or another email provider
       host: 'smtp.gmail.com',
       auth: {
-        user: process.env.EMAIL_USER, // Your email
-        pass: process.env.EMAIL_PASS, // Your email password (or app password)
+        user: process.env.NEXT_PUBLIC_EMAIL_USER, // Your email
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASS, // Your email password (or app password)
       },
     });
 
