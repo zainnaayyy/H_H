@@ -6,13 +6,13 @@ import { NextResponse } from 'next/server';
 export async function POST(req) {
     try {
       const body = await req.json();
-      // Load the service account key JSON file
-      const credentialsPath = path.join(process.cwd(), 'credentials.json');
-      const credentials = JSON.parse(await fs.readFile(credentialsPath, 'utf8'));
-
+      
       // Authorize the client
       const auth = new google.auth.GoogleAuth({
-        credentials,
+        credentials: {
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+          private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),  // Ensure the key is correctly formatted
+        },
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
       });
 
