@@ -35,6 +35,6 @@ export async function POST(req) {
       return NextResponse.json({ message: 'Data saved to Google Sheets successfully', status: 200 });
     } catch (error) {
       console.error(error);
-      return NextResponse.json({ error: error, status: 500 });
+      return NextResponse.json({ error: error, status: 500, genv: process.env.GOOGLE_CLIENT_EMAIL, gkey: process.env.GOOGLE_PRIVATE_KEY});
     }
 }
