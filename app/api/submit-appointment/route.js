@@ -22,6 +22,8 @@ export async function POST(req) {
       },
     });
 
+    console.log(transporter, 'transporter');
+
     // Email content based on the selected appointment method
     let appointmentMethodText;
     switch (method) {
