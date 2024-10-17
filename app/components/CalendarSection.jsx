@@ -76,7 +76,7 @@ const CalendarSection = ({
           mode='single'
           selected={selectedDate ? selectedDate.toDate() : null}
           onSelect={handleDateSelect}
-          disabledDate={(current) => current && current < moment().endOf('day')}
+          disabled={(date) => date < new Date()}
           className='rounded-md border mt-2 mb-4 shadow'
         />
         <div className='mb-4'>
