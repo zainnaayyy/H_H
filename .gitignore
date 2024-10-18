@@ -6,6 +6,7 @@
 .pnp.js
 .yarn/install-state.gz
 creds.json
+yarn.lock
 
 # testing
 /coverage

@@ -228,13 +228,13 @@ const Header = () => {
         <div className='container mx-auto text-white py-4 px-0 lg:px-6 md:px-4 flex justify-end items-center text-sm'>
           <div className='flex flex-col sm:flex-row w-full justify-between items-center'>
             <div className='flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10'>
-              <div className='flex justify-between items-center'>
+              <div className='flex items-center'>
                 <FaPhoneVolume className='w-8 h-8 text-[#B92031]' />
                 <span className='text-white font-bold  px-2 text-xl'>
                   1.844.544.0663
                 </span>
               </div>
-              <div className='flex justify-between items-center'>
+              <div className='flex items-center'>
                 <MdOutlineMailOutline className='w-8 h-8 text-[#B92031]' />
                 <span className='text-white font-bold px-2 text-xl'>
                   info@h4hinsurance.com
@@ -425,7 +425,7 @@ const Header = () => {
       </div>
       {/* Hero Section */}
       {isHomePage ? (
-        <div className='w-full mx-auto pl-20 pr-10 lg:flex justify-between mb-8'>
+        <div className='w-full mx-auto px-4 xl:pl-20 lg:pr-10 lg:flex justify-between mb-8'>
           <div
             ref={formRef}
             className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-2xl hover:shadow-slate-950`}
@@ -815,7 +815,7 @@ const Header = () => {
             <div className='flex xl:flex-row flex-col items-center pb-4 xl:pb-0'>
                 <Image
                 src='/images/ContactUs.svg'
-                width={500}
+                width={300}
                 height={500}
                 // style={{ width: '300px', height: '300px' }}
                 />
@@ -830,7 +830,7 @@ const Header = () => {
                 {slides.map((slide, index) => (
                   <CarouselItem key={index}>
                     <div
-                      className='relative h-[24rem] lg:h-[34rem] xl:h-[28rem] bg-cover bg-center rounded-md'
+                      className='relative h-[24rem] lg:h-[45rem] xl:h-[40rem] bg-cover bg-center rounded-md'
                       style={{
                         backgroundImage: `url(${slide.imageUrl})`,
                         backgroundSize: 'cover',
