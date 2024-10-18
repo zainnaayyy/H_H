@@ -50,7 +50,7 @@ const Health = () => {
               Finding the right health plan for your family is easier than ever!
               Our Health Insurance options offer a wide variety of plans
               tailored to fit your needs and budget. From comprehensive coverage
-              to affordable options, we’ve got you covered.
+              to affordable options, we've got you covered.
             </p>
           </div>
 
