@@ -23,11 +23,11 @@ export async function POST(req) {
 
   // Email content
   const mailOptions = {
-    from: '"Your Company" <tech@ehgcorp.com>',
+    from: '"H4H Insurance" <info@h4hinsurance.com>',
     to: email, // Send email to the customer
-    subject: 'Thank You for Opting In!',
-    text: `Hello ${firstName},\n\nThank you for opting in to receive updates from us.\n\nBest regards,\nYour Company`,
-    html: `<p>Hello <strong>${firstName}</strong>,</p><p>Thank you for opting in to receive updates from us.</p><p>Best regards,<br>Your Company</p>`,
+    subject: 'Thank you for contacting H4H!',
+    // text: `Hello ${firstName},\n\nThank you for opting in to receive updates from us.\n\nBest regards,\nYour Company`,
+    html: `<p>Hello <strong>${firstName}</strong>,</p><p>Thank you for opting in to receive updates from us.<br>One of our agents will be contacting you soon.</p><b><i>Best regards,</i><br>H4H Insurance</b><p>1.844.544.0663</p>`,
   };
 
   // Send the email

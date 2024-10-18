@@ -1,19 +1,23 @@
+'use client'
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const services = [
   {
-    title: 'Health ',
+    title: 'Health Insurance',
     description:
       'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
     imageUrl: '/images/health.jpeg',
+    url: '/health',
     icon: '💉',
   },
   {
-    title: 'Life ',
+    title: 'Life Insurance',
     description: 'Let us help you navigate the key to financial security.',
     imageUrl: '/images/life.jpeg',
+    url: '/life',
     icon: '👨‍👩‍👧',
   },
   {
@@ -21,6 +25,7 @@ const services = [
     description:
       'We provide affordable dental and vision policies for your overall health.',
     imageUrl: '/images/dental.jpeg',
+    url: '/dental',
     icon: '🦷',
   },
   {
@@ -28,11 +33,13 @@ const services = [
     description:
       'Finding the right medicare supplement can be challenging, we are here to help.',
     imageUrl: '/images/medicare.jpeg',
+    url: '/medicare',
     icon: '⚕️',
   },
 ];
 
 const InsuranceService = () => {
+  const router = useRouter()
   return (
     <div className='bg-gray-100 py-16'>
       <div className='text-center mb-12'>
@@ -51,7 +58,8 @@ const InsuranceService = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className='relative group w-96 h-80 overflow-hidden rounded-lg shadow-lg'
+            onClick={() => router.push(service.url)}
+            className='relative group w-96 h-80 overflow-hidden rounded-lg shadow-lg cursor-pointer'
           >
             <div
               className='absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110'

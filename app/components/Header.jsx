@@ -105,28 +105,21 @@ const Header = () => {
         .then((response) => response.json())
         .then(async (result) => {
           if (result.status === 200) {
-            const response = await fetch('/api/submit-lead', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(values),
-            });
-
-            if (response.ok) {
-              Swal.fire({
-                icon: 'success',
-                title: 'Form Submitted!',
-                text: 'Your form has been submitted successfully!  A confirmation e-mail has also been sent. An agent will reach out to you soon.',
-                confirmButtonColor: '#17f0ff',
-                width: '20rem',
-              });
-            } else {
-              Swal.fire({
-                icon: 'error',
-                title: `Oops!`,
-                text: 'Something went wrong while sending the confirmation e-mail.',
-                confirmButtonColor: '#B92031',
+            if(values?.email) {
+              await fetch('/api/submit-lead', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(values),
               });
             }
+
+            Swal.fire({
+              icon: 'success',
+              title: 'Form Submitted!',
+              text: 'Your form has been submitted successfully! An agent will reach out to you soon.',
+              confirmButtonColor: '#17f0ff',
+              width: '25rem',
+            });
             formik.resetForm();
             setIsSubmitting(false);
           }
@@ -146,7 +139,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setFormPosition(formRef.current.getBoundingClientRect().top);
+      setFormPosition(formRef?.current?.getBoundingClientRect().top);
       const screenPosition = window.innerHeight / 10;
       if (formPosition < screenPosition) {
         setIsVisible(true);
@@ -199,28 +192,27 @@ const Header = () => {
       imageUrl: '/images/slider/african.jpeg',
       title:
         'Together We are Building a Healthier Haiti, One Family at a Time.',
-      description:
-        'We have almost 30+ years of experience for providing consulting services solutions',
-      buttonText: 'Get Started',
+      url:'/health',
+      buttonText: 'Learn More',
     },
     {
       imageUrl: '/images/slider/african3.jpeg',
       title:
         'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
-      description: 'Get coverage that suits your unique needs.',
-      buttonText: 'Get Started',
+      url: '/health',
+      buttonText: 'Compare Plans',
     },
     {
       imageUrl: '/images/slider/african2.jpg',
       title: 'Find an Affordable Dental & Vision Plan for Your Family.',
-      description: 'Get coverage that suits your unique needs.',
-      buttonText: 'Get Started',
+      url: '/dental',
+      buttonText: 'Request Quotes',
     },
     {
       imageUrl: '/images/slider/african3.jpg',
       title: "Protect Your Family's Financial Future with Life Insurance.",
-      description: 'Get coverage that suits your unique needs.',
-      buttonText: 'Get Started',
+      url: '/appointment',
+      buttonText: 'Contact Agent',
     },
   ];
 
@@ -233,7 +225,7 @@ const Header = () => {
     <header id='home' className='bg-white'>
       {/* Top Bar */}
       <div className='bg-[#17f0ff]'>
-        <div className='container mx-auto text-white py-4 px-16 flex justify-end items-center text-sm'>
+        <div className='container mx-auto text-white py-4 px-0 lg:px-6 md:px-4 flex justify-end items-center text-sm'>
           <div className='flex flex-col sm:flex-row w-full justify-between items-center'>
             <div className='flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10'>
               <div className='flex justify-between items-center'>
@@ -365,7 +357,7 @@ const Header = () => {
       </div>
       {/* Main Navigation */}
       <div className='bg-white mb-5 flex justify-center lg:justify-start items-center w-full mx-auto'>
-        <div className='flex xl:pl-[22rem] lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]'>
+        <div className='flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]'>
           <Image
             src='/images/H4HLogo.svg'
             width={100}
@@ -376,53 +368,53 @@ const Header = () => {
         <div className='hidden lg:flex xl:w-9/12 w-[80%]'>
           {/* Navbar */}
           <nav className='hidden lg:flex text-black'>
-            <div className='xl:text-xl text-base flex justify-center space-x-10 py-2 font-bold'>
-              <div>
+            <div className='xl:text-xl text-base flex justify-center py-2 font-bold'>
+              <div className='space-x-7'>
                 <Link
                   href='/'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-2'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Home
                 </Link>
                 <Link
                   href='/about-us'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   About Us
                 </Link>
                 <Link
                   href='/health'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Health
                 </Link>
                 <Link
                   href='/dental'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Dental & Vision
                 </Link>
                 <Link
                   href='/life'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Life
                 </Link>
                 <Link
                   href='/medicare'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Medicare
                 </Link>
                 <Link
                   href='/mission'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Mission
                 </Link>
                 <Link
                   href='/#contact'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2 px-4'
+                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
                 >
                   Contact Us
                 </Link>
@@ -436,10 +428,10 @@ const Header = () => {
         <div className='w-full mx-auto pl-20 pr-10 lg:flex justify-between mb-8'>
           <div
             ref={formRef}
-            className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl`}
+            className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-2xl hover:shadow-slate-950`}
           >
-            <h2 className='text-3xl text-[#B92031] font-semibold mb-6'>
-              Get Covered Today
+            <h2 className='text-3xl text-[#B92031] font-bold mb-6'>
+              Get Covered Today!
             </h2>
             <form onSubmit={formik.handleSubmit}>
               {/* Insurance Type */}
@@ -819,25 +811,41 @@ const Header = () => {
               </button>
             </form>
           </div>
-          <div className={`lg:w-2/3 lg:pl-5 w-full`}>
+          <div className={`flex flex-col justify-between items-center lg:w-2/3 lg:pl-5 w-full min-h-full`}>
+            <div className='flex xl:flex-row flex-col items-center pb-4 xl:pb-0'>
+                <Image
+                src='/images/ContactUs.svg'
+                width={500}
+                height={500}
+                // style={{ width: '300px', height: '300px' }}
+                />
+                <div className='flex flex-col xl:items-start items-center space-y-6'>
+                  <p className='text-gray-500 text-2xl md:text-5xl'>Health <span className='text-[#B92031]'>4</span> Haitians</p>
+                  <p className='font-bold text-lg md:text-3xl'>Meet with a Licensed Agent</p>
+                  <button className='bg-[#17f0ff] p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>Contact Us</button>
+                </div>
+            </div>
             <Carousel plugins={[plugin.current]} className='w-full'>
               <CarouselContent>
                 {slides.map((slide, index) => (
                   <CarouselItem key={index}>
                     <div
-                      className='relative h-[25rem] xl:h-[65rem] md:h-[83rem] bg-cover bg-center'
+                      className='relative h-[24rem] lg:h-[34rem] xl:h-[28rem] bg-cover bg-center rounded-md'
                       style={{
                         backgroundImage: `url(${slide.imageUrl})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                       }}
                     >
-                      <div className='absolute inset-0 bg-black opacity-50'></div>
+                      <div className='absolute inset-0 bg-black opacity-50 rounded-md'></div>
                       <div className='absolute inset-0 flex items-center justify-center'>
                         <div className='text-center max-w-3xl text-white space-y-4 animate-slideIn'>
                           <h1 className='text-lg md:text-4xl font-bold leading-normal'>
                             {slide.title}
                           </h1>
+                          <button onClick={() => {router.push(slide.url)}} className='bg-[#17f0ff] hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'>
+                            {slide.buttonText}
+                          </button>
                           {/* <p className='text-sm md:text-lg'>
                           {slide.description}
                         </p> */}
