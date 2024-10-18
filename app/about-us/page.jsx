@@ -11,6 +11,13 @@ const AboutUs = () => {
         <div className='flex flex-col md:flex-row  justify-center md:space-x-8 w-full'>
           <div className='md:w-1/2 mt-8 md:mt-0'>
             <div className='text-center text-3xl font-bold'>About Us</div>
+            <div className='w-full md:w-1/2 mt-8'>
+              <img
+                src='/images/about/about.jpg'
+                alt='Health Plans'
+                className='w-full h-auto'
+              />
+            </div>
             <div className='grid grid-cols-1 sm:grid-cols-1 gap-4 mt-8'>
               <div>
                 <p className='text-base text-gray-600'>

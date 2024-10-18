@@ -11,23 +11,23 @@ import InterviewForm from './InterviewForm';
 const services = [
   {
     id: 1,
-    title: 'Schedule via Phone',
+    title: 'Call us now',
     description:
-      'Conveniently book your appointment over the phone. Call us at 1.844.544.0663.',
+      'Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone',
     icon: FaPhone,
   },
   {
     id: 2,
-    title: 'Face-to-Face Meeting',
+    title: 'Schedule for a Phone Appointment',
     description:
-      'Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience.',
+      'Conveniently book your appointment for a meeting by phone at a preferred date and time.',
     icon: FaHandshake,
   },
   {
     id: 3,
-    title: 'Visit Our Office',
+    title: 'Face-to-Face Meeting',
     description:
-      'Drop by our office at your convenience. We welcome you to discuss your needs with our team.',
+      'Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience.',
     icon: FaBuilding,
   },
   {
