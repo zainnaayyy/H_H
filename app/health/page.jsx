@@ -44,13 +44,13 @@ const Health = () => {
           {/* Left Side */}
           <div className='w-full md:w-1/2 p-4'>
             <h2 className='text-2xl text-blue-700 font-bold mb-8'>
-              Plans for Your Family's Needs
+              Plans for Your Family&apos;s Needs
             </h2>
             <p className='text-[#5497a7]'>
               Finding the right health plan for your family is easier than ever!
               Our Health Insurance options offer a wide variety of plans
               tailored to fit your needs and budget. From comprehensive coverage
-              to affordable options, we’ve got you covered.
+              to affordable options, we&apos;ve got you covered.
             </p>
           </div>
 
