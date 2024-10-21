@@ -2,11 +2,12 @@ import { google } from 'googleapis';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { NextResponse } from 'next/server';
+import moment from 'moment';
 
 export async function POST(req) {
     try {
       const body = await req.json();
-      
+      const dateTime = moment.utc(new Date()).local().format('MM-DD-YYYY HH:mm:ss Z');
       // Authorize the client
       const auth = new google.auth.GoogleAuth({
         credentials: {
@@ -20,8 +21,8 @@ export async function POST(req) {
 
       // Append the form data to Google Sheets
       const spreadsheetId = '1hCCNo_o8bk7IXva1KZt16FfTQX8m54FbQCxevjjNSt0';
-      const range = 'Sheet1!A:H'; // Adjust based on your sheet structure
-      const values = [[body?.insuranceType, body?.firstName, body?.lastName, body?.dob, body?.zipCode, body?.email, body?.phoneNumber, body?.consent]];
+      const range = 'Sheet2!A:I'; // Adjust based on your sheet structure
+      const values = [[body?.insuranceType, body?.firstName, body?.lastName, body?.dob, body?.zipCode, body?.email, body?.phoneNumber, body?.consent, dateTime]];
 
       await sheets.spreadsheets.values.append({
         spreadsheetId,
