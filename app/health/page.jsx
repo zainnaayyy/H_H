@@ -1,10 +1,12 @@
 // pages/health.js
+'use client';
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Image from 'next/image';
 import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
+import { motion } from 'framer-motion';
 
 const Health = () => {
   const healthPoints = [
@@ -18,7 +20,7 @@ const Health = () => {
   return (
     <>
       <Header />
-      <div className='max-w-4xl mx-auto p-6'>
+      <div className='  p-6'>
         <div className='text-center text-3xl mb-10 font-bold'>
           Health Insurance
         </div>
@@ -35,14 +37,19 @@ const Health = () => {
             </h1>
           </div>
         </div>
-        <div className=''>
+        {/* <div className=''>
           <h1 className='text-2xl font-bold mb-4 mt-8 '>
             Explore the Best Health
           </h1>
-        </div>
-        <div className='flex flex-col md:flex-row justify-between items-center'>
+        </div> */}
+        <div className='flex flex-col mt-8 md:flex-row justify-between items-center'>
           {/* Left Side */}
-          <div className='w-full md:w-1/2 p-4'>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className='text-2xl text-blue-700 font-bold mb-8'>
               Plans for Your Family&apos;s Needs
             </h2>
@@ -52,30 +59,45 @@ const Health = () => {
               tailored to fit your needs and budget. From comprehensive coverage
               to affordable options, we&apos;ve got you covered.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className='w-full md:w-1/2 p-4'>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <img
               src='/images/health/Health2.jpg'
               alt='Health Plans'
               className='w-full h-auto'
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className='flex flex-col md:flex-row justify-between items-center mt-14'>
           {/* Left Side */}
-          <div className='w-full md:w-1/2 p-4'>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <img
               src='/images/health/Health3.jpg'
               alt='Health Plans'
               className='w-full h-auto'
             />
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className='w-full md:w-1/2 p-4'>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className='text-2xl text-blue-700 font-bold mb-8'>
               Health Insurance Helps You Save
             </h2>
@@ -94,7 +116,7 @@ const Health = () => {
               today and get expert advice on choosing the best health plan for
               you and your loved ones.
             </p>
-          </div>
+          </motion.div>
         </div>
 
         <div className='mt-5 mb-6'>
@@ -119,26 +141,98 @@ const Health = () => {
           </ul>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between items-center'>
+        <div className='flex flex-col md:flex-row justify-between items-center mt-14'>
           {/* Left Side */}
-          <div className='w-full md:w-1/2 p-4'>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <img
               src='/images/health/Health5.jpg'
-              alt='Health Plans'
-              className='w-full h-auto'
+              alt='Health Image'
+              className='w-full h-full '
             />
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className='w-full md:w-1/2 p-4'>
-            <img
-              src='/images/health/Health5.jpg'
-              alt='Health Plans'
-              className='w-full h-auto'
-            />
-          </div>
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className='text-2xl mt-4 font-semibold mb-4'>
+              What are Out-of-Pocket Expenses?
+            </h2>
+            <p className='text-[#5497a7]'>
+              Out-of-pocket expenses are the costs you pay directly for
+              healthcare services that aren&apos;t covered by your health
+              insurance plan. Understanding these costs is crucial to budgeting
+              for your healthcare needs and preventing unexpected financial
+              strain.
+            </p>
+          </motion.div>
         </div>
-        <div className='w-full md:w-1/2 mt-20'>
+
+        <div className='flex flex-col md:flex-row justify-between items-center mt-14'>
+          {/* Left Side */}
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className='text-2xl mt-4 font-semibold mb-4'>
+              Out-of-Pocket Costs includes:
+            </h2>
+            <ul className='list-none list-inside mb-6'>
+              <li className='mb-1'>
+                <strong className='text-sm'>Premium:</strong>
+                The fixed monthly payment you make to keep your health insurance
+                active.
+              </li>
+              <li className='mb-1'>
+                <strong className='text-sm'>Deductibles:</strong>
+                The amount you must pay for covered healthcare services before
+                your insurance starts to pay.
+              </li>
+              <li className='mb-1'>
+                <strong className='text-sm'>Copayments:</strong>A fixed amount
+                you pay for specific services like doctor visits or
+                prescriptions.
+              </li>
+              <li className='mb-1'>
+                <strong className='text-sm'>Coinsurance:</strong>A percentage of
+                the costs you share with your insurance company after meeting
+                your deductible.
+              </li>
+              {/* <li className='mb-1'>
+                <strong className='text-sm'>Out-of-Pocket Maximum:</strong>
+                The total amount you&apos;ll pay for covered services in a
+                policy period. Once you reach this limit, the insurance company
+                covers all further expenses.
+              </li> */}
+            </ul>
+          </motion.div>
+
+          {/* Right Side */}
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src='/images/health/Health.jpg'
+              alt='Health Image'
+              className='w-full h-full '
+            />
+          </motion.div>
+        </div>
+
+        {/* <div className='w-full md:w-1/2 mt-20'>
           <img
             src='/images/health/Health.jpg'
             alt='Health Image'
@@ -187,18 +281,19 @@ const Health = () => {
             period. Once you reach this limit, the insurance company covers all
             further expenses.
           </li>
-        </ul>
-
-        <p className=''>
-          When comparing insurance plans, it&apos;s crucial to review all costs.
-          This understanding will help you make smarter decisions. Let us help
-          you{' '}
-          <a href='/' className='underline text-blue-600 pr-1'>
-            explore the best plan
-          </a>
-          to fit your healthcare needs and budget. Connect with our licensed
-          agent today!
-        </p>
+        </ul> */}
+        <div className='mt-8'>
+          <p className='text-center'>
+            When comparing insurance plans, it&apos;s crucial to review all
+            costs. This understanding will help you make smarter decisions. Let
+            us help you{' '}
+            <a href='/' className='underline text-blue-600 pr-1'>
+              explore the best plan
+            </a>
+            to fit your healthcare needs and budget. Connect with our licensed
+            agent today!
+          </p>
+        </div>
         <div className='mt-5'>
           <CTA />
         </div>
