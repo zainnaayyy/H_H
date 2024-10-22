@@ -119,21 +119,21 @@ const Health = () => {
           </motion.div>
         </div>
 
-        <div className='mt-5 mb-6'>
+        <div className='mt-5 mb-6 flex flex-col items-center'>
           <h2 className='text-center mt-6 text-blue-700 text-2xl font-bold mb-4'>
             What Does Health Coverage Include?
           </h2>
           <p className='text-center mb-4 text-blue-300'>
             Here are some of the Essential Benefits the ACA plan includes:
           </p>
-          <ul className='flex flex-wrap gap-y-4 mt-14'>
+          <ul className='grid grid-cols-1 gap-y-4 mt-14 md:grid-cols-2 md:gap-x-6'>
             {healthPoints.map((feature, index) => (
-              <li key={index} className='flex w-full items-center md:w-1/2'>
+              <li key={index} className='flex items-center'>
                 <IoIosCheckbox
                   color='blue'
                   className='mr-3 w-7 h-7 flex-shrink-0 text-success-solid'
                 />
-                <span className='text-nowrap bg-gray-100 px-2 text-sm font-normal text-primary-on-primary md:text-lg'>
+                <span className='bg-gray-100 px-2 text-sm font-normal text-primary-on-primary md:text-lg'>
                   {feature}
                 </span>
               </li>
@@ -163,7 +163,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-2xl mt-4 font-semibold mb-4'>
+            <h2 className='text-2xl text-blue-700 font-bold mb-8'>
               What are Out-of-Pocket Expenses?
             </h2>
             <p className='text-[#5497a7]'>
@@ -184,10 +184,10 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-2xl mt-4 font-semibold mb-4'>
+            <h2 className='text-2xl text-blue-700 font-bold mb-8'>
               Out-of-Pocket Costs includes:
             </h2>
-            <ul className='list-none list-inside mb-6'>
+            <ul className='list-none list-inside mb-6 text-[#5497a7]'>
               <li className='mb-1'>
                 <strong className='text-sm'>Premium:</strong>
                 The fixed monthly payment you make to keep your health insurance
