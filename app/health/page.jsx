@@ -20,23 +20,24 @@ const Health = () => {
   return (
     <>
       <Header />
+      <div className='relative w-full mt-10'>
+        <img
+          src='/images/health/Health.jpg'
+          alt='Health Image'
+          className='w-full h-full md:h-[32rem] '
+        />
+        <div className='absolute inset-0 bg-black opacity-50'></div>
+        <div className='absolute inset-0 flex items-center justify-center'>
+          <h1 className='text-lg md:text-5xl font-bold text-white'>
+            Health Insurance
+          </h1>
+        </div>
+      </div>
       <div className='  p-6'>
-        <div className='text-center text-3xl mb-10 font-bold'>
+        {/* <div className='text-center text-6xl mb-10 font-bold'>
           Health Insurance
-        </div>
-        <div className='relative w-full'>
-          <img
-            src='/images/health/Health.jpg'
-            alt='Health Image'
-            className='w-full h-full md:h-[40rem] '
-          />
-          <div className='absolute inset-0 bg-black opacity-50'></div>
-          <div className='absolute inset-0 flex items-center justify-center'>
-            <h1 className='text-lg md:text-5xl font-bold text-white'>
-              Health Insurance
-            </h1>
-          </div>
-        </div>
+        </div> */}
+
         {/* <div className=''>
           <h1 className='text-2xl font-bold mb-4 mt-8 '>
             Explore the Best Health
@@ -50,7 +51,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl text-blue-700 font-bold mb-8'>
+            <h2 className='text-3xl lg:text-6xl text-blue-700 font-bold mb-8'>
               Plans for Your Family&apos;s Needs
             </h2>
             <p className=' text-lg'>
@@ -98,7 +99,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl text-blue-700 font-bold mb-8'>
+            <h2 className='text-3xl lg:text-6xl text-blue-700 font-bold mb-8'>
               Health Insurance Helps You Save
             </h2>
             <p className=' text-lg'>
@@ -163,7 +164,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl text-blue-700 mt-6 font-semibold mb-8'>
+            <h2 className='text-3xl lg:text-6xl text-blue-700 mt-6 font-semibold mb-8'>
               What are Out-of-Pocket Expenses?
             </h2>
             <p className='mb-4 text-lg'>
@@ -184,7 +185,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl text-blue-700 mt-4 font-semibold mb-4'>
+            <h2 className='text-3xl lg:text-6xl text-blue-700 mt-4 font-semibold mb-4'>
               Out-of-Pocket Costs includes:
             </h2>
             <ul className='list-none list-inside mb-6 text-lg'>
