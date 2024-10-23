@@ -32,10 +32,26 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { cn } from '@/lib/utils';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from '@/components/ui/navigation-menu';
 import Swal from 'sweetalert2';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const Header = () => {
   const pathname = usePathname(); // Get the current pathname
@@ -45,24 +61,30 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const formRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [formPosition,  setFormPosition] = useState(formRef?.current?.getBoundingClientRect()?.top)
+  const [formPosition, setFormPosition] = useState(
+    formRef?.current?.getBoundingClientRect()?.top
+  );
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validationSchema = Yup.object({
-    insuranceType: Yup.array().min(1, 'Select at least one insurance type').required(),
+    insuranceType: Yup.array()
+      .min(1, 'Select at least one insurance type')
+      .required(),
     firstName: Yup.string().required('First name is required'),
     lastName: Yup.string().required('Last name is required'),
     dob: Yup.string().required('Date of birth is required'),
     zipCode: Yup.string()
       .matches(/^\d{5}$/, 'Zip Code must be 5 digits')
       .required('Zip code is required'),
-    email: Yup.string().email('Invalid email address').optional('Email is required'),
+    email: Yup.string()
+      .email('Invalid email address')
+      .optional('Email is required'),
     phoneNumber: Yup.string()
-    .matches(
-      /^(?:(\+1\s?)?(\(\d{3}\)|\d{3})[\s-]?(\d{3})[\s-]?(\d{4})|(\d{11}))$/,
-      'Phone number must be in the format: (123) 456-7890, 123-456-7890, or 1234567890'
-    )
-    .required('Phone number is required')
+      .matches(
+        /^(?:(\+1\s?)?(\(\d{3}\)|\d{3})[\s-]?(\d{3})[\s-]?(\d{4})|(\d{11}))$/,
+        'Phone number must be in the format: (123) 456-7890, 123-456-7890, or 1234567890'
+      )
+      .required('Phone number is required'),
   });
 
   const formik = useFormik({
@@ -105,7 +127,7 @@ const Header = () => {
         .then((response) => response.json())
         .then(async (result) => {
           if (result.status === 200) {
-            if(values?.email) {
+            if (values?.email) {
               await fetch('/api/submit-lead', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -192,7 +214,7 @@ const Header = () => {
       imageUrl: '/images/slider/african.jpeg',
       title:
         'Together We are Building a Healthier Haiti, One Family at a Time.',
-      url:'/health',
+      url: '/health',
       buttonText: 'Learn More',
     },
     {
@@ -356,7 +378,7 @@ const Header = () => {
         </div>
       </div>
       {/* Main Navigation */}
-      <div className='bg-white mb-5 flex justify-center lg:justify-start items-center w-full mx-auto'>
+      <div className='bg-white mb-5 shadow-md flex justify-center lg:justify-start items-center w-full mx-auto'>
         <div className='flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]'>
           <Image
             src='/images/HHlogo.png'
@@ -365,60 +387,81 @@ const Header = () => {
             // style={{ width: '300px', height: '300px' }}
           />
         </div>
-        <div className='hidden lg:flex xl:w-9/12 w-[80%]'>
+        <div className='hidden lg:flex justify-center items-center'>
           {/* Navbar */}
-          <nav className='hidden lg:flex text-black'>
-            <div className='xl:text-xl text-base flex justify-center py-2 font-bold'>
-              <div className='space-x-7'>
-                <Link
-                  href='/'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Home
-                </Link>
-                <Link
-                  href='/about-us'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  About Us
-                </Link>
-                <Link
-                  href='/health'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Health
-                </Link>
-                <Link
-                  href='/dental'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Dental & Vision
-                </Link>
-                <Link
-                  href='/life'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Life
-                </Link>
-                <Link
-                  href='/medicare'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Medicare
-                </Link>
-                <Link
-                  href='/mission'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Mission
-                </Link>
-                <Link
-                  href='/#contact'
-                  className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
-                >
-                  Contact Us
-                </Link>
-              </div>
+          <nav className='text-black'>
+            <div className='xl:text-xl text-base flex space-x-7 font-bold'>
+              <Link
+                href='/'
+                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+              >
+                Home
+              </Link>
+              <Link
+                href='/about-us'
+                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+              >
+                About Us
+              </Link>
+
+              <NavigationMenu>
+                <NavigationMenuList className='flex'>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className='hover:text-[#17f0ff] text-xl font-semibold text-[#8d8d8d] py-2'>
+                      Products
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className='bg-white  w-[400px] shadow-lg rounded-md'>
+                      <div className='p-4'>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href='/health'
+                            className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
+                          >
+                            Health
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href='/dental'
+                            className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
+                          >
+                            Dental & Vision
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href='/life'
+                            className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
+                          >
+                            Life
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href='/medicare'
+                            className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
+                          >
+                            Medicare
+                          </Link>
+                        </NavigationMenuLink>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
+              <Link
+                href='/mission'
+                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+              >
+                Mission
+              </Link>
+              <Link
+                href='/#contact'
+                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+              >
+                Contact Us
+              </Link>
             </div>
           </nav>
         </div>
@@ -811,19 +854,27 @@ const Header = () => {
               </button>
             </form>
           </div>
-          <div className={`flex flex-col justify-between items-center lg:w-2/3 lg:pl-5 w-full min-h-full`}>
+          <div
+            className={`flex flex-col justify-between items-center lg:w-2/3 lg:pl-5 w-full min-h-full`}
+          >
             <div className='flex xl:flex-row flex-col items-center pb-4 xl:pb-0'>
-                <Image
+              <Image
                 src='/images/ContactUs.svg'
                 width={300}
                 height={500}
                 // style={{ width: '300px', height: '300px' }}
-                />
-                <div className='flex flex-col xl:items-start items-center space-y-6'>
-                  <p className='text-gray-500 text-2xl md:text-5xl'>Health <span className='text-[#B92031]'>4</span> Haitians</p>
-                  <p className='font-bold text-lg md:text-3xl'>Meet with a Licensed Agent</p>
-                  <button className='bg-[#17f0ff] p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>Contact Us</button>
-                </div>
+              />
+              <div className='flex flex-col xl:items-start items-center space-y-6'>
+                <p className='text-gray-500 text-2xl md:text-5xl'>
+                  Health <span className='text-[#B92031]'>4</span> Haitians
+                </p>
+                <p className='font-bold text-lg md:text-3xl'>
+                  Meet with a Licensed Agent
+                </p>
+                <button className='bg-[#17f0ff] p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>
+                  Contact Us
+                </button>
+              </div>
             </div>
             <Carousel plugins={[plugin.current]} className='w-full'>
               <CarouselContent>
@@ -843,7 +894,12 @@ const Header = () => {
                           <h1 className='text-lg md:text-4xl font-bold leading-normal'>
                             {slide.title}
                           </h1>
-                          <button onClick={() => {router.push(slide.url)}} className='bg-[#17f0ff] hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'>
+                          <button
+                            onClick={() => {
+                              router.push(slide.url);
+                            }}
+                            className='bg-[#17f0ff] hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'
+                          >
                             {slide.buttonText}
                           </button>
                           {/* <p className='text-sm md:text-lg'>
