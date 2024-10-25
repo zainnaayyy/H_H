@@ -20,20 +20,8 @@ const Health = () => {
   return (
     <>
       <Header />
-      <div className='relative w-full mt-10'>
-        <img
-          src='/images/health/Health.jpg'
-          alt='Health Image'
-          className='w-full h-full md:h-[32rem] '
-        />
-        <div className='absolute inset-0 bg-black opacity-50'></div>
-        <div className='absolute inset-0 flex items-center justify-center'>
-          <h1 className='text-lg md:text-5xl font-bold text-white'>
-            Health Insurance
-          </h1>
-        </div>
-      </div>
-      <div className='  p-6'>
+
+      <div className=''>
         {/* <div className='text-center text-6xl mb-10 font-bold'>
           Health Insurance
         </div> */}
@@ -43,7 +31,21 @@ const Health = () => {
             Explore the Best Health
           </h1>
         </div> */}
-        <div className='flex flex-col mt-8 md:flex-row justify-between items-center bg-gray-100'>
+
+        <div className='relative w-full mt-10 p-10 rounded-md'>
+          <img
+            src='/images/health/Health.jpg'
+            alt='Health Image'
+            className='w-full h-full md:h-[34rem] rounded-md'
+          />
+          <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div>
+          <div className='absolute inset-0 flex items-center justify-center'>
+            <h1 className='text-lg md:text-5xl font-bold text-white'>
+              Health Insurance
+            </h1>
+          </div>
+        </div>
+        <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
           {/* Left Side */}
           <motion.div
             className='w-full md:w-1/2 p-4'
@@ -72,7 +74,7 @@ const Health = () => {
             <img
               src='/images/health/Health2.jpg'
               alt='Health Plans'
-              className='w-full h-auto'
+              className='w-full h-auto rounded-md'
             />
           </motion.div>
         </div>
@@ -88,7 +90,7 @@ const Health = () => {
             <img
               src='/images/health/Health3.jpg'
               alt='Health Plans'
-              className='w-full h-auto'
+              className='w-full h-auto rounded-md'
             />
           </motion.div>
 
@@ -120,27 +122,38 @@ const Health = () => {
           </motion.div>
         </div>
 
-        <div className='mt-5 mb-6 flex flex-col items-center'>
-          <h2 className='text-center mt-6 text-blue-700 text-2xl font-bold mb-4'>
+        <motion.div
+          className='mt-10 mb-6 flex flex-col items-center bg-blue-700'
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.8 }}
+        >
+          <h2 className='text-center mt-6 text-white text-lg md:text-5xl font-bold mb-4'>
             What Does Health Coverage Include?
           </h2>
-          <p className='text-center mb-4 text-blue-300'>
+          <p className='text-center text-lg mb-4 '>
             Here are some of the Essential Benefits the ACA plan includes:
           </p>
-          <ul className='grid grid-cols-1 gap-y-4 mt-14 md:grid-cols-2 md:gap-x-6'>
+          <ul className='grid grid-cols-1 gap-y-4 mt-10 md:grid-cols-2 md:gap-x-6 mb-10'>
             {healthPoints.map((feature, index) => (
-              <li key={index} className='flex items-center'>
+              <motion.li
+                key={index}
+                className='flex items-center'
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+              >
                 <IoIosCheckbox
-                  color='blue'
+                  color='white'
                   className='mr-3 w-7 h-7 flex-shrink-0 text-success-solid'
                 />
                 <span className='bg-gray-100 px-2 text-sm font-normal text-primary-on-primary md:text-lg'>
                   {feature}
                 </span>
-              </li>
+              </motion.li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
         <div className='flex flex-col md:flex-row justify-between items-center mt-14 bg-gray-100'>
           {/* Left Side */}
@@ -153,7 +166,7 @@ const Health = () => {
             <img
               src='/images/health/Health5.jpg'
               alt='Health Image'
-              className='w-full h-full '
+              className='w-full h-full rounded-md'
             />
           </motion.div>
 
@@ -177,7 +190,7 @@ const Health = () => {
           </motion.div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between items-center mt-14 bg-gray-100'>
+        <div className='flex flex-col md:flex-row justify-between items-center mt-14 '>
           {/* Left Side */}
           <motion.div
             className='w-full md:w-1/2 p-4'
@@ -188,7 +201,7 @@ const Health = () => {
             <h2 className='text-3xl lg:text-6xl text-blue-700 mt-4 font-semibold mb-4'>
               Out-of-Pocket Costs includes:
             </h2>
-            <ul className='list-none list-inside mb-6 text-lg'>
+            <ul className='list-none list-inside mb-6 '>
               <li className='mb-1'>
                 <strong className='text-sm'>Premium:</strong>
                 The fixed monthly payment you make to keep your health insurance
@@ -228,7 +241,7 @@ const Health = () => {
             <img
               src='/images/health/Health.jpg'
               alt='Health Image'
-              className='w-full h-full '
+              className='w-full h-full rounded-md'
             />
           </motion.div>
         </div>
