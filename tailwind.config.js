@@ -31,6 +31,7 @@ module.exports = {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
           gradient: 'linear-gradient(135deg, #D20E32, #01209F)', // Your gradient from red to blue
+          aqua: '#17f0ff',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',

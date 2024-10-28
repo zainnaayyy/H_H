@@ -34,17 +34,21 @@ const Health = () => {
 
         <div className='relative w-full mt-10 p-10 rounded-md'>
           <img
-            src='/images/health/Health.jpg'
+            src='/images/health/couple.jpg'
             alt='Health Image'
             className='w-full h-full md:h-[34rem] rounded-md'
           />
-          <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div>
-          <div className='absolute inset-0 flex items-center justify-center'>
-            <h1 className='text-lg md:text-5xl font-bold text-white'>
+          {/* <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div> */}
+          <div className='absolute inset-0 flex flex-col items-end justify-center mr-[10rem]'>
+            <h1 className='text-lg text-[#17f0ff] md:text-6xl font-bold mb-4'>
               Health Insurance
             </h1>
+            <button className='bg-primary-aqua text-white  font-semibold py-2 px-4 rounded-md'>
+              Find Out More
+            </button>
           </div>
         </div>
+
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
           {/* Left Side */}
           <motion.div
@@ -53,7 +57,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-6xl text-blue-700 font-bold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-aqua font-bold mb-8'>
               Plans for Your Family&apos;s Needs
             </h2>
             <p className=' text-lg'>
@@ -62,6 +66,9 @@ const Health = () => {
               tailored to fit your needs and budget. From comprehensive coverage
               to affordable options, we&apos;ve got you covered.
             </p>
+            <button className='bg-primary-aqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
+              Get Quote
+            </button>
           </motion.div>
 
           {/* Right Side */}
@@ -101,7 +108,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-6xl text-blue-700 font-bold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-aqua font-bold mb-8'>
               Health Insurance Helps You Save
             </h2>
             <p className=' text-lg'>
@@ -111,9 +118,12 @@ const Health = () => {
               fraction of what you would otherwise.
             </p>
             <br />
-            <p className=' '>
+            <p className=' pl-2'>
               Ready to protect what matters most?
-              <a href='/appointment' className='underline text-blue-600 pr-1'>
+              <a
+                href='/appointment'
+                className='underline text-blue-600 pr-1 px-1'
+              >
                 Talk to an agent
               </a>
               today and get expert advice on choosing the best health plan for
@@ -123,7 +133,7 @@ const Health = () => {
         </div>
 
         <motion.div
-          className='mt-10 mb-6 flex flex-col items-center bg-blue-700'
+          className='mt-10 mb-6 flex flex-col items-center bg-primary-aqua'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.8 }}
@@ -131,7 +141,7 @@ const Health = () => {
           <h2 className='text-center mt-6 text-white text-lg md:text-5xl font-bold mb-4'>
             What Does Health Coverage Include?
           </h2>
-          <p className='text-center text-lg mb-4 '>
+          <p className='text-center text-white text-lg mb-4 '>
             Here are some of the Essential Benefits the ACA plan includes:
           </p>
           <ul className='grid grid-cols-1 gap-y-4 mt-10 md:grid-cols-2 md:gap-x-6 mb-10'>
@@ -177,7 +187,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-6xl text-blue-700 mt-6 font-semibold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-aqua mt-6 font-semibold mb-8'>
               What are Out-of-Pocket Expenses?
             </h2>
             <p className='mb-4 text-lg'>
@@ -198,27 +208,27 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-6xl text-blue-700 mt-4 font-semibold mb-4'>
+            <h2 className='text-3xl lg:text-5xl text-primary-aqua mt-4 font-semibold mb-4'>
               Out-of-Pocket Costs includes:
             </h2>
-            <ul className='list-none list-inside mb-6 '>
-              <li className='mb-1'>
-                <strong className='text-sm'>Premium:</strong>
+            <ul className='list-none list-inside mb-6 text-lg'>
+              <li className='mb-1 '>
+                <strong className='text-lg'>Premium:</strong>
                 The fixed monthly payment you make to keep your health insurance
                 active.
               </li>
               <li className='mb-1'>
-                <strong className='text-sm'>Deductibles:</strong>
+                <strong className='text-lg'>Deductibles:</strong>
                 The amount you must pay for covered healthcare services before
                 your insurance starts to pay.
               </li>
               <li className='mb-1'>
-                <strong className='text-sm'>Copayments:</strong>A fixed amount
+                <strong className='text-lg'>Copayments:</strong>A fixed amount
                 you pay for specific services like doctor visits or
                 prescriptions.
               </li>
               <li className='mb-1'>
-                <strong className='text-sm'>Coinsurance:</strong>A percentage of
+                <strong className='text-lg'>Coinsurance:</strong>A percentage of
                 the costs you share with your insurance company after meeting
                 your deductible.
               </li>

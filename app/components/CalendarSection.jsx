@@ -82,7 +82,8 @@ const CalendarSection = ({
         <div className='mb-4'>
           <TimePicker
             className='w-full focus:ring-2 focus:ring-[#01B6AD]'
-            format='HH:mm'
+            format='h:mm a' // 12-hour format with AM/PM
+            // use12Hours={true}
             minuteStep={15}
             onChange={(time) => setSelectedTime(time)}
             placeholder='Select Time'
