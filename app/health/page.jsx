@@ -68,9 +68,11 @@ const Health = () => {
               to affordable options, we&apos;ve got you covered.
             </p>
             <div className='flex justify-center items-center'>
-              <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
-                <Link href='/appointment'>Get Quote</Link>
-              </button>
+              <Link href='/appointment'>
+                <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
+                  Get Quote
+                </button>
+              </Link>
             </div>
           </motion.div>
 
