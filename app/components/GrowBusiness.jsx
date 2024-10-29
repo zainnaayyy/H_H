@@ -38,7 +38,10 @@ const GrowBusiness = () => {
         <h1 className='text-4xl md:text-4xl font-bold'>
           Get Your Family Covered Today!
         </h1>
-        <Button size='lg' className='bg-[#17f0ff] hover:bg-[#0A4958] mt-2 '>
+        <Button
+          size='lg'
+          className='bg-primary-darkAqua hover:bg-[#0A4958] mt-2 '
+        >
           <Link href='/appointment'>Speak to an Agent</Link>
         </Button>
       </div>

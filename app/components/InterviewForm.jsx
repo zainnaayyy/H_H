@@ -180,7 +180,7 @@ const InterviewForm = ({
             <Button
               type='primary'
               onClick={handleSubmit}
-              className='bg-[#17f0ff] '
+              className='bg-primary-darkAqua'
             >
               Schedule
             </Button>

@@ -46,7 +46,10 @@ const InsuranceService = () => {
         <h2 className='text-3xl font-bold text-gray-800'>
           We Are Here to Service Your Insurance Needs
         </h2>
-        <Button size='lg' className='bg-[#17f0ff] hover:bg-[#0A4958] mt-2 '>
+        <Button
+          size='lg'
+          className='bg-primary-darkAqua hover:bg-[#0A4958] mt-2 '
+        >
           <Link href='#contact'>Get Started</Link>
         </Button>
         <p className='text-gray-600 text-center mt-2 text-lg'>

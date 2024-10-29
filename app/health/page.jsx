@@ -40,10 +40,10 @@ const Health = () => {
           />
           {/* <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div> */}
           <div className='absolute inset-0 flex flex-col items-end justify-center mr-[10rem]'>
-            <h1 className='text-lg text-[#17f0ff] md:text-6xl font-bold mb-4'>
+            <h1 className='text-lg text-primary-darkAqua md:text-6xl font-bold mb-4'>
               Health Insurance
             </h1>
-            <button className='bg-primary-aqua text-white  font-semibold py-2 px-4 rounded-md'>
+            <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md'>
               Find Out More
             </button>
           </div>
@@ -57,7 +57,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-5xl text-primary-aqua font-bold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
               Plans for Your Family&apos;s Needs
             </h2>
             <p className=' text-lg'>
@@ -66,7 +66,7 @@ const Health = () => {
               tailored to fit your needs and budget. From comprehensive coverage
               to affordable options, we&apos;ve got you covered.
             </p>
-            <button className='bg-primary-aqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
+            <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
               Get Quote
             </button>
           </motion.div>
@@ -108,7 +108,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-5xl text-primary-aqua font-bold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
               Health Insurance Helps You Save
             </h2>
             <p className=' text-lg'>
@@ -133,7 +133,7 @@ const Health = () => {
         </div>
 
         <motion.div
-          className='mt-10 mb-6 flex flex-col items-center bg-primary-aqua'
+          className='mt-10 mb-6 flex flex-col items-center bg-primary-darkAqua'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.8 }}
@@ -187,7 +187,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-5xl text-primary-aqua mt-6 font-semibold mb-8'>
+            <h2 className='text-3xl lg:text-5xl text-primary-darkAqua mt-6 font-semibold mb-8'>
               What are Out-of-Pocket Expenses?
             </h2>
             <p className='mb-4 text-lg'>
@@ -208,7 +208,7 @@ const Health = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className='text-3xl lg:text-5xl text-primary-aqua mt-4 font-semibold mb-4'>
+            <h2 className='text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-4'>
               Out-of-Pocket Costs includes:
             </h2>
             <ul className='list-none list-inside mb-6 text-lg'>

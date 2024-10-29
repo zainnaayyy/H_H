@@ -92,7 +92,7 @@ const CalendarSection = ({
         </div>
         <Button
           type='primary'
-          className='bg-[#17f0ff] w-full mt-4'
+          className='bg-primary-darkAqua w-full mt-4'
           onClick={handleSubmit}
         >
           Submit

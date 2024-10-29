@@ -246,7 +246,7 @@ const Header = () => {
   return (
     <header id='home' className='bg-white'>
       {/* Top Bar */}
-      <div className='bg-[#17f0ff]'>
+      <div className='bg-primary-darkAqua'>
         <div className='container mx-auto text-white py-4 px-0 lg:px-6 md:px-4 flex justify-end items-center text-sm'>
           <div className='flex flex-col sm:flex-row w-full justify-between items-center'>
             <div className='flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0 sm:space-x-10'>
@@ -393,13 +393,13 @@ const Header = () => {
             <div className='xl:text-xl text-base flex space-x-7 font-bold'>
               <Link
                 href='/'
-                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+                className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
               >
                 Home
               </Link>
               <Link
                 href='/about-us'
-                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+                className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
               >
                 About Us
               </Link>
@@ -407,7 +407,7 @@ const Header = () => {
               <NavigationMenu>
                 <NavigationMenuList className='flex'>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className='hover:text-[#17f0ff] text-xl font-semibold text-[#8d8d8d] py-2'>
+                    <NavigationMenuTrigger className='hover:text-primary-darkAqua text-xl font-semibold text-[#8d8d8d] py-2'>
                       Products
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className='bg-white  w-[400px] shadow-lg rounded-md'>
@@ -452,13 +452,13 @@ const Header = () => {
 
               <Link
                 href='/mission'
-                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+                className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
               >
                 Mission
               </Link>
               <Link
                 href='/#contact'
-                className='hover:text-[#17f0ff] text-[#8d8d8d] py-2'
+                className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
               >
                 Contact Us
               </Link>
@@ -821,7 +821,7 @@ const Header = () => {
               </p>
               <button
                 type='submit'
-                className='bg-[#17f0ff] mt-3 text-white font-semibold py-2 px-6 hover:bg-[#0A4958] transition-colors flex items-center justify-center'
+                className='bg-primary-darkAqua mt-3 text-white font-semibold py-2 px-6 hover:bg-[#0A4958] transition-colors flex items-center justify-center'
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
@@ -871,7 +871,7 @@ const Header = () => {
                 <p className='font-bold text-lg md:text-3xl'>
                   Meet with a Licensed Agent
                 </p>
-                <button className='bg-[#17f0ff] p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>
+                <button className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>
                   Contact Us
                 </button>
               </div>
@@ -898,7 +898,7 @@ const Header = () => {
                             onClick={() => {
                               router.push(slide.url);
                             }}
-                            className='bg-[#17f0ff] hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'
+                            className='bg-primary-darkAqua hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'
                           >
                             {slide.buttonText}
                           </button>

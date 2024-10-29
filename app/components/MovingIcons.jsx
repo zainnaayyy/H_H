@@ -27,7 +27,7 @@ const MovingIcons = () => {
   };
 
   return (
-    <div className='relative flex justify-center items-center bg-[#17f0ff] rounded-lg w-[90%] mx-auto my-10 overflow-hidden'>
+    <div className='relative flex justify-center items-center bg-primary-darkAqua rounded-lg w-[90%] mx-auto my-10 overflow-hidden'>
       <div className='flex flex-col w-[100%] justify-between items-center'>
         {/* Counter Section */}
         <div className='flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-[50%]'>
@@ -62,7 +62,10 @@ const MovingIcons = () => {
           </div>
         </div>
         {/* Logo Section */}
-        <div className='flex flex-col justify-end h-full items-center w-[100%] my-5' animate={slideAnimation}>
+        <div
+          className='flex flex-col justify-end h-full items-center w-[100%] my-5'
+          animate={slideAnimation}
+        >
           <p className='text-base italic text-white'>Proud Partner of</p>
           <Image
             src='/images/floridaBlue.png'
