@@ -871,7 +871,7 @@ const Header = () => {
                 <p className='font-bold text-lg md:text-3xl'>
                   Meet with a Licensed Agent
                 </p>
-                <button className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-black hover:text-white'>
+                <button className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-white hover:text-white'>
                   Contact Us
                 </button>
               </div>
@@ -898,7 +898,7 @@ const Header = () => {
                             onClick={() => {
                               router.push(slide.url);
                             }}
-                            className='bg-primary-darkAqua hover:bg-[#0A4958] text-black hover:text-white font-bold py-2 px-4 rounded'
+                            className='bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded'
                           >
                             {slide.buttonText}
                           </button>
