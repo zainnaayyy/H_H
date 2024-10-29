@@ -239,7 +239,7 @@ const Health = () => {
               </li>
               <li className='mb-1'>
                 <strong className='text-lg'>Comparing Insurance Plans:</strong>
-                When comparing insurance plans, it's crucial to review all
+                When comparing insurance plans, it&apos;s crucial to review all
                 costs.
                 <a href='/' className='underline text-blue-600 pr-1'>
                   explore the best plan
