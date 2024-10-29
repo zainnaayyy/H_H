@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Health = () => {
   const healthPoints = [
@@ -66,9 +67,11 @@ const Health = () => {
               tailored to fit your needs and budget. From comprehensive coverage
               to affordable options, we&apos;ve got you covered.
             </p>
-            <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
-              Get Quote
-            </button>
+            <div className='flex justify-center items-center'>
+              <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md mt-8'>
+                <Link href='/appointment'>Get Quote</Link>
+              </button>
+            </div>
           </motion.div>
 
           {/* Right Side */}
@@ -200,7 +203,7 @@ const Health = () => {
           </motion.div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-between items-center mt-14 '>
+        <div className='flex flex-col md:flex-row justify-between items-center mt-14'>
           {/* Left Side */}
           <motion.div
             className='w-full md:w-1/2 p-4'
@@ -212,7 +215,7 @@ const Health = () => {
               Out-of-Pocket Costs includes:
             </h2>
             <ul className='list-none list-inside mb-6 text-lg'>
-              <li className='mb-1 '>
+              <li className='mb-1'>
                 <strong className='text-lg'>Premium:</strong>
                 The fixed monthly payment you make to keep your health insurance
                 active.
@@ -232,12 +235,16 @@ const Health = () => {
                 the costs you share with your insurance company after meeting
                 your deductible.
               </li>
-              {/* <li className='mb-1'>
-                <strong className='text-sm'>Out-of-Pocket Maximum:</strong>
-                The total amount you&apos;ll pay for covered services in a
-                policy period. Once you reach this limit, the insurance company
-                covers all further expenses.
-              </li> */}
+              <li className='mb-1'>
+                <strong className='text-lg'>Comparing Insurance Plans:</strong>
+                When comparing insurance plans, it's crucial to review all
+                costs.
+                <a href='/' className='underline text-blue-600 pr-1'>
+                  explore the best plan
+                </a>
+                to fit your healthcare needs and budget. Connect with our
+                licensed agent today!
+              </li>
             </ul>
           </motion.div>
 
@@ -306,7 +313,7 @@ const Health = () => {
             further expenses.
           </li>
         </ul> */}
-        <div className='mt-8'>
+        {/* <div className='mt-8'>
           <p className='text-center'>
             When comparing insurance plans, it&apos;s crucial to review all
             costs. This understanding will help you make smarter decisions. Let
@@ -317,7 +324,7 @@ const Health = () => {
             to fit your healthcare needs and budget. Connect with our licensed
             agent today!
           </p>
-        </div>
+        </div> */}
         <div className='mt-5'>
           <CTA />
         </div>
