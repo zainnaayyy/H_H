@@ -241,8 +241,8 @@ const Health = () => {
                 <strong className='text-lg'>Comparing Insurance Plans:</strong>
                 When comparing insurance plans, it&apos;s crucial to review all
                 costs.
-                <a href='/' className='underline text-blue-600 pr-1'>
-                  explore the best plan
+                <a href='/' className='underline text-blue-600 pr-1 px-1'>
+                  Explore the best plan
                 </a>
                 to fit your healthcare needs and budget. Connect with our
                 licensed agent today!
