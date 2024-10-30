@@ -37,16 +37,17 @@ const Health = () => {
           <img
             src='/images/health/couple.jpg'
             alt='Health Image'
-            className='w-full h-full md:h-[34rem] rounded-md'
+            className='w-full h-full md:h-[34rem] rounded-md object-cover'
           />
-          {/* <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div> */}
-          <div className='hidden sm:flex  absolute  inset-0 flex-col items-end justify-center mr-[10rem]'>
-            <h1 className='text-lg text-primary-darkAqua md:text-6xl font-bold mb-4'>
-              Health Insurance
-            </h1>
-            <button className='bg-primary-darkAqua text-white  font-semibold py-2 px-4 rounded-md'>
-              Find Out More
-            </button>
+          <div className='flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10'>
+            <div className='text-right mr-7 md:mr-[10rem]'>
+              <h1 className='text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4'>
+                Health Insurance
+              </h1>
+              <button className='bg-primary-darkAqua text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
+                Find Out More
+              </button>
+            </div>
           </div>
         </div>
 
@@ -218,27 +219,29 @@ const Health = () => {
             </h2>
             <ul className='list-none list-inside mb-6 text-lg'>
               <li className='mb-1'>
-                <strong className='text-lg'>Premium:</strong>
+                <strong className='text-lg pr-1'>Premium:</strong>
                 The fixed monthly payment you make to keep your health insurance
                 active.
               </li>
               <li className='mb-1'>
-                <strong className='text-lg'>Deductibles:</strong>
+                <strong className='text-lg pr-1'>Deductibles:</strong>
                 The amount you must pay for covered healthcare services before
                 your insurance starts to pay.
               </li>
               <li className='mb-1'>
-                <strong className='text-lg'>Copayments:</strong>A fixed amount
-                you pay for specific services like doctor visits or
+                <strong className='text-lg pr-1'>Copayments:</strong>A fixed
+                amount you pay for specific services like doctor visits or
                 prescriptions.
               </li>
               <li className='mb-1'>
-                <strong className='text-lg'>Coinsurance:</strong>A percentage of
-                the costs you share with your insurance company after meeting
-                your deductible.
+                <strong className='text-lg pr-1'>Coinsurance:</strong>A
+                percentage of the costs you share with your insurance company
+                after meeting your deductible.
               </li>
               <li className='mb-1'>
-                <strong className='text-lg'>Comparing Insurance Plans:</strong>
+                <strong className='text-lg pr-1'>
+                  Comparing Insurance Plans:
+                </strong>
                 When comparing insurance plans, it&apos;s crucial to review all
                 costs.
                 <a href='/' className='underline text-blue-600 pr-1 px-1'>

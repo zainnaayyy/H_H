@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebookF, FaYoutube, FaShoppingCart, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
 const services = [
@@ -22,24 +22,28 @@ const Footer = () => {
   return (
     <footer className='bg-footer text-white pt-5'>
       <div className='max-w-7xl mx-auto px-4 mb-6 sm:px-6 lg:px-8'>
-        <div className='grid grid-cols-1 md:grid-cols-3'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
           {/* Logo and Description */}
-          <div>
+          <div className='flex flex-col items-center md:items-start mb-6 md:mb-0'>
             <Image
               src='/images/H4HLogo.svg'
               width={175}
               height={150}
+              alt='Health for Haitians Logo'
             />
-            {/* <p className='text-4xl'>Health <span className='text-[#B92031]'> For</span> Haitians</p> */}
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className='text-xl font-bold mb-4'>Company</h3>
-
+          <div className='mb-6 md:mb-0'>
+            <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
+              Company
+            </h3>
             <ul className='space-y-2'>
               {services.map((service, index) => (
-                <li key={index} className='flex items-center'>
+                <li
+                  key={index}
+                  className='flex items-center justify-center md:justify-start'
+                >
                   <span className='mr-2 text-white'>
                     <IoIosArrowDroprightCircle />
                   </span>
@@ -53,14 +57,19 @@ const Footer = () => {
 
           {/* Useful Links */}
           <div>
-            <h3 className='text-xl font-bold mb-4'>Useful Links</h3>
+            <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
+              Useful Links
+            </h3>
             <ul className='space-y-2'>
               {usefulLinks.map((link, index) => (
-                <li key={index} className='flex items-center'>
+                <li
+                  key={index}
+                  className='flex items-center justify-center md:justify-start'
+                >
                   <span className='mr-2 text-white'>
                     <IoIosArrowDroprightCircle />
                   </span>
-                  <Link href={link.href} className='hover:text-blue-600 w-full'>
+                  <Link href={link.href} className='hover:text-blue-600'>
                     {link.name}
                   </Link>
                 </li>
@@ -68,15 +77,15 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Footer Bottom */}
       </div>
-      <div className='bg-black w-full'>
-        <div className='border-t w-[80%] mx-auto bg-black border-gray-700 h-16 px-5 flex flex-col md:flex-row justify-between items-center'>
-          <p className='text-xs sm:text-lg'>
+
+      {/* Footer Bottom */}
+      <div className='bg-black w-full py-4'>
+        <div className='border-t border-gray-700 w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center py-4'>
+          <p className='text-xs sm:text-lg text-center md:text-left mb-4 md:mb-0'>
             © 2024 Health for Haitians. All Rights Reserved.
           </p>
-          <div className='flex space-x-4 pb-2 mt-0 sm:mt-4 md:mt-0'>
+          <div className='flex space-x-4'>
             <FaFacebookF className='text-white hover:text-blue-500 cursor-pointer' />
             <FaWhatsapp className='text-white hover:text-green-500 cursor-pointer' />
             <FaInstagram className='text-white hover:text-red-500 cursor-pointer' />
