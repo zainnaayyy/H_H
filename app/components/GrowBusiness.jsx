@@ -34,7 +34,7 @@ const GrowBusiness = () => {
           <FaPlay className='h-10 w-10 text-white' />
         </button>
       </div> */}
-      <div className='flex flex-col justify-center items-center text-center mt-8 text-white z-50'>
+      <div className='flex flex-col justify-center items-center text-center mt-8 text-white z-10'>
         <h1 className='text-4xl md:text-4xl font-bold'>
           Get Your Family Covered Today!
         </h1>

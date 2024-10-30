@@ -388,7 +388,7 @@ const Header = () => {
         </div>
         {/* Main Navigation */}
       </header>
-      <header className='bg-white sticky top-0 z-10'>
+      <header className='bg-white sticky top-0 z-50'>
         <div className='bg-white mb-5 shadow-md  flex justify-center lg:justify-start items-center w-full mx-auto'>
           <div className='flex lg:pl-[5rem] justify-center items-center text-[#0A4958] my-5 xl:w-5/12 w-[20%]'>
             <Image
@@ -477,6 +477,8 @@ const Header = () => {
             </nav>
           </div>
         </div>
+      </header>
+      <header>
         {/* Hero Section */}
         {isHomePage ? (
           <div className='w-full mx-auto px-4 xl:pl-20 lg:pr-10 lg:flex justify-between mb-8'>
