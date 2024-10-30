@@ -40,7 +40,7 @@ const Health = () => {
             className='w-full h-full md:h-[34rem] rounded-md'
           />
           {/* <div className='absolute inset-0 bg-black opacity-50 m-10 rounded-md'></div> */}
-          <div className='absolute inset-0 flex flex-col items-end justify-center mr-[10rem]'>
+          <div className='hidden sm:flex  absolute  inset-0 flex-col items-end justify-center mr-[10rem]'>
             <h1 className='text-lg text-primary-darkAqua md:text-6xl font-bold mb-4'>
               Health Insurance
             </h1>
