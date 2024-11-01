@@ -25,11 +25,11 @@ const AboutUs = () => {
 
         <div className='relative w-full mt-10 p-10 rounded-md'>
           <img
-            src='/images/about/about.jpg'
+            src='/images/about/about4.jpg'
             alt='Health Image'
             className='w-full h-full md:h-[40rem] rounded-md object-cover'
           />
-          <div className='flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10'>
+          {/* <div className='flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10'>
             <div className='text-right mr-7 md:mr-[10rem]'>
               <h1 className='text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4'>
                 Medicare
@@ -38,7 +38,7 @@ const AboutUs = () => {
                 <Link href='/appointment'>Find Out More</Link>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
