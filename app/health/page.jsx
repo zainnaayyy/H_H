@@ -45,7 +45,7 @@ const Health = () => {
                 Health Insurance
               </h1>
               <button className='bg-primary-darkAqua text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
-                Find Out More
+                <Link href='/appointment'>Find Out More</Link>
               </button>
             </div>
           </div>
