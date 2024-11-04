@@ -27,7 +27,7 @@ const Life = () => {
 
         <div className='relative w-full mt-10 p-10 rounded-md'>
           <img
-            src='/images/life/life1.jpg'
+            src='/images/life/life.jpg'
             alt='Health Image'
             className='w-full h-full md:h-[40rem] rounded-md object-cover'
           />
@@ -83,7 +83,7 @@ const Life = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src='/images/life/life.jpg'
+              src='/images/life/life1.jpg'
               alt='Health Plans'
               className='w-full h-auto rounded-md'
             />

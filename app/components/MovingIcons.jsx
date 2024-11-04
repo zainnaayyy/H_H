@@ -8,7 +8,9 @@ const MovingIcons = () => {
   // Get the current year
   const currentYear = new Date().getFullYear();
   // Set the target date to November 1st of the current year
-  const targetTime = new Date(currentYear, 10, 1); // Month is 0-indexed, so 10 is November
+  // const targetTime = new Date(currentYear, 10, 1);
+  // Month is 0-indexed, so 10 is November
+  const targetTime = new Date(2024, 11, 15);
 
   const { seconds, minutes, hours, days } = useTimer({
     expiryTimestamp: targetTime,
@@ -32,7 +34,8 @@ const MovingIcons = () => {
         {/* Counter Section */}
         <div className='flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-[50%]'>
           <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold text-center'>
-            Open Enrollment Begins November 1st...
+            Enroll Now! Open Enrollment Ends December 15th..
+            {/* Open Enrollment Begins November 1st... */}
           </p>
           <div className='flex space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10'>
             <div className='flex flex-col text-white font-semibold items-center'>
