@@ -126,7 +126,7 @@ const Life = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src='/images/life/life1.jpg'
+              src='/images/life/Life1.jpg'
               alt='Health Plans'
               className='w-full h-auto rounded-md'
             />
