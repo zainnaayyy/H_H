@@ -34,7 +34,7 @@ const Medicare = () => {
               <h1 className='text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4'>
                 Medicare
               </h1>
-              <button className='bg-primary-darkAqua text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
+              <button className='bg-[#B92031] text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
                 <Link href='/appointment'>Find Out More</Link>
               </button>
             </div>
@@ -62,7 +62,7 @@ const Medicare = () => {
             <div className='flex justify-center items-center'>
               <Link href='/appointment'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                  Get Quote
+                  Get a Quote
                 </button>
               </Link>
             </div>
@@ -92,7 +92,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src='/images/medi/medi4.jpg'
+              src='/images/medi/medi3.jpg'
               alt='Health Plans'
               className='w-full h-auto rounded-md'
             />
@@ -163,7 +163,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src='/images/medi/medi3.jpg'
+              src='/images/medi/medi4.jpg'
               alt='Health Image'
               className='w-full h-full rounded-md'
             />

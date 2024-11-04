@@ -71,7 +71,7 @@ const Health = () => {
             <div className='flex justify-center items-center'>
               <Link href='/appointment'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                  Get Quote
+                  Get a Quote
                 </button>
               </Link>
             </div>
