@@ -31,9 +31,33 @@ const Life = () => {
             alt='Health Image'
             className='w-full h-full md:h-[40rem] rounded-md object-cover'
           />
+          <div className='flex absolute inset-0 flex-col items-start justify-center p-4 sm:p-10'>
+            <div className='hidden sm:block text-center ml-7 md:mr-[10rem]'>
+              <h1 className='text-sm text-blue-900 md:text-4xl lg:text-6xl font-bold mb-4'>
+                Life
+              </h1>
+              <button className='bg-blue-800 text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
+                <Link href='/appointment'>Get Your Free Quote Today!</Link>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
+          {/* Right Side */}
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src='/images/life/Life3.jpg'
+              alt='Health Plans'
+              className='w-full h-auto rounded-md'
+            />
+          </motion.div>
+
           {/* Left Side */}
           <motion.div
             className='w-full md:w-1/2 p-4'
@@ -58,36 +82,10 @@ const Life = () => {
               </Link>
             </div>
           </motion.div>
-
-          {/* Right Side */}
-          <motion.div
-            className='w-full md:w-1/2 p-4'
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img
-              src='/images/life/life3.jpg'
-              alt='Health Plans'
-              className='w-full h-auto rounded-md'
-            />
-          </motion.div>
         </div>
 
         <div className='flex flex-col md:flex-row justify-between items-center mt-14 bg-gray-100'>
           {/* Left Side */}
-          <motion.div
-            className='w-full md:w-1/2 p-4'
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <img
-              src='/images/life/life1.jpg'
-              alt='Health Plans'
-              className='w-full h-auto rounded-md'
-            />
-          </motion.div>
 
           {/* Right Side */}
           <motion.div
@@ -119,6 +117,19 @@ const Life = () => {
                 daily expenses, or long-term financial stability.
               </li>
             </ul>
+          </motion.div>
+
+          <motion.div
+            className='w-full md:w-1/2 p-4'
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              src='/images/life/life1.jpg'
+              alt='Health Plans'
+              className='w-full h-auto rounded-md'
+            />
           </motion.div>
         </div>
 
