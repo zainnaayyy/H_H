@@ -1,0 +1,417 @@
+{
+  "navigation": {
+    "navigate": "Navigate",
+    "choose_page": "Choose a page to navigate to:",
+    "menu_items": {
+      "home": "Home",
+      "about_us": "About Us",
+      "health": "Health",
+      "dental_vision": "Dental & Vision",
+      "life": "Life",
+      "medicare": "Medicare",
+      "mission": "Mission",
+      "contact": "Contact",
+      "products": "Products",
+      "contact_us": "Contact Us"
+    },
+    "close": "Close"
+  },
+
+  "slides": [
+    {
+      "imageUrl": "/images/slider/african.jpeg",
+      "title": "Together We are Building a Healthier Haiti, One Family at a Time.",
+      "url": "/health",
+      "buttonText": "Learn More"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpeg",
+      "title": "Comprehensive Health Plans for Individuals, Family and Medicare Options.",
+      "url": "/health",
+      "buttonText": "Compare Plans"
+    },
+    {
+      "imageUrl": "/images/slider/african2.jpg",
+      "title": "Find an Affordable Dental & Vision Plan for Your Family.",
+      "url": "/dental",
+      "buttonText": "Request Quotes"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpg",
+      "title": "Protect Your Family's Financial Future with Life Insurance.",
+      "url": "/appointment",
+      "buttonText": "Contact Agent"
+    }
+  ],
+
+  "contact_form": {
+    "title": "Get Covered Today!",
+    "subtitle": "Choose your Insurance Type",
+    "fields": {
+      "full_name": "Full Name",
+      "date_of_birth": "Date of Birth",
+      "zip_code": "Zip Code",
+      "email": "Email",
+      "mobile_phone": "Mobile phone number (US only)",
+      "text_consent": "Text me with news & offers"
+    },
+    "consent_notice": "By clicking the button below, you consent to receiving marketing emails and text messages. Additionally, you consent to being contacted by phone call, an automatic telephone dialing system, text message at the telephone number you provided above or by email. You understand this is not a condition of purchase and you may also receive a quote by contacting us by phone. You may revoke this consent at any time by contacting us at 844-544-0663 or info@h4hinsurance.com. You understand your carrier's message and data rates may apply.",
+    "links": {
+      "privacy_policy": "View Privacy Policy",
+      "sms_terms": "SMS Terms of Service"
+    }
+  },
+
+  "sms_terms": {
+    "please_read": "Please read and review our SMS Terms of Service below.",
+    "description": {
+      "title": "SMS Services Description:",
+      "content": "Your use of the Health For Haitians services to receive short message services and/or multi-media services  for marketing and non-marketing purposes is subject to these SMS Terms of Service (these SMS Terms). The SMS Services and our collection and use of your personal information is also subject to our SMS Privacy Policy. By enrolling to use, using or accessing the SMS Services, you accept and agree to these SMS Terms and our SMS Privacy Policy."
+    },
+    "services_description": {
+      "title": "SMS Services Description:",
+      "content": "We may send marketing and non-marketing Messages through the SMS Services which may include transactional Messages. Marketing Messages advertise and promote our products and services and may include promotions, specials, other marketing offers, abandoned checkout reminders and other relevant information. Transactional Messages relate to an existing or ongoing transaction and may include updates and other transaction-related information. Messages may be sent using an automated technology, including an autodialer, automated system, or automatic telephone dialing system. Message frequency will vary. You agree that we and our third-party service providers may send you Messages regarding the foregoing topics and that such Messages and/or calls may be made or placed using different telephone numbers or short codes. We do not charge for Messages sent through the SMS Services but you are responsible for any Message and data rates imposed by your mobile provider, as standard data and Message rates may apply for short Message alerts. We do not share text message opt-in consents or related mobile telephone numbers with third parties, except with our service providers and vendors to provide our SMS Services."
+    },
+    "eligibility": {
+      "title": "Eligibility:",
+      "content": "To receive SMS Services, you must be a resident of the United States and 18 years of age or older."
+    },
+    "user_opt_in": {
+      "title": "User Opt-In:",
+      "content": "By providing your mobile phone number to us, you are voluntarily opting in to the SMS Services and you agree to receive recurring Messages from us at the mobile phone number associated with your opt-in, even if such number is registered on any state or federal Do Not Call list. You represent that any mobile phone number you provide to us is a valid mobile phone number of which you are the valid account owner or authorized user. If you change your mobile phone number or are no longer the valid account owner or authorized user of the mobile phone number, you are responsible for notifying us immediately at info@H4Hinsurance.com. You agree to indemnify us in full for all claims, expenses, and damages related to or caused in whole or in part by your failure to notify us if you change your mobile phone number including, but not limited to, all claims, expenses, and damages related to or arising under the Telephone Consumer Protection Act. Your use of the SMS Services is not required to make any purchase from us and your use of the SMS Services is completely voluntary."
+    },
+    "opt_in_success": {
+      "title": "  User Opt-Out and Support:",
+      "content": "You may opt-out of the SMS Services at any time. If you wish to opt-out of the SMS Services and stop receiving Messages from us, or you no longer agree to these SMS Terms, reply STOP, QUIT, CANCEL, OPT-OUT, or UNSUBSCRIBE to any Message from us. You may continue to receive Messages for a short period while we process your request and you may receive a one-time opt-out confirmation message. You understand and agree that the foregoing is the only reasonable method of opting out. If you want to use the SMS Services again, just opt-in as you did the first time, or text START to a Message sent by us, and we will start sending Messages to you again. For support, reply HELP to any Message from us. The SMS Services may not recognize requests that modify the foregoing commands, and you agree that we and our service providers will not be liable for failing to honor requests that do not comply with the requirements in these SMS Terms. We may also change the telephone number or short code we use to operate the SMS Services and we will notify you of any such change. You acknowledge that any requests sent to a telephone number or short code that has been changed may not be received by us and we will not be responsible for failing to honor a request sent to a telephone number or short code that has been changed."
+    },
+    "warranty": {
+      "title": "Disclaimer of Warranty and Liability:",
+      "content": "The SMS Services are offered on an “as-is” basis and may not be available in all areas, at all times, or on all mobile providers. You agree that neither we nor our service providers will be liable for any failed, delayed, or misdirected delivery of any Message or information sent through the SMS Services. To the fullest extent permissible pursuant to applicable law, we are not responsible and will not be liable for any damages of any nature, including without limitation any incidental, special or consequential damages (such as lost profits or lost business opportunities), punitive damages or attorney’s fees."
+    },
+    "modification": {
+      "title": " Modifications:",
+      "content": "We may revise, modify, amend, suspend or cancel all or any part of the SMS Services or any of its features at any time, with or without notice. To the extent permitted by applicable law, we may also modify these SMS Terms at any time. Any such modification will take effect when it is posted to our website or websites associated with the SMS Services. You agree to review these SMS Terms periodically to ensure that you are aware of any modifications. Your continued use of the SMS Services will constitute your acceptance of those modifications or changes. If you have any questions about this terms of service, contact us at: Health For Haitians, 1000 NW 65th St. Suite 103, Fort Lauderdale, FL 33309. Email: info@H4Hinsurance.com. Phone: 1-844-544-0663"
+    }
+  },
+
+  "company": {
+    "title": "Company",
+    "useful_links": {
+      "title": "Useful Links"
+    },
+    "services": ["Privacy Policy", "Terms of Service", "SMS Terms & Condition"],
+    "useful_links_data": [
+      {
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "name": "About Us",
+        "href": "/about-us"
+      },
+      {
+        "name": "Products",
+        "href": "/#products"
+      },
+      {
+        "name": "Mission",
+        "href": "/mission"
+      },
+      {
+        "name": "Contact Us",
+        "href": "/#contact"
+      }
+    ],
+    "copyright": "© 2024 Health for Haitians. All Rights Reserved."
+  },
+
+  "home": {
+    "hero": {
+      "title": "Health 4 Haitians",
+      "subtitle": "Meet with a Licensed Agent",
+      "cta_button": "Contact Us"
+    },
+    "main_section": {
+      "title": "We Are Here to Service Your Insurance Needs",
+      "description": "Insurance can leave you with a lot of questions, let us help you make the best informed decision.",
+      "cta_button": "Get Started"
+    },
+    "services": [
+      {
+        "title": "Health Insurance",
+        "description": "The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.",
+        "imageUrl": "/images/health.jpeg",
+        "url": "/health",
+        "icon": "💉"
+      },
+      {
+        "title": "Life Insurance",
+        "description": "Let us help you navigate the key to financial security.",
+        "imageUrl": "/images/life.jpeg",
+        "url": "/life",
+        "icon": "👨‍👩‍👧"
+      },
+      {
+        "title": "Dental & Vision",
+        "description": "We provide affordable dental and vision policies for your overall health.",
+        "imageUrl": "/images/dental.jpeg",
+        "url": "/dental",
+        "icon": "🦷"
+      },
+      {
+        "title": "Medicare",
+        "description": "Finding the right medicare supplement can be challenging, we are here to help.",
+        "imageUrl": "/images/medicare.jpeg",
+        "url": "/medicare",
+        "icon": "⚕️"
+      }
+    ],
+    "enrollment_section": {
+      "title": "Enroll Now! Open Enrollment Ends December 15th.",
+      "time_labels": {
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+      }
+    },
+    "partner_section": {
+      "text": "Proud Partner of",
+      "logo_alt": "Company Logo"
+    }
+  },
+
+  "growBusiness": {
+    "title": "Get Your Family Covered Today!",
+    "button": "Speak to an Agent"
+  },
+
+  "about_us": {
+    "title": "About Us",
+    "description": "Discover our mission, vision, and the journey that drives our passion for healthcare access.",
+    "sections": [
+      {
+        "heading": "A Personal Mission: From Immigrant Experience to Empowerment",
+        "paragraph": "Founded by a Haitian immigrant with first-hand experience of the unique challenges Haitians face when trying to access the American Dream, our mission is deeply personal.",
+        "button": "Get a Quote"
+      },
+      {
+        "heading": "A Vision for Holistic Empowerment",
+        "paragraph": "Like everyone else, he envisions helping the Haitian community gain access to essential opportunities such as healthcare, education, jobs, networks, housing, nutrition, investing, and personal growth. His wife, also of Caribbean descent, shares this vision and dreams of expanding these efforts to all Caribbean Islands. While our goal is to support all underserved communities, our team is particularly focused on Haitians, who are among the most underserved. Health is the foundation of life, which is why we begin our work here."
+      },
+      {
+        "heading": "Bridging the Healthcare Gap for Haitians",
+        "paragraph": "Access to quality healthcare is vital for the well-being of individuals and families, yet many in the Haitian community face significant barriers to obtaining proper health coverage. Language differences, lack of information, and financial constraints are just a few of the obstacles that prevent them from accessing the care they need. Our mission is to bridge this gap by providing Creole-speaking resources to help Haitian individuals and families navigate the complex healthcare system and secure the coverage necessary for a healthier future."
+      },
+      {
+        "heading": "Expanding Access to Quality Healthcare Services",
+        "paragraph": "Whether they need Medicaid, health insurance, Medicare, or life insurance, we believe that everyone deserves access to high-quality service and support. Looking ahead, we aim to expand our outreach, ensuring that every member of the Haitian community has the knowledge and resources to protect their health and well-being."
+      }
+    ]
+  },
+
+  "appointments": {
+    "title": "Appointment Scheduling",
+    "description": "Effortlessly schedule your appointment with flexible options and receive instant confirmation via email.",
+    "services": [
+      {
+        "title": "Call us now",
+        "description": "Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone."
+      },
+      {
+        "title": "Schedule for a Phone Appointment",
+        "description": "Conveniently book your appointment for a meeting by phone at a preferred date and time."
+      },
+      {
+        "title": "Face-to-Face Meeting",
+        "description": "Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience."
+      },
+      {
+        "title": "Virtual Consultation",
+        "description": "Connect with us online through a virtual meeting. Get the same expert advice from the comfort of your home."
+      }
+    ],
+    "appointment_messages": {
+      "success": "Appointment scheduled for {date} at {time}",
+      "error": "Please select both date and time."
+    }
+  },
+
+  "dental_vision": {
+    "title": "Dental & Vision",
+    "description": "Affordable Dental & Vision Insurance Plans for Your Family",
+    "content": {
+      "benefits_title": "Benefits of Dental Insurance:",
+      "benefits": [
+        {
+          "title": "Enroll Anytime",
+          "description": "There is no need to wait for open enrollment—you can sign up for coverage year-round!"
+        },
+        {
+          "title": "Fast Activation",
+          "description": "Enroll today, and your coverage could begin as soon as next month."
+        },
+        {
+          "title": "Coverage Anywhere",
+          "description": "Our plans are available across the country, making it easy for nearly anyone to get covered."
+        }
+      ],
+      "call_to_action": "Get Started Today! Explore our plans and see how easy it is to protect your smile."
+    },
+    "images": {
+      "main_image": "/images/dental/dental.jpg",
+      "secondary_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
+      ]
+    }
+  },
+
+  "health": {
+    "sections": [
+      {
+        "title": "Health Insurance",
+        "button_text": "Find Out More",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Plans for Your Family's Needs",
+        "description": "Finding the right health plan for your family is easier than ever! Our Health Insurance options offer a wide variety of plans tailored to fit your needs and budget. From comprehensive coverage to affordable options, we've got you covered.",
+        "button_text": "Get a Quote",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Health Insurance Helps You Save",
+        "description": "Without coverage, even a single hospital visit can result in thousands of dollars in medical bills. Health insurance helps you manage these costs by sharing the burden and ensuring you pay a fraction of what you would otherwise.",
+        "call_to_action": "Ready to protect what matters most? Talk to an agent today and get expert advice on choosing the best health plan for you and your loved ones.",
+        "link_text": "Talk to an agent",
+        "link": "/appointment"
+      },
+      {
+        "title": "What Does Health Coverage Include?",
+        "description": "Here are some of the Essential Benefits the ACA plan includes:"
+      },
+      {
+        "title": "What are Out-of-Pocket Expenses?",
+        "description": "Out-of-pocket expenses are the costs you pay directly for healthcare services that aren't covered by your health insurance plan. Understanding these costs is crucial to budgeting for your healthcare needs and preventing unexpected financial strain."
+      },
+      {
+        "title": "Out-of-Pocket Costs includes:",
+        "list": [
+          {
+            "item": "Premium",
+            "description": "The fixed monthly payment you make to keep your health insurance active."
+          },
+          {
+            "item": "Deductibles",
+            "description": "The amount you must pay for covered healthcare services before your insurance starts to pay."
+          },
+          {
+            "item": "Copayments",
+            "description": "A fixed amount you pay for specific services like doctor visits or prescriptions."
+          },
+          {
+            "item": "Coinsurance",
+            "description": "A percentage of the costs you share with your insurance company after meeting your deductible."
+          },
+          {
+            "item": "Comparing Insurance Plans",
+            "description": "When comparing insurance plans, it's crucial to review all costs. Explore the best plan to fit your healthcare needs and budget. Connect with our licensed agent today!"
+          }
+        ]
+      }
+    ]
+  },
+
+  "life": {
+    "header": {
+      "title": "Life",
+      "button": "Get Your Free Quote Today!",
+      "image": {
+        "src": "/images/life/life.jpg",
+        "alt": "Health Image"
+      }
+    },
+    "main_content": [
+      {
+        "title": "Get a Personalized Quote... Take the First Step Today!",
+        "description": "Your family's future is too important to leave to chance. Start securing your financial legacy today by exploring our life insurance options. Get your free quote and take the first step towards peace of mind.",
+        "button": "Get a Quote"
+      },
+      {
+        "title": "Protect Your Loved Ones with Life Insurance",
+        "description": "Life is unpredictable, but your family's future doesn't have to be. Life insurance provides peace of mind, knowing that your family or dependents will be financially protected if the unexpected happens.",
+        "bullet_points": [
+          "Have dependents, like children or a spouse, who rely on your income.",
+          "Carry significant debt, such as a mortgage, loans, or credit card debt.",
+          "Want to ensure your family has financial support for education, daily expenses, or long-term financial stability."
+        ]
+      }
+    ]
+  },
+
+  "medicare": {
+    "header": {
+      "title": "Medicare",
+      "button": "Find Out More",
+      "image": {
+        "src": "/images/medi/medi1.jpg",
+        "alt": "Health Image"
+      }
+    },
+    "main_content": [
+      {
+        "title": "Medicare Coverage Made Simple, Affordable, and Tailored to Your Needs.",
+        "description": "Turning 65 and navigating Medicare can be overwhelming, but we're here to help. Whether you're enrolling for the first time, exploring additional coverage options, or switching plans, we'll guide you every step of the way.",
+        "button": "Get a Quote"
+      },
+      {
+        "title": "Compare Medicare Plans Now!",
+        "description": "Don't leave your healthcare to chance. Explore our Medicare plans today and find coverage that keeps you healthy, protected, and worry-free. With our expert guidance and simple tools, you can confidently choose the best plan for your needs. Call to speak with a licensed Medicare expert today!",
+        "bullet_points": [
+          {
+            "title": "Medicare Advantage:",
+            "text": "Medicare Advantage plans combine hospital insurance (Part A) and medical insurance (Part B) into one plan. Many of these plans also offer prescription drug coverage (Part D), along with extra benefits like vision, dental, and hearing."
+          },
+          {
+            "title": "Medicare Supplement:",
+            "text": "Medicare Supplement plans help cover out-of-pocket costs that traditional Medicare doesn't, such as copayments, coinsurance, and deductibles. Choose from a variety of plans designed to save you money and protect you from high medical bills."
+          },
+          {
+            "title": "Prescription Drug Plans:",
+            "text": "Get coverage for prescription medications with a Part D plan. You'll have access to a broad network of pharmacies and coverage for the drugs you need."
+          }
+        ]
+      }
+    ]
+  },
+  "mission": {
+    "content": [
+      {
+        "section": "Mission",
+        "text": "Our mission is to improve the lives of Haiti's underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives."
+      },
+      {
+        "section": "Call to Action",
+        "text": "Find Out More"
+      },
+      {
+        "section": "How We Make a Difference",
+        "text": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time."
+      },
+      {
+        "section": "Investment Importance",
+        "text": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change."
+      },
+      {
+        "section": "Breaking Down Barriers",
+        "text": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy."
+      },
+      {
+        "section": "Unlocking Potential",
+        "text": "Empowering Haitians unlocks their full potential, generating innovation, cultural diversity, and a more inclusive society. When we uplift our own, we build a future where everyone thrives."
+      }
+    ]
+  }
+}

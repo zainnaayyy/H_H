@@ -1,0 +1,414 @@
+{
+  "navigation": {
+    "navigate": "Navige",
+    "choose_page": "Chwazi yon paj pou navige:",
+    "menu_items": {
+      "home": "Akèy",
+      "about_us": "Sou nou",
+      "health": "Sante",
+      "dental_vision": "Dantè & Vizyon",
+      "life": "Lavi",
+      "medicare": "Medicare",
+      "mission": "Misyon",
+      "contact": "Kontak",
+      "products": "Pwodwi yo",
+      "contact_us": "Kontakte nou"
+    },
+    "close": "Fèmen"
+  },
+
+  "slides": [
+    {
+      "imageUrl": "/images/slider/african.jpeg",
+      "title": "Ansanm Nou ap Bati yon Ayiti ki Pi An Sante, Yon Fanmi a la Fwa.",
+      "url": "/health",
+      "buttonText": "Aprann Plis"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpeg",
+      "title": "Plan Sante Konplè pou Endividyèl, Fanmi ak Opsyon Medicare.",
+      "url": "/health",
+      "buttonText": "Konpare Plan yo"
+    },
+    {
+      "imageUrl": "/images/slider/african2.jpg",
+      "title": "Jwenn yon Plan Dantal ak Vizyon Abòdab pou Fanmi Ou.",
+      "url": "/dental",
+      "buttonText": "Mande Pri"
+    },
+    {
+      "imageUrl": "/images/slider/african3.jpg",
+      "title": "Pwoteje Avni Finansye Fanmi Ou ak Asirans Lavi.",
+      "url": "/appointment",
+      "buttonText": "Kontakte Ajan"
+    }
+  ],
+
+  "contact_form": {
+    "title": "Kouvri jodi a!",
+    "subtitle": "Chwazi tip asirans ou",
+    "fields": {
+      "full_name": "Non konplè",
+      "date_of_birth": "Dat nesans",
+      "zip_code": "Kòd postal",
+      "email": "Imèl",
+      "mobile_phone": "Nimewo telefòn mobil (Sèlman pou Etazini)",
+      "text_consent": "Voye mesaj mwen ak nouvèl & òf"
+    },
+    "consent_notice": "Lè ou klike sou bouton ki anba a, ou dakò pou resevwa imèl maketing ak mesaj tèks. Anplis de sa, ou dakò pou kontakte pa apèl telefòn, yon sistèm apèl otomatik, mesaj tèks nan nimewo telefòn ou te bay la anwo a oswa pa imèl. Ou konprann sa a se pa yon kondisyon pou acha e ou ka resevwa yon sitasyon tou pa kontakte nou pa telefòn. Ou ka revoke konsantman sa a nenpòt ki lè lè ou kontakte nou nan 844-544-0663 oswa info@h4hinsurance.com. Ou konprann ke frè mesaj ak done karyè ou ka aplike.",
+    "links": {
+      "privacy_policy": "Gade Politik Konfidansyalite",
+      "sms_terms": "Tèm sèvis SMS"
+    }
+  },
+
+  "sms_terms": {
+    "please_read": "Tanpri li epi revize tèm sèvis SMS nou yo anba a.",
+    "description": {
+      "title": "Deskripsyon Sèvis SMS:",
+      "content": "Itilizasyon sèvis Health For Haitians pou resevwa sèvis mesaj kout ak/oswa sèvis multimédia pou rezon maketing ak non-maketing se subject a tèm sèvis SMS sa yo. Sèvis SMS yo ak koleksyon ak itilizasyon enfòmasyon pèsonèl ou se subject a politik konfidansyalite SMS nou an. Lè ou enskri pou itilize, itilize oswa aksè sèvis SMS yo, ou aksepte e ou dakò ak tèm SMS sa yo ak politik konfidansyalite SMS nou an."
+    },
+    "services_description": {
+      "title": "Deskripsyon Sèvis SMS:",
+      "content": "Nou ka voye mesaj maketing ak non-maketing atravè sèvis SMS yo ki ka enkli mesaj tranzaksyonèl. Mesaj maketing yo piblisite ak ankouraje pwodwi ak sèvis nou yo e yo ka enkli pwomosyon, espesyal, lòt òf maketing, rapèl abandone pou tèt ou ak lòt enfòmasyon ki enpòtan. Mesaj tranzaksyonèl yo gen rapò ak yon tranzaksyon ki egziste oswa ki ap fèt e yo ka enkli ajou ak lòt enfòmasyon ki gen rapò ak tranzaksyon an. Mesaj yo ka voye ak teknoloji otomatik, ki gen ladan yon autodialer, sistèm otomatik, oswa sistèm apèl otomatik. Frekans mesaj yo ap varye."
+    },
+    "eligibility": {
+      "title": "Elijibilite:",
+      "content": "Pou resevwa sèvis SMS, ou dwe yon rezidan Etazini e ou dwe 18 ane oswa plis."
+    },
+    "user_opt_in": {
+      "title": "Opt-In Itilizatè:",
+      "content": "Lè ou bay nou nimewo telefòn mobil ou, ou ap volontèman opte pou sèvis SMS yo e ou dakò pou resevwa mesaj repete soti nan nou nan nimewo telefòn mobil ki asosye ak opte ou, menm si nimewo sa a anrejistre sou nenpòt lis eta oswa federal."
+    },
+    "opt_in_success": {
+      "title": "Opt-Out Itilizatè ak Sipò:",
+      "content": "Ou ka opte soti nan sèvis SMS yo nenpòt ki lè."
+    },
+    "warranty": {
+      "title": "Avètisman sou Garanti ak Responsablite:",
+      "content": "Sèvis SMS yo ofri sou yon baz 'jan li ye a' e yo ka pa disponib nan tout zòn, nan tout tan, oswa sou tout founisè mobil."
+    },
+    "modification": {
+      "title": "Modifikasyon:",
+      "content": "Si ou gen nenpòt kesyon sou tèm sèvis sa a, kontakte nou nan: Health For Haitians, 1000 NW 65th St. Suite 103, Fort Lauderdale, FL 33309. Imèl: info@H4Hinsurance.com. Telefòn: 1-844-544-0663"
+    }
+  },
+
+  "company": {
+    "title": "Konpayi",
+    "useful_links": {
+      "title": "Lyen Itil"
+    },
+    "services": ["Règ Konfidansyalite", "Kondisyon Sèvis", "Kondisyon SMS"],
+    "useful_links_data": [
+      {
+        "name": "Akèy",
+        "href": "/"
+      },
+      {
+        "name": "Sou Nou",
+        "href": "/about-us"
+      },
+      {
+        "name": "Pwodwi",
+        "href": "/#products"
+      },
+      {
+        "name": "Misyon",
+        "href": "/mission"
+      },
+      {
+        "name": "Kontakte Nou",
+        "href": "/#contact"
+      }
+    ],
+    "copyright": "© 2024 Health for Haitians. Tout Dwa Rezève."
+  },
+
+  "home": {
+    "hero": {
+      "title": "Sante pou Ayisyen",
+      "subtitle": "Rankontre ak yon Ajan ki gen Lisans",
+      "cta_button": "Kontakte nou"
+    },
+    "main_section": {
+      "title": "Nou la pou sèvis bezwen asirans ou yo",
+      "description": "Asirans ka kite ou ak anpil kesyon, ann ede ou pran pi bon desizyon enfòme.",
+      "cta_button": "Kòmanse"
+    },
+    "services": [
+      {
+        "title": "Asirans Sante",
+        "description": "Lwa sou swen abòdab ofri resous pou ede diminye obstak yo ak bay aksè swen sante pou moun ki bezwen yo.",
+        "imageUrl": "/images/health.jpeg",
+        "url": "/health",
+        "icon": "💉"
+      },
+      {
+        "title": "Asirans Vi",
+        "description": "Ann ede ou navige kle pou sekirite finansye.",
+        "imageUrl": "/images/life.jpeg",
+        "url": "/life",
+        "icon": "👨‍👩‍👧"
+      },
+      {
+        "title": "Dantè & Vizyon",
+        "description": "Nou ofri politik dantè ak vizyon abòdab pour sante jeneral ou.",
+        "imageUrl": "/images/dental.jpeg",
+        "url": "/dental",
+        "icon": "🦷"
+      },
+      {
+        "title": "Medicare",
+        "description": "Jwenn bon sipleman Medicare ka difisil, nou la pou ede.",
+        "imageUrl": "/images/medicare.jpeg",
+        "url": "/medicare",
+        "icon": "⚕️"
+      }
+    ],
+    "enrollment_section": {
+      "title": "Enskri Kounye a! Enskri ouvè a fini 15 Desanm.",
+      "time_labels": {
+        "days": "Jou",
+        "hours": "Èdtan",
+        "minutes": "Minit",
+        "seconds": "Segond"
+      }
+    },
+    "partner_section": {
+      "text": "Patnè Fyè de",
+      "logo_alt": "Logo Konpayi a"
+    }
+  },
+  "growBusiness": {
+    "title": "Jwenn Kouvèti pou Fanmi Ou Jodi a!",
+    "button": "Pale ak yon Ajan"
+  },
+
+  "about_us": {
+    "title": "Sou nou",
+    "description": "Dekouvri misyon nou, vizyon nou, ak vwayaj ki kondwi pasyon nou pou aksè a swen sante.",
+    "sections": [
+      {
+        "heading": "Yon Misyon Pèsonèl: Soti nan Eksperyans Imigran pou Empowerment",
+        "paragraph": "Fondatè a se yon imigran ayisyen ki gen eksperyans premye men sou defi inik ayisyen yo ap fè fas lè yo ap eseye jwenn Rèv Ameriken an, misyon nou an se trè pèsonèl.",
+        "button": "Jwenn yon Pri"
+      },
+      {
+        "heading": "Yon Vizyon pou Empowerment Holistik",
+        "paragraph": "Tankou tout lòt moun, li vizyon l ap ede kominote ayisyen an jwenn aksè a opòtinite esansyèl tankou swen sante, edikasyon, travay, rezo, lojman, nitrisyon, envesti, ak kwasans pèsonèl. Madanm li, ki soti nan Karayib tou, pataje vizyon sa a e li reve elaji efò sa yo nan tout Zile Karayib yo. Pandan ke objektif nou se sipòte tout kominote ki pa gen ase sèvis yo, ekip nou an patikilyèman konsantre sou Ayisyen yo, ki pami moun ki pi pa gen sèvis yo. Sante se fondasyon lavi, se poutèt sa nou kòmanse travay nou isit la."
+      },
+      {
+        "heading": "Fè Pwogrè sou Gèp Sante pou Ayisyen",
+        "paragraph": "Aksè a swen sante de kalite esansyèl pou byennèt endividi ak fanmi, men anpil nan kominote ayisyen an fè fas a baryè siyifikatif pou jwenn kouvèti sante ki apwopriye. Diferans lang, mank enfòmasyon, ak kontrèn finansye se jis kèk nan obstak ki anpeche yo jwenn swen yo bezwen. Misyon nou se konble gèp sa a nan bay resous ki pale Kreyòl pou ede moun ak fanmi ayisyen yo navige sistèm swen sante konplèks la epi garanti kouvèti ki nesesè pou yon avni ki pi an sante."
+      },
+      {
+        "heading": "Elaji Aksè a Sèvis Swen Sante de Kalite",
+        "paragraph": "Kit yo bezwen Medicaid, asirans sante, Medicare, oswa asirans vi, nou kwè ke tout moun merite aksè a sèvis ak sipò de kalite. Pandan n ap gade devan, nou vize elaji sansibilizasyon nou, asire ke chak manm nan kominote ayisyen an gen konesans ak resous pou pwoteje sante ak byennèt yo."
+      }
+    ]
+  },
+
+  "appointments": {
+    "title": "Pwogramasyon Randevou",
+    "description": "Pwograme randevou ou san efò ak opsyon fleksib epi resevwa konfimasyon imedya pa imèl.",
+    "services": [
+      {
+        "title": "Rele nou kounye a",
+        "description": "Pale ak yon ajan lè ou rele nou nan 1.844.544.0663. Pwograme randevou ou fasilman nan telefòn."
+      },
+      {
+        "title": "Pwograme pou yon Randevou Telefòn",
+        "description": "Pwograme randevou ou fasilman pou yon reyinyon pa telefòn nan yon dat ak lè ou prefere."
+      },
+      {
+        "title": "Reyinyon Fas-a-Fas",
+        "description": "Rankontre ak ekspè nou yo an pèsòn pou yon konsiltasyon konplè. Nou asire yon eksperyans pèsonalize."
+      },
+      {
+        "title": "Konsiltasyon Vityèl",
+        "description": "Konekte ak nou sou entènèt atravè yon reyinyon vityèl. Jwenn menm konsèy ekspè a nan konfò lakay ou."
+      }
+    ],
+    "appointment_messages": {
+      "success": "Randevou pwograme pou {date} a {time}",
+      "error": "Tanpri chwazi dat ak lè."
+    }
+  },
+
+  "dental_vision": {
+    "title": "Dantè & Vizyon",
+    "description": "Plan Asirans Dantè & Vizyon Abòdab pou Fanmi Ou",
+    "content": {
+      "benefits_title": "Benefis Asirans Dantè:",
+      "benefits": [
+        {
+          "title": "Enskri Nenpòt Lè",
+          "description": "Pa gen bezwen tann pou ouvèti enskripsyon—ou ka enskri pou kouvèti pandan tout ane a!"
+        },
+        {
+          "title": "Aktivasyon Rapid",
+          "description": "Enskri jodi a, e kouvèti ou ka kòmanse nan mwa kap vini an."
+        },
+        {
+          "title": "Kouvèti Patou",
+          "description": "Plan nou yo disponib atravè tout peyi a, sa ki fè li fasil pou prèske nenpòt moun jwenn kouvèti."
+        }
+      ],
+      "call_to_action": "Kòmanse Jodi a! Eksplore plan nou yo e wè kijan li fasil pou pwoteje souri ou."
+    },
+    "images": {
+      "main_image": "/images/dental/dental.jpg",
+      "secondary_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
+      ]
+    }
+  },
+
+  "health": {
+    "sections": [
+      {
+        "title": "Asirans Sante",
+        "button_text": "Jwenn Plis Enfòmasyon",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Plan pou Bezwen Fanmi Ou",
+        "description": "Jwenn bon plan sante pou fanmi ou pi fasil ke jamè! Opsyon Asirans Sante nou yo ofri yon gwo varyete plan ki fèt pou satisfè bezwen ak bidjè ou. Soti nan kouvèti konplè rive nan opsyon abòdab, nou gen ou kouvri.",
+        "button_text": "Jwenn Yon Pri",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Asirans Sante Ede Ou Ekonomize",
+        "description": "San kouvèti, menm yon sèl vizit lopital ka lakòz plizyè milye dola nan bòdwo medikal. Asirans sante ede ou jere depans sa yo lè li pataje fado a epi asire ou peye yon fraksyon de sa ou ta peye otreman.",
+        "call_to_action": "Pare pou pwoteje sa ki pi enpòtan? Pale ak yon ajan jodi a epi jwenn konsèy ekspè sou chwazi pi bon plan sante pou ou ak moun ou renmen yo.",
+        "link_text": "Pale ak yon ajan",
+        "link": "/appointment"
+      },
+      {
+        "title": "Kisa Kouvèti Sante a Gen Ladan?",
+        "description": "Men kèk nan Benefis Esansyèl plan ACA a gen ladan:"
+      },
+      {
+        "title": "Kisa ki Depans Pèsonèl yo?",
+        "description": "Depans pèsonèl yo se depans ou peye dirèkteman pou sèvis swen sante ki pa kouvri pa plan asirans sante ou. Konprann depans sa yo enpòtan pou fè bidjè pou bezwen swen sante ou yo epi anpeche presyon finansye inatandi."
+      },
+      {
+        "title": "Depans Pèsonèl yo gen ladan:",
+        "list": [
+          {
+            "item": "Prim",
+            "description": "Peman mansyèl fiks ou fè pou kenbe asirans sante ou aktif."
+          },
+          {
+            "item": "Dediktib",
+            "description": "Kantite lajan ou dwe peye pou sèvis swen sante ki kouvri anvan asirans ou kòmanse peye."
+          },
+          {
+            "item": "Kopeman",
+            "description": "Yon kantite fiks ou peye pou sèvis espesifik tankou vizit doktè oswa preskripsyon."
+          },
+          {
+            "item": "Koasirans",
+            "description": "Yon pousantaj nan depans ou pataje ak konpayi asirans ou aprè ou satisfè dediktib ou."
+          },
+          {
+            "item": "Konparezon Plan Asirans",
+            "description": "Lè w ap konpare plan asirans, li enpòtan pou revize tout depans yo. Eksplore pi bon plan ki adapte ak bezwen swen sante ou ak bidjè ou. Konekte ak ajan lisansye nou an jodi a!"
+          }
+        ]
+      }
+    ]
+  },
+  "life": {
+    "header": {
+      "title": "Lavi",
+      "button": "Jwenn Pri Ou Gratis Jodi a!",
+      "image": {
+        "src": "/images/life/life.jpg",
+        "alt": "Imaj Sante"
+      }
+    },
+    "sections": [
+      {
+        "title": "Jwenn yon Pri Pèsonalize... Pran Premye Pa a Jodi a!",
+        "description": "Avni fanmi ou twò enpòtan pou kite l nan chans. Kòmanse pwoteje eritaj finansye ou jodi a lè ou eksplore opsyon asirans lavi nou yo. Jwenn pri gratis ou epi pran premye pa nan direksyon lapè nan lespri.",
+        "button": "Jwenn Yon Pri"
+      },
+      {
+        "title": "Pwoteje Moun Ou Renmen yo ak Asirans Lavi",
+        "description": "Lavi a enprevizib, men avni fanmi ou pa bezwen ye. Asirans lavi bay lapè nan lespri, konnen ke fanmi ou oswa moun ki depann de ou yo ap pwoteje finansyèman si inatandi a rive.",
+        "bullet_points": [
+          "Gen moun ki depann, tankou timoun oswa yon konjwen, ki konte sou revni ou.",
+          "Gen dèt enpòtan, tankou yon ipotèk, prè, oswa dèt kat kredi.",
+          "Vle asire fanmi ou gen sipò finansye pou edikasyon, depans chak jou, oswa estabilite finansye alontèm."
+        ]
+      }
+    ]
+  },
+  "medicare": {
+    "header": {
+      "title": "Medicare",
+      "button": "Jwenn Plis Enfòmasyon",
+      "image": {
+        "src": "/images/medi/medi1.jpg",
+        "alt": "Imaj Sante"
+      }
+    },
+    "main_content": [
+      {
+        "title": "Kouvèti Medicare Fèt Senp, Abòdab, epi Adapte a Bezwen Ou yo.",
+        "description": "Rive nan laj 65 an epi navige Medicare ka akablan, men nou la pou ede. Kit ou ap enskri pou premye fwa, ap eksplore opsyon kouvèti adisyonèl, oswa chanje plan, nou pral gide ou nan chak etap.",
+        "button": "Jwenn Yon Pri"
+      },
+      {
+        "title": "Konpare Plan Medicare yo Kounye a!",
+        "description": "Pa kite swen sante ou nan chans. Eksplore plan Medicare nou yo jodi a epi jwenn kouvèti ki kenbe ou an sante, pwoteje, epi san enkyetid. Avèk gid ekspè nou yo ak zouti senp, ou ka chwazi pi bon plan pou bezwen ou yo avèk konfyans. Rele pou pale ak yon ekspè Medicare ki gen lisans jodi a!",
+        "bullet_points": [
+          {
+            "title": "Avantaj Medicare:",
+            "text": "Plan Avantaj Medicare yo konbine asirans lopital (Pati A) ak asirans medikal (Pati B) nan yon sèl plan. Anpil nan plan sa yo ofri tou kouvèti medikaman sou preskripsyon (Pati D), ansanm ak benefis siplemantè tankou vizyon, dantè, ak tande."
+          },
+          {
+            "title": "Sipleman Medicare:",
+            "text": "Plan Sipleman Medicare yo ede kouvri depans ki soti nan pòch ou ke Medicare tradisyonèl pa kouvri, tankou kopeman, koasirans, ak dediktib. Chwazi nan yon varyete plan ki fèt pou ekonomize ou lajan epi pwoteje ou kont gwo bòdwo medikal."
+          },
+          {
+            "title": "Plan Medikaman sou Preskripsyon:",
+            "text": "Jwenn kouvèti pou medikaman sou preskripsyon ak yon plan Pati D. Ou pral gen aksè a yon gwo rezo famasi ak kouvèti pou medikaman ou bezwen yo."
+          }
+        ]
+      }
+    ]
+  },
+  "mission": {
+    "content": [
+      {
+        "section": "Misyon",
+        "text": "Misyon nou se amelyore lavi popilasyon ki pa byen sèvi yo nan Ayiti lè nou bay aksè a asirans sante ki abòdab ak konplè. Nou kwè ke tout moun, kèlkeswa sitiyasyon finansye yo, merite swen sante ki bon kalite. Lè nou kraze baryè finansye yo epi ankouraje konsyantizasyon sou sèvis sante ki disponib yo, n ap travay pou asire ke plis fanmi Ayisyen ka mennen yon lavi ki pi sen, ki pi an sekirite."
+      },
+      {
+        "section": "Apèl pou Aksyon",
+        "text": "Jwenn Plis Enfòmasyon"
+      },
+      {
+        "section": "Kijan Nou Fè Yon Diferans",
+        "text": "Ansanm, N ap Bati yon Ayiti ki Pi Fò, Ki Pi An Sante, Yon Politik Alafwa."
+      },
+      {
+        "section": "Enpòtans Envestisman",
+        "text": "Envesti nan kominote Ayisyen yo se pa sèlman yon enperatif moral; se yon katalis pou kwasans dirab ak chanjman pozitif."
+      },
+      {
+        "section": "Kraze Baryè yo",
+        "text": "Kominote Ayisyen an souvan fè fas ak baryè sistematik ki limite aksè a resous esansyèl yo, tankou edikasyon, swen sante, ak opòtinite ekonomik. Lè nou dirije envestisman nan domèn sa yo, nou ka ankouraje ekite, kreye chemen pou siksè, epi ranfòse ekonomi an an jeneral."
+      },
+      {
+        "section": "Debwouye Potansyèl",
+        "text": "Bay Ayisyen yo pouvwa debwouye tout potansyèl yo, jenere inovasyon, divèsite kiltirèl, ak yon sosyete ki pi enklizif. Lè nou leve pa nou yo, nou bati yon avni kote tout moun ka pwospere."
+      }
+    ]
+  }
+}

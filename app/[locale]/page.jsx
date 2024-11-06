@@ -12,42 +12,38 @@ import BlogSection from './components/BlogSection';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
+import initTranslations from './i18n';
+import TranslationsProvider from '@/lib/TranslationProvider';
 
-const page = () => {
+const i18nNamespaces = ['translation'];
+
+async function page({ params: { locale } }) {
+  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+
+  console.log({ locale });
   return (
-    // <div>
-    //   <Header />
-    //   {/* <ServicesSection /> */}
-    //   <InsuranceService />
-    //   <MovingIcons />
-    //   <InsurancePolicy />
-    //   <GrowBusiness />
-    //   <ContactSection />
-    //   {/* <Achievements />
-    //   <BlogSection />
-    //   <Testimonials />
-    //   <Team /> */}
-    //   <Footer />
-    //   {/* <ContactSection /> */}
-    //   {/* <ContactFormWithMap /> */}
-    // </div>
-
-    <div>
-      <Header />
-      <section id='products'>
-        <InsuranceService />
-      </section>
-      <MovingIcons />
-      {/* <section id='mission'>
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={locale}
+      resources={resources}
+    >
+      <div>
+        <Header />
+        <section id='products'>
+          <InsuranceService />
+        </section>
+        <MovingIcons />
+        {/* <section id='mission'>
         <InsurancePolicy />
       </section> */}
-      <GrowBusiness />
-      <section id='contact'>
-        <ContactSection />
-      </section>
-      <Footer />
-    </div>
+        <GrowBusiness />
+        <section id='contact'>
+          <ContactSection />
+        </section>
+        <Footer />
+      </div>
+    </TranslationsProvider>
   );
-};
+}
 
 export default page;

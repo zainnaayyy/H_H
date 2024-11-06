@@ -54,8 +54,11 @@ import {
 } from '@/components/ui/carousel';
 import { GoogleTranslate } from '@/lib/googleTranslate';
 import { getPrefLangCookie } from '@/lib/getPrefLangCookie';
+import { useTranslation } from 'react-i18next';
+import LanguageChanger from '@/components/LanguageChanger';
 
 const Header = () => {
+  const { t } = useTranslation();
   const pathname = usePathname(); // Get the current pathname
   const plugin = useRef(Autoplay({ delay: 10000, stopOnInteraction: true }));
   const isHomePage = pathname === '/';
@@ -211,34 +214,36 @@ const Header = () => {
       pageTitle = 'Page';
   }
 
-  const slides = [
-    {
-      imageUrl: '/images/slider/african.jpeg',
-      title:
-        'Together We are Building a Healthier Haiti, One Family at a Time.',
-      url: '/health',
-      buttonText: 'Learn More',
-    },
-    {
-      imageUrl: '/images/slider/african3.jpeg',
-      title:
-        'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
-      url: '/health',
-      buttonText: 'Compare Plans',
-    },
-    {
-      imageUrl: '/images/slider/african2.jpg',
-      title: 'Find an Affordable Dental & Vision Plan for Your Family.',
-      url: '/dental',
-      buttonText: 'Request Quotes',
-    },
-    {
-      imageUrl: '/images/slider/african3.jpg',
-      title: "Protect Your Family's Financial Future with Life Insurance.",
-      url: '/appointment',
-      buttonText: 'Contact Agent',
-    },
-  ];
+  // const slides = [
+  //   {
+  //     imageUrl: '/images/slider/african.jpeg',
+  //     title:
+  //       'Together We are Building a Healthier Haiti, One Family at a Time.',
+  //     url: '/health',
+  //     buttonText: 'Learn More',
+  //   },
+  //   {
+  //     imageUrl: '/images/slider/african3.jpeg',
+  //     title:
+  //       'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
+  //     url: '/health',
+  //     buttonText: 'Compare Plans',
+  //   },
+  //   {
+  //     imageUrl: '/images/slider/african2.jpg',
+  //     title: 'Find an Affordable Dental & Vision Plan for Your Family.',
+  //     url: '/dental',
+  //     buttonText: 'Request Quotes',
+  //   },
+  //   {
+  //     imageUrl: '/images/slider/african3.jpg',
+  //     title: "Protect Your Family's Financial Future with Life Insurance.",
+  //     url: '/appointment',
+  //     buttonText: 'Contact Agent',
+  //   },
+  // ];
+
+  const slides = t('slides', { returnObjects: true });
 
   const handleLinkClick = (href) => {
     router.push(href); // Use router to navigate
@@ -278,6 +283,9 @@ const Header = () => {
                 <a href='#' className='hidden lg:flex hover:text-gray-400'>
                   <FaWhatsapp className='w-6 h-6 text-white hover:text-green-800' />
                 </a>
+                <div className='text-black'>
+                  <LanguageChanger />
+                </div>
                 {/* <div>
                   <GoogleTranslate prefLangCookie={prefLangCookie} />
              
@@ -292,9 +300,9 @@ const Header = () => {
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
-                      <SheetTitle>Navigate</SheetTitle>
+                      <SheetTitle> {t('navigation.navigate')}</SheetTitle>
                       <SheetDescription>
-                        Choose a page to navigate to:
+                        {t('navigation.choose_page')}
                       </SheetDescription>
                     </SheetHeader>
                     <div className='grid gap-4 py-4'>
@@ -306,7 +314,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('#home')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Home
+                              {t('navigation.menu_items.home')}
                             </Link>
                           </li>
                           <li>
@@ -315,7 +323,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/about-us')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              About Us
+                              {t('navigation.menu_items.about_us')}
                             </Link>
                           </li>
                           <li>
@@ -324,7 +332,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/health')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Health
+                              {t('navigation.menu_items.health')}
                             </Link>
                           </li>
                           <li>
@@ -333,7 +341,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/dental')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Dental & Vision
+                              {t('navigation.menu_items.dental_vision')}
                             </Link>
                           </li>
                           <li>
@@ -342,7 +350,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/life')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Life
+                              {t('navigation.menu_items.life')}
                             </Link>
                           </li>
                           <li>
@@ -351,7 +359,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/medicare')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Medicare
+                              {t('navigation.menu_items.medicare')}
                             </Link>
                           </li>
                           <li>
@@ -360,7 +368,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('/mission')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Mission
+                              {t('navigation.menu_items.mission')}
                             </Link>
                           </li>
                           <li>
@@ -369,7 +377,7 @@ const Header = () => {
                               onClick={() => handleLinkClick('#contact')}
                               className='hover:text-[#13287B] py-2 px-2'
                             >
-                              Contact
+                              {t('navigation.menu_items.contact')}
                             </Link>
                           </li>
                         </ul>
@@ -377,7 +385,7 @@ const Header = () => {
                     </div>
                     <SheetFooter>
                       <SheetClose asChild>
-                        <Button type='submit'>Close</Button>
+                        <Button type='submit'>{t('navigation.close')}</Button>
                       </SheetClose>
                     </SheetFooter>
                   </SheetContent>
@@ -406,20 +414,20 @@ const Header = () => {
                   href='/'
                   className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
                 >
-                  Home
+                  {t('navigation.menu_items.home')}
                 </Link>
                 <Link
                   href='/about-us'
                   className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
                 >
-                  About Us
+                  {t('navigation.menu_items.about_us')}
                 </Link>
 
                 <NavigationMenu>
                   <NavigationMenuList className='flex'>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className='hover:text-primary-darkAqua text-xl font-semibold text-[#8d8d8d] py-2'>
-                        Products
+                        {t('navigation.menu_items.products')}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className='bg-white  w-[400px] shadow-lg rounded-md'>
                         <div className='p-4'>
@@ -428,7 +436,7 @@ const Header = () => {
                               href='/health'
                               className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
                             >
-                              Health
+                              {t('navigation.menu_items.health')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -436,7 +444,7 @@ const Header = () => {
                               href='/dental'
                               className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
                             >
-                              Dental & Vision
+                              {t('navigation.menu_items.dental_vision')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -444,7 +452,7 @@ const Header = () => {
                               href='/life'
                               className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
                             >
-                              Life
+                              {t('navigation.menu_items.life')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -452,7 +460,7 @@ const Header = () => {
                               href='/medicare'
                               className='block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]'
                             >
-                              Medicare
+                              {t('navigation.menu_items.medicare')}
                             </Link>
                           </NavigationMenuLink>
                         </div>
@@ -465,13 +473,13 @@ const Header = () => {
                   href='/mission'
                   className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
                 >
-                  Mission
+                  {t('navigation.menu_items.mission')}
                 </Link>
                 <Link
                   href='/#contact'
                   className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
                 >
-                  Contact Us
+                  {t('navigation.menu_items.contact')}
                 </Link>
               </div>
             </nav>
@@ -487,13 +495,13 @@ const Header = () => {
               className={`lg:w-1/3 w-full mb-5 lg:mb-0 p-6 bg-white rounded-lg shadow-2xl hover:shadow-slate-950`}
             >
               <h2 className='text-3xl text-[#B92031] font-bold mb-6'>
-                Get Covered Today!
+                {t('contact_form.title')}
               </h2>
               <form onSubmit={formik.handleSubmit}>
                 {/* Insurance Type */}
                 <div className='mb-4'>
                   <label className='block text-gray-500 text-lg lg:text-xl font-semibold mb-2'>
-                    Choose your Insurance Type
+                    {t('contact_form.subtitle')}
                   </label>
                   <div className='flex text-lg flex-wrap gap-4'>
                     {['Health', 'Dental', 'Vision', 'Medicare', 'Life'].map(
@@ -523,7 +531,7 @@ const Header = () => {
                 {/* Full Name */}
                 <div className='mb-4 '>
                   <label className='text-xl block text-gray-500 font-semibold mb-2'>
-                    Full Name
+                    {t('contact_form.fields.full_name')}
                   </label>
                   <div className='flex gap-4'>
                     <div className='flex flex-col w-1/2'>
@@ -562,7 +570,7 @@ const Header = () => {
                 {/* Date of Birth */}
                 <div className='mb-4'>
                   <label className='block text-xl text-gray-500 font-semibold mb-2'>
-                    Date of Birth
+                    {t('contact_form.fields.date_of_birth')}
                   </label>
                   <input
                     type='date'
@@ -579,7 +587,7 @@ const Header = () => {
                 {/* Zip Code */}
                 <div className='mb-4'>
                   <label className='block text-gray-500 font-semibold mb-2 text-xl'>
-                    Zip Code
+                    {t('contact_form.fields.zip_code')}
                   </label>
                   <input
                     type='text'
@@ -596,7 +604,7 @@ const Header = () => {
                 {/* Email */}
                 <div className='mb-4'>
                   <label className='block text-xl text-gray-500 font-semibold mb-2'>
-                    Email
+                    {t('contact_form.fields.email')}
                   </label>
                   <input
                     type='email'
@@ -613,7 +621,7 @@ const Header = () => {
                 {/* Phone Number */}
                 <div className='mb-4'>
                   <label className='block text-gray-500 font-semibold mb-2 text-xl'>
-                    Mobile phone number (US only)
+                    {t('contact_form.fields.mobile_phone')}
                   </label>
                   <input
                     type='tel'
@@ -640,7 +648,7 @@ const Header = () => {
                       className='form-checkbox text-[#01B6AD]'
                     />
                     <span className='ml-2 text-lg text-gray-500'>
-                      Text me with news & offers
+                      {t('contact_form.fields.text_consent')}
                     </span>
                   </label>
                   {formik.touched.consent && formik.errors.consent ? (
@@ -648,178 +656,63 @@ const Header = () => {
                   ) : null}
                 </div>
                 <p className='text-sm text-gray-500 mt-2'>
-                  By clicking the button below, you consent to receiving
-                  marketing emails and text messages, additionally you consent
-                  to being contacted by phone call, an automatic telephone
-                  dialing system, text message at the telephone number you
-                  provided above or by email. You understand this is not a
-                  condition of purchase and you may also receive a quote by
-                  contacting us by phone. You may revoke this consent at any
-                  time by contacting us at 844-544-0663 or
-                  info@h4hinsurance.com. You understand your carrier’s message
-                  and data rates may apply.{' '}
-                  <a href='/privacy-policy' className='underline text-blue-600'>
-                    View Privacy Policy
+                  {t('contact_form.consent_notice')}
+                  <a href='' className='underline text-blue-600'>
+                    {t('contact_form.links.sms_terms')}
                   </a>{' '}
                   and{' '}
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className='text-blue-600 underline'>
-                        SMS Terms of Service
+                        {t('contact_form.links.privacy_policy')}
                       </button>
                     </DialogTrigger>
                     <DialogContent className='sm:max-w-[800px] overflow-y-auto'>
                       <DialogHeader>
                         <DialogTitle className='text-2xl font-semibold mb-4'>
-                          SMS Terms of Service
+                          {t('contact_form.links.sms_terms')}
                         </DialogTitle>
                         <DialogDescription className='mb-4'>
-                          Please read and review our SMS Terms of Service below.
+                          {t('sms_terms.please_read')}
                         </DialogDescription>
                       </DialogHeader>
                       <div className='max-h-[60vh] overflow-y-auto space-y-4'>
+                        <p>{t('sms_terms.description.content')}</p>
                         <p>
-                          Your use of the Health For Haitians (“we” or “us”)
-                          services to receive short message services and/or
-                          multi-media services (“Messages”) for marketing and
-                          non-marketing purposes is subject to these SMS Terms
-                          of Service (these “SMS Terms”). The SMS Services and
-                          our collection and use of your personal information is
-                          also subject to our SMS Privacy Policy. By enrolling
-                          to use, using or accessing the SMS Services, you
-                          accept and agree to these SMS Terms and our SMS
-                          Privacy Policy.
+                          <strong className='block mt-4 mb-2'>
+                            {t('sms_terms.description.title')}
+                          </strong>{' '}
+                          {t('sms_terms.services_description.content')}
                         </p>
                         <p>
                           <strong className='block mt-4 mb-2'>
-                            SMS Services Description:
+                            {t('sms_terms.eligibility.title')}
                           </strong>{' '}
-                          We may send marketing and non-marketing Messages,
-                          through the SMS Services which may include
-                          transactional Messages. Marketing Messages advertise
-                          and promote our products and services and may include
-                          promotions, specials, other marketing offers,
-                          abandoned checkout reminders and other relevant
-                          information. Transactional Messages relate to an
-                          existing or ongoing transaction and may include
-                          updates and other transaction-related information.
-                          Messages may be sent using an automated technology,
-                          including an autodialer, automated system, or
-                          automatic telephone dialing system. Message frequency
-                          will vary. You agree that we and our third-party
-                          service providers may send you Messages regarding the
-                          foregoing topics and that such Messages and/or calls
-                          may be made or placed using different telephone
-                          numbers or short codes. We do not charge for Messages
-                          sent through the SMS Services but you are responsible
-                          for any Message and data rates imposed by your mobile
-                          provider, as standard data and Message rates may apply
-                          for short Message alerts. We do not share text message
-                          opt-in consents or related mobile telephone numbers
-                          with third parties, except with our service providers
-                          and vendors to provide our SMS Services.
+                          {t('sms_terms.eligibility.content')}
                         </p>
                         <p>
                           <strong className='block mt-4 mb-2'>
-                            Eligibility:
+                            {t('sms_terms.user_opt_in.title')}
                           </strong>{' '}
-                          To receive SMS Services, you must be a resident of the
-                          United States and 18 years of age or older.
+                          {t('sms_terms.user_opt_in.content')}
                         </p>
                         <p>
                           <strong className='block mt-4 mb-2'>
-                            User Opt-In:
+                            {t('sms_terms.opt_in_success.title')}
                           </strong>{' '}
-                          By providing your mobile phone number to us, you are
-                          voluntarily opting in to the SMS Services and you
-                          agree to receive recurring Messages from us at the
-                          mobile phone number associated with your opt-in, even
-                          if such number is registered on any state or federal
-                          “Do Not Call” list. You represent that any mobile
-                          phone number you provide to us is a valid mobile phone
-                          number of which you are the valid account owner or
-                          authorized user. If you change your mobile phone
-                          number or are no longer the valid account owner or
-                          authorized user of the mobile phone number, you are
-                          responsible for notifying us immediately at
-                          info@H4Hinsurance.com. You agree to indemnify us in
-                          full for all claims, expenses, and damages related to
-                          or caused in whole or in part by your failure to
-                          notify us if you change your mobile phone number
-                          including, but not limited to, all claims, expenses,
-                          and damages related to or arising under the Telephone
-                          Consumer Protection Act. Your use of the SMS Services
-                          is not required to make any purchase from us and your
-                          use of the SMS Services is completely voluntary.
+                          {t('sms_terms.opt_in_success.content')}
                         </p>
                         <p>
                           <strong className='block mt-4 mb-2'>
-                            User Opt-Out and Support:
+                            {t('sms_terms.warranty.title')}
                           </strong>{' '}
-                          You may opt-out of the SMS Services at any time. If
-                          you wish to opt-out of the SMS Services and stop
-                          receiving Messages from us, or you no longer agree to
-                          these SMS Terms, reply STOP, QUIT, CANCEL, OPT-OUT, or
-                          UNSUBSCRIBE to any Message from us. You may continue
-                          to receive Messages for a short period while we
-                          process your request and you may receive a one-time
-                          opt-out confirmation message. You understand and agree
-                          that the foregoing is the only reasonable method of
-                          opting out. If you want to use the SMS Services again,
-                          just opt-in as you did the first time, or text START
-                          to a Message sent by us, and we will start sending
-                          Messages to you again. For support, reply HELP to any
-                          Message from us. The SMS Services may not recognize
-                          requests that modify the foregoing commands, and you
-                          agree that we and our service providers will not be
-                          liable for failing to honor requests that do not
-                          comply with the requirements in these SMS Terms. We
-                          may also change the telephone number or short code we
-                          use to operate the SMS Services and we will notify you
-                          of any such change. You acknowledge that any requests
-                          sent to a telephone number or short code that has been
-                          changed may not be received by us and we will not be
-                          responsible for failing to honor a request sent to a
-                          telephone number or short code that has been changed.
+                          {t('sms_terms.warranty.content')}
                         </p>
                         <p>
                           <strong className='block mt-4 mb-2'>
-                            Disclaimer of Warranty and Liability:
+                            {t('sms_terms.modification.title')}
                           </strong>{' '}
-                          The SMS Services are offered on an “as-is” basis and
-                          may not be available in all areas, at all times, or on
-                          all mobile providers. You agree that neither we nor
-                          our service providers will be liable for any failed,
-                          delayed, or misdirected delivery of any Message or
-                          information sent through the SMS Services. To the
-                          fullest extent permissible pursuant to applicable law,
-                          we are not responsible and will not be liable for any
-                          damages of any nature, including without limitation
-                          any incidental, special or consequential damages (such
-                          as lost profits or lost business opportunities),
-                          punitive damages or attorney’s fees.
-                        </p>
-                        <p>
-                          <strong className='block mt-4 mb-2'>
-                            Modifications:
-                          </strong>{' '}
-                          We may revise, modify, amend, suspend or cancel all or
-                          any part of the SMS Services or any of its features at
-                          any time, with or without notice. To the extent
-                          permitted by applicable law, we may also modify these
-                          SMS Terms at any time. Any such modification will take
-                          effect when it is posted to our website or websites
-                          associated with the SMS Services. You agree to review
-                          these SMS Terms periodically to ensure that you are
-                          aware of any modifications. Your continued use of the
-                          SMS Services will constitute your acceptance of those
-                          modifications or changes.
-                        </p>
-                        <p>
-                          If you have any questions about this terms of service,
-                          contact us at: Health For Haitians, 1000 NW 65th St.
-                          Suite 103, Fort Lauderdale, FL 33309. Email:
-                          info@H4Hinsurance.com. Phone: 1-844-544-0663
+                          {t('sms_terms.modification.content')}
                         </p>
                       </div>
                       <DialogFooter className='mt-4'>
@@ -831,7 +724,7 @@ const Header = () => {
                               .click()
                           }
                         >
-                          Close
+                          {t('navigation.close')}
                         </Button>
                       </DialogFooter>
                     </DialogContent>
@@ -888,47 +781,51 @@ const Header = () => {
                     Health <span className='text-[#B92031]'>4</span> Haitians
                   </p>
                   <p className='font-bold text-lg md:text-3xl'>
-                    Meet with a Licensed Agent
+                    {t('home.hero.subtitle')}
                   </p>
                   <button className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-white hover:text-white'>
-                    Contact Us
+                    {t('home.hero.cta_button')}
                   </button>
                 </div>
               </div>
               <Carousel plugins={[plugin.current]} className='w-full'>
                 <CarouselContent>
-                  {slides.map((slide, index) => (
-                    <CarouselItem key={index}>
-                      <div
-                        className='relative h-[24rem] lg:h-[45rem] xl:h-[40rem] bg-cover bg-center rounded-md'
-                        style={{
-                          backgroundImage: `url(${slide.imageUrl})`,
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
-                        }}
-                      >
-                        <div className='absolute inset-0 bg-black opacity-50 rounded-md'></div>
-                        <div className='absolute inset-0 flex items-center justify-center'>
-                          <div className='text-center max-w-3xl text-white space-y-4 animate-slideIn'>
-                            <h1 className='text-lg md:text-4xl font-bold leading-normal'>
-                              {slide.title}
-                            </h1>
-                            <button
-                              onClick={() => {
-                                router.push(slide.url);
-                              }}
-                              className='bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded'
-                            >
-                              {slide.buttonText}
-                            </button>
-                            {/* <p className='text-sm md:text-lg'>
+                  {slides && slides.length > 0 && (
+                    <>
+                      {slides.map((slide, index) => (
+                        <CarouselItem key={index}>
+                          <div
+                            className='relative h-[24rem] lg:h-[45rem] xl:h-[40rem] bg-cover bg-center rounded-md'
+                            style={{
+                              backgroundImage: `url(${slide.imageUrl})`,
+                              backgroundSize: 'cover',
+                              backgroundPosition: 'center',
+                            }}
+                          >
+                            <div className='absolute inset-0 bg-black opacity-50 rounded-md'></div>
+                            <div className='absolute inset-0 flex items-center justify-center'>
+                              <div className='text-center max-w-3xl text-white space-y-4 animate-slideIn'>
+                                <h1 className='text-lg md:text-4xl font-bold leading-normal'>
+                                  {slide.title}
+                                </h1>
+                                <button
+                                  onClick={() => {
+                                    router.push(slide.url);
+                                  }}
+                                  className='bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded'
+                                >
+                                  {slide.buttonText}
+                                </button>
+                                {/* <p className='text-sm md:text-lg'>
                           {slide.description}
                         </p> */}
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
+                        </CarouselItem>
+                      ))}
+                    </>
+                  )}
                 </CarouselContent>
               </Carousel>
             </div>
