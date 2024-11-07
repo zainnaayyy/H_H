@@ -136,3 +136,7 @@ html {
   display: flex;
   /* Ensure the content inside is laid out in a row */
 }
+
+.ant-breadcrumb a {
+  color: black !important;
+}

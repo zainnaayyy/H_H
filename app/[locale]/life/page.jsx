@@ -19,7 +19,7 @@ const Life = () => {
         <BreadcrumbComp
           img={'/images/life/life.jpg'} 
           pos={'start'} 
-          route={'Life'}
+          route={'Life Insurance'}
         />
 
         

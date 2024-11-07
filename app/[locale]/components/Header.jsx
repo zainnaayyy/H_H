@@ -217,14 +217,14 @@ const Header = () => {
       imageUrl: '/images/slider/african.jpeg',
       title:
         'Together We are Building a Healthier Haiti, One Family at a Time.',
-      url: '/health',
+      url: '/about-us',
       buttonText: 'Learn More',
     },
     {
       imageUrl: '/images/slider/african3.jpeg',
       title:
         'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
-      url: '/medicare',
+      url: '/health',
       buttonText: 'Compare Plans',
     },
     {
@@ -891,12 +891,12 @@ const Header = () => {
               </form>
             </div>
             <div
-              className={`flex flex-col justify-between items-center lg:w-2/3 lg:pl-5 w-full min-h-full`}
+              className={`flex flex-col justify-between items-center lg:w-2/3 lg:pl-5 w-full min-h-full mt-8`}
             >
               <div className='flex xl:flex-row flex-col items-center pb-4 xl:pb-0'>
                 <Image
                   src='/images/ContactUs.svg'
-                  width={300}
+                  width={200}
                   height={500}
                   // style={{ width: '300px', height: '300px' }}
                 />

@@ -8,18 +8,47 @@ import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import BreadcrumbComp from '@/app/components/BreadcrumbComp';
+import { Breadcrumb } from 'antd';
 
 const Medicare = () => {
   return (
     <>
       <Header />
       <div className=''>
-        <BreadcrumbComp
-        img={'/images/medi/medi1.jpg'} 
+        {/* <BreadcrumbComp
+        img={'/images/medi/medi5.jpg'} 
         pos={'end'} 
         route={'Medicare'}
+      /> */}
+      <div className="relative w-full mt-10 p-10 rounded-md">
+      <Image
+        priority={true}
+        width={1000}
+        height={1000}
+        src={'/images/medi/medi5.jpg'}
+        alt="img"
+        className="w-full h-full md:h-[34rem] rounded-md object-cover"
       />
-
+    
+    <div className={`flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10`}>
+      <div className="text-center ml-7 md:mr-[1rem]">
+        <h1 className="text-sm text-white md:text-4xl lg:text-6xl font-bold mb-4">
+            Medicare
+        </h1>
+        <Breadcrumb
+          className="text-xs md:text-xl text-white font-semibold py-2 px-4"
+          items={[
+            {
+              title: <Link href="/">Home</Link>,
+            },
+            {
+              title: 'Medicare',
+            },
+          ]}
+        />
+      </div>
+    </div>
+  </div>
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
           {/* Left Side */}
           <motion.div

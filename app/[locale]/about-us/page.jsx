@@ -8,6 +8,7 @@ import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import BreadcrumbComp from '@/app/components/BreadcrumbComp';
+import { Breadcrumb } from 'antd';
 
 const AboutUs = () => {
   return (
@@ -31,11 +32,40 @@ const AboutUs = () => {
             className='w-full h-full md:h-[40rem] rounded-md object-cover'
           />
         </div> */}
-        <BreadcrumbComp
+        {/* <BreadcrumbComp
         img={'/images/about/about5.jpg'} 
         pos={'start'} 
         route={'About Us'}
-      />
+      /> */}
+      <div className="relative w-full mt-10 p-10 rounded-md">
+          <Image
+            priority={true}
+            width={1000}
+            height={1000}
+            src={'/images/about/about10.jpg'}
+            alt="img"
+            className="w-full h-full md:h-[34rem] rounded-md object-cover"
+          />
+        
+        <div className={`flex absolute inset-0 flex-col items-center justify-start p-4 sm:p-10`}>
+          <div className="text-center ml-7 md:mr-[10rem]">
+            <h1 className="text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4">
+              About Us
+            </h1>
+            <Breadcrumb
+              className="text-xs md:text-xl text-white font-semibold py-2 px-4"
+              items={[
+                {
+                  title: <Link href="/">Home</Link>,
+                },
+                {
+                  title: 'About Us',
+                },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
         {/* <div className="relative w-full mt-10 p-10 rounded-md h-screen bg-gray-200 flex items-center justify-center">
           <img
             src="/images/about/about5.jpg"
