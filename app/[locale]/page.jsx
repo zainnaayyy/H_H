@@ -20,7 +20,7 @@ const i18nNamespaces = ['translation'];
 async function page({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
-  console.log({ locale });
+  // console.log({ locale });
   return (
     <TranslationsProvider
       namespaces={i18nNamespaces}

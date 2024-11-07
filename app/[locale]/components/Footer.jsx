@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
@@ -21,7 +20,6 @@ const usefulLinks = [
 ];
 
 const Footer = () => {
-  const { t } = useTranslation();
   return (
     <footer className='bg-footer text-white pt-5'>
       <div className='max-w-7xl mx-auto px-4 mb-6 sm:px-6 lg:px-8'>
@@ -37,52 +35,48 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          {/* <div className='mb-6 md:mb-0'>
+          <div className='mb-6 md:mb-0'>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
-              Company {t('company.title')}
+              Company
             </h3>
             <ul className='space-y-2'>
-              {t('company.services', { returnObjects: true }).map(
-                (service, index) => (
-                  <li
-                    key={index}
-                    className='flex items-center justify-center md:justify-start'
-                  >
-                    <span className='mr-2 text-white'>
-                      <IoIosArrowDroprightCircle />
-                    </span>
-                    <Link href='/' className='hover:text-blue-600'>
-                      {service}
-                    </Link>
-                  </li>
-                )
-              )}
+              {services.map((service, index) => (
+                <li
+                  key={index}
+                  className='flex items-center justify-center md:justify-start'
+                >
+                  <span className='mr-2 text-white'>
+                    <IoIosArrowDroprightCircle />
+                  </span>
+                  <Link href='/' className='hover:text-blue-600'>
+                    {service}
+                  </Link>
+                </li>
+              ))}
             </ul>
-          </div> */}
+          </div>
 
           {/* Useful Links */}
-          {/* <div>
+          <div>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
-              {t('company.useful_links.title')}
+              Useful Links
             </h3>
             <ul className='space-y-2'>
-              {t('company.useful_links_data', { returnObjects: true }).map(
-                (link, index) => (
-                  <li
-                    key={index}
-                    className='flex items-center justify-center md:justify-start'
-                  >
-                    <span className='mr-2 text-white'>
-                      <IoIosArrowDroprightCircle />
-                    </span>
-                    <Link href={link.href} className='hover:text-blue-600'>
-                      {link.name}
-                    </Link>
-                  </li>
-                )
-              )}
+              {usefulLinks.map((link, index) => (
+                <li
+                  key={index}
+                  className='flex items-center justify-center md:justify-start'
+                >
+                  <span className='mr-2 text-white'>
+                    <IoIosArrowDroprightCircle />
+                  </span>
+                  <Link href={link.href} className='hover:text-blue-600'>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
-          </div> */}
+          </div>
         </div>
       </div>
 
@@ -90,7 +84,7 @@ const Footer = () => {
       <div className='bg-black w-full py-4'>
         <div className='border-t border-gray-700 w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center py-4'>
           <p className='text-xs sm:text-lg text-center md:text-left mb-4 md:mb-0'>
-            {t('company.copyright')}
+            © 2024 Health for Haitians. All Rights Reserved.
           </p>
           <div className='flex space-x-4'>
             <FaFacebookF className='text-white hover:text-blue-500 cursor-pointer' />
