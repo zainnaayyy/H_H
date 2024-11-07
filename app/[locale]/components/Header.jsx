@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import {
   FaFacebook,
   FaInstagram,
+  FaPhone,
   FaPhoneVolume,
   FaWhatsapp,
 } from 'react-icons/fa';
@@ -214,36 +215,34 @@ const Header = () => {
       pageTitle = 'Page';
   }
 
-  // const slides = [
-  //   {
-  //     imageUrl: '/images/slider/african.jpeg',
-  //     title:
-  //       'Together We are Building a Healthier Haiti, One Family at a Time.',
-  //     url: '/health',
-  //     buttonText: 'Learn More',
-  //   },
-  //   {
-  //     imageUrl: '/images/slider/african3.jpeg',
-  //     title:
-  //       'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
-  //     url: '/health',
-  //     buttonText: 'Compare Plans',
-  //   },
-  //   {
-  //     imageUrl: '/images/slider/african2.jpg',
-  //     title: 'Find an Affordable Dental & Vision Plan for Your Family.',
-  //     url: '/dental',
-  //     buttonText: 'Request Quotes',
-  //   },
-  //   {
-  //     imageUrl: '/images/slider/african3.jpg',
-  //     title: "Protect Your Family's Financial Future with Life Insurance.",
-  //     url: '/appointment',
-  //     buttonText: 'Contact Agent',
-  //   },
-  // ];
-
-  const slides = t('slides', { returnObjects: true });
+  const slides = [
+    {
+      imageUrl: '/images/slider/african.jpeg',
+      title:
+        'Together We are Building a Healthier Haiti, One Family at a Time.',
+      url: '/health',
+      buttonText: 'Learn More',
+    },
+    {
+      imageUrl: '/images/slider/african3.jpeg',
+      title:
+        'Comprehensive Health Plans for Individuals, Family and Medicare Options.',
+      url: '/medicare',
+      buttonText: 'Compare Plans',
+    },
+    {
+      imageUrl: '/images/slider/african2.jpg',
+      title: 'Find an Affordable Dental & Vision Plan for Your Family.',
+      url: '/dental',
+      buttonText: 'Discover More',
+    },
+    {
+      imageUrl: '/images/slider/african3.jpg',
+      title: "Protect Your Family's Financial Future with Life Insurance.",
+      url: '/appointment',
+      buttonText: 'Contact Agent',
+    },
+  ];
 
   const handleLinkClick = (href) => {
     router.push(href); // Use router to navigate
@@ -380,6 +379,11 @@ const Header = () => {
                               {t('navigation.menu_items.contact')}
                             </Link>
                           </li>
+                          <li>
+                            <button onClick={() => handleLinkClick('appointment')} className='bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white'>
+                                <FaPhone className='h-7 w-7' />
+                            </button>
+                          </li>
                         </ul>
                       </nav>
                     </div>
@@ -406,10 +410,10 @@ const Header = () => {
               // style={{ width: '300px', height: '300px' }}
             />
           </div>
-          <div className='hidden lg:flex justify-center items-center'>
+          <div className='hidden lg:flex justify-center items-center md:w-[60%]'>
             {/* Navbar */}
             <nav className='text-black'>
-              <div className='xl:text-xl text-base flex space-x-7 font-bold'>
+              <div className='xl:text-xl text-base flex space-x-16 font-bold'>
                 <Link
                   href='/'
                   className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
@@ -475,14 +479,13 @@ const Header = () => {
                 >
                   {t('navigation.menu_items.mission')}
                 </Link>
-                <Link
-                  href='/#contact'
-                  className='hover:text-primary-darkAqua text-[#8d8d8d] py-2'
-                >
-                  {t('navigation.menu_items.contact')}
-                </Link>
               </div>
             </nav>
+          </div>
+          <div className='hidden lg:flex justify-center items-center w-[20%]'>
+              <button onClick={() => handleLinkClick('appointment')} className='bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse'>
+                  <FaPhone className='h-12 w-12' />
+              </button>
           </div>
         </div>
       </header>
@@ -783,8 +786,8 @@ const Header = () => {
                   <p className='font-bold text-lg md:text-3xl'>
                     {t('home.hero.subtitle')}
                   </p>
-                  <button className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-white hover:text-white'>
-                    {t('home.hero.cta_button')}
+                  <button onClick={() => handleLinkClick('#contact')} className='bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-white hover:text-white'>
+                    Contact Us
                   </button>
                 </div>
               </div>

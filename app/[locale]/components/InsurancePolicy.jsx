@@ -7,6 +7,7 @@ import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import BreadcrumbComp from '@/app/components/BreadcrumbComp';
 
 const data = [
   {
@@ -94,7 +95,7 @@ const InsurancePolicy = () => {
           </h1>
         </div> */}
 
-      <div className='relative w-full mt-10 p-10 rounded-md'>
+      {/* <div className='relative w-full mt-10 p-10 rounded-md'>
         <img
           src='/images/mission/mission.jpg'
           alt='Health Image'
@@ -110,7 +111,12 @@ const InsurancePolicy = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
+      <BreadcrumbComp
+        img={'/images/mission/mission.jpg'} 
+        pos={'end'} 
+        route={'Mission'}
+      />
 
       <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
         {/* Left Side */}
@@ -135,7 +141,7 @@ const InsurancePolicy = () => {
           <div className='flex justify-center items-center'>
             <Link href='/appointment'>
               <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                Get a Quote
+              Discover More
               </button>
             </Link>
           </div>

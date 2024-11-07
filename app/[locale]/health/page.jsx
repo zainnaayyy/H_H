@@ -8,6 +8,7 @@ import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import BreadcrumbComp from '@/app/components/BreadcrumbComp';
 
 const Health = () => {
   const healthPoints = [
@@ -23,33 +24,11 @@ const Health = () => {
       <Header />
 
       <div className=''>
-        {/* <div className='text-center text-6xl mb-10 font-bold'>
-          Health Insurance
-        </div> */}
-
-        {/* <div className=''>
-          <h1 className='text-2xl font-bold mb-4 mt-8 '>
-            Explore the Best Health
-          </h1>
-        </div> */}
-
-        <div className='relative w-full mt-10 p-10 rounded-md'>
-          <img
-            src='/images/health/couple.jpg'
-            alt='Health Image'
-            className='w-full h-full md:h-[34rem] rounded-md object-cover'
-          />
-          <div className='flex absolute inset-0 flex-col items-end justify-center p-4 sm:p-10'>
-            <div className='text-right mr-7 md:mr-[10rem]'>
-              <h1 className='text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4'>
-                Health Insurance
-              </h1>
-              <button className='bg-primary-darkAqua text-xs md:text-xl text-white font-semibold py-2 px-4 rounded-md'>
-                <Link href='/appointment'>Find Out More</Link>
-              </button>
-            </div>
-          </div>
-        </div>
+        <BreadcrumbComp
+        img={'/images/health/couple.jpg'} 
+        pos={'end'} 
+        route={'Health Insurance'}
+        />
 
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
           {/* Left Side */}
@@ -71,7 +50,7 @@ const Health = () => {
             <div className='flex justify-center items-center'>
               <Link href='/appointment'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                  Get a Quote
+                Start Here
                 </button>
               </Link>
             </div>

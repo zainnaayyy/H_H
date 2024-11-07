@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className='mb-6 md:mb-0'>
+          {/* <div className='mb-6 md:mb-0'>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
               Company {t('company.title')}
             </h3>
@@ -58,10 +58,10 @@ const Footer = () => {
                 )
               )}
             </ul>
-          </div>
+          </div> */}
 
           {/* Useful Links */}
-          <div>
+          {/* <div>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
               {t('company.useful_links.title')}
             </h3>
@@ -82,7 +82,7 @@ const Footer = () => {
                 )
               )}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
 

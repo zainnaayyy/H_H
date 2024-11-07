@@ -10,6 +10,7 @@ import { IoIosCheckbox } from 'react-icons/io';
 import CTA from '../components/CTA';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import BreadcrumbComp from '@/app/components/BreadcrumbComp';
 
 const Dental = () => {
   return (
@@ -17,17 +18,13 @@ const Dental = () => {
       <Header />
 
       <div className=''>
-        {/* <div className='text-center text-6xl mb-10 font-bold'>
-          Health Insurance
-        </div> */}
-
-        {/* <div className=''>
-          <h1 className='text-2xl font-bold mb-4 mt-8 '>
-            Explore the Best Health
-          </h1>
-        </div> */}
-
-        <div className='relative w-full mt-10 p-10 rounded-md'>
+        <BreadcrumbComp
+        videoSrc={'https://video.wixstatic.com/video/ac2815_e69d7b305b0e477c8a7127b5e4a56992/1080p/mp4/file.mp4'} 
+        video={true}
+        pos={'center'} 
+        route={'Dental & Vision'}
+      />
+        {/* <div className='relative w-full mt-10 p-10 rounded-md'>
           <img
             src='/images/dental/dental.jpg'
             alt='Health Image'
@@ -43,7 +40,8 @@ const Dental = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
+        
 
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>
           {/* Right Side */}
@@ -79,7 +77,7 @@ const Dental = () => {
             <div className='flex justify-center items-center'>
               <Link href='/appointment'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                  Get a Quote
+                  Explore Plans
                 </button>
               </Link>
             </div>
