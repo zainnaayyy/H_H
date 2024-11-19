@@ -297,9 +297,9 @@ const Header = () => {
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
-                      <SheetTitle>Navigate</SheetTitle>
+                      <SheetTitle> {t('navigation.navigate')}</SheetTitle>
                       <SheetDescription>
-                        Choose a page to navigate to:
+                      {t('navigation.choose_page')}
                       </SheetDescription>
                     </SheetHeader>
                     <div className="grid gap-4 py-4">
@@ -311,7 +311,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("#home")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Home
+                              {t('navigation.menu_items.home')}
                             </Link>
                           </li>
                           <li>
@@ -320,7 +320,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/about-us")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              About Us
+                                 {t('navigation.menu_items.about_us')}
                             </Link>
                           </li>
                           <li>
@@ -329,7 +329,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/health")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Health
+                            {t('navigation.menu_items.health')}
                             </Link>
                           </li>
                           <li>
@@ -338,7 +338,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/dental")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Dental & Vision
+                                        {t('navigation.menu_items.dental_vision')}
                             </Link>
                           </li>
                           <li>
@@ -347,7 +347,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/life")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Life
+                               {t('navigation.menu_items.life')}
                             </Link>
                           </li>
                           <li>
@@ -356,7 +356,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/medicare")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Medicare
+                        {t('navigation.menu_items.medicare')}
                             </Link>
                           </li>
                           <li>
@@ -365,7 +365,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/mission")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Mission
+                               {t('navigation.menu_items.mission')}
                             </Link>
                           </li>
                           <li>
@@ -374,7 +374,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("#contact")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              Contact
+                                  {t('navigation.menu_items.contact')}
                             </Link>
                           </li>
                           <li>
@@ -390,7 +390,7 @@ const Header = () => {
                     </div>
                     <SheetFooter>
                       <SheetClose asChild>
-                        <Button type="submit">Close</Button>
+                        <Button type="submit">{t('navigation.close')}</Button>
                       </SheetClose>
                     </SheetFooter>
                   </SheetContent>
@@ -420,20 +420,20 @@ const Header = () => {
                   href="/"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-                  Home
+                  {t('navigation.menu_items.home')}
                 </Link>
                 <Link
                   href="/about-us"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-                  About Us
+            {t('navigation.menu_items.about_us')}
                 </Link>
 
                 <NavigationMenu>
                   <NavigationMenuList className="flex">
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="hover:text-primary-darkAqua text-xl font-semibold text-[#8d8d8d] py-2">
-                        Products
+                      {t('navigation.menu_items.products')}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-white  w-[400px] shadow-lg rounded-md">
                         <div className="p-4">
@@ -442,7 +442,7 @@ const Header = () => {
                               href="/health"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                              Health
+                              {t('navigation.menu_items.health')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -450,7 +450,7 @@ const Header = () => {
                               href="/dental"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                              Dental & Vision
+                             {t('navigation.menu_items.dental_vision')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -458,7 +458,7 @@ const Header = () => {
                               href="/life"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                              Life
+                        {t('navigation.menu_items.life')}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -466,7 +466,7 @@ const Header = () => {
                               href="/medicare"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                              Medicare
+                                 {t('navigation.menu_items.medicare')}
                             </Link>
                           </NavigationMenuLink>
                         </div>
@@ -479,7 +479,7 @@ const Header = () => {
                   href="/mission"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-                  Mission
+                   {t('navigation.menu_items.mission')}
                 </Link>
                 {/* <Link
                   href='/#contact'
