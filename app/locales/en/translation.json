@@ -96,36 +96,41 @@
     }
   },
 
-  "company": {
-    "title": "Company",
-    "useful_links": {
-      "title": "Useful Links"
+  
+    "company": {
+      "title": "Company",
+      "services": [
+        "Privacy Policy", 
+        "Terms of Service", 
+        "SMS Terms & Condition"
+      ],
+      "useful_links": {
+        "title": "Useful Links"
+      },
+      "useful_links_data": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "About Us",
+          "href": "/about-us"
+        },
+        {
+          "name": "Products",
+          "href": "/#products"
+        },
+        {
+          "name": "Mission",
+          "href": "/mission"
+        },
+        {
+          "name": "Contact Us",
+          "href": "/#contact"
+        }
+      ],
+      "copyright": "© 2024 Health for Haitians. All Rights Reserved."
     },
-    "services": ["Privacy Policy", "Terms of Service", "SMS Terms & Condition"],
-    "useful_links_data": [
-      {
-        "name": "Home",
-        "href": "/"
-      },
-      {
-        "name": "About Us",
-        "href": "/about-us"
-      },
-      {
-        "name": "Products",
-        "href": "/#products"
-      },
-      {
-        "name": "Mission",
-        "href": "/mission"
-      },
-      {
-        "name": "Contact Us",
-        "href": "/#contact"
-      }
-    ],
-    "copyright": "© 2024 Health for Haitians. All Rights Reserved."
-  },
 
   "home": {
     "hero": {

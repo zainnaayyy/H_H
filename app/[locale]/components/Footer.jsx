@@ -6,22 +6,14 @@ import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { IoIosArrowDroprightCircle } from 'react-icons/io';
 
-const services = [
-  'Privacy Policy',
-  'Terms of Service',
-  'SMS Terms & Condition',
-];
-
-const usefulLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about-us' },
-  { name: 'Products', href: '/#products' },
-  { name: 'Mission', href: '/mission' },
-  { name: 'Contact Us', href: '/#contact' },
-];
-
 const Footer = () => {
   const { t } = useTranslation();
+  
+  // Safe translation retrieval with fallbacks
+  const services = t('company.services', { returnObjects: true }) || [];
+  console.log(services,'checl')
+  const usefulLinks = t('company.useful_links_data', { returnObjects: true }) || [];
+
   return (
     <footer className='bg-footer text-white pt-5'>
       <div className='max-w-7xl mx-auto px-4 mb-6 sm:px-6 lg:px-8'>
@@ -39,10 +31,10 @@ const Footer = () => {
           {/* Services */}
           <div className='mb-6 md:mb-0'>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
-             {t('company.title')}
+              {t('company.title')}
             </h3>
             <ul className='space-y-2'>
-              {/* {services.map((service, index) => (
+              {services.map((service, index) => (
                 <li
                   key={index}
                   className='flex items-center justify-center md:justify-start'
@@ -54,32 +46,17 @@ const Footer = () => {
                     {service}
                   </Link>
                 </li>
-              ))} */}
-              {t('company.services', { returnObjects: true }).map(
-                (service, index) => (
-                  <li
-                    key={index}
-                    className='flex items-center justify-center md:justify-start'
-                  >
-                    <span className='mr-2 text-white'>
-                      <IoIosArrowDroprightCircle />
-                    </span>
-                    <Link href='/' className='hover:text-blue-600'>
-                      {service}
-                    </Link>
-                  </li>
-                )
-              )}
+              ))}
             </ul>
           </div>
 
           {/* Useful Links */}
           <div>
             <h3 className='text-xl font-bold mb-4 text-center md:text-left'>
-            {t('company.useful_links.title')}
+              {t('company.useful_links.title')}
             </h3>
             <ul className='space-y-2'>
-              {/* {usefulLinks.map((link, index) => (
+              {usefulLinks.map((link, index) => (
                 <li
                   key={index}
                   className='flex items-center justify-center md:justify-start'
@@ -87,26 +64,14 @@ const Footer = () => {
                   <span className='mr-2 text-white'>
                     <IoIosArrowDroprightCircle />
                   </span>
-                  <Link href={link.href} className='hover:text-blue-600'>
+                  <Link 
+                    href={link.href || '/'} 
+                    className='hover:text-blue-600'
+                  >
                     {link.name}
                   </Link>
                 </li>
-              ))} */}
-              {t('company.useful_links_data', { returnObjects: true }).map(
-                (link, index) => (
-                  <li
-                    key={index}
-                    className='flex items-center justify-center md:justify-start'
-                  >
-                    <span className='mr-2 text-white'>
-                      <IoIosArrowDroprightCircle />
-                    </span>
-                    <Link href={link.href} className='hover:text-blue-600'>
-                      {link.name}
-                    </Link>
-                  </li>
-                )
-              )}
+              ))}
             </ul>
           </div>
         </div>
@@ -116,7 +81,7 @@ const Footer = () => {
       <div className='bg-black w-full py-4'>
         <div className='border-t border-gray-700 w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center py-4'>
           <p className='text-xs sm:text-lg text-center md:text-left mb-4 md:mb-0'>
-          {t('company.copyright')}
+            {t('company.copyright')}
           </p>
           <div className='flex space-x-4'>
             <FaFacebookF className='text-white hover:text-blue-500 cursor-pointer' />
