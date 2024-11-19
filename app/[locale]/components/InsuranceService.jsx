@@ -5,39 +5,39 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const services = [
-  {
-    title: 'Health Insurance',
-    description:
-      'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
-    imageUrl: '/images/health.jpeg',
-    url: '/health',
-    icon: '💉',
-  },
-  {
-    title: 'Life Insurance',
-    description: 'Let us help you navigate the key to financial security.',
-    imageUrl: '/images/life.jpeg',
-    url: '/life',
-    icon: '👨‍👩‍👧',
-  },
-  {
-    title: 'Dental & Vision ',
-    description:
-      'We provide affordable dental and vision policies for your overall health.',
-    imageUrl: '/images/dental.jpeg',
-    url: '/dental',
-    icon: '🦷',
-  },
-  {
-    title: 'Medicare ',
-    description:
-      'Finding the right medicare supplement can be challenging, we are here to help.',
-    imageUrl: '/images/medicare.jpeg',
-    url: '/medicare',
-    icon: '⚕️',
-  },
-];
+// const services = [
+//   {
+//     title: 'Health Insurance',
+//     description:
+//       'The Affordable Care Act offers resources to help reduce obstacles and provide healthcare access for those in need.',
+//     imageUrl: '/images/health.jpeg',
+//     url: '/health',
+//     icon: '💉',
+//   },
+//   {
+//     title: 'Life Insurance',
+//     description: 'Let us help you navigate the key to financial security.',
+//     imageUrl: '/images/life.jpeg',
+//     url: '/life',
+//     icon: '👨‍👩‍👧',
+//   },
+//   {
+//     title: 'Dental & Vision ',
+//     description:
+//       'We provide affordable dental and vision policies for your overall health.',
+//     imageUrl: '/images/dental.jpeg',
+//     url: '/dental',
+//     icon: '🦷',
+//   },
+//   {
+//     title: 'Medicare ',
+//     description:
+//       'Finding the right medicare supplement can be challenging, we are here to help.',
+//     imageUrl: '/images/medicare.jpeg',
+//     url: '/medicare',
+//     icon: '⚕️',
+//   },
+// ];
 
 const InsuranceService = () => {
   const { t } = useTranslation();

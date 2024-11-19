@@ -20,42 +20,44 @@
   "slides": [
     {
       "imageUrl": "/images/slider/african.jpeg",
-      "title": "Ansanm Nou ap Bati yon Ayiti ki Pi An Sante, Yon Fanmi a la Fwa.",
+      "title": "Ansanm N’ap Bati yon Ayiti pi An Sante (pi djanm), Yon Fanmi alafwa.",
       "url": "/health",
-      "buttonText": "Aprann Plis"
+      "buttonText": "Aprann Plis ; Plis enfòmasyon"
     },
     {
       "imageUrl": "/images/slider/african3.jpeg",
-      "title": "Plan Sante Konplè pou Endividyèl, Fanmi ak Opsyon Medicare.",
+      "title": "Plan Sante Konplè pou moun endividyèl, Fanmi avèk Opsyon Medicare.",
       "url": "/health",
       "buttonText": "Konpare Plan yo"
     },
     {
       "imageUrl": "/images/slider/african2.jpg",
-      "title": "Jwenn yon Plan Dantal ak Vizyon Abòdab pou Fanmi Ou.",
+      "title": "Jwenn yon Plan Dantè ak Vizyon Abòdab (ki pa chè) pou Fanmi ou.",
       "url": "/dental",
-      "buttonText": "Mande Pri"
+      "buttonText": "Dekouvri Plis"
     },
     {
       "imageUrl": "/images/slider/african3.jpg",
-      "title": "Pwoteje Avni Finansye Fanmi Ou ak Asirans Lavi.",
+      "title": "Pwoteje Fiti Finansye Fanmi ou ak Asirans Lavi (Asirans de vi).",
       "url": "/appointment",
-      "buttonText": "Kontakte Ajan"
+      "buttonText": "Kontakte yon Ajan"
     }
   ],
 
   "contact_form": {
-    "title": "Kouvri jodi a!",
-    "subtitle": "Chwazi tip asirans ou",
+    "title": "Jwenn Kouvèti Jodi a!",
+    "subtitle": "Chwazi Kalite Asirans ou",
     "fields": {
-      "full_name": "Non konplè",
-      "date_of_birth": "Dat nesans",
+      "full_name": "non komplè",
+      "first_name": "prenon",
+      "last_name": "non fanmi ; siyati",
+      "date_of_birth": "dat nesans ; date ou fèt",
       "zip_code": "Kòd postal",
       "email": "Imèl",
-      "mobile_phone": "Nimewo telefòn mobil (Sèlman pou Etazini)",
-      "text_consent": "Voye mesaj mwen ak nouvèl & òf"
+      "mobile_phone": "Nimewo telefòn mobil (Etazini sèlman)",
+      "text_consent": "Voye mesaj ak nouvèl &amp; òf pou mwen"
     },
-    "consent_notice": "Lè ou klike sou bouton ki anba a, ou dakò pou resevwa imèl maketing ak mesaj tèks. Anplis de sa, ou dakò pou kontakte pa apèl telefòn, yon sistèm apèl otomatik, mesaj tèks nan nimewo telefòn ou te bay la anwo a oswa pa imèl. Ou konprann sa a se pa yon kondisyon pou acha e ou ka resevwa yon sitasyon tou pa kontakte nou pa telefòn. Ou ka revoke konsantman sa a nenpòt ki lè lè ou kontakte nou nan 844-544-0663 oswa info@h4hinsurance.com. Ou konprann ke frè mesaj ak done karyè ou ka aplike.",
+    "consent_notice": "Lè w klike sou bouton ki anba a, w ap bay konsantman’w pou resevwa e-mail ak mesajmarketing, anplis w ap dakò pou resevwa apèl telefòn, yon sistèm otomatik pou voye mesaj ak apèl telefòn, mesaj tèks nan nimewo telefòn ou bay la oswa pa e-mail. Ou konprann sa a pa yon kondisyon pou achte nan men nou, epi ou ka resevwa yon estimasyon asirans mlè w kontakte nou pa telefòn. Ou ka anile konsantman sa a nenpòt lè lè w kontakte nou nan 844-544-0663 oswa info@h4hinsurance.com. Ou konprann ke tarif mesaj ak done operatè ou ka aplike. Verifye Règleman Konfidansyalite ak Tèm Sèvis SMS sou telefòn ou .",
     "links": {
       "privacy_policy": "Gade Politik Konfidansyalite",
       "sms_terms": "Tèm sèvis SMS"
@@ -99,7 +101,7 @@
     "useful_links": {
       "title": "Lyen Itil"
     },
-    "services": ["Règ Konfidansyalite", "Kondisyon Sèvis", "Kondisyon SMS"],
+    "services": ["Règleman Konfidansyalite", "Tèm Sèvis", "Tèm &amp; Kondisyon SMS"],
     "useful_links_data": [
       {
         "name": "Akèy",
@@ -122,52 +124,52 @@
         "href": "/#contact"
       }
     ],
-    "copyright": "© 2024 Health for Haitians. Tout Dwa Rezève."
+    "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
   },
 
   "home": {
     "hero": {
       "title": "Sante pou Ayisyen",
-      "subtitle": "Rankontre ak yon Ajan ki gen Lisans",
+      "subtitle": "Rankontre ak yon Ajan ki gen Lisans; pale ak yon Ajan ki gen Lisans",
       "cta_button": "Kontakte nou"
     },
     "main_section": {
-      "title": "Nou la pou sèvis bezwen asirans ou yo",
-      "description": "Asirans ka kite ou ak anpil kesyon, ann ede ou pran pi bon desizyon enfòme.",
-      "cta_button": "Kòmanse"
+      "title": "Nou La pou Satisfè tout Bezwen Asirans ou",
+      "description": "Asirans ka kite ou ak anpil kesyon, kite nou ede w pran pi bon desizyon ki nan bon enterè’w.",
+      "cta_button": "Ann Kòmanse; Kòmanse la; Kòmanse"
     },
     "services": [
       {
         "title": "Asirans Sante",
-        "description": "Lwa sou swen abòdab ofri resous pou ede diminye obstak yo ak bay aksè swen sante pou moun ki bezwen yo.",
+        "description": "Affordable Care Act (ACC) ofri resous pou ede diminye obstak ak bay aksè swen sante poumoun ki nan bezwen.",
         "imageUrl": "/images/health.jpeg",
         "url": "/health",
         "icon": "💉"
       },
       {
         "title": "Asirans Vi",
-        "description": "Ann ede ou navige kle pou sekirite finansye.",
+        "description": "Kite nou ede w jwenn kle sekirite finansye pou ou menm ak fanmi’w .",
         "imageUrl": "/images/life.jpeg",
         "url": "/life",
         "icon": "👨‍👩‍👧"
       },
       {
         "title": "Dantè & Vizyon",
-        "description": "Nou ofri politik dantè ak vizyon abòdab pour sante jeneral ou.",
+        "description": "Nou ofri plan dantè ak vizyon abòdab (a bon pri) (ki pa chè) pou sante jeneral ou.",
         "imageUrl": "/images/dental.jpeg",
         "url": "/dental",
         "icon": "🦷"
       },
       {
         "title": "Medicare",
-        "description": "Jwenn bon sipleman Medicare ka difisil, nou la pou ede.",
+        "description": "Jwenn konplemantè Medicare ki apwopriye a ka difisil, nou la pou’n ede’w .",
         "imageUrl": "/images/medicare.jpeg",
         "url": "/medicare",
         "icon": "⚕️"
       }
     ],
     "enrollment_section": {
-      "title": "Enskri Kounye a! Enskri ouvè a fini 15 Desanm.",
+      "title": "Enskri Kounya ! Peryòd Enskripsyon an (open enrollment) ap Fini 15 Desanm.",
       "time_labels": {
         "days": "Jou",
         "hours": "Èdtan",
@@ -181,7 +183,7 @@
     }
   },
   "growBusiness": {
-    "title": "Jwenn Kouvèti pou Fanmi Ou Jodi a!",
+    "title": "Kouvri fanmi’w jodi a",
     "button": "Pale ak yon Ajan"
   },
 
