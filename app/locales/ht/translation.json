@@ -277,48 +277,69 @@
         "button_link": "/appointment"
       },
       {
-        "title": "Plan pou Bezwen Fanmi Ou",
-        "description": "Jwenn bon plan sante pou fanmi ou pi fasil ke jamè! Opsyon Asirans Sante nou yo ofri yon gwo varyete plan ki fèt pou satisfè bezwen ak bidjè ou. Soti nan kouvèti konplè rive nan opsyon abòdab, nou gen ou kouvri.",
+        "title": "Plan pou Bezwen Fanmi ou ",
+        "description": "Jwenn yon bon plan sante pou fanmi ‘w pi fasil kounya! Opsyon Asirans Sante nou yo ofri’w yon varyete plan ki adapte pou bezwen ak bidjè ou. Soti nan kouvèti konplè rive nan opsyon abòdab, nou la pou ede w jwenn sa ou bezwen an.",
         "button_text": "Jwenn Yon Pri",
         "button_link": "/appointment"
       },
       {
-        "title": "Asirans Sante Ede Ou Ekonomize",
-        "description": "San kouvèti, menm yon sèl vizit lopital ka lakòz plizyè milye dola nan bòdwo medikal. Asirans sante ede ou jere depans sa yo lè li pataje fado a epi asire ou peye yon fraksyon de sa ou ta peye otreman.",
-        "call_to_action": "Pare pou pwoteje sa ki pi enpòtan? Pale ak yon ajan jodi a epi jwenn konsèy ekspè sou chwazi pi bon plan sante pou ou ak moun ou renmen yo.",
-        "link_text": "Pale ak yon ajan",
+        "title": "Asirans Sante Ede’w Ekonomize",
+        "description": "San kouvèti, menm yon sèl vizit lopital ka kòz dè milye de dola nan bill medikal. Asirans sante ede w jere depans sa yo, li pataje chay la epi asire w peye sèlman yon pati nan sa ou t ap peye otreman.",
+        "call_to_action": "Ou Pare pou pwoteje sa ki pi esansyèl lan? ",
+        "link_text": "Pale ak yon ajan jodi",
         "link": "/appointment"
       },
       {
-        "title": "Kisa Kouvèti Sante a Gen Ladan?",
-        "description": "Men kèk nan Benefis Esansyèl plan ACA a gen ladan:"
-      },
-      {
-        "title": "Kisa ki Depans Pèsonèl yo?",
-        "description": "Depans pèsonèl yo se depans ou peye dirèkteman pou sèvis swen sante ki pa kouvri pa plan asirans sante ou. Konprann depans sa yo enpòtan pou fè bidjè pou bezwen swen sante ou yo epi anpeche presyon finansye inatandi."
-      },
-      {
-        "title": "Depans Pèsonèl yo gen ladan:",
+        "title": "Ki Sa Kouvèti Sante Gen Ladann?",
+        "description": "Men kèk nan Avantaj Esansyèl kin nan plan ACA an:",
         "list": [
           {
-            "item": "Prim",
-            "description": "Peman mansyèl fiks ou fè pou kenbe asirans sante ou aktif."
+            "text": "Vizit Doktè ak Espesyalis"
+          },
+          {
+            "text": "Sèvis Ijans ak Lopital"
+          },
+          {
+            "text": "Preskripsyon Medikaman"
+          },
+          {
+            "text": "Sèvis Prevansyon (egzanp: chèk anyèl)"
+          },
+          {
+            "text": "Swen Matènite ak Nouvo Nèf"
+          },
+          {
+            "text": "Sèvis Sante Mantal"
+          }
+        ]
+
+      },
+      {
+        "title": "Kisa Depans Pòch yo Ye?",
+        "description": "Depans pòch yo se depans ou peye dirèkteman pou sèvis swen sante ki pa kouvri pa plan asirans sante ou. Konprann depans sa yo enpòtan pou bidjè swen sante ou epi pou evite strès finansye inatandi."
+      },
+      {
+        "title": "Depans Pòch yo ka inkli:",
+        "list": [
+          {
+            "item": "Bill/Premium",
+            "description": "Peman fiks chak mwa ou fè pou kenbe asirans sante ou aktif."
           },
           {
             "item": "Dediktib",
-            "description": "Kantite lajan ou dwe peye pou sèvis swen sante ki kouvri anvan asirans ou kòmanse peye."
+            "description": "Kantite lajan ou dwe peye pou sèvis swen sante kouvri yo anvan asirans ou kòmanse peye."
           },
           {
             "item": "Kopeman",
-            "description": "Yon kantite fiks ou peye pou sèvis espesifik tankou vizit doktè oswa preskripsyon."
+            "description": "Kantite fiks ou peye pou sèten sèvis tankou vizit doktè oswa preskripsyon."
           },
           {
             "item": "Koasirans",
-            "description": "Yon pousantaj nan depans ou pataje ak konpayi asirans ou aprè ou satisfè dediktib ou."
+            "description": "Yon pousantaj nan depans ou pataje ak konpayi asirans ou apre ou fin satisfè dediktib ou."
           },
           {
-            "item": "Konparezon Plan Asirans",
-            "description": "Lè w ap konpare plan asirans, li enpòtan pou revize tout depans yo. Eksplore pi bon plan ki adapte ak bezwen swen sante ou ak bidjè ou. Konekte ak ajan lisansye nou an jodi a!"
+            "item": "Konpare Plan Asirans",
+            "description": "Lè w ap konpare plan asirans yo, li enpòtan pou revize tout depans yo. Eksplore pi bon plan ki adapte ak bezwen swen sante ou ak bidjè ou. Konekte ak yon ajan ki gen lisans jodi a!"
           }
         ]
       }

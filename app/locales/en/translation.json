@@ -291,13 +291,33 @@
       {
         "title": "Health Insurance Helps You Save",
         "description": "Without coverage, even a single hospital visit can result in thousands of dollars in medical bills. Health insurance helps you manage these costs by sharing the burden and ensuring you pay a fraction of what you would otherwise.",
-        "call_to_action": "Ready to protect what matters most? Talk to an agent today and get expert advice on choosing the best health plan for you and your loved ones.",
+        "call_to_action": "Ready to protect what matters most? ",
         "link_text": "Talk to an agent",
         "link": "/appointment"
       },
       {
         "title": "What Does Health Coverage Include?",
-        "description": "Here are some of the Essential Benefits the ACA plan includes:"
+        "description": "Here are some of the Essential Benefits the ACA plan includes:",
+        "list": [
+          {
+            "text": "Doctor Visits and Specialist Care"
+          },
+          {
+            "text": "Emergency and Hospital Services"
+          },
+          {
+            "text": "Prescription Drugs"
+          },
+          {
+            "text": "Preventive Services (e.g. annual check-ups)"
+          },
+          {
+            "text": "Maternity and Newborn Care"
+          },
+          {
+            "text": "Mental Health Services"
+          }
+        ]
       },
       {
         "title": "What are Out-of-Pocket Expenses?",

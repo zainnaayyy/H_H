@@ -12,6 +12,7 @@ import BreadcrumbComp from '@/app/components/BreadcrumbComp';
 import Footer from '@/app/[locale]/components/Footer';
 import CTA from '@/app/[locale]/components/CTA';
 import Header from '@/app/[locale]/components/Header';
+import { useTranslation } from 'react-i18next';
 
 const Health = () => {
   const healthPoints = [
@@ -22,6 +23,9 @@ const Health = () => {
     'Maternity and Newborn Care',
     'Mental Health Services',
   ];
+  const { t } = useTranslation();
+  const healthSections = t('health.sections', { returnObjects: true });
+  console.log('Health Sections:', healthSections[3])
   return (
     <>
       <Header />
@@ -42,18 +46,15 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-              Plans for Your Family&apos;s Needs
+            {healthSections[1].title}
             </h2>
             <p className=' text-lg'>
-              Finding the right health plan for your family is easier than ever!
-              Our Health Insurance options offer a wide variety of plans
-              tailored to fit your needs and budget. From comprehensive coverage
-              to affordable options, we&apos;ve got you covered.
+            {healthSections[1].description}
             </p>
             <div className='flex justify-center items-center'>
               <Link href='/appointment'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
-                Start Here
+                {healthSections[1].button_text}
                 </button>
               </Link>
             </div>
@@ -97,25 +98,21 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className='text-3xl lg:text-5xl text-primary-darkAqua font-bold mb-8'>
-              Health Insurance Helps You Save
+            {healthSections[2].title}
             </h2>
             <p className=' text-lg'>
-              Without coverage, even a single hospital visit can result in
-              thousands of dollars in medical bills. Health insurance helps you
-              manage these costs by sharing the burden and ensuring you pay a
-              fraction of what you would otherwise.
+            {healthSections[2].description}
             </p>
             <br />
             <p className=' pl-2'>
-              Ready to protect what matters most?
+            {healthSections[2].call_to_action}
               <a
                 href='/appointment'
                 className='underline text-blue-600 pr-1 px-1'
               >
-                Talk to an agent
+               {healthSections[2].link_text}
               </a>
-              today and get expert advice on choosing the best health plan for
-              you and your loved ones.
+         
             </p>
           </motion.div>
         </div>
@@ -127,13 +124,13 @@ const Health = () => {
           transition={{ duration: 1.8 }}
         >
           <h2 className='text-center mt-6 text-white text-lg md:text-5xl font-bold mb-4'>
-            What Does Health Coverage Include?
+          {healthSections[3].title}
           </h2>
           <p className='text-center text-white text-lg mb-4 '>
-            Here are some of the Essential Benefits the ACA plan includes:
+          {healthSections[3].description}
           </p>
           <ul className='grid grid-cols-1 gap-y-4 mt-10 md:grid-cols-2 md:gap-x-6 mb-10'>
-            {healthPoints.map((feature, index) => (
+          {healthSections[3]?.list?.map((feature, index) => (
               <motion.li
                 key={index}
                 className='flex items-center'
@@ -146,7 +143,7 @@ const Health = () => {
                   className='mr-3 w-7 h-7 flex-shrink-0 text-success-solid'
                 />
                 <span className='bg-gray-100 px-2 text-sm font-normal text-primary-on-primary md:text-lg'>
-                  {feature}
+                {feature.text || feature.title || feature}
                 </span>
               </motion.li>
             ))}
@@ -176,14 +173,10 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className='text-3xl lg:text-5xl text-primary-darkAqua mt-6 font-semibold mb-8'>
-              What are Out-of-Pocket Expenses?
+            {healthSections[4].title}
             </h2>
             <p className='mb-4 text-lg'>
-              Out-of-pocket expenses are the costs you pay directly for
-              healthcare services that aren&apos;t covered by your health
-              insurance plan. Understanding these costs is crucial to budgeting
-              for your healthcare needs and preventing unexpected financial
-              strain.
+            {healthSections[4].description}
             </p>
           </motion.div>
         </div>
@@ -197,42 +190,23 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className='text-3xl lg:text-5xl text-primary-darkAqua mt-4 font-semibold mb-4'>
-              Out-of-Pocket Costs includes:
+            {healthSections[5].title}
             </h2>
             <ul className='list-none list-inside mb-6 text-lg'>
-              <li className='mb-1'>
-                <strong className='text-lg pr-1'>Premium:</strong>
-                The fixed monthly payment you make to keep your health insurance
-                active.
-              </li>
-              <li className='mb-1'>
-                <strong className='text-lg pr-1'>Deductibles:</strong>
-                The amount you must pay for covered healthcare services before
-                your insurance starts to pay.
-              </li>
-              <li className='mb-1'>
-                <strong className='text-lg pr-1'>Copayments:</strong>A fixed
-                amount you pay for specific services like doctor visits or
-                prescriptions.
-              </li>
-              <li className='mb-1'>
-                <strong className='text-lg pr-1'>Coinsurance:</strong>A
-                percentage of the costs you share with your insurance company
-                after meeting your deductible.
-              </li>
-              <li className='mb-1'>
-                <strong className='text-lg pr-1'>
-                  Comparing Insurance Plans:
-                </strong>
-                When comparing insurance plans, it&apos;s crucial to review all
-                costs.
-                <a href='/' className='underline text-blue-600 pr-1 px-1'>
-                  Explore the best plan
-                </a>
-                to fit your healthcare needs and budget. Connect with our
-                licensed agent today!
-              </li>
-            </ul>
+     {healthSections[5].list.map((item, index) => (
+       <li key={index} className='mb-1'>
+         <strong className='text-lg pr-1'>{item.item}:</strong>
+         {item.description}
+       </li>
+     ))}
+     <li className='mb-1'>
+       <strong className='text-lg pr-1'>
+         {healthSections[5].list[4].item}:
+       </strong>
+       {healthSections[5].list[4].description}
+     
+     </li>
+   </ul>
           </motion.div>
 
           {/* Right Side */}
@@ -250,68 +224,6 @@ const Health = () => {
           </motion.div>
         </div>
 
-        {/* <div className='w-full md:w-1/2 mt-20'>
-          <img
-            src='/images/health/Health.jpg'
-            alt='Health Image'
-            className='w-full h-full '
-          />
-        </div>
-        <h2 className='text-2xl mt-4 font-semibold mb-4'>
-          Understanding Health Insurance
-        </h2>
-        <h2 className='text-lg font-semibold mb-4'>
-          What are Out-of-Pocket Expenses?
-        </h2>
-        <p className='mb-6'>
-          Out-of-pocket expenses are the costs you pay directly for healthcare
-          services that aren&apos;t covered by your health insurance plan.
-          Understanding these costs is crucial to budgeting for your healthcare
-          needs and preventing unexpected financial strain.
-        </p>
-
-        <h2 className='text-lg font-semibold mb-2'>
-          Out-of-Pocket Costs includes:
-        </h2>
-        <ul className='list-none list-inside mb-6'>
-          <li className='mb-1'>
-            <strong className='text-sm'>Premium:</strong>
-            The fixed monthly payment you make to keep your health insurance
-            active.
-          </li>
-          <li className='mb-1'>
-            <strong className='text-sm'>Deductibles:</strong>
-            The amount you must pay for covered healthcare services before your
-            insurance starts to pay.
-          </li>
-          <li className='mb-1'>
-            <strong className='text-sm'>Copayments:</strong>A fixed amount you
-            pay for specific services like doctor visits or prescriptions.
-          </li>
-          <li className='mb-1'>
-            <strong className='text-sm'>Coinsurance:</strong>A percentage of the
-            costs you share with your insurance company after meeting your
-            deductible.
-          </li>
-          <li className='mb-1'>
-            <strong className='text-sm'>Out-of-Pocket Maximum:</strong>
-            The total amount you&apos;ll pay for covered services in a policy
-            period. Once you reach this limit, the insurance company covers all
-            further expenses.
-          </li>
-        </ul> */}
-        {/* <div className='mt-8'>
-          <p className='text-center'>
-            When comparing insurance plans, it&apos;s crucial to review all
-            costs. This understanding will help you make smarter decisions. Let
-            us help you{' '}
-            <a href='/' className='underline text-blue-600 pr-1'>
-              explore the best plan
-            </a>
-            to fit your healthcare needs and budget. Connect with our licensed
-            agent today!
-          </p>
-        </div> */}
         <div className='mt-5'>
           <CTA />
         </div>
