@@ -244,36 +244,48 @@
     }
   },
 
-  "dental_vision": {
-    "title": "Dental & Vision",
-    "description": "Affordable Dental & Vision Insurance Plans for Your Family",
-    "content": {
-      "benefits_title": "Benefits of Dental Insurance:",
-      "benefits": [
-        {
-          "title": "Enroll Anytime",
-          "description": "There is no need to wait for open enrollment—you can sign up for coverage year-round!"
+  
+    "dental_vision": {
+      "title": "Dental & Vision",
+      "description": "Affordable Dental & Vision Insurance Plans for Your Family",
+      "main_sections": {
+        "first_section": {
+          "title": "Affordable Dental & Vision Insurance Plans for Your Family",
+          "description": "Finding the right dental insurance doesn't have to be complicated—or expensive. We offer a range of affordable plans that make it easy to get the dental care you need. Plus, you can even bundle your plan with vision and hearing coverage for complete care, all in one package."
         },
-        {
-          "title": "Fast Activation",
-          "description": "Enroll today, and your coverage could begin as soon as next month."
+        "benefits_section": {
+          "title": "Benefits of Dental Insurance:",
+          "benefits": [
+            {
+              "title": "Enroll Anytime",
+              "description": "There is no need to wait for open enrollment—you can sign up for coverage year-round!"
+            },
+            {
+              "title": "Fast Activation",
+              "description": "Enroll today, and your coverage could begin as soon as next month."
+            },
+            {
+              "title": "Coverage Anywhere",
+              "description": "Our plans are available across the country, making it easy for nearly anyone to get covered."
+            }
+          ]
         },
-        {
-          "title": "Coverage Anywhere",
-          "description": "Our plans are available across the country, making it easy for nearly anyone to get covered."
+        "need_insurance_section": {
+          "title": "Why Do You Need Dental Insurance?",
+          "description": "Regular dental check-ups help catch issues before they become costly, ensuring you maintain a healthy smile. From routine cleanings to more serious procedures, dental insurance makes care more affordable, giving you peace of mind and protecting your wallet.",
+          "call_to_action": "Get Started Today! Explore our plans and see how easy it is to protect your smile."
         }
-      ],
-      "call_to_action": "Get Started Today! Explore our plans and see how easy it is to protect your smile."
+      },
+      "images": {
+        "main_images": [
+          "/images/dental/dental1.jpg",
+          "/images/dental/dental2.jpg",
+          "/images/dental/dental3.jpg"
+        ]
+      },
+      "cta_button": "Explore Plans"
     },
-    "images": {
-      "main_image": "/images/dental/dental.jpg",
-      "secondary_images": [
-        "/images/dental/dental1.jpg",
-        "/images/dental/dental2.jpg",
-        "/images/dental/dental3.jpg"
-      ]
-    }
-  },
+  
 
   "health": {
     "sections": [

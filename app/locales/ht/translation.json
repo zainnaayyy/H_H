@@ -238,36 +238,50 @@
     }
   },
 
-  "dental_vision": {
-    "title": "Dantè & Vizyon",
-    "description": "Plan Asirans Dantè & Vizyon Abòdab pou Fanmi Ou",
-    "content": {
-      "benefits_title": "Benefis Asirans Dantè:",
-      "benefits": [
-        {
-          "title": "Enskri Nenpòt Lè",
-          "description": "Pa gen bezwen tann pou ouvèti enskripsyon—ou ka enskri pou kouvèti pandan tout ane a!"
+  
+  
+    "dental_vision": {
+      "title": "Kouvèti Dantè &amp; Vizyon",
+      "description": "Planes de Seguro Dental y de Visión Accesibles para su Familia",
+      "main_sections": {
+        "first_section": {
+          "title": "Planes de Seguro Dental y de Visión Accesibles para su Familia",
+          "description": "Jwenn bon asirans dantè a pa bezwen konplike—ni chè. Nou ofri yon varyete plan abòdab ki rann li fasil pou jwenn swen dantè ou bezwen an. Anplis, ou ka menm konbine plan ou a ak kouvèti pou vizyon ak tande pou yon swen konplè, tout nan yon sèl paket (bwat ; pakèt)."
         },
-        {
-          "title": "Aktivasyon Rapid",
-          "description": "Enskri jodi a, e kouvèti ou ka kòmanse nan mwa kap vini an."
+        "benefits_section": {
+          "title": "Avantaj Asirans Dantè:",
+          "benefits": [
+            {
+              "title": "Enskri Nenpòt Lè:",
+              "description": "Pa bezwen tann pou enskripsyon ouvè (open enrollment) —ou ka enskri pou kouvèti nenpòt lè pandan tout ane a!"
+            },
+            {
+              "title": "Aktivasyon Rapid:",
+              "description": "Enskri jodi a, epi kouvèti ak benefis ou ka kòmanse nan mwa kap vini an."
+            },
+            {
+              "title": "Kouvèti Kèlkeswa Kote’ w ye an:",
+              "description": "NPlan nou yo disponib atravè tout peyi a, sa fè li fasil pou prèske nenpòt moun jwenn kouvèti."
+            }
+          ]
         },
-        {
-          "title": "Kouvèti Patou",
-          "description": "Plan nou yo disponib atravè tout peyi a, sa ki fè li fasil pou prèske nenpòt moun jwenn kouvèti."
+        "need_insurance_section": {
+          "title": "Poukisa ou bezwen Asirans Dantè?",
+          "description": "Vizit dantis regilye ede dekouvri pwoblèm anvan yo vin koute chè, li asire tout ke ou kenbe yon souri an sante. Soti nan netwayaj woutin rive nan pwosedi ki pi serye, asirans dantè fè swen plis abòdab, ba ou lapè mantal, ak pwoteksyon pou bous ou.",
+          "call_to_action": "Kòmanse Jodi a! Eksploreplan nou yo epi wè kijan li fasil pou pwoteje souri ou."
         }
-      ],
-      "call_to_action": "Kòmanse Jodi a! Eksplore plan nou yo e wè kijan li fasil pou pwoteje souri ou."
+      },
+      "images": {
+        "main_images": [
+          "/images/dental/dental1.jpg",
+          "/images/dental/dental2.jpg",
+          "/images/dental/dental3.jpg"
+        ]
+      },
+      "cta_button": "Explorar Planes"
     },
-    "images": {
-      "main_image": "/images/dental/dental.jpg",
-      "secondary_images": [
-        "/images/dental/dental1.jpg",
-        "/images/dental/dental2.jpg",
-        "/images/dental/dental3.jpg"
-      ]
-    }
-  },
+  
+  
 
   "health": {
     "sections": [
