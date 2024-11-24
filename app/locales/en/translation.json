@@ -363,94 +363,150 @@
     ]
   },
 
-  "life": {
-    "header": {
-      "title": "Life",
-      "button": "Get Your Free Quote Today!",
-      "image": {
-        "src": "/images/life/life.jpg",
-        "alt": "Health Image"
-      }
-    },
-    "main_content": [
-      {
-        "title": "Get a Personalized Quote... Take the First Step Today!",
-        "description": "Your family's future is too important to leave to chance. Start securing your financial legacy today by exploring our life insurance options. Get your free quote and take the first step towards peace of mind.",
-        "button": "Get a Quote"
+ 
+      "life_insurance": {
+        "breadcrumb": {
+          "title": "Life Insurance",
+          "image": "/images/life/life.jpg"
+        },
+        "main_section": {
+          "title": "Protect Your Loved Ones with Life Insurance",
+          "description": "Life is unpredictable, but your family's future doesn't have to be. Life insurance provides peace of mind, knowing that your family or dependents will be financially protected if the unexpected happens. It can be especially crucial if you:",
+          "key_points": [
+            "Have dependents, like children or a spouse, who rely on your income.",
+            "Carry significant debt, such as a mortgage, loans, or credit card debt.",
+            "Want to ensure your family has financial support for education, daily expenses, or long-term financial stability."
+          ],
+          "image": "/images/life/Life1.jpg"
+        },
+        "types_section": {
+          "title": "Types of Life Insurance",
+          "types": [
+            {
+              "title": "Term Life Insurance",
+              "description": "Affordable coverage for a set period (10, 20, 30 years). Great for short-term needs like income replacement or mortgage protection."
+            },
+            {
+              "title": "Whole Life Insurance",
+              "description": "Lifelong coverage that includes a cash value component, building savings over time."
+            },
+            {
+              "title": "Universal Life Insurance",
+              "description": "Flexible policy with the potential for cash value growth, allowing you to adjust premiums and coverage as your needs change."
+            }
+          ],
+          "image": "/images/life/Life2.jpg"
+        },
+        "quote_section": {
+          "title": "Get a Personalized Quote... Take the First Step Today!",
+          "description": "Your family's future is too important to leave to chance. Start securing your financial legacy today by exploring our life insurance options. Get your free quote and take the first step towards peace of mind.",
+          "button_text": "Get Your Free Quote Today",
+          "image": "/images/life/Life3.jpg"
+        }
       },
-      {
-        "title": "Protect Your Loved Ones with Life Insurance",
-        "description": "Life is unpredictable, but your family's future doesn't have to be. Life insurance provides peace of mind, knowing that your family or dependents will be financially protected if the unexpected happens.",
-        "bullet_points": [
-          "Have dependents, like children or a spouse, who rely on your income.",
-          "Carry significant debt, such as a mortgage, loans, or credit card debt.",
-          "Want to ensure your family has financial support for education, daily expenses, or long-term financial stability."
-        ]
-      }
-    ]
-  },
+    
 
-  "medicare": {
-    "header": {
-      "title": "Medicare",
-      "button": "Find Out More",
-      "image": {
-        "src": "/images/medi/medi1.jpg",
-        "alt": "Health Image"
+      "medicare": {
+        "breadcrumb": {
+          "title": "Medicare",
+          "image": "/images/medi/medi5.jpg"
+        },
+        "hero_section": {
+          "title": "Medicare",
+          "home": "Home"
+        },
+        "main_section": {
+          "title": "Medicare Coverage Made Simple, Affordable, and Tailored to Your Needs.",
+          "description": "Turning 65 and navigating Medicare can be overwhelming, but we're here to help. Whether you're enrolling for the first time, exploring additional coverage options, or switching plans, we'll guide you every step of the way.",
+          "button": "Get a Quote",
+          "image": "/images/medi/medi2.jpg"
+        },
+        "plans_section": {
+          "title": "What Medicare Plan Is Right for You?",
+          "image": "/images/medi/medi3.jpg",
+          "plans": [
+            {
+              "title": "Medicare Advantage (Part C)",
+              "description": "Medicare Advantage plans combine hospital insurance (Part A) and medical insurance (Part B) into one plan. Many of these plans also offer prescription drug coverage (Part D), along with extra benefits like vision, dental, and hearing."
+            },
+            {
+              "title": "Medicare Supplement (Medigap)",
+              "description": "Medicare Supplement plans help cover out-of-pocket costs that traditional Medicare doesn't, such as copayments, coinsurance, and deductibles. Choose from a variety of plans designed to save you money and protect you from high medical bills"
+            },
+            {
+              "title": "Prescription Drug Plans (Part D)",
+              "description": "Get coverage for prescription medications with a Part D plan. You'll have access to a broad network of pharmacies and coverage for the drugs you need."
+            }
+          ]
+        },
+        "compare_section": {
+          "title": "Compare Medicare Plans Now!",
+          "description": "Don't leave your healthcare to chance. Explore our Medicare plans today and find coverage that keeps you healthy, protected, and worry-free. With our expert guidance and simple tools, you can confidently choose the best plan for your needs.",
+          "call_text": "Call to speak",
+          "expert_text": "with a licensed Medicare expert today!",
+          "image": "/images/medi/medi4.jpg"
+        }
+      },
+
+
+    "mission": {
+      "breadcrumb": {
+        "title": "Mission",
+        "image": "/images/mission/mission.jpg"
+      },
+      "make_difference": {
+        "title": "How We Make a Difference",
+        "description": "Our mission is to improve the lives of Haiti's underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives.",
+        "button": "Discover More",
+        "image": "/images/mission/mission1.jpg"
+      },
+      "stronger_haiti": {
+        "title": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time.",
+        "description": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change.",
+        "image": "/images/mission/missionPic.jpg"
+      },
+      "breaking_barriers": {
+        "title": "Breaking Down Barriers for Equity and Growth",
+        "description": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy.",
+        "image": "/images/mission/mission2.jpg"
+      },
+      "unlocking_potential": {
+        "title": "Unlocking Potential for a Thriving Future",
+        "description": "Empowering Haitians unlocks their full potential, generating innovation, cultural diversity, and a more inclusive society. When we uplift our own, we build a future where everyone thrives",
+        "image": "/images/mission/mission3.jpg"
       }
     },
-    "main_content": [
-      {
-        "title": "Medicare Coverage Made Simple, Affordable, and Tailored to Your Needs.",
-        "description": "Turning 65 and navigating Medicare can be overwhelming, but we're here to help. Whether you're enrolling for the first time, exploring additional coverage options, or switching plans, we'll guide you every step of the way.",
-        "button": "Get a Quote"
-      },
-      {
-        "title": "Compare Medicare Plans Now!",
-        "description": "Don't leave your healthcare to chance. Explore our Medicare plans today and find coverage that keeps you healthy, protected, and worry-free. With our expert guidance and simple tools, you can confidently choose the best plan for your needs. Call to speak with a licensed Medicare expert today!",
-        "bullet_points": [
-          {
-            "title": "Medicare Advantage:",
-            "text": "Medicare Advantage plans combine hospital insurance (Part A) and medical insurance (Part B) into one plan. Many of these plans also offer prescription drug coverage (Part D), along with extra benefits like vision, dental, and hearing."
-          },
-          {
-            "title": "Medicare Supplement:",
-            "text": "Medicare Supplement plans help cover out-of-pocket costs that traditional Medicare doesn't, such as copayments, coinsurance, and deductibles. Choose from a variety of plans designed to save you money and protect you from high medical bills."
-          },
-          {
-            "title": "Prescription Drug Plans:",
-            "text": "Get coverage for prescription medications with a Part D plan. You'll have access to a broad network of pharmacies and coverage for the drugs you need."
+
+
+      "appointment": {
+          "title": "Appointment Scheduling",
+          "subtitle": "Effortlessly schedule your appointment with flexible options and receive instant confirmation via email.",
+          "services": [
+            {
+              "id": 1,
+              "title": "Call us now",
+              "description": "Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone"
+            },
+            {
+              "id": 2,
+              "title": "Schedule for a Phone Appointment",
+              "description": "Conveniently book your appointment for a meeting by phone at a preferred date and time."
+            },
+            {
+              "id": 3,
+              "title": "Face-to-Face Meeting",
+              "description": "Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience."
+            },
+            {
+              "id": 4,
+              "title": "Virtual Consultation",
+              "description": "Connect with us online through a virtual meeting. Get the same expert advice from the comfort of your home."
+            }
+          ],
+          "form": {
+            "date_select": "Please select both date and time",
+            "success_message": "Appointment scheduled for {{date}} at {{time}}"
           }
-        ]
-      }
-    ]
-  },
-  "mission": {
-    "content": [
-      {
-        "section": "Mission",
-        "text": "Our mission is to improve the lives of Haiti's underserved populations by providing access to affordable and comprehensive health insurance. We believe that everyone, regardless of their financial situation, deserves quality healthcare. By breaking down financial barriers and promoting awareness of available health services, we are working to ensure that more Haitian families can lead healthier, more secure lives."
-      },
-      {
-        "section": "Call to Action",
-        "text": "Find Out More"
-      },
-      {
-        "section": "How We Make a Difference",
-        "text": "Together, We are Building a Stronger, Healthier Haiti, One Policy at a Time."
-      },
-      {
-        "section": "Investment Importance",
-        "text": "Investing in Haitian communities is not just a moral imperative; it's a catalyst for sustainable growth and positive change."
-      },
-      {
-        "section": "Breaking Down Barriers",
-        "text": "The Haitian community often faces systemic barriers that limit access to essential resources, such as education, healthcare, and economic opportunities. By directing investments into these areas, we can foster equity, create pathways for success, and strengthen the broader economy."
-      },
-      {
-        "section": "Unlocking Potential",
-        "text": "Empowering Haitians unlocks their full potential, generating innovation, cultural diversity, and a more inclusive society. When we uplift our own, we build a future where everyone thrives."
-      }
-    ]
-  }
+        }
+        
 }

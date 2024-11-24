@@ -1,66 +1,56 @@
-// ServicesSection.js
 'use client';
 import React, { useState } from 'react';
 import { FaBuilding, FaPhone, FaHandshake, FaLaptop } from 'react-icons/fa';
 import { Select, Button, message } from 'antd';
 import moment from 'moment';
+import { useTranslation } from 'react-i18next';
 import { Calendar } from '@/components/ui/calendar';
 import CalendarSection from './CalendarSection';
 import InterviewForm from './InterviewForm';
 
-const services = [
-  {
-    id: 1,
-    title: 'Call us now',
-    description:
-      'Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone',
-    icon: FaPhone,
-  },
-  {
-    id: 2,
-    title: 'Schedule for a Phone Appointment',
-    description:
-      'Conveniently book your appointment for a meeting by phone at a preferred date and time.',
-    icon: FaHandshake,
-  },
-  {
-    id: 3,
-    title: 'Face-to-Face Meeting',
-    description:
-      'Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience.',
-    icon: FaBuilding,
-  },
-  {
-    id: 4,
-    title: 'Virtual Consultation',
-    description:
-      'Connect with us online through a virtual meeting. Get the same expert advice from the comfort of your home.',
-    icon: FaLaptop,
-  },
-];
-
 const ServicesSection = () => {
+  const { t } = useTranslation();
   const [selectedService, setSelectedService] = useState(null);
 
+  const services = [
+    {
+      id: 1,
+      title: t('appointment.services.0.title'),
+      description: t('appointment.services.0.description'),
+      icon: FaPhone,
+    },
+    {
+      id: 2,
+      title: t('appointment.services.1.title'),
+      description: t('appointment.services.1.description'),
+      icon: FaHandshake,
+    },
+    {
+      id: 3,
+      title: t('appointment.services.2.title'),
+      description: t('appointment.services.2.description'),
+      icon: FaBuilding,
+    },
+    {
+      id: 4,
+      title: t('appointment.services.3.title'),
+      description: t('appointment.services.3.description'),
+      icon: FaLaptop,
+    },
+  ];
+
   const handleServiceClick = (service) => {
-    // if (service.id !== 1) {
-    // Don't render the form for "Schedule via Phone"
     setSelectedService(service);
-    // }
-  };
-  const goBackToCalendar = () => {
-    setShowInterview(false);
   };
 
   return (
     <div className='bg-gray-100 py-16'>
       <div className='text-center mb-12'>
         <h2 className='text-3xl font-bold text-gray-800'>
-          Appointment Scheduling
+          {t('appointment.title')}
         </h2>
         <p className='text-gray-600 mt-2 text-lg'>
-          Effortlessly schedule your appointment with flexible options and
-          receive instant confirmation via email.
+          {t('appointment.subtitle')}
         </p>
       </div>
       {selectedService ? (
@@ -94,12 +84,11 @@ const ServicesSection = () => {
   );
 };
 
-const ScheduleForm = ({ service, goBack, goBackToCalendar }) => {
+const ScheduleForm = ({ service, goBack }) => {
+  const { t } = useTranslation();
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [showInterview, setShowInterview] = useState(false);
-
-  console.log(selectedTime, selectedDate, 'checking both');
 
   const handleDateSelect = (date) => {
     setSelectedDate(date);
@@ -112,25 +101,18 @@ const ScheduleForm = ({ service, goBack, goBackToCalendar }) => {
   const handleSubmit = () => {
     if (selectedDate && selectedTime) {
       message.success(
-        `Appointment scheduled for ${moment(selectedDate).format(
-          'MMMM Do YYYY'
-        )} at ${selectedTime}`
+        t('appointment.form.success_message', {
+          date: moment(selectedDate).format('MMMM Do YYYY'),
+          time: selectedTime
+        })
       );
     } else {
-      message.error('Please select both date and time');
+      message.error(t('appointment.form.date_select'));
     }
   };
 
-  const timeOptions = Array.from({ length: 10 }, (_, index) =>
-    moment({ hour: 9 + index }).format('h:mm A')
-  );
-
   return (
     <div className='bg-white p-8 shadow-lg rounded-lg'>
-      {/* <h3 className='text-2xl text-center font-bold text-gray-800 mb-4'>
-        {service.title}
-      </h3>
-      <p className='text-gray-600 text-center mb-4'>{service.description}</p> */}
       {showInterview ? (
         <InterviewForm
           selectedDate={selectedDate}

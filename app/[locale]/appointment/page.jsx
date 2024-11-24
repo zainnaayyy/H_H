@@ -1,23 +1,35 @@
-'use client';
-import React, { useState } from 'react';
-import { DatePicker, TimePicker, Radio, Button, message, Input } from 'antd';
-import { useRouter } from 'next/navigation';
-import moment from 'moment';
-import 'antd/dist/reset.css'; // Ant Design Reset CSS
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import ServicesSection from '../components/ServicesSection';
+import TranslationsProvider from '@/lib/TranslationProvider';
+import initTranslations from '../i18n';
+import LanguageChanger from '@/components/LanguageChanger';
+import AboutUs from '@/components/AboutUs';
+import Mission from '@/components/Mission';
+import Health from '@/components/Health';
+import Dental from '@/components/Dental';
+import Life from '@/components/Life';
+import ScheduleAppointment from '@/components/Appointment';
 
-const ScheduleAppointment = () => {
+const i18nNamespaces = ['translation'];
+
+async function appointment({ params: { locale } }) {
+  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+
+  console.log({ locale });
+
   return (
-    <>
-      <Header />
-      <div>
-        <ServicesSection />
-      </div>
-      <Footer />
-    </>
-  );
-};
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={locale}
+      resources={resources}
+    >
+      <main>
+        {/* <h1>{t('header')}</h1> */}
+        {/* <ExampleClientComponent /> */}
+        {/* <h1>{t('name')}</h1> */}
 
-export default ScheduleAppointment;
+        <ScheduleAppointment />
+      </main>
+    </TranslationsProvider>
+  );
+}
+
+export default appointment;
