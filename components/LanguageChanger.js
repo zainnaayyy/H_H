@@ -46,6 +46,7 @@ export default function LanguageChanger() {
       <select onChange={handleChange} value={currentLocale}>
         <option value='en'>English</option>
         <option value='ht'>Creole</option>
+        <option value='es'>Spanish</option>
       </select>
     </div>
   );
