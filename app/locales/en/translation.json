@@ -59,42 +59,257 @@
     },
     "consent_notice": "By clicking the button below, you consent to receiving marketing emails and text messages. Additionally, you consent to being contacted by phone call, an automatic telephone dialing system, text message at the telephone number you provided above or by email. You understand this is not a condition of purchase and you may also receive a quote by contacting us by phone. You may revoke this consent at any time by contacting us at 844-544-0663 or info@h4hinsurance.com. You understand your carrier's message and data rates may apply.",
     "links": {
-      "privacy_policy": "View Privacy Policy",
-      "sms_terms": "SMS Terms of Service"
+      "privacy_policy": "Privacy Policy",
+      "terms_and_conditions": "Terms and Conditions"
     }
   },
 
-  "sms_terms": {
-    "please_read": "Please read and review our SMS Terms of Service below.",
-    "description": {
-      "title": "SMS Services Description:",
-      "content": "Your use of the Health For Haitians services to receive short message services and/or multi-media services  for marketing and non-marketing purposes is subject to these SMS Terms of Service (these SMS Terms). The SMS Services and our collection and use of your personal information is also subject to our SMS Privacy Policy. By enrolling to use, using or accessing the SMS Services, you accept and agree to these SMS Terms and our SMS Privacy Policy."
+  
+  
+    "terms_and_conditions": {
+      "title":"Terms and Conditions",
+      "welcome": "Welcome to the website of H4HInsurance (“we,” “our,” or “us”). By accessing or using our website (h4hinsurance.com, the “Site”), you agree to these Terms and Conditions. If you do not agree to these Terms, please do not use the Site.",
+      "acceptance_of_terms": {
+        "title": "1. Acceptance of Terms",
+        "content": [
+          "These Terms govern your use of the Site. By accessing or using the Site, you represent that:",
+          "You are at least 18 years old.",
+          "You are a resident of the United States.",
+          "You agree to comply with these Terms."
+        ]
+      },
+      "use_of_the_site": {
+        "title": "2. Use of the Site",
+        "license_to_use": {
+          "title": "a. License to Use the Site:",
+          "content": "H4HInsurance grants you a limited, non-exclusive, non-transferable, revocable license to use the Site solely for personal, non-commercial purposes related to insurance services."
+        },
+        "prohibited_activities": {
+          "title": "b. Prohibited Activities:",
+          "content": [
+            "You agree not to:",
+            "Copy, distribute, or reproduce content from the Site without authorization.",
+            "Use the Site to upload or distribute harmful software.",
+            "Attempt to reverse engineer, decompile, or disassemble the Site.",
+            "Use the Site for unlawful or fraudulent purposes."
+          ]
+        },
+        "site_modifications": {
+          "title": "c. Site Modifications:",
+          "content": "H4HInsurance reserves the right to modify, suspend, or discontinue the Site or any features thereof at any time without prior notice."
+        }
+      },
+      "information_you_provide": {
+        "title": "3. Information You Provide",
+        "content": [
+          "To use certain features of the Site, you may need to provide personal information. By providing this information, you agree that:",
+          "The information is accurate, current, and complete.",
+          "You will update the information as necessary.",
+          "You consent to the use of your information as outlined in our Privacy Policy."
+        ]
+      },
+      "privacy": {
+        "title": "4. Privacy",
+        "content": "Your use of the Site is subject to our Privacy Policy, which explains how we collect, use, and protect your personal information. By using the Site, you consent to the practices described in the Privacy Policy."
+      },
+      "sms_terms_of_service": {
+        "title": "5. SMS Terms of Service",
+        "program_name_and_description": {
+          "title": "a. Program Name and Description:",
+          "content": "H4HInsurance SMS Services may send you marketing and non-marketing messages, including transactional updates, promotions, special offers, and other relevant insurance-related information. Messages may be sent using automated technologies, such as autodialers or automatic telephone dialing systems."
+        },
+        "message_frequency_and_cadence": {
+          "title": "b. Message Frequency and Cadence:",
+          "content": "Message frequency will vary based on your engagement and preferences. For example, you may receive up to 9 messages per month."
+        },
+        "message_and_data_rates": {
+          "title": "c. Message and Data Rates:",
+          "content": "We do not charge for Messages sent through the SMS Services. However, standard message and data rates imposed by your mobile provider may apply."
+        },
+        "eligibility": {
+          "title": "d. Eligibility:",
+          "content": [
+            "To receive SMS Services, you must be:",
+            "A resident of the United States.",
+            "18 years of age or older."
+          ]
+        },
+        "opt_in_agreement": {
+          "title": "e. Opt-In Agreement:",
+          "content": "By providing your mobile number, you voluntarily opt-in to the SMS Services and agree to receive recurring Messages at the mobile number provided. Opting in is not required to purchase any products or services."
+        },
+        "opt_out_instructions": {
+          "title": "f. Opt-Out Instructions:",
+          "content": "To stop receiving Messages, reply STOP, QUIT, CANCEL, OPT-OUT, or UNSUBSCRIBE to any Message. You may continue to receive Messages for a short time while we process your request. To resume receiving Messages, reply START to a previous Message."
+        },
+        "customer_care_contact_information": {
+          "title": "g. Customer Care Contact Information:",
+          "content": "For assistance, reply HELP to any Message or contact us at",
+          "Email": "h4hinsurance.com",
+          "Phone": "1.844.544.0663"
+        }
+        },
+        "privacy_and_data_sharing": {
+          "title": "h. Privacy and Data Sharing:",
+          "content": "Your personal data, including your SMS opt-in status, will only be shared with third-party service providers or vendors who assist in delivering SMS Services. See our Privacy Policy for more details."
+        },
+        "disclaimer_and_liability": {
+          "title": "i. Disclaimer and Liability:",
+          "content": "The SMS Services are provided 'as-is' and may not always be available. H4HInsurance.com and its service providers are not responsible for failed or delayed Messages."
+        },
+      "intellectual_property": {
+        "title": "6. Intellectual Property",
+        "content": "All content, trademarks, and materials on the Site are the property of H4HInsurance or its licensors. You may not use any of our intellectual property without prior written consent."
+      },
+      "disclaimers": {
+        "title": "7. Disclaimers",
+        "no_professional_advice": {
+          "title": "a. No Professional Advice:",
+          "content": "The content on the Site is provided for informational purposes only and does not constitute professional, financial, or legal advice."
+        },
+        "no_guarantee_of_results": {
+          "title": "b. No Guarantee of Results:",
+          "content": "We do not guarantee that insurance quotes or recommendations provided will meet your requirements. Always consult directly with insurance carriers or agents."
+        }
+      },
+      "limitation_of_liability": {
+        "title": "8. Limitation of Liability",
+        "content": [
+          "To the fullest extent permitted by law:",
+          "H4HInsurance is not responsible for any damages arising from your use of the Site.",
+          "Our liability is limited to the amount you paid us for services accessed through the Site."
+        ]
+      },
+      "arbitration_and_dispute_resolution": {
+        "title": "9. Arbitration and Dispute Resolution",
+        "content": "Any disputes arising from your use of the Site will be resolved through binding arbitration in accordance with the Federal Arbitration Act. You waive the right to participate in class actions."
+      },
+      "termination": {
+        "title": "10. Termination",
+        "content": "H4HInsurance reserves the right to terminate your access to the Site for any violation of these Terms or misuse of the Site."
+      },
+      "changes_to_these_terms": {
+        "title": "11. Changes to These Terms",
+        "content": "We may update these Terms periodically. Changes will be posted on this page with the updated effective date. Continued use of the Site indicates your acceptance of the revised Terms."
+      },
+      "contact_us": {
+        "title": "12. Contact Us",
+        "content": [
+          "If you have questions about these Terms, please contact us:",
+          "H4HInsurance",
+          "1000 NW 65th St, Suite 110",
+          "Fort Lauderdale, FL 33309",
+          "Email: info@h4hinsurance.com"
+        ]
+      }
     },
-    "services_description": {
-      "title": "SMS Services Description:",
-      "content": "We may send marketing and non-marketing Messages through the SMS Services which may include transactional Messages. Marketing Messages advertise and promote our products and services and may include promotions, specials, other marketing offers, abandoned checkout reminders and other relevant information. Transactional Messages relate to an existing or ongoing transaction and may include updates and other transaction-related information. Messages may be sent using an automated technology, including an autodialer, automated system, or automatic telephone dialing system. Message frequency will vary. You agree that we and our third-party service providers may send you Messages regarding the foregoing topics and that such Messages and/or calls may be made or placed using different telephone numbers or short codes. We do not charge for Messages sent through the SMS Services but you are responsible for any Message and data rates imposed by your mobile provider, as standard data and Message rates may apply for short Message alerts. We do not share text message opt-in consents or related mobile telephone numbers with third parties, except with our service providers and vendors to provide our SMS Services."
-    },
-    "eligibility": {
-      "title": "Eligibility:",
-      "content": "To receive SMS Services, you must be a resident of the United States and 18 years of age or older."
-    },
-    "user_opt_in": {
-      "title": "User Opt-In:",
-      "content": "By providing your mobile phone number to us, you are voluntarily opting in to the SMS Services and you agree to receive recurring Messages from us at the mobile phone number associated with your opt-in, even if such number is registered on any state or federal Do Not Call list. You represent that any mobile phone number you provide to us is a valid mobile phone number of which you are the valid account owner or authorized user. If you change your mobile phone number or are no longer the valid account owner or authorized user of the mobile phone number, you are responsible for notifying us immediately at info@H4Hinsurance.com. You agree to indemnify us in full for all claims, expenses, and damages related to or caused in whole or in part by your failure to notify us if you change your mobile phone number including, but not limited to, all claims, expenses, and damages related to or arising under the Telephone Consumer Protection Act. Your use of the SMS Services is not required to make any purchase from us and your use of the SMS Services is completely voluntary."
-    },
-    "opt_in_success": {
-      "title": "  User Opt-Out and Support:",
-      "content": "You may opt-out of the SMS Services at any time. If you wish to opt-out of the SMS Services and stop receiving Messages from us, or you no longer agree to these SMS Terms, reply STOP, QUIT, CANCEL, OPT-OUT, or UNSUBSCRIBE to any Message from us. You may continue to receive Messages for a short period while we process your request and you may receive a one-time opt-out confirmation message. You understand and agree that the foregoing is the only reasonable method of opting out. If you want to use the SMS Services again, just opt-in as you did the first time, or text START to a Message sent by us, and we will start sending Messages to you again. For support, reply HELP to any Message from us. The SMS Services may not recognize requests that modify the foregoing commands, and you agree that we and our service providers will not be liable for failing to honor requests that do not comply with the requirements in these SMS Terms. We may also change the telephone number or short code we use to operate the SMS Services and we will notify you of any such change. You acknowledge that any requests sent to a telephone number or short code that has been changed may not be received by us and we will not be responsible for failing to honor a request sent to a telephone number or short code that has been changed."
-    },
-    "warranty": {
-      "title": "Disclaimer of Warranty and Liability:",
-      "content": "The SMS Services are offered on an “as-is” basis and may not be available in all areas, at all times, or on all mobile providers. You agree that neither we nor our service providers will be liable for any failed, delayed, or misdirected delivery of any Message or information sent through the SMS Services. To the fullest extent permissible pursuant to applicable law, we are not responsible and will not be liable for any damages of any nature, including without limitation any incidental, special or consequential damages (such as lost profits or lost business opportunities), punitive damages or attorney’s fees."
-    },
-    "modification": {
-      "title": " Modifications:",
-      "content": "We may revise, modify, amend, suspend or cancel all or any part of the SMS Services or any of its features at any time, with or without notice. To the extent permitted by applicable law, we may also modify these SMS Terms at any time. Any such modification will take effect when it is posted to our website or websites associated with the SMS Services. You agree to review these SMS Terms periodically to ensure that you are aware of any modifications. Your continued use of the SMS Services will constitute your acceptance of those modifications or changes. If you have any questions about this terms of service, contact us at: Health For Haitians, 1000 NW 65th St. Suite 103, Fort Lauderdale, FL 33309. Email: info@H4Hinsurance.com. Phone: 1-844-544-0663"
-    }
-  },
+
+
+    
+    
+      "privacy_policy": {
+        "title":"Privacy Policy",
+          "commitment": "H4HInsurance is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website (h4hinsurance.com) and interact with our services.",
+          "information_we_collect": {
+              "title": "1. Information We Collect",
+              "pii": {
+                  "title": "a. Personally Identifiable Information (PII)",
+                  "content": "We collect information such as your name, address, phone number, email, date of birth, and other personal details necessary to provide insurance services. This may also include information about family members if required for the services."
+              },
+              "npii": {
+                  "title": "b. Non-Personally Identifiable Information (NPII)",
+                  "content": "We may collect non-identifiable information such as demographic data, browser type, device details, and browsing activity on our website."
+              }
+          },
+          "how_we_collect_information": {
+              "title": "2. How We Collect Information",
+              "from_you": {
+                  "title": "a. Information Provided by You",
+                  "content": "We collect information directly from you when you fill out forms on our website, contact us via phone or email, or provide details during an insurance consultation."
+              },
+              "from_cookies": {
+                  "title": "b. Information from Cookies",
+                  "content": "We use cookies and similar technologies to improve your browsing experience. These tools may collect data such as IP address, browser type, and pages viewed. Cookies help us personalize content, analyze usage, and improve website functionality."
+              }
+          },
+          "how_we_use_your_information": {
+              "title": "3. How We Use Your Information",
+              "content": [
+                  "Provide insurance quotes, policies, and related services.",
+                  "Improve customer service and website functionality.",
+                  "Communicate with you regarding your inquiries, policies, and updates.",
+                  "Personalize your experience on our website.",
+                  "Ensure compliance with applicable laws and regulations."
+              ]
+          },
+          "information_sharing": {
+              "title": "4. Information Sharing",
+              "content": [
+                  {
+                      "title": "a. Insurance Providers and Partners",
+                      "content": "To deliver the services you request, we may share your information with insurance carriers, agents, and other service providers necessary for processing quotes or claims."
+                  },
+                  {
+                      "title": "b. Third-Party Service Providers",
+                      "content": "We may share your information with vendors who assist with business operations such as IT support, analytics, or marketing. These parties are required to safeguard your information in compliance with this policy."
+                  },
+                  {
+                      "title": "c. Text Messaging Opt-In Data",
+                      "content": "All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties for purposes unrelated to the services of the SMS campaign. We may share your Personal Data, including your SMS opt-in or consent status, with third parties that help us provide our messaging services. This includes, but is not limited to, platform providers, phone companies, and vendors assisting in the delivery of text messages."
+                  },
+                  {
+                      "title": "d. Legal Requirements",
+                      "content": "We may disclose your information if required by law, such as in response to a subpoena or government request."
+                  }
+              ]
+          },
+          "cookies_and_tracking_technologies": {
+              "title": "5. Cookies and Tracking Technologies",
+              "content": [
+                  "Essential Cookies: Required for the website to function properly.",
+                  "Analytics Cookies: Help us understand user behavior to improve the website.",
+                  "Functional Cookies: Remember your preferences, such as language or location settings.",
+                  "You can manage cookie preferences in your browser settings, but this may affect website functionality."
+              ]
+          },
+          "how_we_protect_your_information": {
+              "title": "6. How We Protect Your Information",
+              "content": [
+                  "Encryption for data transmitted between your device and our systems.",
+                  "Firewalls and secure servers to protect stored data.",
+                  "Regular audits and staff training to ensure compliance with privacy regulations.",
+                  "While we strive to protect your information, no system is completely secure. Please contact us immediately if you suspect unauthorized access to your information."
+              ]
+          },
+          "your_privacy_rights": {
+              "title": "7. Your Privacy Rights",
+              "content": [
+                  "Access, correct, or delete your personal information.",
+                  "Opt out of marketing communications.",
+                  "Limit data sharing with third parties.",
+                  "To exercise these rights, please contact us using the details below."
+              ]
+          },
+          "childrens_privacy": {
+              "title": "8. Children's Privacy",
+              "content": "H4HInsurance does not knowingly collect information from individuals under 13 years of age. If we become aware that we have inadvertently collected such information, we will delete it promptly."
+          },
+          "changes_to_this_policy": {
+              "title": "9. Changes to This Policy",
+              "content": "We may update this Privacy Policy periodically. Changes will be posted on this page with the updated effective date. We encourage you to review this policy regularly."
+          },
+          "contact_us": {
+              "title": "10. Contact Us",
+              "content": {
+                  "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
+                  "email": "info@h4hinsurance.com",
+                  "phone": "1.844.544.0663"
+              }
+          }
+      },
+  
+  
+  
 
   
     "company": {

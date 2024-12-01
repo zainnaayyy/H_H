@@ -244,8 +244,8 @@ const Header = () => {
   //   },
   // ];
 
-  const slides = t('slides', { returnObjects: true });
-  
+  const slides = t("slides", { returnObjects: true });
+
   const handleLinkClick = (href) => {
     router.push(href); // Use router to navigate
     setIsDropdownOpen(false); // Close the dropdown
@@ -297,9 +297,9 @@ const Header = () => {
                   </SheetTrigger>
                   <SheetContent>
                     <SheetHeader>
-                      <SheetTitle> {t('navigation.navigate')}</SheetTitle>
+                      <SheetTitle> {t("navigation.navigate")}</SheetTitle>
                       <SheetDescription>
-                      {t('navigation.choose_page')}
+                        {t("navigation.choose_page")}
                       </SheetDescription>
                     </SheetHeader>
                     <div className="grid gap-4 py-4">
@@ -311,7 +311,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("#home")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                              {t('navigation.menu_items.home')}
+                              {t("navigation.menu_items.home")}
                             </Link>
                           </li>
                           <li>
@@ -320,7 +320,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/about-us")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                                 {t('navigation.menu_items.about_us')}
+                              {t("navigation.menu_items.about_us")}
                             </Link>
                           </li>
                           <li>
@@ -329,7 +329,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/health")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                            {t('navigation.menu_items.health')}
+                              {t("navigation.menu_items.health")}
                             </Link>
                           </li>
                           <li>
@@ -338,7 +338,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/dental")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                                        {t('navigation.menu_items.dental_vision')}
+                              {t("navigation.menu_items.dental_vision")}
                             </Link>
                           </li>
                           <li>
@@ -347,7 +347,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/life")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                               {t('navigation.menu_items.life')}
+                              {t("navigation.menu_items.life")}
                             </Link>
                           </li>
                           <li>
@@ -356,7 +356,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/medicare")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                        {t('navigation.menu_items.medicare')}
+                              {t("navigation.menu_items.medicare")}
                             </Link>
                           </li>
                           <li>
@@ -365,7 +365,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("/mission")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                               {t('navigation.menu_items.mission')}
+                              {t("navigation.menu_items.mission")}
                             </Link>
                           </li>
                           <li>
@@ -374,7 +374,7 @@ const Header = () => {
                               onClick={() => handleLinkClick("#contact")}
                               className="hover:text-[#13287B] py-2 px-2"
                             >
-                                  {t('navigation.menu_items.contact')}
+                              {t("navigation.menu_items.contact")}
                             </Link>
                           </li>
                           <li>
@@ -390,7 +390,7 @@ const Header = () => {
                     </div>
                     <SheetFooter>
                       <SheetClose asChild>
-                        <Button type="submit">{t('navigation.close')}</Button>
+                        <Button type="submit">{t("navigation.close")}</Button>
                       </SheetClose>
                     </SheetFooter>
                   </SheetContent>
@@ -420,20 +420,20 @@ const Header = () => {
                   href="/"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-                  {t('navigation.menu_items.home')}
+                  {t("navigation.menu_items.home")}
                 </Link>
                 <Link
                   href="/about-us"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-            {t('navigation.menu_items.about_us')}
+                  {t("navigation.menu_items.about_us")}
                 </Link>
 
                 <NavigationMenu>
                   <NavigationMenuList className="flex">
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="hover:text-primary-darkAqua text-xl font-semibold text-[#8d8d8d] py-2">
-                      {t('navigation.menu_items.products')}
+                        {t("navigation.menu_items.products")}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-white  w-[400px] shadow-lg rounded-md">
                         <div className="p-4">
@@ -442,7 +442,7 @@ const Header = () => {
                               href="/health"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                              {t('navigation.menu_items.health')}
+                              {t("navigation.menu_items.health")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -450,7 +450,7 @@ const Header = () => {
                               href="/dental"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                             {t('navigation.menu_items.dental_vision')}
+                              {t("navigation.menu_items.dental_vision")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -458,7 +458,7 @@ const Header = () => {
                               href="/life"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                        {t('navigation.menu_items.life')}
+                              {t("navigation.menu_items.life")}
                             </Link>
                           </NavigationMenuLink>
                           <NavigationMenuLink asChild>
@@ -466,7 +466,7 @@ const Header = () => {
                               href="/medicare"
                               className="block px-4 py-2 hover:bg-gray-100 text-[#8d8d8d]"
                             >
-                                 {t('navigation.menu_items.medicare')}
+                              {t("navigation.menu_items.medicare")}
                             </Link>
                           </NavigationMenuLink>
                         </div>
@@ -479,7 +479,7 @@ const Header = () => {
                   href="/mission"
                   className="hover:text-primary-darkAqua text-[#8d8d8d] py-2"
                 >
-                   {t('navigation.menu_items.mission')}
+                  {t("navigation.menu_items.mission")}
                 </Link>
                 {/* <Link
                   href='/#contact'
@@ -586,7 +586,7 @@ const Header = () => {
                 {/* Date of Birth */}
                 <div className="mb-4">
                   <label className="block text-xl text-gray-500 font-semibold mb-2">
-                  {t('contact_form.fields.date_of_birth')}
+                    {t("contact_form.fields.date_of_birth")}
                   </label>
                   <input
                     type="date"
@@ -603,7 +603,7 @@ const Header = () => {
                 {/* Zip Code */}
                 <div className="mb-4">
                   <label className="block text-gray-500 font-semibold mb-2 text-xl">
-                  {t('contact_form.fields.zip_code')}
+                    {t("contact_form.fields.zip_code")}
                   </label>
                   <input
                     type="text"
@@ -620,7 +620,7 @@ const Header = () => {
                 {/* Email */}
                 <div className="mb-4">
                   <label className="block text-xl text-gray-500 font-semibold mb-2">
-                  {t('contact_form.fields.email')}
+                    {t("contact_form.fields.email")}
                   </label>
                   <input
                     type="email"
@@ -637,7 +637,7 @@ const Header = () => {
                 {/* Phone Number */}
                 <div className="mb-4">
                   <label className="block text-gray-500 font-semibold mb-2 text-xl">
-                  {t('contact_form.fields.mobile_phone')}
+                    {t("contact_form.fields.mobile_phone")}
                   </label>
                   <input
                     type="tel"
@@ -664,7 +664,7 @@ const Header = () => {
                       className="form-checkbox text-[#01B6AD]"
                     />
                     <span className="ml-2 text-lg text-gray-500">
-                    {t('contact_form.fields.text_consent')}
+                      {t("contact_form.fields.text_consent")}
                     </span>
                   </label>
                   {formik.touched.consent && formik.errors.consent ? (
@@ -672,64 +672,421 @@ const Header = () => {
                   ) : null}
                 </div>
                 <p className="text-sm text-gray-500 mt-2">
-                {t('contact_form.consent_notice')}
-                  <a href="/privacy-policy" className="underline text-blue-600">
-                  {t('contact_form.links.sms_terms')}
-                  </a>{" "}
+                  {t("contact_form.consent_notice")}
+                  <Dialog>
+      <DialogTrigger asChild>
+        <button className="text-blue-600 underline">
+        {t("contact_form.links.privacy_policy")}
+        </button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[800px] sm:max-h-[700px] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-semibold mb-4">
+            {t('privacy_policy.title')}
+          </DialogTitle>
+          <DialogDescription>
+          {t('privacy_policy.commitment')}
+          </DialogDescription>
+        </DialogHeader>
+        
+        <div className="max-h-[60vh] space-y-6 overflow-y-auto pr-4">
+          {/* Information We Collect Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.information_we_collect.title')}
+            </h2>
+            <div className="space-y-3">
+              <div>
+                <h3 className="font-semibold mb-1">
+                  {t('privacy_policy.information_we_collect.pii.title')}
+                </h3>
+                <p>{t('privacy_policy.information_we_collect.pii.content')}</p>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">
+                  {t('privacy_policy.information_we_collect.npii.title')}
+                </h3>
+                <p>{t('privacy_policy.information_we_collect.npii.content')}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* How We Collect Information Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.how_we_collect_information.title')}
+            </h2>
+            <div className="space-y-3">
+              <div>
+                <h3 className="font-semibold mb-1">
+                  {t('privacy_policy.how_we_collect_information.from_you.title')}
+                </h3>
+                <p>{t('privacy_policy.how_we_collect_information.from_you.content')}</p>
+              </div>
+              <div>
+                <h3 className="font-semibold mb-1">
+                  {t('privacy_policy.how_we_collect_information.from_cookies.title')}
+                </h3>
+                <p>{t('privacy_policy.how_we_collect_information.from_cookies.content')}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* How We Use Your Information Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.how_we_use_your_information.title')}
+            </h2>
+            <ul className="list-disc list-inside space-y-2">
+              {t('privacy_policy.how_we_use_your_information.content', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Information Sharing Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.information_sharing.title')}
+            </h2>
+            <div className="space-y-3">
+              {t('privacy_policy.information_sharing.content', { returnObjects: true }).map((item, index) => (
+                <div key={index}>
+                  <h3 className="font-semibold mb-1">{item.title}</h3>
+                  <p>{item.content}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Cookies and Tracking Technologies Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.cookies_and_tracking_technologies.title')}
+            </h2>
+            <ul className="list-disc list-inside space-y-2">
+              {t('privacy_policy.cookies_and_tracking_technologies.content', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* How We Protect Your Information Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.how_we_protect_your_information.title')}
+            </h2>
+            <ul className="list-disc list-inside space-y-2">
+              {t('privacy_policy.how_we_protect_your_information.content', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Your Privacy Rights Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.your_privacy_rights.title')}
+            </h2>
+            <ul className="list-disc list-inside space-y-2">
+              {t('privacy_policy.your_privacy_rights.content', { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Children's Privacy Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.childrens_privacy.title')}
+            </h2>
+            <p>{t('privacy_policy.childrens_privacy.content')}</p>
+          </section>
+
+          {/* Changes to This Policy Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.changes_to_this_policy.title')}
+            </h2>
+            <p>{t('privacy_policy.changes_to_this_policy.content')}</p>
+          </section>
+
+          {/* Contact Us Section */}
+          <section>
+            <h2 className="font-bold text-xl mb-3">
+              {t('privacy_policy.contact_us.title')}
+            </h2>
+            <div className="space-y-2">
+              <p>{t('privacy_policy.contact_us.content.address')}</p>
+              <p>{t('privacy_policy.contact_us.content.email')}</p>
+              <p>{t('privacy_policy.contact_us.content.phone')}</p>
+            </div>
+          </section>
+        </div>
+
+        <DialogFooter className="mt-4">
+          <Button variant="outline" type="button">
+            {t('navigation.close')}
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
                   and{" "}
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className="text-blue-600 underline">
-                      {t('contact_form.links.privacy_policy')}
+                      {t('contact_form.links.terms_and_conditions')}
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[800px] overflow-y-auto">
+                    <DialogContent className="sm:max-w-[800px] sm:max-h-[600px] overflow-y-auto">
                       <DialogHeader>
                         <DialogTitle className="text-2xl font-semibold mb-4">
-                        {t('contact_form.links.sms_terms')}
+                          {t("terms_and_conditions.title")}
                         </DialogTitle>
                         <DialogDescription className="mb-4">
-                        {t('sms_terms.please_read')}
+                          {t("terms_and_conditions.welcome")}
                         </DialogDescription>
                       </DialogHeader>
-                      <div className="max-h-[60vh] overflow-y-auto space-y-4">
-                      <p>{t('sms_terms.description.content')}</p>
+                      <div className="max-h-[60vh] space-y-4">
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.acceptance_of_terms.title")}
+                        </h2>
+                        {t("terms_and_conditions.acceptance_of_terms.content", {
+                          returnObjects: true,
+                        }).map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.use_of_the_site.title")}
+                        </h2>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.use_of_the_site.license_to_use.title"
+                          )}
+                        </h3>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.description.title')}
-                          </strong>{" "}
-                          {t('sms_terms.services_description.content')}
+                          {t(
+                            "terms_and_conditions.use_of_the_site.license_to_use.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.use_of_the_site.prohibited_activities.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.use_of_the_site.prohibited_activities.content.0"
+                          )}
+                        </p>
+                        {t(
+                          "terms_and_conditions.use_of_the_site.prohibited_activities.content",
+                          { returnObjects: true }
+                        )
+                          .slice(1)
+                          .map((item, index) => (
+                            <p key={index}>{item}</p>
+                          ))}
+                        <p>
+                          {t(
+                            "terms_and_conditions.use_of_the_site.site_modifications.content"
+                          )}
+                        </p>
+                        <h2 className="font-bold">
+                          {t(
+                            "terms_and_conditions.information_you_provide.title"
+                          )}
+                        </h2>
+                        {t(
+                          "terms_and_conditions.information_you_provide.content",
+                          { returnObjects: true }
+                        ).map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.privacy.title")}
+                        </h2>
+                        <p>{t("terms_and_conditions.privacy.content")}</p>
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.sms_terms_of_service.title")}
+                        </h2>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.program_name_and_description.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.program_name_and_description.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.message_frequency_and_cadence.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.message_frequency_and_cadence.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.message_and_data_rates.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.message_and_data_rates.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.eligibility.title"
+                          )}
+                        </h3>
+                        {t(
+                          "terms_and_conditions.sms_terms_of_service.eligibility.content",
+                          { returnObjects: true }
+                        ).map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.opt_in_agreement.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.opt_in_agreement.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.opt_out_instructions.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.opt_out_instructions.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.customer_care_contact_information.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.customer_care_contact_information.content"
+                          )}
                         </p>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.eligibility.title')}
-                          </strong>{" "}
-                          {t('sms_terms.eligibility.content')}
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.customer_care_contact_information.Email"
+                          )}
                         </p>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.user_opt_in.title')}
-                          </strong>{" "}
-                          {t('sms_terms.user_opt_in.content')}
+                          {t(
+                            "terms_and_conditions.sms_terms_of_service.customer_care_contact_information.Phone"
+                          )}
                         </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.privacy_and_data_sharing.title"
+                          )}
+                        </h3>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.opt_in_success.title')}
-                          </strong>{" "}
-                          {t('sms_terms.opt_in_success.content')}
+                          {t(
+                            "terms_and_conditions.privacy_and_data_sharing.content"
+                          )}
                         </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.disclaimer_and_liability.title"
+                          )}
+                        </h3>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.warranty.title')}
-                          </strong>{" "}
-                          {t('sms_terms.warranty.content')}
+                          {t(
+                            "terms_and_conditions.disclaimer_and_liability.content"
+                          )}
                         </p>
+                        <h2 className="font-bold">
+                          {t(
+                            "terms_and_conditions.intellectual_property.title"
+                          )}
+                        </h2>
                         <p>
-                          <strong className="block mt-4 mb-2">
-                          {t('sms_terms.modification.title')}
-                          </strong>{" "}
-                          {t('sms_terms.modification.content')}
+                          {t(
+                            "terms_and_conditions.intellectual_property.content"
+                          )}
                         </p>
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.disclaimers.title")}
+                        </h2>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.disclaimers.no_professional_advice.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.disclaimers.no_professional_advice.content"
+                          )}
+                        </p>
+                        <h3 className="font-semibold">
+                          {t(
+                            "terms_and_conditions.disclaimers.no_guarantee_of_results.title"
+                          )}
+                        </h3>
+                        <p>
+                          {t(
+                            "terms_and_conditions.disclaimers.no_guarantee_of_results.content"
+                          )}
+                        </p>
+                        <h2 className="font-bold">
+                          {t(
+                            "terms_and_conditions.limitation_of_liability.title"
+                          )}
+                        </h2>
+                        {t(
+                          "terms_and_conditions.limitation_of_liability.content",
+                          { returnObjects: true }
+                        ).map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
+                        <h2 className="font-bold">
+                          {t(
+                            "terms_and_conditions.arbitration_and_dispute_resolution.title"
+                          )}
+                        </h2>
+                        <p>
+                          {t(
+                            "terms_and_conditions.arbitration_and_dispute_resolution.content"
+                          )}
+                        </p>
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.termination.title")}
+                        </h2>
+                        <p>{t("terms_and_conditions.termination.content")}</p>
+                        <h2 className="font-bold">
+                          {t(
+                            "terms_and_conditions.changes_to_these_terms.title"
+                          )}
+                        </h2>
+                        <p>
+                          {t(
+                            "terms_and_conditions.changes_to_these_terms.content"
+                          )}
+                        </p>
+                        <h2 className="font-bold">
+                          {t("terms_and_conditions.contact_us.title")}
+                        </h2>
+                        {t("terms_and_conditions.contact_us.content", {
+                          returnObjects: true,
+                        }).map((item, index) => (
+                          <p key={index}>{item}</p>
+                        ))}
                       </div>
                       <DialogFooter className="mt-4">
                         <Button
@@ -740,7 +1097,7 @@ const Header = () => {
                               .click()
                           }
                         >
-                           {t('navigation.close')}
+                          {t("navigation.close")}
                         </Button>
                       </DialogFooter>
                     </DialogContent>
@@ -798,52 +1155,52 @@ const Header = () => {
                     Health <span className="text-[#B92031]">4</span> Haitians
                   </p>
                   <p className="font-bold text-lg md:text-3xl">
-                  {t('home.hero.subtitle')}
+                    {t("home.hero.subtitle")}
                   </p>
                   <button
                     onClick={() => handleLinkClick("#contact")}
                     className="bg-primary-darkAqua p-2 rounded-full w-1/2 hover:bg-[#0A4958] text-white hover:text-white"
                   >
-                   {t('home.hero.cta_button')}
+                    {t("home.hero.cta_button")}
                   </button>
                 </div>
               </div>
               <Carousel plugins={[plugin.current]} className="w-full">
                 <CarouselContent>
-                {slides && slides.length > 0 && (
-                  <>
-                  {slides.map((slide, index) => (
-                    <CarouselItem key={index}>
-                      <div
-                        className="relative h-[24rem] lg:h-[45rem] xl:h-[40rem] bg-cover bg-center rounded-md"
-                        style={{
-                          backgroundImage: `url(${slide.imageUrl})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
-                            <h1 className="text-lg md:text-4xl font-bold leading-normal">
-                              {slide.title}
-                            </h1>
-                            <button
-                              onClick={() => {
-                                router.push(slide.url);
-                              }}
-                              className="bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded"
-                            >
-                              {slide.buttonText}
-                            </button>
-                            {/* <p className='text-sm md:text-lg'>
+                  {slides && slides.length > 0 && (
+                    <>
+                      {slides.map((slide, index) => (
+                        <CarouselItem key={index}>
+                          <div
+                            className="relative h-[24rem] lg:h-[45rem] xl:h-[40rem] bg-cover bg-center rounded-md"
+                            style={{
+                              backgroundImage: `url(${slide.imageUrl})`,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}
+                          >
+                            <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
+                                <h1 className="text-lg md:text-4xl font-bold leading-normal">
+                                  {slide.title}
+                                </h1>
+                                <button
+                                  onClick={() => {
+                                    router.push(slide.url);
+                                  }}
+                                  className="bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded"
+                                >
+                                  {slide.buttonText}
+                                </button>
+                                {/* <p className='text-sm md:text-lg'>
                           {slide.description}
                         </p> */}
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
+                        </CarouselItem>
+                      ))}
                     </>
                   )}
                 </CarouselContent>
