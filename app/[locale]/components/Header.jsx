@@ -490,13 +490,16 @@ const Header = () => {
               </div>
             </nav>
           </div>
-          <div className="hidden lg:flex justify-center items-center w-[20%]">
+          <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%]">
             <button
               onClick={() => handleLinkClick("appointment")}
               className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
             >
               <FaPhone className="h-12 w-12" />
             </button>
+            <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
+            {t("misc.schedule")}
+            </span>
           </div>
         </div>
       </header>
@@ -674,168 +677,223 @@ const Header = () => {
                 <p className="text-sm text-gray-500 mt-2">
                   {t("contact_form.consent_notice")}
                   <Dialog>
-      <DialogTrigger asChild>
-        <button className="text-blue-600 underline">
-        {t("contact_form.links.privacy_policy")}
-        </button>
-      </DialogTrigger>
-      <DialogContent className="sm:max-w-[800px] sm:max-h-[700px] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-semibold mb-4">
-            {t('privacy_policy.title')}
-          </DialogTitle>
-          <DialogDescription>
-          {t('privacy_policy.commitment')}
-          </DialogDescription>
-        </DialogHeader>
-        
-        <div className="max-h-[60vh] space-y-6 overflow-y-auto pr-4">
-          {/* Information We Collect Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.information_we_collect.title')}
-            </h2>
-            <div className="space-y-3">
-              <div>
-                <h3 className="font-semibold mb-1">
-                  {t('privacy_policy.information_we_collect.pii.title')}
-                </h3>
-                <p>{t('privacy_policy.information_we_collect.pii.content')}</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-1">
-                  {t('privacy_policy.information_we_collect.npii.title')}
-                </h3>
-                <p>{t('privacy_policy.information_we_collect.npii.content')}</p>
-              </div>
-            </div>
-          </section>
+                    <DialogTrigger asChild>
+                      <button className="text-blue-600 underline">
+                        {t("contact_form.links.privacy_policy")}
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[800px] sm:max-h-[700px] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl font-semibold mb-4">
+                          {t("privacy_policy.title")}
+                        </DialogTitle>
+                        <DialogDescription>
+                          {t("privacy_policy.commitment")}
+                        </DialogDescription>
+                      </DialogHeader>
 
-          {/* How We Collect Information Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.how_we_collect_information.title')}
-            </h2>
-            <div className="space-y-3">
-              <div>
-                <h3 className="font-semibold mb-1">
-                  {t('privacy_policy.how_we_collect_information.from_you.title')}
-                </h3>
-                <p>{t('privacy_policy.how_we_collect_information.from_you.content')}</p>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-1">
-                  {t('privacy_policy.how_we_collect_information.from_cookies.title')}
-                </h3>
-                <p>{t('privacy_policy.how_we_collect_information.from_cookies.content')}</p>
-              </div>
-            </div>
-          </section>
+                      <div className="max-h-[60vh] space-y-6 overflow-y-auto pr-4">
+                        {/* Information We Collect Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.information_we_collect.title")}
+                          </h2>
+                          <div className="space-y-3">
+                            <div>
+                              <h3 className="font-semibold mb-1">
+                                {t(
+                                  "privacy_policy.information_we_collect.pii.title"
+                                )}
+                              </h3>
+                              <p>
+                                {t(
+                                  "privacy_policy.information_we_collect.pii.content"
+                                )}
+                              </p>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold mb-1">
+                                {t(
+                                  "privacy_policy.information_we_collect.npii.title"
+                                )}
+                              </h3>
+                              <p>
+                                {t(
+                                  "privacy_policy.information_we_collect.npii.content"
+                                )}
+                              </p>
+                            </div>
+                          </div>
+                        </section>
 
-          {/* How We Use Your Information Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.how_we_use_your_information.title')}
-            </h2>
-            <ul className="list-disc list-inside space-y-2">
-              {t('privacy_policy.how_we_use_your_information.content', { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </section>
+                        {/* How We Collect Information Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t(
+                              "privacy_policy.how_we_collect_information.title"
+                            )}
+                          </h2>
+                          <div className="space-y-3">
+                            <div>
+                              <h3 className="font-semibold mb-1">
+                                {t(
+                                  "privacy_policy.how_we_collect_information.from_you.title"
+                                )}
+                              </h3>
+                              <p>
+                                {t(
+                                  "privacy_policy.how_we_collect_information.from_you.content"
+                                )}
+                              </p>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold mb-1">
+                                {t(
+                                  "privacy_policy.how_we_collect_information.from_cookies.title"
+                                )}
+                              </h3>
+                              <p>
+                                {t(
+                                  "privacy_policy.how_we_collect_information.from_cookies.content"
+                                )}
+                              </p>
+                            </div>
+                          </div>
+                        </section>
 
-          {/* Information Sharing Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.information_sharing.title')}
-            </h2>
-            <div className="space-y-3">
-              {t('privacy_policy.information_sharing.content', { returnObjects: true }).map((item, index) => (
-                <div key={index}>
-                  <h3 className="font-semibold mb-1">{item.title}</h3>
-                  <p>{item.content}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+                        {/* How We Use Your Information Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t(
+                              "privacy_policy.how_we_use_your_information.title"
+                            )}
+                          </h2>
+                          <ul className="list-disc list-inside space-y-2">
+                            {t(
+                              "privacy_policy.how_we_use_your_information.content",
+                              { returnObjects: true }
+                            ).map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </section>
 
-          {/* Cookies and Tracking Technologies Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.cookies_and_tracking_technologies.title')}
-            </h2>
-            <ul className="list-disc list-inside space-y-2">
-              {t('privacy_policy.cookies_and_tracking_technologies.content', { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </section>
+                        {/* Information Sharing Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.information_sharing.title")}
+                          </h2>
+                          <div className="space-y-3">
+                            {t("privacy_policy.information_sharing.content", {
+                              returnObjects: true,
+                            }).map((item, index) => (
+                              <div key={index}>
+                                <h3 className="font-semibold mb-1">
+                                  {item.title}
+                                </h3>
+                                <p>{item.content}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </section>
 
-          {/* How We Protect Your Information Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.how_we_protect_your_information.title')}
-            </h2>
-            <ul className="list-disc list-inside space-y-2">
-              {t('privacy_policy.how_we_protect_your_information.content', { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </section>
+                        {/* Cookies and Tracking Technologies Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t(
+                              "privacy_policy.cookies_and_tracking_technologies.title"
+                            )}
+                          </h2>
+                          <ul className="list-disc list-inside space-y-2">
+                            {t(
+                              "privacy_policy.cookies_and_tracking_technologies.content",
+                              { returnObjects: true }
+                            ).map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </section>
 
-          {/* Your Privacy Rights Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.your_privacy_rights.title')}
-            </h2>
-            <ul className="list-disc list-inside space-y-2">
-              {t('privacy_policy.your_privacy_rights.content', { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </section>
+                        {/* How We Protect Your Information Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t(
+                              "privacy_policy.how_we_protect_your_information.title"
+                            )}
+                          </h2>
+                          <ul className="list-disc list-inside space-y-2">
+                            {t(
+                              "privacy_policy.how_we_protect_your_information.content",
+                              { returnObjects: true }
+                            ).map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </section>
 
-          {/* Children's Privacy Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.childrens_privacy.title')}
-            </h2>
-            <p>{t('privacy_policy.childrens_privacy.content')}</p>
-          </section>
+                        {/* Your Privacy Rights Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.your_privacy_rights.title")}
+                          </h2>
+                          <ul className="list-disc list-inside space-y-2">
+                            {t("privacy_policy.your_privacy_rights.content", {
+                              returnObjects: true,
+                            }).map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </section>
 
-          {/* Changes to This Policy Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.changes_to_this_policy.title')}
-            </h2>
-            <p>{t('privacy_policy.changes_to_this_policy.content')}</p>
-          </section>
+                        {/* Children's Privacy Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.childrens_privacy.title")}
+                          </h2>
+                          <p>{t("privacy_policy.childrens_privacy.content")}</p>
+                        </section>
 
-          {/* Contact Us Section */}
-          <section>
-            <h2 className="font-bold text-xl mb-3">
-              {t('privacy_policy.contact_us.title')}
-            </h2>
-            <div className="space-y-2">
-              <p>{t('privacy_policy.contact_us.content.address')}</p>
-              <p>{t('privacy_policy.contact_us.content.email')}</p>
-              <p>{t('privacy_policy.contact_us.content.phone')}</p>
-            </div>
-          </section>
-        </div>
+                        {/* Changes to This Policy Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.changes_to_this_policy.title")}
+                          </h2>
+                          <p>
+                            {t("privacy_policy.changes_to_this_policy.content")}
+                          </p>
+                        </section>
 
-        <DialogFooter className="mt-4">
-          <Button variant="outline" type="button">
-            {t('navigation.close')}
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+                        {/* Contact Us Section */}
+                        <section>
+                          <h2 className="font-bold text-xl mb-3">
+                            {t("privacy_policy.contact_us.title")}
+                          </h2>
+                          <div className="space-y-2">
+                            <p>
+                              {t("privacy_policy.contact_us.content.address")}
+                            </p>
+                            <p>
+                              {t("privacy_policy.contact_us.content.email")}
+                            </p>
+                            <p>
+                              {t("privacy_policy.contact_us.content.phone")}
+                            </p>
+                          </div>
+                        </section>
+                      </div>
+
+                      <DialogFooter className="mt-4">
+                        <Button variant="outline" type="button">
+                          {t("navigation.close")}
+                        </Button>
+                      </DialogFooter>
+                    </DialogContent>
+                  </Dialog>
                   and{" "}
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className="text-blue-600 underline">
-                      {t('contact_form.links.terms_and_conditions')}
+                        {t("contact_form.links.terms_and_conditions")}
                       </button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[800px] sm:max-h-[600px] overflow-y-auto">

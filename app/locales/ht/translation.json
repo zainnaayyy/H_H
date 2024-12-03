@@ -127,6 +127,244 @@
     "copyright": "© 2024 Sante pou Ayisyen. Tout Dwa Rezève."
   },
 
+    "terms_and_conditions": {
+      "title": "Tèm ak Kondisyon yo",
+      "welcome": "Byenveni sou sit entènèt H4HInsurance (“nou,” “nou an,” oswa “nou”). Lè w gen aksè ak itilize sit entènèt nou an (h4hinsurance.com, “Sit la”), ou dakò ak Tèm ak Kondisyon sa yo. Si w pa dakò ak tèm sa yo, tanpri pa itilize Sit la.",
+      "acceptance_of_terms": {
+        "title": "1. Akseptasyon Tèm yo",
+        "content": [
+          "Tèm sa yo gouvène itilizasyon Sit la. Lè w itilize Sit la, ou deklare ke:",
+          "Ou gen omwen 18 lane.",
+          "Ou se yon rezidan Etazini.",
+          "Ou dakò pou w konfòme w ak tèm sa yo."
+        ]
+      },
+      "use_of_the_site": {
+        "title": "2. Itilizasyon Sit la",
+        "license_to_use": {
+          "title": "a. Lisans pou Itilize Sit la:",
+          "content": "H4HInsurance ba ou yon lisans limite, ki pa eksklizif, ki pa transfere, epi ki ka revoke pou itilize Sit la sèlman pou rezon pèsonèl ak ki pa komèsyal ki gen rapò ak sèvis asirans."
+        },
+        "prohibited_activities": {
+          "title": "b. Aktivite Entèdi:",
+          "content": [
+            "Ou dakò pou pa:",
+            "Kopi, distribye, oswa repwodui kontni Sit la san otorizasyon.",
+            "Itilize Sit la pou telechaje oswa distribye lojisyèl ki danjere.",
+            "Eseye analize, dekonpile, oswa demonte Sit la.",
+            "Itilize Sit la pou aktivite ilegal oswa fwod."
+          ]
+        },
+        "site_modifications": {
+          "title": "c. Modifikasyon Sit la:",
+          "content": "H4HInsurance rezève dwa pou modifye, sispann, oswa sispann operasyon Sit la oswa nenpòt karakteristik li yo nenpòt ki lè san avètisman alavans."
+        }
+      },
+      "information_you_provide": {
+        "title": "3. Enfòmasyon Ou Bay",
+        "content": [
+          "Pou itilize sèten karakteristik sou Sit la, ou ka oblije bay enfòmasyon pèsonèl. Lè w fè sa, ou dakò ke:",
+          "Enfòmasyon an egzat, aktyèl, ak konplè.",
+          "Ou pral mete enfòmasyon yo ajou jan sa nesesè.",
+          "Ou bay konsantman pou itilize enfòmasyon ou jan sa dekri nan Règleman sou Konfidansyalite nou an."
+        ]
+      },
+      "privacy": {
+        "title": "4. Konfidansyalite",
+        "content": "Itilizasyon ou sou Sit la sibi Règleman sou Konfidansyalite nou an, ki eksplike kijan nou kolekte, itilize, ak pwoteje enfòmasyon pèsonèl ou yo. Lè w itilize Sit la, ou konsanti ak pratik ki dekri nan Règleman sou Konfidansyalite nou an."
+      },
+      "sms_terms_of_service": {
+        "title": "5. Tèm ak Kondisyon SMS",
+        "program_name_and_description": {
+          "title": "a. Non Pwogram ak Deskripsyon:",
+          "content": "Sèvis SMS H4HInsurance ka voye mesaj maketing ak mesaj ki pa maketing, ki gen ladan mizajou tranzaksyonèl, pwomosyon, ofri espesyal, ak lòt enfòmasyon ki gen rapò ak asirans. Mesaj yo ka voye itilize teknoloji otomatize, tankou sistèm otodyalè oswa sistèm apèl otomatik."
+        },
+        "message_frequency_and_cadence": {
+          "title": "b. Frekans ak Kaden Mesaj:",
+          "content": "Frekans mesaj yo ap varye selon angajman ou ak preferans ou. Pa egzanp, ou ka resevwa jiska 9 mesaj pa mwa."
+        },
+        "message_and_data_rates": {
+          "title": "c. Frè Mesaj ak Done:",
+          "content": "Nou pa chaje pou mesaj yo voye atravè Sèvis SMS yo. Sepandan, frè mesaj ak done ki enpoze pa founisè mobil ou a ka aplike."
+        },
+        "eligibility": {
+          "title": "d. Kalifikasyon:",
+          "content": [
+            "Pou resevwa Sèvis SMS, ou dwe:",
+            "Yon rezidan Etazini.",
+            "18 lane oswa plis."
+          ]
+        },
+        "opt_in_agreement": {
+          "title": "e. Akò pou Opt-In:",
+          "content": "Lè ou bay nimewo mobil ou, ou opt-in volontè pou Sèvis SMS yo epi dakò pou resevwa mesaj repete nan nimewo mobil ou bay la. Opt-in sa a pa obligatwa pou achte nenpòt pwodwi oswa sèvis."
+        },
+        "opt_out_instructions": {
+          "title": "f. Enstriksyon Opt-Out:",
+          "content": "Pou sispann resevwa mesaj, reponn STOP, QUIT, CANCEL, OPT-OUT, oswa UNSUBSCRIBE nan nenpòt mesaj. Ou ka kontinye resevwa mesaj pandan kèk tan pandan nap trete demann ou an. Pou reprann resevwa mesaj yo, reponn START nan yon mesaj anvan."
+        },
+        "customer_care_contact_information": {
+          "title": "g. Enfòmasyon Kontak Sèvis Kliyantèl:",
+          "content": "Pou asistans, reponn HELP nan nenpòt mesaj oswa kontakte nou nan",
+          "Email": "h4hinsurance.com",
+          "Phone": "1.844.544.0663"
+        }
+      },
+      "privacy_and_data_sharing": {
+        "title": "h. Konfidansyalite ak Pataje Done:",
+        "content": "Done pèsonèl ou yo, enkli estati opt-in SMS ou, pral sèlman pataje ak founisè sèvis twazyèm pati oswa vandè ki ede nan livrezon Sèvis SMS yo. Gade Règleman sou Konfidansyalite nou an pou plis detay."
+      },
+      "disclaimer_and_liability": {
+        "title": "i. Renon ak Responsabilite:",
+        "content": "Sèvis SMS yo bay 'jan yo ye' epi yo ka pa toujou disponib. H4HInsurance.com ak founisè sèvis li yo pa responsab pou echèk oswa reta nan mesaj."
+      },
+      "intellectual_property": {
+        "title": "6. Pwopriyete Entèlektyèl",
+        "content": "Tout kontni, mak komèsyal, ak materyèl sou Sit la se pwopriyete H4HInsurance oswa lisansye li yo. Ou pa ka itilize okenn nan pwopriyete entèlektyèl nou yo san konsantman ekri."
+      },
+      "disclaimers": {
+        "title": "7. Renon",
+        "no_professional_advice": {
+          "title": "a. Pa gen Konsèy Pwofesyonèl:",
+          "content": "Kontni sou Sit la bay sèlman pou rezon enfòmasyon epi li pa konstitiye konsèy pwofesyonèl, finansye, oswa legal."
+        },
+        "no_guarantee_of_results": {
+          "title": "b. Pa gen Garanti Rezilta:",
+          "content": "Nou pa garanti ke sitasyon oswa rekòmandasyon asirans yo bay ap satisfè kondisyon ou. Toujou konsilte dirèkteman ak konpayi asirans oswa ajan."
+        }
+      },
+      "limitation_of_liability": {
+        "title": "8. Limitasyon Responsabilite",
+        "content": [
+          "Nan tout limit lalwa pèmèt:",
+          "H4HInsurance pa responsab pou nenpòt domaj ki sòti nan itilizasyon Sit la.",
+          "Responsabilite nou limite a montan ou peye nou pou sèvis yo aksede atravè Sit la."
+        ]
+      },
+      "arbitration_and_dispute_resolution": {
+        "title": "9. Arbitraj ak Rezolisyon Konfli",
+        "content": "Nenpòt konfli ki sòti nan itilizasyon ou nan Sit la pral rezoud atravè arbitraj obligatwa dapre Lwa Federal sou Arbitraj. Ou renonse dwa pou patisipe nan aksyon klas."
+      },
+      "termination": {
+        "title": "10. Terminasyon",
+        "content": "H4HInsurance rezève dwa pou rezilye aksè ou a Sit la pou nenpòt vyolasyon Tèm sa yo oswa itilizasyon move Sit la."
+      },
+      "changes_to_these_terms": {
+        "title": "11. Chanjman nan Tèm sa yo",
+        "content": "Nou ka mete ajou Tèm sa yo peryodikman. Chanjman yo ap pibliye sou paj sa a ak dat efektif mete ajou. Kontinye itilize Sit la endike akseptasyon ou nan Tèm yo revize."
+      },
+      "contact_us": {
+        "title": "12. Kontakte Nou",
+        "content": [
+          "Si ou gen nenpòt kesyon sou Tèm sa yo, tanpri kontakte nou nan:",
+          "Email: h4hinsurance.com",
+          "Phone: 1.844.544.0663"
+        ]
+      }
+    },  
+
+
+    "privacy_policy": {
+      "title": "Règleman sou Konfidansyalite",
+      "commitment": "H4HInsurance angaje nan pwoteje vi prive ou. Règleman sou Konfidansyalite sa a eksplike kijan nou kolekte, itilize, ak pwoteje enfòmasyon ou lè w itilize sit entènèt nou an (h4hinsurance.com) epi entèaji ak sèvis nou yo.",
+      "information_we_collect": {
+        "title": "1. Enfòmasyon Nou Kolekte",
+        "pii": {
+          "title": "a. Enfòmasyon Idantifyab Pèsonèl (PII)",
+          "content": "Nou kolekte enfòmasyon tankou non ou, adrès, nimewo telefòn, imèl, dat nesans, ak lòt detay pèsonèl ki nesesè pou bay sèvis asirans. Sa ka gen ladan tou enfòmasyon sou manm fanmi ou si sa nesesè pou sèvis yo."
+        },
+        "npii": {
+          "title": "b. Enfòmasyon Ki Pa Idantifyab Pèsonèlman (NPII)",
+          "content": "Nou ka kolekte enfòmasyon ki pa idantifyab pèsonèlman tankou done demografik, tip navigatè, detay sou aparèy, ak aktivite navigasyon sou sit entènèt nou an."
+        }
+      },
+      "how_we_collect_information": {
+        "title": "2. Kijan Nou Kolekte Enfòmasyon",
+        "from_you": {
+          "title": "a. Enfòmasyon Ou Bay",
+          "content": "Nou kolekte enfòmasyon dirèkteman nan men ou lè w ranpli fòm sou sit entènèt nou an, kontakte nou pa telefòn oswa imèl, oswa bay detay pandan yon konsiltasyon asirans."
+        },
+        "from_cookies": {
+          "title": "b. Enfòmasyon ki Soti nan Cookies",
+          "content": "Nou itilize cookies ak teknoloji menm jan an pou amelyore eksperyans navigasyon ou. Zouti sa yo ka kolekte done tankou adrès IP, tip navigatè, ak paj wè. Cookies ede nou pèsonalize kontni, analize itilizasyon, ak amelyore fonksyonalite sit entènèt."
+        }
+      },
+      "how_we_use_your_information": {
+        "title": "3. Kijan Nou Itilize Enfòmasyon Ou",
+        "content": [
+          "Bay quotes asirans, politik, ak sèvis ki gen rapò.",
+          "Amelyore sèvis kliyan ak fonksyonalite sit entènèt.",
+          "Kominike avèk ou konsènan demann ou yo, politik, ak mizajou.",
+          "Pèsonalize eksperyans ou sou sit entènèt nou an.",
+          "Asire konfòmite ak lwa ak regilasyon aplikab."
+        ]
+      },
+      "information_sharing": {
+        "title": "4. Pataje Enfòmasyon",
+        "content": [
+          {
+            "title": "a. Founisè Asirans ak Patnè",
+            "content": "Pou delivre sèvis ou mande yo, nou ka pataje enfòmasyon ou avèk konpayi asirans, ajan, ak lòt founisè sèvis ki nesesè pou trete quotes oswa reklamasyon."
+          },
+          {
+            "title": "b. Founisè Sèvis Twazyèm Pati",
+            "content": "Nou ka pataje enfòmasyon ou avèk vandè ki ede ak operasyon biznis tankou sipò IT, analiz, oswa maketing. Pati sa yo oblije pwoteje enfòmasyon ou an konfòmite avèk règleman sa a."
+          },
+          {
+            "title": "c. Done Opt-In Mesaj Tèks",
+            "content": "Tout kategori pi wo yo ekskli done opt-in ak konsantman pou mesaje tèks; enfòmasyon sa a p ap pataje ak okenn twazyèm pati pou objektif ki pa gen rapò ak sèvis kanpay SMS. Nou ka pataje Done Pèsonèl ou, ki gen ladan estati opt-in oswa konsantman SMS ou, ak twazyèm pati ki ede nou bay sèvis mesaj nou yo. Sa enkli, men pa limite a, founisè platfòm, konpayi telefòn, ak vandè ki ede nan livrezon mesaj tèks."
+          },
+          {
+            "title": "d. Egzijans Legal",
+            "content": "Nou ka divilge enfòmasyon ou si lalwa mande sa, tankou an repons a yon konvokasyon oswa demann gouvènman an."
+          }
+        ]
+      },
+      "cookies_and_tracking_technologies": {
+        "title": "5. Cookies ak Teknoloji Swivi",
+        "content": [
+          "Cookies Esansyèl: Ki nesesè pou sit entènèt la fonksyone kòmsadwa.",
+          "Cookies Analitik: Ede nou konprann konpòtman itilizatè pou amelyore sit entènèt la.",
+          "Cookies Fonksyonèl: Sonje preferans ou, tankou anviwònman lang oswa kote.",
+          "Ou ka jere preferans cookies nan anviwònman navigatè ou, men sa ka afekte fonksyonalite sit entènèt la."
+        ]
+      },
+      "how_we_protect_your_information": {
+        "title": "6. Kijan Nou Pwoteje Enfòmasyon Ou",
+        "content": [
+          "Chifreman pou done ki transmèt ant aparèy ou a ak sistèm nou yo.",
+          "Firewall ak sèvè sekirize pou pwoteje done ki estoke yo.",
+          "Revizyon regilye ak fòmasyon anplwaye pou asire konfòmite ak regilasyon vi prive.",
+          "Pandan n ap fè efò pou pwoteje enfòmasyon ou, pa gen okenn sistèm ki konplètman sekirize. Tanpri kontakte nou imedyatman si w sispèk aksè san otorizasyon a enfòmasyon ou."
+        ]
+      },
+      "your_privacy_rights": {
+        "title": "7. Dwa Konfidansyalite Ou",
+        "content": [
+          "Aksè, korije, oswa efase enfòmasyon pèsonèl ou.",
+          "Dekonekte nan kominikasyon maketing.",
+          "Limite pataje done ak twazyèm pati.",
+          "Pou egzèse dwa sa yo, tanpri kontakte nou lè w ap itilize detay ki anba la a."
+        ]
+      },
+      "childrens_privacy": {
+        "title": "8. Konfidansyalite Timoun",
+        "content": "H4HInsurance pa kolekte enfòmasyon konsyaman nan men moun ki poko gen 13 zan. Si nou vin okouran ke nou kolekte enfòmasyon sa a san atansyon, nou pral efase l imedyatman."
+      },
+      "changes_to_this_policy": {
+        "title": "9. Chanjman nan Règleman sa a",
+        "content": "Nou ka mete ajou Règleman sou Konfidansyalite sa a periodyikman. Chanjman yo ap afiche sou paj sa a ak dat efikasite ajou. Nou ankouraje w revize règleman sa a regilyèman."
+      },
+      "contact_us": {
+        "title": "10. Kontakte Nou",
+        "content": {
+          "address": "H4HInsurance, 1000 NW 65th St, Suite 110, Fort Lauderdale, FL 33309",
+          "email": "info@h4hinsurance.com",
+          "phone": "1.844.544.0663"
+        }
+      }
+    },  
+
   "home": {
     "hero": {
       "title": "Sante pou Ayisyen",
@@ -504,8 +742,10 @@
           "date_select": "Tanpri chwazi dat ak lè",
           "success_message": "Randevou pwograme pou {{date}} a {{time}}"
         }
-      }
+      },
     
-  
+  "misc": {
+    "schedule": "Pwograme randevou ou"
+  }
   
 }
