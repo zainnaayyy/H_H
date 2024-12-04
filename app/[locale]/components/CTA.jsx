@@ -17,27 +17,29 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { useTranslation } from 'react-i18next';
 
 const CTA = () => {
+  const { t } = useTranslation();
   const services = [
     {
       id: 1,
-      title: 'Call',
-      description: '1.844.544.0663',
-      icon: FaPhone,
+      title: t('contact.call'),
+      description: t('contact.phone_number'),
+      icon: FaPhone
     },
     {
       id: 2,
-      title: 'Email',
-      description: 'info@h4hinsurance.com',
-      icon: MdOutlineMailOutline,
+      title: t('contact.email'),
+      description: t('contact.email_address'),
+      icon: MdOutlineMailOutline
     },
     {
       id: 3,
-      title: 'Chat',
-      description: 'Mon to Fri (9am-6pm EST)',
-      icon: MdOutlineChat,
-    },
+      title: t('contact.chat'),
+      description: t('contact.chat_hours'),
+      icon: MdOutlineChat
+    }
   ];
 
   const formFields = [
@@ -62,7 +64,8 @@ const CTA = () => {
         }}
       >
         <div className='text-center mb-12'>
-          <h2 className='text-3xl font-bold text-gray-500'>Contact Us!</h2>
+          <h2 className='text-3xl font-bold text-gray-500'>
+          {t('navigation.menu_items.contact_us')}!</h2>
         </div>
         <div className='max-w-6xl px-4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
           {services.map((service, index) => {

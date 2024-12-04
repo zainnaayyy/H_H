@@ -1,8 +1,11 @@
+'use client'
 import { Breadcrumb } from "antd"
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslation } from "react-i18next"
 
 const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
+  const { t } = useTranslation();
   return (
     <div className="relative w-full mt-10 p-10 rounded-md">
     {video ? (
@@ -33,7 +36,7 @@ const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
           className="text-xs md:text-xl text-white font-semibold py-2 px-4"
           items={[
             {
-              title: <Link href="/">Home</Link>,
+              title: <Link href="/"> {t("navigation.menu_items.home")}</Link>,
             },
             {
               title: route,

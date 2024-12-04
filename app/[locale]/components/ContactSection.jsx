@@ -24,22 +24,22 @@ const ContactSection = () => {
   const services = [
     {
       id: 1,
-      title: 'Call',
-      description: '1.844.544.0663',
-      icon: FaPhone,
+      title: t('contact.call'),
+      description: t('contact.phone_number'),
+      icon: FaPhone
     },
     {
       id: 2,
-      title: 'Email',
-      description: 'info@h4hinsurance.com',
-      icon: MdOutlineMailOutline,
+      title: t('contact.email'),
+      description: t('contact.email_address'),
+      icon: MdOutlineMailOutline
     },
     {
       id: 3,
-      title: 'Chat',
-      description: 'Mon to Fri (9am-6pm EST)',
-      icon: MdOutlineChat,
-    },
+      title: t('contact.chat'),
+      description: t('contact.chat_hours'),
+      icon: MdOutlineChat
+    }
   ];
 
   const formFields = [

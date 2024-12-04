@@ -62,10 +62,10 @@ const AboutUs = () => {
               className="text-xs md:text-xl text-white font-semibold py-2 px-4"
               items={[
                 {
-                  title: <Link href="/">Home</Link>,
+                  title: <Link href="/">{t("navigation.menu_items.home")}</Link>,
                 },
                 {
-                  title: 'About Us',
+                  title: <h1>{t("navigation.menu_items.about_us")}</h1>,
                 },
               ]}
             />

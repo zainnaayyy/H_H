@@ -544,6 +544,79 @@
       "cta": "¡Comienza Hoy! Explora nuestros planes y descubre lo fácil que es proteger tu sonrisa."
     }
   },
+
+  
+    "mission": {
+      "breadcrumb": {
+        "title": "Misión",
+        "image": "/images/mission/mission.jpg"
+      },
+      "make_difference": {
+        "title": "Cómo Marcamos la Diferencia",
+        "description": "Nuestra misión es mejorar la vida de las poblaciones desatendidas de Haití proporcionando acceso a seguros de salud asequibles e integrales. Creemos que todos, independientemente de su situación financiera, merecen atención médica de calidad. Al eliminar las barreras económicas y promover la concienciación sobre los servicios de salud disponibles, estamos trabajando para garantizar que más familias haitianas puedan llevar vidas más saludables y seguras.",
+        "button": "Descubre Más",
+        "image": "/images/mission/mission1.jpg"
+      },
+      "stronger_haiti": {
+        "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
+        "description": "Invertir en las comunidades haitianas no es solo un imperativo moral; es un catalizador para el crecimiento sostenible y el cambio positivo.",
+        "image": "/images/mission/missionPic.jpg"
+      },
+      "breaking_barriers": {
+        "title": "Derribando Barreras para la Equidad y el Crecimiento",
+        "description": "La comunidad haitiana a menudo enfrenta barreras sistémicas que limitan el acceso a recursos esenciales, como la educación, la atención médica y las oportunidades económicas. Al dirigir inversiones hacia estas áreas, podemos fomentar la equidad, crear caminos hacia el éxito y fortalecer la economía en general.",
+        "image": "/images/mission/mission2.jpg"
+      },
+      "unlocking_potential": {
+        "title": "Desbloqueando el Potencial para un Futuro Próspero",
+        "description": "Empoderar a los haitianos libera todo su potencial, generando innovación, diversidad cultural y una sociedad más inclusiva. Cuando elevamos a los nuestros, construimos un futuro donde todos prosperan",
+        "image": "/images/mission/mission3.jpg"
+      }
+    },  
+
+      "company": {
+        "title": "Compañía",
+        "services": ["Política de Privacidad", "Términos de Servicio", "Términos y Condiciones de SMS"],
+        "useful_links": {
+          "title": "Enlaces Útiles"
+        },
+        "useful_links_data": [
+          {
+            "name": "Inicio",
+            "href": "/"
+          },
+          {
+            "name": "Sobre Nosotros",
+            "href": "/about-us"
+          },
+          {
+            "name": "Productos",
+            "href": "/#products"
+          },
+          {
+            "name": "Misión",
+            "href": "/mission"
+          },
+          {
+            "name": "Contáctanos",
+            "href": "/#contact"
+          }
+        ],
+        "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
+      },    
+
+
+      
+        "contact": {
+          "title": "¡Contáctanos!",
+          "call": "Llama",
+          "phone_number": "1.844.544.0663",
+          "email": "Correo Electrónico",
+          "email_address": "info@h4hinsurance.com",
+          "chat": "Charlar",
+          "chat_hours": "Lunes a Viernes (9am-6pm EST)"
+        },
+      
     
   "misc": {
     "schedule": "Programa tu cita"

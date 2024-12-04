@@ -705,6 +705,17 @@
     }
   },
 
+
+  "contact": {
+    "call": "Call",
+    "phone_number": "1.844.544.0663",
+    "email": "Email", 
+    "email_address": "info@h4hinsurance.com",
+    "chat": "Chat",
+    "chat_hours": "Mon to Fri (9am-6pm EST)"
+  },
+  
+
   "misc": {
     "schedule": "Schedule your appointment"
   }

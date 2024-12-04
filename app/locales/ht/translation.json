@@ -743,6 +743,18 @@
           "success_message": "Randevou pwograme pou {{date}} a {{time}}"
         }
       },
+
+      
+        "contact": {
+          "title": "Kontakte nou !",
+          "call": "Rele nou nan",
+          "phone_number": "1.844.544.0663",
+          "email": "Imèl",
+          "email_address": "info@h4hinsurance.com",
+          "chat": "Ekri nou",
+          "chat_hours": "Lundi Au Vendredi (9am – 6pm EST)"
+        },
+      
     
   "misc": {
     "schedule": "Pwograme randevou ou"
