@@ -23,7 +23,7 @@ const Dental = () => {
          videoSrc={'https://video.wixstatic.com/video/ac2815_e69d7b305b0e477c8a7127b5e4a56992/1080p/mp4/file.mp4'} 
           video={true}
           pos={"center"}
-          route={'Dental & Vision'}
+          route={t('dental_vision.title')}
         />
 
         <div className="flex flex-col mt-8 md:flex-row justify-between items-center ">

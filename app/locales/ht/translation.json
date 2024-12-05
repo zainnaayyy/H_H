@@ -479,7 +479,7 @@
   
   
     "dental_vision": {
-      "title": "Kouvèti Dantè &amp; Vizyon",
+      "title": "Kouvèti Dantè & Vizyon",
       "description": "Planes de Seguro Dental y de Visión Accesibles para su Familia",
       "main_sections": {
         "first_section": {
@@ -522,6 +522,7 @@
   
 
   "health": {
+    "title":"Asirans Sante",
     "sections": [
       {
         "title": "Asirans Sante",

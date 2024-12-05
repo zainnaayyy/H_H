@@ -34,7 +34,7 @@ const Health = () => {
         <BreadcrumbComp
         img={'/images/health/couple.jpg'} 
         pos={'end'} 
-        route={'Health Insurance'}
+        route={t('health.title')}
         />
 
         <div className='flex flex-col mt-8 md:flex-row justify-between items-center '>

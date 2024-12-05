@@ -419,205 +419,279 @@
   },
 
   "medicare": {
-    "title": "Cobertura de Medicare Hecha Simple, Asequible y Adaptada a Tus Necesidades",
-    "subtitle": "Cumplir 65 años y navegar por Medicare puede ser abrumador, pero estamos aquí para ayudarte. Ya sea que te estés inscribiendo por primera vez, explorando opciones de cobertura adicional o cambiando de plan, te guiaremos en cada paso del camino.",
-    "cta_button": "Obtén una Cotización",
-    "plan_types": {
-      "title": "¿Qué Plan de Medicare es el Adecuado para Ti?",
-      "advantage": {
-        "title": "Medicare Advantage (Parte C)",
-        "description": "Los planes de Medicare Advantage combinan el seguro hospitalario (Parte A) y el seguro médico (Parte B) en un solo plan. Muchos de estos planes también ofrecen cobertura para medicamentos recetados (Parte D), junto con beneficios adicionales como visión, dental y audición."
-      },
-      "supplement": {
-        "title": "Medicare Supplement (Medigap)",
-        "description": "Los planes de suplemento de Medicare ayudan a cubrir los costos de bolsillo que Medicare tradicional no cubre, como copagos, coseguros y deducibles. Elige entre una variedad de planes diseñados para ahorrarte dinero y protegerte de facturas médicas elevadas."
-      },
-      "prescription": {
-        "title": "Planes de Medicamentos Recetados (Parte D)",
-        "description": "Obtén cobertura para medicamentos recetados con un plan Parte D. Tendrás acceso a una amplia red de farmacias y cobertura para los medicamentos que necesitas."
-      }
+    "breadcrumb": {
+      "title": "Medicare",
+      "image": "/images/medi/medi5.jpg"
     },
-    "compare_cta": {
+    "hero_section": {
+      "title": "Medicare",
+      "home": "Inicio"
+    },
+    "main_section": {
+      "title": "Cobertura de Medicare Hecha Simple, Asequible y Adaptada a Tus Necesidades.",
+      "description": "Cumplir 65 años y navegar por Medicare puede ser abrumador, pero estamos aquí para ayudarte. Ya sea que te estés inscribiendo por primera vez, explorando opciones de cobertura adicional o cambiando de plan, te guiaremos en cada paso del camino.",
+      "button": "Obtén una Cotización",
+      "image": "/images/medi/medi2.jpg"
+    },
+    "plans_section": {
+      "title": "¿Qué Plan de Medicare es el Adecuado para Ti?",
+      "image": "/images/medi/medi3.jpg",
+      "plans": [
+        {
+          "title": "Medicare Advantage (Parte C)",
+          "description": "Los planes de Medicare Advantage combinan el seguro hospitalario (Parte A) y el seguro médico (Parte B) en un solo plan. Muchos de estos planes también ofrecen cobertura para medicamentos recetados (Parte D), junto con beneficios adicionales como visión, dental y audición."
+        },
+        {
+          "title": "Medicare Supplement (Medigap)",
+          "description": "Los planes de suplemento de Medicare ayudan a cubrir los costos de bolsillo que Medicare tradicional no cubre, como copagos, coseguros y deducibles. Elige entre una variedad de planes diseñados para ahorrarte dinero y protegerte de facturas médicas elevadas."
+        },
+        {
+          "title": "Planes de Medicamentos Recetados (Parte D)",
+          "description": "Obtén cobertura para medicamentos recetados con un plan Parte D. Tendrás acceso a una amplia red de farmacias y cobertura para los medicamentos que necesitas."
+        }
+      ]
+    },
+    "compare_section": {
       "title": "¡Compara Planes de Medicare Ahora!",
       "description": "No dejes tu atención médica al azar. Explora nuestros planes de Medicare hoy y encuentra una cobertura que te mantenga saludable, protegido y sin preocupaciones. Con nuestra guía experta y herramientas simples, puedes elegir con confianza el mejor plan para tus necesidades.",
-      "button": "¡Llama ahora y habla con un experto licenciado en Medicare!"
+      "call_text": "Llama ahora",
+      "expert_text": "y habla con un experto licenciado en Medicare!",
+      "image": "/images/medi/medi4.jpg"
     }
   },
+
   "life_insurance": {
-    "title": "Seguro de Vida",
-    "subtitle": "Protege a Tus Seres Queridos con un Seguro de Vida",
-    "description": "La vida es impredecible, pero el futuro de tu familia no tiene por qué serlo. El seguro de vida brinda tranquilidad al saber que tu familia o dependientes estarán protegidos financieramente si ocurre algo inesperado. Esto puede ser especialmente importante si:",
-    "important_cases": [
-      "Tienes dependientes, como hijos o un cónyuge, que dependen de tus ingresos.",
-      "Llevas una deuda significativa, como una hipoteca, préstamos o deudas de tarjetas de crédito.",
-      "Quieres asegurarte de que tu familia tenga apoyo financiero para la educación, los gastos diarios o la estabilidad financiera a largo plazo."
-    ],
-    "types": [
-      {
-        "title": "Seguro de Vida a Término",
-        "description": "Cobertura asequible por un período determinado (10, 20, 30 años). Ideal para necesidades a corto plazo, como reemplazo de ingresos o protección de hipoteca."
-      },
-      {
-        "title": "Seguro de Vida Entera",
-        "description": "Cobertura de por vida que incluye un componente de valor en efectivo, acumulando ahorros con el tiempo."
-      },
-      {
-        "title": "Seguro de Vida Universal",
-        "description": "Póliza flexible con potencial de crecimiento en el valor en efectivo, que te permite ajustar las primas y la cobertura a medida que cambian tus necesidades."
-      }
-    ],
-    "cta": {
-      "title": "Obtén una Cotización Personalizada... ¡Da el Primer Paso Hoy!",
-      "description": "El futuro de tu familia es demasiado importante para dejarlo al azar. Comienza a asegurar tu legado financiero hoy mismo explorando nuestras opciones de seguro de vida. Obtén tu cotización gratuita y da el primer paso hacia la tranquilidad.",
-      "button": "Obtén Tu Cotización Gratis Hoy"
-    }
-  },
-  "health_insurance": {
-    "title": "Seguro de Salud",
-    "subtitle": "Planes para las Necesidades de Tu Familia",
-    "description": "¡Encontrar el plan de salud adecuado para tu familia es más fácil que nunca! Nuestras opciones de seguro de salud ofrecen una amplia variedad de planes diseñados para ajustarse a tus necesidades y presupuesto. Desde cobertura integral hasta opciones asequibles, tenemos todo lo que necesitas.",
-    "cta_button": "Comienza Aquí",
-    "benefits_description": "El Seguro de Salud Te Ayuda a Ahorrar",
-    "benefits_details": "Sin cobertura, incluso una sola visita al hospital puede resultar en miles de dólares en facturas médicas. El seguro de salud te ayuda a manejar estos costos al compartir la carga y garantizar que pagues solo una fracción de lo que pagarías de otra manera.",
-    "cta_agent": "¿Listo para proteger lo que más importa? Habla con un agente hoy mismo y obtén asesoramiento experto para elegir el mejor plan de salud para ti y tus seres queridos.",
-    "essential_benefits": {
-      "title": "¿Qué Incluye la Cobertura de Salud?",
-      "subtitle": "Estos son algunos de los beneficios esenciales que incluye el plan de la Ley de Cuidado de Salud Asequible (ACA):",
-      "benefits": [
-        "Visitas al médico y atención de especialistas",
-        "Servicios de emergencia y hospitalización",
-        "Medicamentos recetados",
-        "Servicios preventivos (por ejemplo, chequeos anuales)",
-        "Atención de maternidad y recién nacidos",
-        "Servicios de salud mental"
-      ]
+    "breadcrumb": {
+      "title": "Seguro de Vida",
+      "image": "/images/life/life.jpg"
     },
-    "out_of_pocket": {
-      "title": "¿Qué Son los Gastos de Bolsillo?",
-      "description": "Los gastos de bolsillo son los costos que pagas directamente por servicios de atención médica que no están cubiertos por tu plan de seguro de salud. Comprender estos costos es crucial para planificar tu presupuesto de atención médica y evitar tensiones financieras inesperadas.",
-      "costs": [
+    "main_section": {
+      "title": "Protege a Tus Seres Queridos con un Seguro de Vida",
+      "description": "La vida es impredecible, pero el futuro de tu familia no tiene por qué serlo. El seguro de vida brinda tranquilidad al saber que tu familia o dependientes estarán protegidos financieramente si ocurre algo inesperado. Esto puede ser especialmente importante si:",
+      "key_points": [
+        "Tienes dependientes, como hijos o un cónyuge, que dependen de tus ingresos.",
+        "Llevas una deuda significativa, como una hipoteca, préstamos o deudas de tarjetas de crédito.",
+        "Quieres asegurarte de que tu familia tenga apoyo financiero para la educación, los gastos diarios o la estabilidad financiera a largo plazo."
+      ],
+      "image": "/images/life/Life1.jpg"
+    },
+    "types_section": {
+      "title": "Tipos de Seguro de Vida",
+      "types": [
         {
-          "name": "Prima",
-          "description": "El pago mensual fijo que realizas para mantener activo tu seguro de salud."
+          "title": "Seguro de Vida a Término",
+          "description": "Cobertura asequible por un período determinado (10, 20, 30 años). Ideal para necesidades a corto plazo, como reemplazo de ingresos o protección de hipoteca."
         },
         {
-          "name": "Deducibles",
-          "description": "La cantidad que debes pagar por servicios médicos cubiertos antes de que tu seguro comience a pagar."
+          "title": "Seguro de Vida Entera",
+          "description": "Cobertura de por vida que incluye un componente de valor en efectivo, acumulando ahorros con el tiempo."
         },
         {
-          "name": "Copagos",
-          "description": "Una cantidad fija que pagas por servicios específicos como visitas al médico o medicamentos recetados."
-        },
-        {
-          "name": "Coinsurance",
-          "description": "Un porcentaje de los costos que compartes con tu compañía de seguros después de cumplir con tu deducible."
+          "title": "Seguro de Vida Universal",
+          "description": "Póliza flexible con potencial de crecimiento en el valor en efectivo, que te permite ajustar las primas y la cobertura a medida que cambian tus necesidades."
         }
       ],
-      "cta": "Al comparar planes de seguro, es crucial revisar todos los costos. Explora el mejor plan que se ajuste a tus necesidades de atención médica y presupuesto."
+      "image": "/images/life/Life2.jpg"
+    },
+    "quote_section": {
+      "title": "Obtén una Cotización Personalizada... ¡Da el Primer Paso Hoy!",
+      "description": "El futuro de tu familia es demasiado importante para dejarlo al azar. Comienza a asegurar tu legado financiero hoy mismo explorando nuestras opciones de seguro de vida. Obtén tu cotización gratuita y da el primer paso hacia la tranquilidad.",
+      "button_text": "Obtén Tu Cotización Gratis Hoy",
+      "image": "/images/life/Life3.jpg"
     }
   },
+
+  "health": {
+    "title": "Seguro de Salud",
+    "sections": [
+      {
+        "title": "Seguro de Salud",
+        "button_text": "Descubre Más",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "Planes para las Necesidades de Tu Familia",
+        "description": "¡Encontrar el plan de salud adecuado para tu familia es más fácil que nunca! Nuestras opciones de seguro de salud ofrecen una amplia variedad de planes diseñados para ajustarse a tus necesidades y presupuesto. Desde cobertura integral hasta opciones asequibles, tenemos todo lo que necesitas.",
+        "button_text": "Obtener una Cotización",
+        "button_link": "/appointment"
+      },
+      {
+        "title": "El Seguro de Salud Te Ayuda a Ahorrar",
+        "description": "Sin cobertura, incluso una sola visita al hospital puede resultar en miles de dólares en facturas médicas. El seguro de salud te ayuda a manejar estos costos al compartir la carga y garantizar que pagues solo una fracción de lo que pagarías de otra manera.",
+        "call_to_action": "¿Listo para proteger lo que más importa?",
+        "link_text": "Habla con un agente",
+        "link": "/appointment"
+      },
+      {
+        "title": "¿Qué Incluye la Cobertura de Salud?",
+        "description": "Estos son algunos de los beneficios esenciales que incluye el plan de la Ley de Cuidado de Salud Asequible (ACA):",
+        "list": [
+          {
+            "text": "Visitas al Médico y Atención de Especialistas"
+          },
+          {
+            "text": "Servicios de Emergencia y Hospitalización"
+          },
+          {
+            "text": "Medicamentos Recetados"
+          },
+          {
+            "text": "Servicios Preventivos (por ejemplo, chequeos anuales)"
+          },
+          {
+            "text": "Atención de Maternidad y Recién Nacidos"
+          },
+          {
+            "text": "Servicios de Salud Mental"
+          }
+        ]
+      },
+      {
+        "title": "¿Qué Son los Gastos de Bolsillo?",
+        "description": "Los gastos de bolsillo son los costos que pagas directamente por servicios de atención médica que no están cubiertos por tu plan de seguro de salud. Comprender estos costos es crucial para planificar tu presupuesto de atención médica y evitar tensiones financieras inesperadas."
+      },
+      {
+        "title": "Los Costos de Bolsillo Incluyen:",
+        "list": [
+          {
+            "item": "Prima",
+            "description": "El pago mensual fijo que realizas para mantener activo tu seguro de salud."
+          },
+          {
+            "item": "Deducibles",
+            "description": "La cantidad que debes pagar por servicios médicos cubiertos antes de que tu seguro comience a pagar."
+          },
+          {
+            "item": "Copagos",
+            "description": "Una cantidad fija que pagas por servicios específicos como visitas al médico o medicamentos recetados."
+          },
+          {
+            "item": "Coseguro",
+            "description": "Un porcentaje de los costos que compartes con tu compañía de seguros después de cumplir con tu deducible."
+          },
+          {
+            "item": "Comparar Planes de Seguro",
+            "description": "Al comparar planes de seguro, es crucial revisar todos los costos. Explora el mejor plan que se ajuste a tus necesidades de atención médica y presupuesto. ¡Conéctate con nuestro agente licenciado hoy!"
+          }
+        ]
+      }
+    ]
+  },
+
   "dental_vision": {
     "title": "Dental y Visión",
-    "subtitle": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
-    "description": "Encontrar el seguro dental adecuado no tiene que ser complicado ni costoso. Ofrecemos una variedad de planes asequibles que facilitan el acceso a la atención dental que necesitas. Además, puedes combinar tu plan con cobertura de visión y audición para un cuidado completo, todo en un solo paquete.",
-    "cta_button": "Explora Planes",
-    "benefits": {
-      "title": "Beneficios del Seguro Dental",
-      "items": [
-        {
-          "title": "Inscríbete en Cualquier Momento",
-          "description": "No necesitas esperar al período de inscripción abierta; ¡puedes inscribirte durante todo el año!"
-        },
-        {
-          "title": "Activación Rápida",
-          "description": "Inscríbete hoy, y tu cobertura podría comenzar tan pronto como el próximo mes."
-        },
-        {
-          "title": "Cobertura en Cualquier Lugar",
-          "description": "Nuestros planes están disponibles en todo el país, lo que facilita que casi cualquier persona obtenga cobertura."
-        }
+    "description": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
+    "main_sections": {
+      "first_section": {
+        "title": "Planes Asequibles de Seguro Dental y de Visión para Tu Familia",
+        "description": "Encontrar el seguro dental adecuado no tiene que ser complicado ni costoso. Ofrecemos una variedad de planes asequibles que facilitan el acceso a la atención dental que necesitas. Además, puedes combinar tu plan con cobertura de visión y audición para un cuidado completo, todo en un solo paquete."
+      },
+      "benefits_section": {
+        "title": "Beneficios del Seguro Dental:",
+        "benefits": [
+          {
+            "title": "Inscríbete en Cualquier Momento",
+            "description": "No necesitas esperar al período de inscripción abierta; ¡puedes inscribirte durante todo el año!"
+          },
+          {
+            "title": "Activación Rápida",
+            "description": "Inscríbete hoy, y tu cobertura podría comenzar tan pronto como el próximo mes."
+          },
+          {
+            "title": "Cobertura en Cualquier Lugar",
+            "description": "Nuestros planes están disponibles en todo el país, lo que facilita que casi cualquier persona obtenga cobertura."
+          }
+        ]
+      },
+      "need_insurance_section": {
+        "title": "¿Por Qué Necesitas un Seguro Dental?",
+        "description": "Las revisiones dentales regulares ayudan a detectar problemas antes de que se vuelvan costosos, asegurando que mantengas una sonrisa saludable. Desde limpiezas rutinarias hasta procedimientos más serios, el seguro dental hace que el cuidado sea más asequible, brindándote tranquilidad y protegiendo tu bolsillo.",
+        "call_to_action": "¡Comienza Hoy! Explora nuestros planes y descubre lo fácil que es proteger tu sonrisa."
+      }
+    },
+    "images": {
+      "main_images": [
+        "/images/dental/dental1.jpg",
+        "/images/dental/dental2.jpg",
+        "/images/dental/dental3.jpg"
       ]
     },
-    "why_needed": {
-      "title": "¿Por Qué Necesitas un Seguro Dental?",
-      "description": "Las revisiones dentales regulares ayudan a detectar problemas antes de que se vuelvan costosos, asegurando que mantengas una sonrisa saludable. Desde limpiezas rutinarias hasta procedimientos más serios, el seguro dental hace que el cuidado sea más asequible, brindándote tranquilidad y protegiendo tu bolsillo.",
-      "cta": "¡Comienza Hoy! Explora nuestros planes y descubre lo fácil que es proteger tu sonrisa."
+    "cta_button": "Explora Planes"
+  },
+
+  "mission": {
+    "breadcrumb": {
+      "title": "Misión",
+      "image": "/images/mission/mission.jpg"
+    },
+    "make_difference": {
+      "title": "Cómo Marcamos la Diferencia",
+      "description": "Nuestra misión es mejorar la vida de las poblaciones desatendidas de Haití proporcionando acceso a seguros de salud asequibles e integrales. Creemos que todos, independientemente de su situación financiera, merecen atención médica de calidad. Al eliminar las barreras económicas y promover la concienciación sobre los servicios de salud disponibles, estamos trabajando para garantizar que más familias haitianas puedan llevar vidas más saludables y seguras.",
+      "button": "Descubre Más",
+      "image": "/images/mission/mission1.jpg"
+    },
+    "stronger_haiti": {
+      "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
+      "description": "Invertir en las comunidades haitianas no es solo un imperativo moral; es un catalizador para el crecimiento sostenible y el cambio positivo.",
+      "image": "/images/mission/missionPic.jpg"
+    },
+    "breaking_barriers": {
+      "title": "Derribando Barreras para la Equidad y el Crecimiento",
+      "description": "La comunidad haitiana a menudo enfrenta barreras sistémicas que limitan el acceso a recursos esenciales, como la educación, la atención médica y las oportunidades económicas. Al dirigir inversiones hacia estas áreas, podemos fomentar la equidad, crear caminos hacia el éxito y fortalecer la economía en general.",
+      "image": "/images/mission/mission2.jpg"
+    },
+    "unlocking_potential": {
+      "title": "Desbloqueando el Potencial para un Futuro Próspero",
+      "description": "Empoderar a los haitianos libera todo su potencial, generando innovación, diversidad cultural y una sociedad más inclusiva. Cuando elevamos a los nuestros, construimos un futuro donde todos prosperan",
+      "image": "/images/mission/mission3.jpg"
     }
   },
 
-  
-    "mission": {
-      "breadcrumb": {
-        "title": "Misión",
-        "image": "/images/mission/mission.jpg"
+  "company": {
+    "title": "Compañía",
+    "services": [
+      "Política de Privacidad",
+      "Términos de Servicio",
+      "Términos y Condiciones de SMS"
+    ],
+    "useful_links": {
+      "title": "Enlaces Útiles"
+    },
+    "useful_links_data": [
+      {
+        "name": "Inicio",
+        "href": "/"
       },
-      "make_difference": {
-        "title": "Cómo Marcamos la Diferencia",
-        "description": "Nuestra misión es mejorar la vida de las poblaciones desatendidas de Haití proporcionando acceso a seguros de salud asequibles e integrales. Creemos que todos, independientemente de su situación financiera, merecen atención médica de calidad. Al eliminar las barreras económicas y promover la concienciación sobre los servicios de salud disponibles, estamos trabajando para garantizar que más familias haitianas puedan llevar vidas más saludables y seguras.",
-        "button": "Descubre Más",
-        "image": "/images/mission/mission1.jpg"
+      {
+        "name": "Sobre Nosotros",
+        "href": "/about-us"
       },
-      "stronger_haiti": {
-        "title": "Juntos, Estamos Construyendo un Haití Más Fuerte y Saludable, Una Póliza a la Vez.",
-        "description": "Invertir en las comunidades haitianas no es solo un imperativo moral; es un catalizador para el crecimiento sostenible y el cambio positivo.",
-        "image": "/images/mission/missionPic.jpg"
+      {
+        "name": "Productos",
+        "href": "/#products"
       },
-      "breaking_barriers": {
-        "title": "Derribando Barreras para la Equidad y el Crecimiento",
-        "description": "La comunidad haitiana a menudo enfrenta barreras sistémicas que limitan el acceso a recursos esenciales, como la educación, la atención médica y las oportunidades económicas. Al dirigir inversiones hacia estas áreas, podemos fomentar la equidad, crear caminos hacia el éxito y fortalecer la economía en general.",
-        "image": "/images/mission/mission2.jpg"
+      {
+        "name": "Misión",
+        "href": "/mission"
       },
-      "unlocking_potential": {
-        "title": "Desbloqueando el Potencial para un Futuro Próspero",
-        "description": "Empoderar a los haitianos libera todo su potencial, generando innovación, diversidad cultural y una sociedad más inclusiva. Cuando elevamos a los nuestros, construimos un futuro donde todos prosperan",
-        "image": "/images/mission/mission3.jpg"
+      {
+        "name": "Contáctanos",
+        "href": "/#contact"
       }
-    },  
+    ],
+    "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
+  },
 
-      "company": {
-        "title": "Compañía",
-        "services": ["Política de Privacidad", "Términos de Servicio", "Términos y Condiciones de SMS"],
-        "useful_links": {
-          "title": "Enlaces Útiles"
-        },
-        "useful_links_data": [
-          {
-            "name": "Inicio",
-            "href": "/"
-          },
-          {
-            "name": "Sobre Nosotros",
-            "href": "/about-us"
-          },
-          {
-            "name": "Productos",
-            "href": "/#products"
-          },
-          {
-            "name": "Misión",
-            "href": "/mission"
-          },
-          {
-            "name": "Contáctanos",
-            "href": "/#contact"
-          }
-        ],
-        "copyright": "© 2024 Health for Haitians. Todos los Derechos Reservados."
-      },    
+  "contact": {
+    "title": "¡Contáctanos!",
+    "call": "Llama",
+    "phone_number": "1.844.544.0663",
+    "email": "Correo Electrónico",
+    "email_address": "info@h4hinsurance.com",
+    "chat": "Charlar",
+    "chat_hours": "Lunes a Viernes (9am-6pm EST)"
+  },
 
-
-      
-        "contact": {
-          "title": "¡Contáctanos!",
-          "call": "Llama",
-          "phone_number": "1.844.544.0663",
-          "email": "Correo Electrónico",
-          "email_address": "info@h4hinsurance.com",
-          "chat": "Charlar",
-          "chat_hours": "Lunes a Viernes (9am-6pm EST)"
-        },
-      
-    
   "misc": {
     "schedule": "Programa tu cita"
   }
