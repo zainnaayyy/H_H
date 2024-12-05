@@ -700,7 +700,7 @@ const Header = () => {
                         {t("contact_form.links.privacy_policy")}
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[800px] sm:max-h-[700px] overflow-y-auto">
+                    <DialogContent className="sm:max-w-[800px] sm:max-h-[900px] overflow-y-auto">
                       <DialogHeader>
                         <DialogTitle className="text-2xl font-semibold mb-4">
                           {t("privacy_policy.title")}
@@ -907,16 +907,14 @@ const Header = () => {
                       </DialogFooter>
                     </DialogContent>
                   </Dialog>
-                 <span className="px-1">
-                   and{" "}
-                  </span>
+                  <span className="px-1">and </span>
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className="text-blue-600 underline">
                         {t("contact_form.links.terms_and_conditions")}
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[800px] sm:max-h-[600px] overflow-y-auto">
+                    <DialogContent className="sm:max-w-[800px] sm:max-h-[900px] overflow-y-auto">
                       <DialogHeader>
                         <DialogTitle className="text-2xl font-semibold mb-4">
                           {t("terms_and_conditions.title")}
