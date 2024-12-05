@@ -12,7 +12,7 @@
       "mission": "Misión",
       "contact": "Contacto",
       "products": "Productos",
-      "contact_us": "Contáctenos"
+      "contact_us": "Contáctanos"
     },
     "close": "Cerrar"
   },
@@ -55,8 +55,8 @@
     "title": "¡Obtén Cobertura Hoy!",
     "subtitle": "Elige tu Tipo de Seguro",
     "fields": {
-      "full_name": "Primer Nombre",
-      "first_name": "Nombre",
+      "full_name": "Nombre Completo",
+      "first_name": "Primer Nombre",
       "last_name": "Apellido",
       "date_of_birth": "Fecha de Nacimiento",
       "zip_code": "Código Postal",
