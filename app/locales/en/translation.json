@@ -419,32 +419,6 @@
     ]
   },
 
-  "appointments": {
-    "title": "Appointment Scheduling",
-    "description": "Effortlessly schedule your appointment with flexible options and receive instant confirmation via email.",
-    "services": [
-      {
-        "title": "Call us now",
-        "description": "Speak to an agent by calling us at 1.844.544.0663. Conveniently book your appointment over the phone."
-      },
-      {
-        "title": "Schedule for a Phone Appointment",
-        "description": "Conveniently book your appointment for a meeting by phone at a preferred date and time."
-      },
-      {
-        "title": "Face-to-Face Meeting",
-        "description": "Meet with our experts in person for a comprehensive consultation. We ensure a personalized experience."
-      },
-      {
-        "title": "Virtual Consultation",
-        "description": "Connect with us online through a virtual meeting. Get the same expert advice from the comfort of your home."
-      }
-    ],
-    "appointment_messages": {
-      "success": "Appointment scheduled for {date} at {time}",
-      "error": "Please select both date and time."
-    }
-  },
 
   "dental_vision": {
     "title": "Dental & Vision",

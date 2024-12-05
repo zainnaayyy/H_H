@@ -391,32 +391,39 @@
     ]
   },
 
-  "appointments": {
-    "title": "Programación de Citas",
-    "description": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
-    "services": [
-      {
-        "title": "Llámanos Ahora",
-        "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
-      },
-      {
-        "title": "Programa una Cita Telefónica",
-        "description": "Reserva cómodamente tu cita para una reunión por teléfono en la fecha y hora que prefieras."
-      },
-      {
-        "title": "Reunión Presencial",
-        "description": "Reúnete con nuestros expertos en persona para una consulta integral. Garantizamos una experiencia personalizada."
-      },
-      {
-        "title": "Consulta Virtual",
-        "description": "Conéctate con nosotros en línea a través de una reunión virtual. Recibe el mismo asesoramiento experto desde la comodidad de tu hogar."
+  
+    "appointment": {
+      "title": "Programación de Citas",
+      "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
+      "services": [
+        {
+          "id": 1,
+          "title": "Llámanos Ahora",
+          "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
+        },
+        {
+          "id": 2,
+          "title": "Programa una Cita Telefónica",
+          "description": "Reserva cómodamente tu cita para una reunión por teléfono en la fecha y hora que prefieras."
+        },
+        {
+          "id": 3,
+          "title": "Reunión Presencial",
+          "description": "Reúnete con nuestros expertos en persona para una consulta integral. Garantizamos una experiencia personalizada."
+        },
+        {
+          "id": 4,
+          "title": "Consulta Virtual",
+          "description": "Conéctate con nosotros en línea a través de una reunión virtual. Recibe el mismo asesoramiento experto desde la comodidad de tu hogar."
+        }
+      ],
+      "form": {
+        "date_select": "Por favor selecciona tanto la fecha como la hora",
+        "success_message": "Cita programada para el {{date}} a las {{time}}"
       }
-    ],
-    "appointment_messages": {
-      "success": "Cita programada para {date} a las {time}",
-      "error": "Por favor seleccione fecha y hora."
-    }
-  },
+    },
+  
+  
 
   "medicare": {
     "breadcrumb": {

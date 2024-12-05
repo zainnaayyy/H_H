@@ -449,33 +449,7 @@
     ]
   },
 
-  "appointments": {
-    "title": "Pwogramasyon Randevou",
-    "description": "Pwograme randevou ou san efò ak opsyon fleksib epi resevwa konfimasyon imedya pa imèl.",
-    "services": [
-      {
-        "title": "Rele nou kounye a",
-        "description": "Pale ak yon ajan lè ou rele nou nan 1.844.544.0663. Pwograme randevou ou fasilman nan telefòn."
-      },
-      {
-        "title": "Pwograme pou yon Randevou Telefòn",
-        "description": "Pwograme randevou ou fasilman pou yon reyinyon pa telefòn nan yon dat ak lè ou prefere."
-      },
-      {
-        "title": "Reyinyon Fas-a-Fas",
-        "description": "Rankontre ak ekspè nou yo an pèsòn pou yon konsiltasyon konplè. Nou asire yon eksperyans pèsonalize."
-      },
-      {
-        "title": "Konsiltasyon Vityèl",
-        "description": "Konekte ak nou sou entènèt atravè yon reyinyon vityèl. Jwenn menm konsèy ekspè a nan konfò lakay ou."
-      }
-    ],
-    "appointment_messages": {
-      "success": "Randevou pwograme pou {date} a {time}",
-      "error": "Tanpri chwazi dat ak lè."
-    }
-  },
-
+ 
   
   
     "dental_vision": {
