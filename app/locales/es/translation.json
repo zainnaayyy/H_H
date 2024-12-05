@@ -45,10 +45,17 @@
   ],
 
   "contact_form": {
+    "insurance_types": {
+      "health": "Salud",
+      "dental": "Dental",
+      "vision": "Visión",
+      "medicare": "Medicare",
+      "life": "Vida"
+    },
     "title": "¡Obtén Cobertura Hoy!",
     "subtitle": "Elige tu Tipo de Seguro",
     "fields": {
-      "full_name": "Nombre Completo",
+      "full_name": "Primer Nombre",
       "first_name": "Nombre",
       "last_name": "Apellido",
       "date_of_birth": "Fecha de Nacimiento",
@@ -59,8 +66,8 @@
     },
     "consent_notice": "Al hacer clic en el botón a continuación, aceptas recibir correos electrónicos y mensajes de texto de marketing. Además, das tu consentimiento para ser contactado por llamada telefónica, un sistema de marcación automática, mensajes de texto al número que proporcionaste anteriormente o por correo electrónico. Entiendes que esto no es una condición de compra y también puedes obtener una cotización contactándonos por teléfono. Puedes revocar este consentimiento en cualquier momento contactándonos al 844-544-0663 o a info@h4hinsurance.com. Entiendes que pueden aplicarse las tarifas de mensajes y datos de tu proveedor. Consulta nuestra Política de Privacidad y los Términos de Servicio de SMS.",
     "links": {
-      "privacy_policy": "Consulta nuestra Política de Privacidad",
-      "sms_terms": "Términos de Servicio de SMS"
+      "privacy_policy": "Política de Privacidad",
+      "terms_and_conditions": "Términos y Condiciones"
     }
   },
 

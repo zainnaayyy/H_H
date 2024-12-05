@@ -45,6 +45,13 @@
   ],
 
   "contact_form": {
+    "insurance_types": {
+      "health": "Sante",
+      "dental": "Dantè",
+      "vision": "Vizyon",
+      "medicare": "Medicare",
+      "life": "Lavi"
+    },
     "title": "Jwenn Kouvèti Jodi a!",
     "subtitle": "Chwazi Kalite Asirans ou",
     "fields": {
@@ -59,8 +66,8 @@
     },
     "consent_notice": "Lè w klike sou bouton ki anba a, w ap bay konsantman’w pou resevwa e-mail ak mesajmarketing, anplis w ap dakò pou resevwa apèl telefòn, yon sistèm otomatik pou voye mesaj ak apèl telefòn, mesaj tèks nan nimewo telefòn ou bay la oswa pa e-mail. Ou konprann sa a pa yon kondisyon pou achte nan men nou, epi ou ka resevwa yon estimasyon asirans mlè w kontakte nou pa telefòn. Ou ka anile konsantman sa a nenpòt lè lè w kontakte nou nan 844-544-0663 oswa info@h4hinsurance.com. Ou konprann ke tarif mesaj ak done operatè ou ka aplike. Verifye Règleman Konfidansyalite ak Tèm Sèvis SMS sou telefòn ou .",
     "links": {
-      "privacy_policy": "Gade Politik Konfidansyalite",
-      "sms_terms": "Tèm sèvis SMS"
+      "privacy_policy": "Règleman Konfidansyalite",
+      "terms_and_conditions": "Tèm ak Kondisyon yo"
     }
   },
 

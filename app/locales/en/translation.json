@@ -45,6 +45,13 @@
   ],
 
   "contact_form": {
+  "insurance_types": {
+      "health": "Health",
+      "dental": "Dental",
+      "vision": "Vision", 
+      "medicare": "Medicare",
+      "life": "Life"
+    },
     "title": "Get Covered Today!",
     "subtitle": "Choose your Insurance Type",
     "fields": {

@@ -246,6 +246,24 @@ const Header = () => {
 
   const slides = t("slides", { returnObjects: true });
 
+  const insuranceTypes = [
+    {
+      title: t("contact_form.insurance_types.health"),
+    },
+    {
+      title: t("contact_form.insurance_types.dental"),
+    },
+    {
+      title: t("contact_form.insurance_types.vision"),
+    },
+    {
+      title: t("contact_form.insurance_types.medicare"),
+    },
+    {
+      title: t("contact_form.insurance_types.life"),
+    },
+  ];
+
   const handleLinkClick = (href) => {
     router.push(href); // Use router to navigate
     setIsDropdownOpen(false); // Close the dropdown
@@ -498,7 +516,7 @@ const Header = () => {
               <FaPhone className="h-12 w-12" />
             </button>
             <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
-            {t("misc.schedule")}
+              {t("misc.schedule")}
             </span>
           </div>
         </div>
@@ -523,21 +541,21 @@ const Header = () => {
                     {t("contact_form.subtitle")}
                   </label>
                   <div className="flex text-lg flex-wrap gap-4">
-                    {["Health", "Dental", "Vision", "Medicare", "Life"].map(
-                      (type) => (
-                        <label key={type} className="inline-flex items-center">
-                          <input
-                            type="checkbox"
-                            name="insuranceType"
-                            value={type}
-                            onChange={formik.handleChange}
-                            checked={formik.values.insuranceType.includes(type)}
-                            className="form-checkbox text-blue-600"
-                          />
-                          <span className="ml-2 text-gray-500">{type}</span>
-                        </label>
-                      )
-                    )}
+                    {insuranceTypes.map((type, index) => (
+                      <label key={index} className="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          name="insuranceType"
+                          value={type.title}
+                          onChange={formik.handleChange}
+                          checked={formik.values.insuranceType.includes(
+                            type.title
+                          )}
+                          className="form-checkbox text-blue-600"
+                        />
+                        <span className="ml-2 text-gray-500">{type.title}</span>
+                      </label>
+                    ))}
                   </div>
                   {formik.touched.insuranceType &&
                   formik.errors.insuranceType ? (
@@ -889,7 +907,9 @@ const Header = () => {
                       </DialogFooter>
                     </DialogContent>
                   </Dialog>
-                  and{" "}
+                 <span className="px-1">
+                   and{" "}
+                  </span>
                   <Dialog>
                     <DialogTrigger asChild>
                       <button className="text-blue-600 underline">
