@@ -707,6 +707,7 @@
   },
 
   "misc": {
-    "schedule": "Programa tu cita"
+    "schedule": "Programa tu cita",
+      "submit":"entregar"
   }
 }

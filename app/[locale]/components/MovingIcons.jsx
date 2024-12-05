@@ -34,7 +34,7 @@ const MovingIcons = () => {
     <div className='relative flex justify-center items-center bg-primary-darkAqua rounded-lg w-[90%] mx-auto my-10 overflow-hidden'>
       <div className='flex flex-col w-[100%] justify-between items-center'>
         {/* Counter Section */}
-        <div className='flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-[50%]'>
+        <div className='flex flex-col items-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 w-full'>
           <p className='text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-bold text-center'>
             {t('home.enrollment_section.title')}
             {/* Open Enrollment Begins November 1st... */}

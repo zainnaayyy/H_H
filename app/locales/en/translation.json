@@ -699,6 +699,7 @@
   
 
   "misc": {
-    "schedule": "Schedule your appointment"
+    "schedule": "Schedule your appointment",
+    "submit":"Submit"
   }
 }

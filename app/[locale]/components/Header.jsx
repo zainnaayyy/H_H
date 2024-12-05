@@ -1210,7 +1210,7 @@ const Header = () => {
                       Submitting...
                     </div>
                   ) : (
-                    "SUBMIT"
+                    t("misc.submit")
                   )}
                 </button>
               </form>

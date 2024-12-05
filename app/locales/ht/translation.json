@@ -739,7 +739,8 @@
       
     
   "misc": {
-    "schedule": "Pwograme randevou ou"
+    "schedule": "Pwograme randevou ou",
+      "submit":"soumèt"
   }
   
 }
