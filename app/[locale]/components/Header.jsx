@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import {
+  FaCalendar,
   FaFacebook,
   FaInstagram,
   FaPhone,
@@ -511,9 +512,9 @@ const Header = () => {
           <div className="hidden lg:flex lg:flex-col justify-center items-center w-[20%]">
             <button
               onClick={() => handleLinkClick("appointment")}
-              className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
+              // className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
             >
-              <FaPhone className="h-12 w-12" />
+              <img src="images/calendar3D.png" className="h-12 w-12" />
             </button>
             <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
               {t("misc.schedule")}
@@ -696,7 +697,7 @@ const Header = () => {
                   {t("contact_form.consent_notice")}
                   <Dialog>
                     <DialogTrigger asChild>
-                      <button className="text-blue-600 underline">
+                      <button className="text-blue-600 px-1 underline">
                         {t("contact_form.links.privacy_policy")}
                       </button>
                     </DialogTrigger>

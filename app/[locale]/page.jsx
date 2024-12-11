@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import initTranslations from './i18n';
 import TranslationsProvider from '@/lib/TranslationProvider';
+import GetQuoteRibbon from '@/components/GetQuoteRibbon';
 
 const i18nNamespaces = ['translation'];
 
@@ -41,6 +42,7 @@ async function page({ params: { locale } }) {
           <ContactSection />
         </section>
         <Footer />
+        <GetQuoteRibbon />
       </div>
     </TranslationsProvider>
   );
