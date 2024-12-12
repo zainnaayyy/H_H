@@ -1,22 +1,23 @@
-import React from 'react';
-import Header from './components/Header';
-import ServicesSection from './components/ServicesSection';
-import MovingIcons from './components/MovingIcons';
-import ContactSection from './components/ContactSection';
-import InsuranceService from './components/InsuranceService';
-import InsurancePolicy from './components/InsurancePolicy';
-import GrowBusiness from './components/GrowBusiness';
-import ContactFormWithMap from './components/ContactFormWithMap';
-import Achievements from './components/Achievements';
-import BlogSection from './components/BlogSection';
-import Team from './components/Team';
-import Footer from './components/Footer';
-import Testimonials from './components/Testimonials';
-import initTranslations from './i18n';
-import TranslationsProvider from '@/lib/TranslationProvider';
-import GetQuoteRibbon from '@/components/GetQuoteRibbon';
+import React from "react";
+import Header from "./components/Header";
+import ServicesSection from "./components/ServicesSection";
+import MovingIcons from "./components/MovingIcons";
+import ContactSection from "./components/ContactSection";
+import InsuranceService from "./components/InsuranceService";
+import InsurancePolicy from "./components/InsurancePolicy";
+import GrowBusiness from "./components/GrowBusiness";
+import ContactFormWithMap from "./components/ContactFormWithMap";
+import Achievements from "./components/Achievements";
+import BlogSection from "./components/BlogSection";
+import Team from "./components/Team";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
+import initTranslations from "./i18n";
+import TranslationsProvider from "@/lib/TranslationProvider";
+import GetQuoteRibbon from "@/components/GetQuoteRibbon";
+import ResponsiveFooter from "@/components/MobileFooter";
 
-const i18nNamespaces = ['translation'];
+const i18nNamespaces = ["translation"];
 
 async function page({ params: { locale } }) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
@@ -30,7 +31,7 @@ async function page({ params: { locale } }) {
     >
       <div>
         <Header />
-        <section id='products'>
+        <section id="products">
           <InsuranceService />
         </section>
         <MovingIcons />
@@ -38,10 +39,12 @@ async function page({ params: { locale } }) {
         <InsurancePolicy />
       </section> */}
         <GrowBusiness />
-        <section id='contact'>
+        <section id="contact">
           <ContactSection />
         </section>
-        <Footer />
+        <ResponsiveFooter>
+          <Footer />
+        </ResponsiveFooter>
         <GetQuoteRibbon />
       </div>
     </TranslationsProvider>
