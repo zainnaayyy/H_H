@@ -1,15 +1,12 @@
+import Image from 'next/image';
 import React from 'react';
 
 const GetQuoteRibbon = () => {
   return (
     <div className="fixed right-0 top-1/2 transform -translate-y-1/2 z-50">
-      <div className="relative bg-red-600 text-white px-6 py-2 shadow-lg">
-        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-8 border-r-red-600"></div>
-        <a href="/appointment" className="font-bold text-lg">
-          Get a Quote
-        </a>
-        <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-red-600"></div>
-      </div>
+      <a href="/quote">
+        <Image src="/images/quoteOriginal.png" width={150} height={200} alt="Get a Quote" />
+      </a>
     </div>
   );
 };
