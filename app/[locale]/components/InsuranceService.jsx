@@ -53,7 +53,7 @@ const InsuranceService = () => {
           size='lg'
           className='bg-primary-darkAqua hover:bg-[#0A4958] mt-2 '
         >
-          <Link href='#contact'> {t('home.main_section.cta_button')} </Link>
+          <Link href='#contact'> Book Your Appointment Today </Link>
         </Button>
         <p className='text-gray-600 text-center mt-2 text-lg'>
           {t('home.main_section.description')}

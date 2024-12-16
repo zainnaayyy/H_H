@@ -21,7 +21,7 @@ const Footer = () => {
 
   // Safe translation retrieval with fallbacks
   const services = t("company.services", { returnObjects: true }) || [];
-  console.log(services, "checl");
+  // console.log(services, "checl");
   const usefulLinks =
     t("company.useful_links_data", { returnObjects: true }) || [];
 
