@@ -525,32 +525,35 @@ const Header = () => {
       <header>
         {/* Hero Section */}
         {isHomePage ? (
-        <div className="relative h-[24rem] lg:h-[32rem]  bg-cover bg-center rounded-md">
-          <Image
-            src="/images/slider/african.jpeg"
-            alt="main"
-            layout="fill"
-            className="object-cover rounded-md"
-          />
-          <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
-              <h1 className="text-lg md:text-4xl font-bold leading-normal">
-                Welcome to Our Service
-              </h1>
-              <button
-                onClick={() => {
-                  router.push('/contact');
-                }}
-                className="bg-primary-darkAqua hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded"
-              >
-                Get a Quote
-              </button>
+          <div className="relative h-[24rem] lg:h-[32rem]  bg-cover bg-center rounded-md">
+            <Image
+              src="/images/slider/african.jpeg"
+              alt="main"
+              layout="fill"
+              className="object-cover rounded-md"
+            />
+            <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
+                <h1 className="text-lg md:text-4xl mb-6 font-bold leading-normal">
+                  Insurance That Works for You
+                </h1>
+                <button
+                  onClick={() => {
+                    router.push("/contact");
+                  }}
+                  className="bg-primary-darkAqua mt-4 mb-8 hover:bg-[#0A4958] text-white hover:text-white font-bold py-2 px-4 rounded"
+                >
+                  Get a Quote
+                </button>
+                <h2 className="text-base md:text-2xl max-w-2xl py-5 font-bold leading-normal">
+                  Protect what matters most with a free, no-obligation quote
+                  today.
+                </h2>
+              </div>
             </div>
           </div>
-        </div>
-        
-      ) : null}
+        ) : null}
       </header>
     </>
   );
