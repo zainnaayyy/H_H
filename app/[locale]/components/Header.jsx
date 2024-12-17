@@ -396,16 +396,20 @@ const Header = () => {
                               {t("navigation.menu_items.contact")}
                             </Link>
                           </li>
-                          <li>
-                            <div className="flex justify-center items-center w-[20%]">
+                          <li className="">
+                            <div className="flex justify-center items-center w-[80%]">
                               <button
                                 onClick={() => handleLinkClick("appointment")}
+                                className="flex items-center justify-center"
                                 // className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
                               >
                                 <img
                                   src="images/calendar3D.png"
                                   className="h-12 w-12"
                                 />
+                                <span className="hover:text-primary-darkAqua text-xs text-gray-800 py-1">
+                                  {t("misc.schedule")}
+                                </span>
                               </button>
                             </div>
                           </li>
