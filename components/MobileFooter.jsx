@@ -10,7 +10,7 @@ const ResponsiveFooter = ({ children }) => {
 
       {/* Fixed quote button for mobile screens */}
       <div className="fixed bottom-0 left-0 right-0 md:hidden z-50 bg-white shadow-lg ">
-        <Button className="w-full bg-red-600 p-6">
+      <Button className="w-full p-6 bg-gradient-to-r from-[#ffbc15cc] to-red-500">
           <Link href="/quote">Get a Quote</Link>
         </Button>
       </div>

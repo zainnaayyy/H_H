@@ -397,12 +397,17 @@ const Header = () => {
                             </Link>
                           </li>
                           <li>
-                            <button
-                              onClick={() => handleLinkClick("appointment")}
-                              className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white"
-                            >
-                              <FaPhone className="h-7 w-7" />
-                            </button>
+                            <div className="flex justify-center items-center w-[20%]">
+                              <button
+                                onClick={() => handleLinkClick("appointment")}
+                                // className="bg-primary-darkAqua p-4 rounded-full hover:bg-[#0A4958] text-white hover:text-white animate-shadow-pulse"
+                              >
+                                <img
+                                  src="images/calendar3D.png"
+                                  className="h-12 w-12"
+                                />
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </nav>
@@ -536,21 +541,22 @@ const Header = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
                 <h1 className="text-lg md:text-4xl mb-6 font-bold leading-normal">
-                Affordable Health Insurance Plans for You and Your Family
+                  Affordable Health Insurance Plans for You and Your Family
                 </h1>
                 <h2 className="text-base ml-0 sm:ml-10 md:text-2xl max-w-2xl py-5 font-bold leading-normal">
-                Protect your loved ones with a plan that fits your life—get your free quote now!
+                  Protect your loved ones with a plan that fits your life—get
+                  your free quote now!
                 </h2>
                 <div class="inline-block bg-black bg-opacity-50 p-3 rounded">
-                <button
-                  onClick={() => {
-                    router.push("/quote");
-                  }}
-                  className="bg-primary-darkAqua hover:bg-[#0A4958] text-white font-bold py-2 px-8 rounded" >
-                 GET A QUOTE
-                </button>
+                  <button
+                    onClick={() => {
+                      router.push("/quote");
+                    }}
+                    className="bg-primary-darkAqua hover:bg-[#0A4958] text-white font-bold py-2 px-8 rounded"
+                  >
+                    GET A QUOTE
+                  </button>
                 </div>
-              
               </div>
             </div>
           </div>
