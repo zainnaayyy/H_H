@@ -45,10 +45,10 @@
   ],
 
   "contact_form": {
-  "insurance_types": {
+    "insurance_types": {
       "health": "Health",
       "dental": "Dental",
-      "vision": "Vision", 
+      "vision": "Vision",
       "medicare": "Medicare",
       "life": "Life"
     },
@@ -426,7 +426,6 @@
     ]
   },
 
-
   "dental_vision": {
     "title": "Dental & Vision",
     "description": "Affordable Dental & Vision Insurance Plans for Your Family",
@@ -469,7 +468,7 @@
   },
 
   "health": {
-    "title":"Health Insurance",
+    "title": "Health Insurance",
     "sections": [
       {
         "title": "Health Insurance",
@@ -687,19 +686,91 @@
     }
   },
 
-
   "contact": {
     "call": "Call",
     "phone_number": "1.844.544.0663",
-    "email": "Email", 
+    "email": "Email",
     "email_address": "info@h4hinsurance.com",
     "chat": "Chat",
     "chat_hours": "Mon to Fri (9am-6pm EST)"
   },
-  
 
   "misc": {
     "schedule": "Schedule your appointment",
-    "submit":"Submit"
+    "submit": "Submit",
+    "afford": " Affordable Health Insurance Plans for You and Your Family",
+    "protect": "Protect your loved ones with a plan that fits your life—get your free quote now!",
+    "quote": "GET A QUOTE",
+    "free_quote": "Get a Free Quote",
+    "book": "Book Your Appointment Today"
+  },
+
+  "form": {
+    "completed": "Completed",
+    "label": {
+      "enterZipCode": "Enter the Zip Code",
+      "householdIncome": "What's your household income?",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "What's your date of birth?",
+      "homeAddress": "What is your home address?",
+      "addressOptional": "Address ",
+      "cityOptional": "City ",
+      "stateOptional": "State ",
+      "email": "Email",
+      "phoneOptional": "Phone "
+    },
+    "inputField": {
+      "enterZipCode": "Enter Zip Code",
+      "selectHouseholdIncome": "Select Household Income",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "mm/dd/yyyy",
+      "addressOptional": "Address ",
+      "cityOptional": "City ",
+      "stateOptional": "State ",
+      "email": "Enter your email",
+      "phoneOptional": "Enter your 10-digit phone number"
+    },
+    "button": {
+      "continue": "Continue",
+      "back": "Back",
+      "ok": "Ok",
+      "submit": "Submit Quote Request"
+    },
+    "questions": {
+      "individualOrFamilyCoverage": "Are you looking for individual or family coverage?",
+      "typeOfCoverage": "What type of coverage are you looking for?",
+      "householdIncome": "What's your household income?",
+      "fullName": "What's your full name?",
+      "dateOfBirth": "What's your date of birth?",
+      "homeAddress": "What is your home address?",
+      "secure":"Secure Your Free Quote Now!",
+      "stayConnected": "Stay Connected"
+    },
+    "options": {
+      "individual": "Individual",
+      "family": "Family",
+      "life": "Life",
+      "health": "Health",
+      "dental": "Dental",
+      "vision": "Vision"
+    },
+    "finalPopUpBox": {
+      "formSubmitted": "Form Submitted",
+      "successMessage1": "Your Form has been successfully submitted.",
+      "successMessage2": "An agent will reach out to you in 24 hours."
+    },
+
+    "errors" : {
+      "zipRequired":"ZIP code is required",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "dobRequired": "Date of Birth is required",
+      "addressRequired": "Address is required",
+      "cityRequired": "City is required",
+      "stateRequired": "State is required",
+      "emailRequired":"Email is required"
+    }
   }
 }

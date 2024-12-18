@@ -398,39 +398,36 @@
     ]
   },
 
-  
-    "appointment": {
-      "title": "Programación de Citas",
-      "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
-      "services": [
-        {
-          "id": 1,
-          "title": "Llámanos Ahora",
-          "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
-        },
-        {
-          "id": 2,
-          "title": "Programa una Cita Telefónica",
-          "description": "Reserva cómodamente tu cita para una reunión por teléfono en la fecha y hora que prefieras."
-        },
-        {
-          "id": 3,
-          "title": "Reunión Presencial",
-          "description": "Reúnete con nuestros expertos en persona para una consulta integral. Garantizamos una experiencia personalizada."
-        },
-        {
-          "id": 4,
-          "title": "Consulta Virtual",
-          "description": "Conéctate con nosotros en línea a través de una reunión virtual. Recibe el mismo asesoramiento experto desde la comodidad de tu hogar."
-        }
-      ],
-      "form": {
-        "date_select": "Por favor selecciona tanto la fecha como la hora",
-        "success_message": "Cita programada para el {{date}} a las {{time}}"
+  "appointment": {
+    "title": "Programación de Citas",
+    "subtitle": "Programa tu cita fácilmente con opciones flexibles y recibe confirmación instantánea por correo electrónico.",
+    "services": [
+      {
+        "id": 1,
+        "title": "Llámanos Ahora",
+        "description": "Habla con un agente llamándonos al 1.844.544.0663. Programa tu cita cómodamente por teléfono."
+      },
+      {
+        "id": 2,
+        "title": "Programa una Cita Telefónica",
+        "description": "Reserva cómodamente tu cita para una reunión por teléfono en la fecha y hora que prefieras."
+      },
+      {
+        "id": 3,
+        "title": "Reunión Presencial",
+        "description": "Reúnete con nuestros expertos en persona para una consulta integral. Garantizamos una experiencia personalizada."
+      },
+      {
+        "id": 4,
+        "title": "Consulta Virtual",
+        "description": "Conéctate con nosotros en línea a través de una reunión virtual. Recibe el mismo asesoramiento experto desde la comodidad de tu hogar."
       }
-    },
-  
-  
+    ],
+    "form": {
+      "date_select": "Por favor selecciona tanto la fecha como la hora",
+      "success_message": "Cita programada para el {{date}} a las {{time}}"
+    }
+  },
 
   "medicare": {
     "breadcrumb": {
@@ -708,6 +705,80 @@
 
   "misc": {
     "schedule": "Programa tu cita",
-      "submit":"entregar"
+    "submit": "entregar",
+    "afford": "Planes de Seguro de Salud Asequibles para Ti y Tu Familia",
+    "protect": "Protege a tus seres queridos con un plan que se ajuste a tu vida. ¡Obtén tu cotización gratis ahora!",
+    "quote": "OBTÉN UNA COTIZACIÓN",
+    "free_quote": "Obtén una Cotización Gratis",
+    "book": "Programa tu Cita Hoy"
+  },
+
+  "form": {
+    "completed": "Completado",
+    "label": {
+      "enterZipCode": "Ingresa el Código Postal",
+      "householdIncome": "¿Cuál es el ingreso de tu hogar?",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "dateOfBirth": "¿Cuál es tu fecha de nacimiento?",
+      "homeAddress": "¿Cuál es tu dirección de domicilio?",
+      "addressOptional": "Dirección ",
+      "cityOptional": "Ciudad ",
+      "stateOptional": "Estado ",
+      "email": "Correo Electrónico",
+      "phoneOptional": "Teléfono "
+    },
+    "inputField": {
+      "enterZipCode": "Ingresa el Código Postal",
+      "selectHouseholdIncome": "Selecciona el Ingreso del Hogar",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "dateOfBirth": "mm/dd/aaaa",
+      "addressOptional": "Dirección ",
+      "cityOptional": "Ciudad ",
+      "stateOptional": "Estado ",
+      "email": "Ingresa tu correo electrónico",
+      "phoneOptional": "Ingresa tu número de teléfono de 10 dígitos"
+    },
+    "button": {
+      "continue": "Continuar",
+      "back": "Regresar",
+      "ok": "¡Perfecto!",
+      "submit": "Enviar solicitud de cotización"
+    },
+    "questions": {
+      "individualOrFamilyCoverage": "¿Estás buscando cobertura individual o familiar?",
+      "typeOfCoverage": "¿Qué tipo de cobertura estás buscando?",
+      "householdIncome": "¿Cuál es el ingreso de tu hogar?",
+      "fullName": "¿Cuál es tu nombre completo?",
+      "dateOfBirth": "¿Cuál es tu fecha de nacimiento?",
+      "homeAddress": "¿Cuál es tu dirección de domicilio?",
+      "secure":"¡Asegura tu Cotización Gratis Ahora!",
+      "stayConnected": "Mantente Conectado"
+    },
+    "options": {
+      "individual": "Individual",
+      "family": "Familiar",
+      "life": "Vida",
+      "health": "Salud",
+      "dental": "Dental",
+      "vision": "Visión"
+    },
+    "finalPopUpBox": {
+      "formSubmitted": "Formulario Enviado",
+      "successMessage": "Tu formulario ha sido enviado exitosamente.",
+      "successMessage2": " Un agente se pondrá en contacto contigo en las próximas 24 horas."
+    },
+
+    "errors" : {
+      "zipRequired":"Se requiere código postal",
+      "firstNameRequired": "El nombre es obligatorio",
+      "lastNameRequired": "el apellido es requerido",
+      "dobRequired": "se requiere fecha de nacimiento",
+      "addressRequired": "Se requiere dirección",
+      "cityRequired": "Se requiere ciudad",
+      "stateRequired": "Se requiere estado",
+      "emailRequired":"Se requiere correo electrónico"
+    }
   }
 }

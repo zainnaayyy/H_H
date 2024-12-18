@@ -545,11 +545,10 @@ const Header = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center max-w-3xl text-white space-y-4 animate-slideIn">
                 <h1 className="text-lg md:text-4xl mb-6 font-bold leading-normal">
-                  Affordable Health Insurance Plans for You and Your Family
+                {t("misc.afford")}
                 </h1>
                 <h2 className="text-base ml-0 sm:ml-10 md:text-2xl max-w-2xl py-5 font-bold leading-normal">
-                  Protect your loved ones with a plan that fits your life—get
-                  your free quote now!
+                {t("misc.protect")}
                 </h2>
                 <div class="inline-block bg-black bg-opacity-50 p-3 rounded">
                   <button
@@ -558,7 +557,7 @@ const Header = () => {
                     }}
                     className="bg-primary-darkAqua hover:bg-[#0A4958] text-white font-bold py-2 px-8 rounded"
                   >
-                    GET A QUOTE
+               {t("misc.quote")}
                   </button>
                 </div>
               </div>

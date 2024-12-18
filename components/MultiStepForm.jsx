@@ -73,58 +73,7 @@ const US_STATES = [
 ];
 
 // Validation schemas for each step
-const validationSchemas = [
-  Yup.object().shape({
-    zipCode: Yup.string()
-      .matches(/^\d{5}(-\d{4})?$/, "Invalid ZIP code")
-      .required("ZIP code is required"),
-  }),
-  Yup.object().shape({
-    // This is now an empty schema to maintain the step count
-  }),
-  Yup.object().shape({
-    insuranceCoverage: Yup.string().required(
-      "Please select insurance coverage"
-    ),
-  }),
-  Yup.object().shape({
-    householdIncome: Yup.string().required("Please select household income"),
-  }),
-  Yup.object().shape({
-    firstName: Yup.string()
-      .required("First name is required")
-      .min(2, "First name must be at least 2 characters"),
-    lastName: Yup.string()
-      .required("Last name is required")
-      .min(2, "Last name must be at least 2 characters"),
-  }),
-  Yup.object().shape({
-    dob: Yup.date()
-      .required("Date of Birth is required")
-      .max(new Date(), "Future date not allowed"),
-    // .test('age', 'You must be at least 18', function(value) {
-    //   const cutoff = new Date();
-    //   cutoff.setFullYear(cutoff.getFullYear() - 18);
-    //   return value <= cutoff;
-    // }),
-  }),
-  Yup.object().shape({
-    address: Yup.string().required("Address is required"),
-    city: Yup.string().required("City is required"),
-    state: Yup.string().required("State is required"),
-  }),
-  Yup.object().shape({
-    email: Yup.string()
-      .email("Invalid email address")
-      .required("Email is required"),
-    // phone: Yup.string()
-    //   .matches(
-    //     /^(?:(\+1\s?)?(\(\d{3}\)|\d{3})[\s-]?(\d{3})[\s-]?(\d{4})|(\d{11}))$/,
-    //     "Phone number must be in the format: (123) 456-7890, 123-456-7890, or 1234567890"
-    //   )
-    //   .required("Phone number is required"),
-  }),
-];
+
 
 const MultiStepForm = () => {
   const router = useRouter();
@@ -132,6 +81,59 @@ const MultiStepForm = () => {
   const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
+
+  const validationSchemas = [
+    Yup.object().shape({
+      zipCode: Yup.string()
+        .matches(/^\d{5}(-\d{4})?$/, "Invalid ZIP code")
+        .required(t("errors.zipRequired")),
+    }),
+    Yup.object().shape({
+      // This is now an empty schema to maintain the step count
+    }),
+    Yup.object().shape({
+      insuranceCoverage: Yup.string().required(
+        "Please select insurance coverage"
+      ),
+    }),
+    Yup.object().shape({
+      householdIncome: Yup.string().required("Please select household income"),
+    }),
+    Yup.object().shape({
+      firstName: Yup.string()
+        .required("First name is required")
+        .min(2, "First name must be at least 2 characters"),
+      lastName: Yup.string()
+        .required("Last name is required")
+        .min(2, "Last name must be at least 2 characters"),
+    }),
+    Yup.object().shape({
+      dob: Yup.date()
+        .required("Date of Birth is required")
+        .max(new Date(), "Future date not allowed"),
+      // .test('age', 'You must be at least 18', function(value) {
+      //   const cutoff = new Date();
+      //   cutoff.setFullYear(cutoff.getFullYear() - 18);
+      //   return value <= cutoff;
+      // }),
+    }),
+    Yup.object().shape({
+      address: Yup.string().required("Address is required"),
+      city: Yup.string().required("City is required"),
+      state: Yup.string().required("State is required"),
+    }),
+    Yup.object().shape({
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Email is required"),
+      // phone: Yup.string()
+      //   .matches(
+      //     /^(?:(\+1\s?)?(\(\d{3}\)|\d{3})[\s-]?(\d{3})[\s-]?(\d{4})|(\d{11}))$/,
+      //     "Phone number must be in the format: (123) 456-7890, 123-456-7890, or 1234567890"
+      //   )
+      //   .required("Phone number is required"),
+    }),
+  ];
 
   const formik = useFormik({
     initialValues: {
@@ -149,10 +151,34 @@ const MultiStepForm = () => {
       phone: "",
     },
     validationSchema: validationSchemas[step],
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       if (step === validationSchemas.length - 1) {
-        console.log("Form submitted", values);
-        setIsModalOpen(true);
+        try {
+          const response = await fetch("/api/submit-lead", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              firstName: values.firstName,
+              email: values.email,
+            }),
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            console.log("Form submitted", values);
+            setIsModalOpen(true);
+          } else {
+            const errorData = await response.json();
+            console.error(
+              "Failed to send confirmation email:",
+              errorData.message
+            );
+          }
+        } catch (error) {
+          console.error("Error during API call:", error);
+        }
       } else {
         setLoading(true);
         setTimeout(() => {
@@ -192,7 +218,7 @@ const MultiStepForm = () => {
                       {Math.round(
                         ((step + 1) / validationSchemas.length) * 100
                       )}
-                      % completed
+                      % {t("form.completed")}
                     </span>
                   </div>
                 </div>
@@ -213,7 +239,7 @@ const MultiStepForm = () => {
               {step === 0 && (
                 <div className="space-y-4">
                   <h2 className="text-center mb-4 text-blue-500 text-3xl font-bold">
-                    Enter the ZIP Code
+                    {t("form.label.enterZipCode")}
                   </h2>
                   <input
                     type="text"
@@ -221,7 +247,7 @@ const MultiStepForm = () => {
                     value={formik.values.zipCode}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    placeholder="Enter ZIP Code"
+                    placeholder={t("form.inputField.enterZipCode")}
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                   {formik.touched.zipCode && formik.errors.zipCode && (
@@ -232,7 +258,7 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 w-full rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                   </div>
                 </div>
@@ -241,7 +267,7 @@ const MultiStepForm = () => {
               {step === 1 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    Are you looking for individual or family coverage?
+                    {t("form.questions.individualOrFamilyCoverage")}
                   </h2>
                   <div className="flex space-x-4 justify-center">
                     <button
@@ -252,7 +278,7 @@ const MultiStepForm = () => {
                       }}
                       className="py-2 px-4 rounded-full w-full bg-orange-500 text-white"
                     >
-                      Individual
+                      {t("form.options.individual")}
                     </button>
                     <button
                       type="button"
@@ -262,7 +288,7 @@ const MultiStepForm = () => {
                       }}
                       className="py-2 px-4 rounded-full w-full bg-orange-500 text-white"
                     >
-                      Family
+                      {t("form.options.family")}
                     </button>
                   </div>
                 </div>
@@ -271,7 +297,7 @@ const MultiStepForm = () => {
               {step === 2 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    What type of insurance coverage are you looking for?
+                    {t("form.questions.typeOfCoverage")}
                   </h2>
                   <select
                     name="insuranceCoverage"
@@ -281,10 +307,10 @@ const MultiStepForm = () => {
                     className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                   >
                     <option value="" label="Select Insurance Coverage" />
-                    <option value="Life" label="Life" />
-                    <option value="Health" label="Health" />
-                    <option value="Dental" label="Dental" />
-                    <option value="Vision" label="Vision" />
+                    <option value="Life" label={t("form.options.life")} />
+                    <option value="Health" label={t("form.options.health")} />
+                    <option value="Dental" label={t("form.options.dental")} />
+                    <option value="Vision" label={t("form.options.vision")} />
                   </select>
                   {formik.touched.insuranceCoverage &&
                     formik.errors.insuranceCoverage && (
@@ -297,14 +323,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -313,7 +339,7 @@ const MultiStepForm = () => {
               {step === 3 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    What&apos;s your household income?
+                    {t("form.questions.householdIncome")}
                   </h2>
                   <select
                     name="householdIncome"
@@ -340,14 +366,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -356,12 +382,12 @@ const MultiStepForm = () => {
               {step === 4 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    What&apos;s your full name?
+                    {t("form.questions.fullName")}
                   </h2>
                   <div className="space-y-4">
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        First Name
+                        {t("form.label.firstName")}
                       </label>
                       <input
                         type="text"
@@ -379,7 +405,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Last Name
+                        {t("form.label.lastName")}
                       </label>
                       <input
                         type="text"
@@ -399,14 +425,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -415,7 +441,7 @@ const MultiStepForm = () => {
               {step === 5 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    What&apos;s your date of birth?
+                    {t("form.questions.dateOfBirth")}
                   </h2>
                   <input
                     type="date"
@@ -433,14 +459,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -449,12 +475,12 @@ const MultiStepForm = () => {
               {step === 6 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    What is your home address?
+                    {t("form.questions.homeAddress")}
                   </h2>
                   <div className="space-y-4">
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Address
+                        {t("form.label.addressOptional")}
                       </label>
                       <input
                         type="text"
@@ -470,7 +496,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        City
+                        {t("form.label.cityOptional")}
                       </label>
                       <input
                         type="text"
@@ -486,7 +512,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        State
+                        {t("form.label.stateOptional")}
                       </label>
                       <select
                         name="state"
@@ -510,14 +536,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Continue
+                      {t("form.button.continue")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -526,15 +552,15 @@ const MultiStepForm = () => {
               {step === 7 && (
                 <div className="space-y-4">
                   <h2 className="text-center text-blue-500 text-3xl font-bold">
-                    Secure Your Free Quote Now!
+                    {t("form.questions.secure")}
                   </h2>
                   <p className="text-center text-gray-600 mb-4">
-                    Stay Connected
+                    {t("form.questions.stayConnected")}
                   </p>
                   <div className="space-y-4">
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Email
+                        {t("form.label.email")}
                       </label>
                       <input
                         type="email"
@@ -551,7 +577,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Phone
+                        {t("form.label.phoneOptional")}
                       </label>
                       <input
                         type="tel"
@@ -572,14 +598,14 @@ const MultiStepForm = () => {
                       type="submit"
                       className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Submit Quote Request
+                      {t("form.button.submit")}
                     </button>
                     <button
                       type="button"
                       onClick={handleBackStep}
                       className="bg-gray-500 hover:bg-gray-700 text-white w-full font-bold py-2 px-4 rounded-full"
                     >
-                      Back
+                      {t("form.button.back")}
                     </button>
                   </div>
                 </div>
@@ -589,17 +615,20 @@ const MultiStepForm = () => {
             {isModalOpen && (
               <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
                 <div className="bg-white p-8 rounded shadow-lg text-center">
-                <TiTick className="text-green-500 text-5xl mb-4 mx-auto bg-white border  rounded-full p-1" />
+                  <TiTick className="text-green-500 text-5xl mb-4 mx-auto bg-white border  rounded-full p-1" />
 
-                  <h2 className="text-2xl font-bold mb-4">Form Submitted</h2>
+                  <h2 className="text-2xl font-bold mb-4">
+                    {t("form.finalPopUpBox.formSubmitted")}
+                  </h2>
                   <p className="mb-4">
-                    Your form has been successfully submitted.<br/> An agent will reach out to you soon.
+                    {t("form.finalPopUpBox.successMessage1")}
+                    <br /> {t("form.finalPopUpBox.successMessage2")}
                   </p>
                   <button
                     onClick={closeModal}
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
-                    OK
+                    {t("form.button.ok")}
                   </button>
                 </div>
               </div>
