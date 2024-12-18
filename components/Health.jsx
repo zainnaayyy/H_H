@@ -32,7 +32,7 @@ const Health = () => {
 
       <div className=''>
         <BreadcrumbComp
-        img={'/images/health/couple.jpg'} 
+        img={'/images/jogging.jpg'} 
         pos={'end'} 
         route={t('health.title')}
         />

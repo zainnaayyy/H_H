@@ -22,7 +22,7 @@ const Life = () => {
       <Header />
       <div className=''>
         <BreadcrumbComp
-          img={t('life_insurance.breadcrumb.image')} 
+            img={'/images/family.jpg'}
           pos={'start'} 
           route={t('life_insurance.breadcrumb.title')}
         />

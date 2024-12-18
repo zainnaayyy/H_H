@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next"
 const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
   const { t } = useTranslation();
   return (
-    <div className="relative w-full mt-10 p-10 rounded-md">
+    <div className="relative w-full mt-10  rounded-md">
     {video ? (
       <video
         src={videoSrc}
@@ -23,7 +23,7 @@ const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
         height={1000}
         src={img}
         alt="img"
-        className="w-full h-full md:h-[34rem] rounded-md object-cover"
+        className="w-full h-full md:h-[45rem] rounded-md object-cover"
       />
     )}
     

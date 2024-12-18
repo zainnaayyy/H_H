@@ -86,7 +86,7 @@ const MultiStepForm = () => {
     Yup.object().shape({
       zipCode: Yup.string()
         .matches(/^\d{5}(-\d{4})?$/, "Invalid ZIP code")
-        .required(t("errors.zipRequired")),
+        .required("Zip Code is required"),
     }),
     Yup.object().shape({
       // This is now an empty schema to maintain the step count
@@ -118,9 +118,9 @@ const MultiStepForm = () => {
       // }),
     }),
     Yup.object().shape({
-      address: Yup.string().required("Address is required"),
-      city: Yup.string().required("City is required"),
-      state: Yup.string().required("State is required"),
+    //   address: Yup.string().required("Address is required"),
+    //   city: Yup.string().required("City is required"),
+    //   state: Yup.string().required("State is required"),
     }),
     Yup.object().shape({
       email: Yup.string()
@@ -287,6 +287,7 @@ const MultiStepForm = () => {
                     <option value="Health" label={t("form.options.health")} />
                     <option value="Dental" label={t("form.options.dental")} />
                     <option value="Vision" label={t("form.options.vision")} />
+                    <option value="Vision" label='Medicare' />
                   </select>
                   {formik.touched.insuranceCoverage &&
                     formik.errors.insuranceCoverage && (
@@ -466,9 +467,9 @@ const MultiStepForm = () => {
                         onBlur={formik.handleBlur}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       />
-                      {formik.touched.address && formik.errors.address && (
+                      {/* {formik.touched.address && formik.errors.address && (
                         <p className="text-red-500">{formik.errors.address}</p>
-                      )}
+                      )} */}
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -482,9 +483,9 @@ const MultiStepForm = () => {
                         onBlur={formik.handleBlur}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       />
-                      {formik.touched.city && formik.errors.city && (
+                      {/* {formik.touched.city && formik.errors.city && (
                         <p className="text-red-500">{formik.errors.city}</p>
-                      )}
+                      )} */}
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -502,9 +503,9 @@ const MultiStepForm = () => {
                           <option key={state} value={state} label={state} />
                         ))}
                       </select>
-                      {formik.touched.state && formik.errors.state && (
+                      {/* {formik.touched.state && formik.errors.state && (
                         <p className="text-red-500">{formik.errors.state}</p>
-                      )}
+                      )} */}
                     </div>
                   </div>
                   <div className="flex flex-col space-y-4">
