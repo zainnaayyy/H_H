@@ -771,6 +771,11 @@
       "cityRequired": "City is required",
       "stateRequired": "State is required",
       "emailRequired":"Email is required"
+    },
+
+    "footer": {
+      "agree":"You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
+      "submit":"By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
     }
   }
 }

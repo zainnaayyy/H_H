@@ -151,34 +151,10 @@ const MultiStepForm = () => {
       phone: "",
     },
     validationSchema: validationSchemas[step],
-    onSubmit: async (values) => {
+    onSubmit: (values) => {
       if (step === validationSchemas.length - 1) {
-        try {
-          const response = await fetch("/api/submit-lead", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              firstName: values.firstName,
-              email: values.email,
-            }),
-          });
-
-          if (response.ok) {
-            const data = await response.json();
-            console.log("Form submitted", values);
-            setIsModalOpen(true);
-          } else {
-            const errorData = await response.json();
-            console.error(
-              "Failed to send confirmation email:",
-              errorData.message
-            );
-          }
-        } catch (error) {
-          console.error("Error during API call:", error);
-        }
+        console.log("Form submitted", values);
+        setIsModalOpen(true);
       } else {
         setLoading(true);
         setTimeout(() => {
@@ -640,10 +616,7 @@ const MultiStepForm = () => {
       <footer className="bg-gray-100 py-6 mt-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-gray-600 mb-4">
-            You agree to receive recurring automated promotional text and email
-            messages from H4H Insurance: Consent is not a condition of purchase.
-            Reply HELP for help or STOP to cancel. Message and data rates may
-            apply.
+          {t("form.footer.agree")}
           </p>
           <div className="mb-4">
             <Dialog>
@@ -1091,12 +1064,10 @@ const MultiStepForm = () => {
             </Dialog>
           </div>
           <p className="text-sm text-gray-600">
-            By submitting this form, you are consenting to receive marketing
-            emails from H4H Insurance. You can revoke your consent to receive
-            emails at any time by unsubscribing to emails at{" "}
+          {t("form.footer.submit")}
             <a
               href="mailto:info@h4hinsurance.com"
-              className="text-blue-600 hover:text-blue-800 underline"
+              className="text-blue-600 ml-1 hover:text-blue-800 underline"
             >
               info@h4hinsurance.com
             </a>

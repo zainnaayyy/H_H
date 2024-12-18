@@ -805,6 +805,11 @@
       "cityRequired": "Vil kote ou abite a obligatwa",
       "stateRequired": "Eta kote ou abite a obligatwa",
       "emailRequired":"Email ou obligatwa"
+    },
+
+    "footer": {
+      "agree":"Ou dakò pou resevwa mesaj tèks ak imèl pwomosyonèl otomatik repete ki sòti nan H4H Insurance: Konsantman pa yon kondisyon pou achte. Reponn HELP pou èd oswa STOP pou anile. Frè mesaj ak done yo ka aplike.",
+      "submit":"Lè w soumèt fòm sa a, ou ap bay konsantman pou resevwa imèl maketing nan men H4HInsurance. Ou ka revoke konsantman sa a nenpòt ki lè lè w koupe abònman nan imèl pou"
     }
   }
 }

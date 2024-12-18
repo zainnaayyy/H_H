@@ -779,6 +779,11 @@
       "cityRequired": "Se requiere ciudad",
       "stateRequired": "Se requiere estado",
       "emailRequired":"Se requiere correo electrónico"
+    },
+
+    "footer": {
+      "agree":"Aceptas recibir mensajes automatizados promocionales recurrentes por texto y correo electrónico de H4H Insurance: El consentimiento no es una condición de compra. Responde HELP para obtener ayuda o STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos.",
+      "submit":"Al enviar este formulario, aceptas recibir correos electrónicos de marketing de H4H Insurance. Puedes revocar tu consentimiento en cualquier momento cancelando la suscripción enviando un correo a"
     }
   }
 }
