@@ -151,10 +151,45 @@ const MultiStepForm = () => {
       phone: "",
     },
     validationSchema: validationSchemas[step],
-    onSubmit: (values) => {
+    onSubmit: async (values) => {
       if (step === validationSchemas.length - 1) {
-        console.log("Form submitted", values);
-        setIsModalOpen(true);
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+  
+        const raw = JSON.stringify({
+          zipCode: values.zipCode,
+          coverageType: values.coverageType,
+          insuranceCoverage: values.insuranceCoverage,
+          householdIncome: values.householdIncome,
+          firstName: values.firstName,
+          lastName: values.lastName,
+          dob: values.dob,
+          address: values.address,
+          city: values.city,
+          state: values.state,
+          email: values.email,
+          phone: values.phone,
+        });
+  
+        const requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+  
+        fetch("/api/saveToGoogleSheet", requestOptions)
+          .then((response) => response.json())
+          .then((result) => {
+            if (result.status === 200) {
+              console.log("Form submitted", values);
+              setIsModalOpen(true);
+              formik.resetForm();
+            }
+          })
+          .catch((error) => {
+            console.error("Error during API call:", error);
+          });
       } else {
         setLoading(true);
         setTimeout(() => {
@@ -164,6 +199,8 @@ const MultiStepForm = () => {
       }
     },
   });
+  
+  
 
   const closeModal = () => {
     setIsModalOpen(false);
