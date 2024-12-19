@@ -727,7 +727,7 @@
       "stateOptional": "Estado ",
       "email": "Correo Electrónico",
       "phoneOptional": "Teléfono ",
-      "optional": "Opcional"
+      "optional": "(Opcional)"
     },
     "inputField": {
       "enterZipCode": "Ingresa el Código Postal",

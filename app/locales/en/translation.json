@@ -719,7 +719,7 @@
       "stateOptional": "State ",
       "email": "Email",
       "phoneOptional": "Phone ",
-      "optional":"(optional)"
+      "optional":"(Optional)"
     },
     "inputField": {
       "enterZipCode": "Enter Zip Code",

@@ -591,7 +591,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        {t("form.label.phoneOptional")}
+                        {t("form.label.phoneOptional")} <span className="text-xs"> {t("form.label.optional")}</span>
                       </label>
                       <input
                         type="tel"
