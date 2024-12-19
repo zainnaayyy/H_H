@@ -726,7 +726,8 @@
       "cityOptional": "Ciudad ",
       "stateOptional": "Estado ",
       "email": "Correo Electrónico",
-      "phoneOptional": "Teléfono "
+      "phoneOptional": "Teléfono ",
+      "optional": "Opcional"
     },
     "inputField": {
       "enterZipCode": "Ingresa el Código Postal",
@@ -753,7 +754,7 @@
       "fullName": "¿Cuál es tu nombre completo?",
       "dateOfBirth": "¿Cuál es tu fecha de nacimiento?",
       "homeAddress": "¿Cuál es tu dirección de domicilio?",
-      "secure":"¡Asegura tu Cotización Gratis Ahora!",
+      "secure": "¡Asegura tu Cotización Gratis Ahora!",
       "stayConnected": "Mantente Conectado"
     },
     "options": {
@@ -770,20 +771,20 @@
       "successMessage2": " Un agente se pondrá en contacto contigo en las próximas 24 horas."
     },
 
-    "errors" : {
-      "zipRequired":"Se requiere código postal",
+    "errors": {
+      "zipRequired": "Se requiere código postal",
       "firstNameRequired": "El nombre es obligatorio",
       "lastNameRequired": "el apellido es requerido",
       "dobRequired": "se requiere fecha de nacimiento",
       "addressRequired": "Se requiere dirección",
       "cityRequired": "Se requiere ciudad",
       "stateRequired": "Se requiere estado",
-      "emailRequired":"Se requiere correo electrónico"
+      "emailRequired": "Se requiere correo electrónico"
     },
 
     "footer": {
-      "agree":"Aceptas recibir mensajes automatizados promocionales recurrentes por texto y correo electrónico de H4H Insurance: El consentimiento no es una condición de compra. Responde HELP para obtener ayuda o STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos.",
-      "submit":"Al enviar este formulario, aceptas recibir correos electrónicos de marketing de H4H Insurance. Puedes revocar tu consentimiento en cualquier momento cancelando la suscripción enviando un correo a"
+      "agree": "Aceptas recibir mensajes automatizados promocionales recurrentes por texto y correo electrónico de H4H Insurance: El consentimiento no es una condición de compra. Responde HELP para obtener ayuda o STOP para cancelar. Pueden aplicarse tarifas de mensajes y datos.",
+      "submit": "Al enviar este formulario, aceptas recibir correos electrónicos de marketing de H4H Insurance. Puedes revocar tu consentimiento en cualquier momento cancelando la suscripción enviando un correo a"
     }
   }
 }

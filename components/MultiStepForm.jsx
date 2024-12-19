@@ -363,11 +363,11 @@ const MultiStepForm = () => {
                     className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                   >
                     <option value="" label="Select Household Income" />
-                    <option value="0-25k" label="$0 - $25,000" />
-                    <option value="25k-50k" label="$25,001 - $50,000" />
+                    <option value="0-15k" label="$0 - $15,000" />
+                    <option value="15k-30k" label="$15,001 - $30,000" />
+                    <option value="30k-50k" label="$30,001 - $50,000" />
                     <option value="50k-75k" label="$50,001 - $75,000" />
-                    <option value="75k-100k" label="$75,001 - $100,000" />
-                    <option value="100k+" label="$100,000+" />
+                    <option value="75k+" label="$75,000+" />
                   </select>
                   {formik.touched.householdIncome &&
                     formik.errors.householdIncome && (
@@ -494,7 +494,7 @@ const MultiStepForm = () => {
                   <div className="space-y-4">
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        {t("form.label.addressOptional")}
+                        {t("form.label.addressOptional")} <span className="text-xs"> {t("form.label.optional")}</span>
                       </label>
                       <input
                         type="text"
@@ -510,7 +510,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        {t("form.label.cityOptional")}
+                        {t("form.label.cityOptional")} <span className="text-xs"> {t("form.label.optional")}</span>
                       </label>
                       <input
                         type="text"
@@ -526,7 +526,7 @@ const MultiStepForm = () => {
                     </div>
                     <div>
                       <label className="block text-gray-700 text-sm font-bold mb-2">
-                        {t("form.label.stateOptional")}
+                        {t("form.label.stateOptional")} <span className="text-xs"> {t("form.label.optional")}</span>
                       </label>
                       <select
                         name="state"

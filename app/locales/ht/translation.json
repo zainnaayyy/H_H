@@ -764,7 +764,8 @@
       "cityOptional": "Vil ",
       "stateOptional": "Eta ",
       "email": "Antre Email ou",
-      "phoneOptional": "Antre nimewo telefòn ou ak 10 chif yo"
+      "phoneOptional": "Antre nimewo telefòn ou ak 10 chif yo",
+      "optional": "Opsyonèl"
     },
     "button": {
       "continue": "Kontinye",
@@ -779,7 +780,7 @@
       "fullName": "Ki non konplè ou?",
       "dateOfBirth": "Ki dat nesans ou?",
       "homeAddress": "Ki adrès lakay ou?",
-      "secure":"Sekirize Estimasyon Gratis ou Kounya!",
+      "secure": "Sekirize Estimasyon Gratis ou Kounya!",
       "stayConnected": "Rete Konekte"
     },
     "options": {
@@ -796,20 +797,20 @@
       "successMessage2": "Yon ajan ap kontakte ou 24 èdtan."
     },
 
-    "errors" : {
-      "zipRequired":"Kòd Postal la obligatwa",
+    "errors": {
+      "zipRequired": "Kòd Postal la obligatwa",
       "firstNameRequired": "Prenon ou obligatwa",
       "lastNameRequired": "Non fanmi ou obligatwa",
       "dobRequired": "Dat nesans obligatwa",
       "addressRequired": "Adrès ou obligatwa",
       "cityRequired": "Vil kote ou abite a obligatwa",
       "stateRequired": "Eta kote ou abite a obligatwa",
-      "emailRequired":"Email ou obligatwa"
+      "emailRequired": "Email ou obligatwa"
     },
 
     "footer": {
-      "agree":"Ou dakò pou resevwa mesaj tèks ak imèl pwomosyonèl otomatik repete ki sòti nan H4H Insurance: Konsantman pa yon kondisyon pou achte. Reponn HELP pou èd oswa STOP pou anile. Frè mesaj ak done yo ka aplike.",
-      "submit":"Lè w soumèt fòm sa a, ou ap bay konsantman pou resevwa imèl maketing nan men H4HInsurance. Ou ka revoke konsantman sa a nenpòt ki lè lè w koupe abònman nan imèl pou"
+      "agree": "Ou dakò pou resevwa mesaj tèks ak imèl pwomosyonèl otomatik repete ki sòti nan H4H Insurance: Konsantman pa yon kondisyon pou achte. Reponn HELP pou èd oswa STOP pou anile. Frè mesaj ak done yo ka aplike.",
+      "submit": "Lè w soumèt fòm sa a, ou ap bay konsantman pou resevwa imèl maketing nan men H4HInsurance. Ou ka revoke konsantman sa a nenpòt ki lè lè w koupe abònman nan imèl pou"
     }
   }
 }

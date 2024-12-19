@@ -718,7 +718,8 @@
       "cityOptional": "City ",
       "stateOptional": "State ",
       "email": "Email",
-      "phoneOptional": "Phone "
+      "phoneOptional": "Phone ",
+      "optional":"(optional)"
     },
     "inputField": {
       "enterZipCode": "Enter Zip Code",
