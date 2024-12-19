@@ -324,7 +324,7 @@ const MultiStepForm = () => {
                     <option value="Health" label={t("form.options.health")} />
                     <option value="Dental" label={t("form.options.dental")} />
                     <option value="Vision" label={t("form.options.vision")} />
-                    <option value="Vision" label='Medicare' />
+                    <option value="Medicare" label='Medicare' />
                   </select>
                   {formik.touched.insuranceCoverage &&
                     formik.errors.insuranceCoverage && (
