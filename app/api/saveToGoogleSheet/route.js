@@ -22,7 +22,7 @@ export async function POST(req) {
       // Append the form data to Google Sheets
       const spreadsheetId = '1hCCNo_o8bk7IXva1KZt16FfTQX8m54FbQCxevjjNSt0';
       const range = 'Sheet2!A:M'; // Adjust based on your sheet structure
-      const values = [[body?.address, body?.city, body?.state, body?.firstName, body?.lastName, body?.dob, body?.zipCode, body?.email, body?.phone, body?.householdIncome, body?.insuranceCoverage, body?.coverageType, dateTime]];
+      const values = [[body?.zipCode, body?.coverageType, body?.insuranceCoverage, body?.householdIncome, body?.firstName, body?.lastName, body?.dob, body?.address,dateTime, body?.city, body?.state, body?.email, body?.phone]];
 
       await sheets.spreadsheets.values.append({
         spreadsheetId,
