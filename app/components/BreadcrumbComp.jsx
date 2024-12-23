@@ -23,7 +23,7 @@ const BreadcrumbComp = ({img, video, videoSrc, pos, route}) => {
         height={1000}
         src={img}
         alt="img"
-        className="w-full h-full md:h-[45rem] rounded-md object-cover"
+        className="w-full h-full md:h-[49rem] rounded-md object-cover"
       />
     )}
     

@@ -700,7 +700,7 @@ const MultiStepForm = () => {
               </DialogTrigger>
               <DialogContent className="sm:max-w-[800px] sm:max-h-[700px] overflow-y-auto">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-semibold mb-4">
+                  <DialogTitle claFssName="text-2xl font-semibold mb-4">
                     {t("privacy_policy.title")}
                   </DialogTitle>
                   <DialogDescription>

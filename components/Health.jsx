@@ -32,7 +32,7 @@ const Health = () => {
 
       <div className="">
         <BreadcrumbComp
-          img={"/images/jogging.jpg"}
+          img={"/images/product/healthheroimage.jpg"}
           pos={"end"}
           route={t("health.title")}
         />
@@ -50,7 +50,7 @@ const Health = () => {
             </h2>
             <p className=" text-lg">{healthSections[1].description}</p>
             <div className="flex justify-center items-center">
-              <Link href="/appointment">
+              <Link href="/quote">
                 <button className="bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8">
                   {healthSections[1].button_text}
                 </button>
@@ -66,7 +66,7 @@ const Health = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/health1.jpg"
+                 src='/images/product/healthH1.jpg'
               alt="Health Plans"
               className="w-full h-auto rounded-md"
             />
@@ -104,7 +104,7 @@ const Health = () => {
             <p className="flex items-center justify-center pl-2">
               {healthSections[2].call_to_action}
               <a
-                href="/appointment"
+                href="/quote"
                 className="underline text-blue-600 pr-1 px-1"
               >
                 {healthSections[2].link_text}

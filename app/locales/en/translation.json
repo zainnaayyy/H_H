@@ -432,7 +432,7 @@
     "main_sections": {
       "first_section": {
         "title": "Affordable Dental & Vision Insurance Plans for Your Family",
-        "description": "Finding the right dental insurance doesn't have to be complicated—or expensive. We offer a range of affordable plans that make it easy to get the dental care you need. Plus, you can even bundle your plan with vision and hearing coverage for complete care, all in one package."
+        "description": "Finding the right dental insurance doesn't have to be complicated—or expensive. We offer a range of affordable plans that make it easy to get the dental care you need. Plus, you can even bundle your plan with vision and hearing 👂 coverage for complete care, all in one package."
       },
       "benefits_section": {
         "title": "Benefits of Dental Insurance:",
@@ -719,7 +719,7 @@
       "stateOptional": "State ",
       "email": "Email",
       "phoneOptional": "Phone ",
-      "optional":"(Optional)"
+      "optional": "(Optional)"
     },
     "inputField": {
       "enterZipCode": "Enter Zip Code",
@@ -746,7 +746,7 @@
       "fullName": "What's your full name?",
       "dateOfBirth": "What's your date of birth?",
       "homeAddress": "What is your home address?",
-      "secure":"Secure Your Free Quote Now!",
+      "secure": "Secure Your Free Quote Now!",
       "stayConnected": "Stay Connected"
     },
     "options": {
@@ -763,20 +763,20 @@
       "successMessage2": "An agent will reach out to you in 24 hours."
     },
 
-    "errors" : {
-      "zipRequired":"ZIP code is required",
+    "errors": {
+      "zipRequired": "ZIP code is required",
       "firstNameRequired": "First name is required",
       "lastNameRequired": "Last name is required",
       "dobRequired": "Date of Birth is required",
       "addressRequired": "Address is required",
       "cityRequired": "City is required",
       "stateRequired": "State is required",
-      "emailRequired":"Email is required"
+      "emailRequired": "Email is required"
     },
 
     "footer": {
-      "agree":"You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
-      "submit":"By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
+      "agree": "You agree to receive recurring automated promotional text and email messages from H4H Insurance: Consent is not a condition of purchase. Reply HELP for help or STOP to cancel. Message and data rates may apply.",
+      "submit": "By submitting this form, you are consenting to receive marketing emails from H4H Insurance. You can revoke your consent to receive emails at any time by unsubscribing to emails at"
     }
   }
 }

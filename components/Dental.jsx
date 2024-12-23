@@ -34,7 +34,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-             src='/images/dental/dental1.jpg'
+             src='/images/product/dentalH1.jpg'
               alt={t('dental_vision.description')}
               className="w-full h-auto rounded-md"
             />
@@ -53,12 +53,16 @@ const Dental = () => {
               {t('dental_vision.main_sections.first_section.description')}
             </p>
             <div className="flex justify-center items-center">
-              <Link href="/appointment">
-                <button className="bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8">
-                  {t('dental_vision.cta_button')}
-                </button>
-              </Link>
-            </div>
+  <Link href="/quote">
+    <div className="flex justify-center items-center">
+      <img className="w-10 h-10 mr-2 mt-8" src="/images/product/Glass Eye Symbol.png" alt="Eye Icon" />
+      <button className="bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8">
+        {t('dental_vision.cta_button')}
+      </button>
+    </div>
+  </Link>
+</div>
+
           </motion.div>
         </div>
 
@@ -89,7 +93,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src='/images/dental/dental2.jpg'
+             src='/images/product/DentalH2.jpg'
               alt={t('dental_vision.title')}
               className="w-full h-full rounded-md"
             />
@@ -104,7 +108,7 @@ const Dental = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-                 src='/images/dental/dental3.jpg'
+               src='/images/product/dentalH3.jpg'
               alt={t('dental_vision.title')}
               className="w-full h-auto rounded-md"
             />

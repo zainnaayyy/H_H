@@ -22,7 +22,7 @@ const Life = () => {
       <Header />
       <div className=''>
         <BreadcrumbComp
-            img={'/images/family.jpg'}
+            img={'/images/product/lifeinsuranceHERO.jpg'}
           pos={'start'} 
           route={t('life_insurance.breadcrumb.title')}
         />
@@ -30,7 +30,7 @@ const Life = () => {
         <div className='flex flex-col md:flex-row justify-between items-center mt-14 bg-gray-100'>
           <motion.div className='w-full md:w-1/2 p-4'>
             <img
-              src={t('life_insurance.main_section.image')}
+              src='/images/product/lifeH1.jpg'
               alt={t('life_insurance.breadcrumb.title')}
               className='w-full h-auto rounded-md'
             />
@@ -71,7 +71,7 @@ const Life = () => {
               priority={true}
               width={600}
               height={500}
-              src={t('life_insurance.types_section.image')}
+                src='/images/product/lifeH2.jpg'
               alt={t('life_insurance.breadcrumb.title')}
               className='rounded-md'
             />
@@ -84,7 +84,7 @@ const Life = () => {
               priority={true}
               width={750}
               height={500}
-              src={t('life_insurance.quote_section.image')}
+              src='/images/product/lifeH3.jpg'
               alt={t('life_insurance.breadcrumb.title')}
               className='rounded-md'
             />
@@ -98,7 +98,7 @@ const Life = () => {
               {t('life_insurance.quote_section.description')}
             </p>
             <div className='flex justify-center items-center'>
-              <Link href='/appointment'>
+              <Link href='/quote'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
                   {t('life_insurance.quote_section.button_text')}
                 </button>

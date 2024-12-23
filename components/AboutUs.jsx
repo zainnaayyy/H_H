@@ -101,7 +101,7 @@ const AboutUs = () => {
             {sections[0].paragraph}
             </p>
             <div className='flex justify-center items-center'>
-              <Link href='/appointment'>
+              <Link href='/quote'>
                 <button className='bg-primary-darkAqua text-white font-semibold py-2 px-4 rounded-md mt-8'>
                 {sections[0].button}
                 </button>
