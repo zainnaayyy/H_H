@@ -80,6 +80,7 @@ const MultiStepForm = () => {
   const [step, setStep] = useState(0);
   const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { t } = useTranslation();
 
   const validationSchemas = [
@@ -153,43 +154,69 @@ const MultiStepForm = () => {
     validationSchema: validationSchemas[step],
     onSubmit: async (values) => {
       if (step === validationSchemas.length - 1) {
-        const myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-  
-        const raw = JSON.stringify({
-          zipCode: values.zipCode,
-          coverageType: values.coverageType,
-          insuranceCoverage: values.insuranceCoverage,
-          householdIncome: values.householdIncome,
-          firstName: values.firstName,
-          lastName: values.lastName,
-          dob: values.dob,
-          address: values.address,
-          city: values.city,
-          state: values.state,
-          email: values.email,
-          phone: values.phone,
-        });
-  
-        const requestOptions = {
-          method: "POST",
-          headers: myHeaders,
-          body: raw,
-          redirect: "follow",
-        };
-  
-        fetch("/api/saveToGoogleSheet", requestOptions)
-          .then((response) => response.json())
-          .then((result) => {
-            if (result.status === 200) {
-              console.log("Form submitted", values);
-              setIsModalOpen(true);
-              formik.resetForm();
-            }
-          })
-          .catch((error) => {
-            console.error("Error during API call:", error);
+        setIsSubmitting(true)
+        try {
+          // First API call - Save to Google Sheet
+          const sheetResponse = await fetch('/api/saveToGoogleSheet', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              zipCode: values.zipCode,
+              coverageType: values.coverageType,
+              insuranceCoverage: values.insuranceCoverage,
+              householdIncome: values.householdIncome,
+              firstName: values.firstName,
+              lastName: values.lastName,
+              dob: values.dob,
+              address: values.address,
+              city: values.city,
+              state: values.state,
+              email: values.email,
+              phone: values.phone,
+            })
           });
+    
+          if (!sheetResponse.ok) {
+            throw new Error('Failed to save to Google Sheet');
+          }
+    
+          // Second API call - Send Email
+          const emailResponse = await fetch('/api/submit-lead', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              firstName: values.firstName,
+              lastName: values.lastName,
+              email: values.email,
+              phone: values.phone,
+              zipCode: values.zipCode,
+              coverageType: values.coverageType,
+              insuranceCoverage: values.insuranceCoverage,
+              householdIncome: values.householdIncome,
+              dob: values.dob,
+              address: values.address,
+              city: values.city,
+              state: values.state
+            })
+          });
+    
+          if (emailResponse.ok) {
+            console.log("Form submitted successfully");
+            setIsModalOpen(true);
+            formik.resetForm();
+          } else {
+            throw new Error('Failed to send email');
+          }
+        } catch (error) {
+          console.error("Error during form submission:", error);
+        }
+        finally {
+          setIsSubmitting(false);
+        }        
       } else {
         setLoading(true);
         setTimeout(() => {
@@ -197,7 +224,7 @@ const MultiStepForm = () => {
           setStep(step + 1);
         }, 500);
       }
-    },
+    }
   });
   
   
@@ -608,12 +635,20 @@ const MultiStepForm = () => {
                     </div>
                   </div>
                   <div className="flex flex-col space-y-4">
-                    <button
-                      type="submit"
-                      className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
-                    >
-                      {t("form.button.submit")}
-                    </button>
+                  <button
+  type="submit"
+  disabled={isSubmitting}
+  className="bg-orange-500 hover:bg-orange-700 text-white w-full font-bold py-2 px-4 rounded-full"
+>
+  {isSubmitting ? (
+    <div className="flex items-center justify-center">
+      <div className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full mr-2" />
+      {/* {t("form.button.submitting")} */}
+    </div>
+  ) : (
+    t("form.button.submit")
+  )}
+</button>
                     <button
                       type="button"
                       onClick={handleBackStep}
