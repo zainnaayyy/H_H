@@ -151,7 +151,7 @@ const Medicare = () => {
             transition={{ duration: 0.5 }}
           >
             <img
-              src="/images/product/medicareH4.jpg"
+              src="/images/product/medicareh4.jpg"
               alt="Health Image"
               className="w-full h-full rounded-md"
             />

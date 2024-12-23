@@ -71,7 +71,7 @@ const Life = () => {
               priority={true}
               width={600}
               height={500}
-                src='/images/product/lifeH2.jpg'
+                src='/images/product/LifeH2.jpg'
               alt={t('life_insurance.breadcrumb.title')}
               className='rounded-md'
             />
