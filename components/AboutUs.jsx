@@ -20,7 +20,15 @@ const AboutUs = () => {
   return (
     <>
       <Header />
-      <div className=''>
+      <div className="">
+        <BreadcrumbComp
+          videoSrc={
+            "/images/product/4k-3d-haiti-flag.mp4"
+          }
+          video={true}
+          pos={"center"}
+          route={t("About Us")}
+        />
         {/* <div className='text-center text-6xl mb-10 font-bold'>
           Health Insurance
         </div> */}
@@ -44,7 +52,7 @@ const AboutUs = () => {
         route={'About Us'}
       /> */}
       <div className="relative w-full mt-10 p-10 rounded-md">
-          <Image
+          {/* <Image
             priority={true}
             width={1000}
             height={1000}
@@ -70,7 +78,7 @@ const AboutUs = () => {
               ]}
             />
           </div>
-        </div>
+        </div> */}
       </div>
         {/* <div className="relative w-full mt-10 p-10 rounded-md h-screen bg-gray-200 flex items-center justify-center">
           <img
