@@ -48,12 +48,12 @@ const AboutUs = () => {
             priority={true}
             width={1000}
             height={1000}
-            src={'/images/about/about10.jpg'}
+            src={'/images/product/aboutusheroimage.jpg'}
             alt="img"
             className="w-full h-full md:h-[34rem] rounded-md object-cover"
           />
         
-        <div className={`flex absolute inset-0 flex-col items-center justify-start p-4 sm:p-10`}>
+        <div className={`flex absolute inset-0 flex-colp-4 sm:p-10`}>
           <div className="text-center ml-7 md:mr-[10rem]">
             <h1 className="text-sm text-primary-darkAqua md:text-4xl lg:text-6xl font-bold mb-4">
             {t('about_us.title')}
