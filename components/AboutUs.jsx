@@ -23,7 +23,7 @@ const AboutUs = () => {
       <div className="">
         <BreadcrumbComp
           videoSrc={
-            "/images/product/4k-3d-haiti-flag.mp4"
+            "/images/product/4k-3d-haiti-fla.mp4"
           }
           video={true}
           pos={"center"}
